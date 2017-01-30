@@ -1,1 +1,1 @@
-import './app.jsx'
+import './routes.jsx'

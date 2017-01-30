@@ -1,2 +1,5 @@
 .env
+public
 node_modules
+test/fixtures
+npm-debug.*
