@@ -7,15 +7,17 @@ An example app structure for a node application utilizing `node-procore`.
 ```
 CIENT_ID
 CLIENT_SECRET
-ReDIRECT_URL
+REDIRECT_URL
 SESSION_PASSWORD
 ```
 ## Development
 In two separate terminal windows run:
+
 `npm run rollup:watch`
+
 `npm run server:watch`
 
 ## Production
-1. `npm run rollup:prod`
+1. `npm run rollup:build`
 2. `npm run server`
 

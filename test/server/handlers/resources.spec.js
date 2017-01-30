@@ -1,98 +1,25 @@
 import { describe, it } from 'mocha'
 import { expect } from 'chai'
 import { gelatoGroups } from './../../../server/handlers/resources'
-import swagger from './../../fixtures/swagger-with-refs.json'
+
+const swagger = {
+  "paths": {
+    "/biding_reports": {
+      "x-gelato-group": "Bids"
+    },
+    "/accident_logs": {
+      "x-gelato-group": "Accident Logs"
+    },
+    "/oauth/token": {
+      "x-gelato-group": "Authentication"
+    }
+  }
+}
 
 const expectedGroups = [
   'Accident Logs',
   'Authentication',
-  'Bids',
-  'Budget Line Items',
-  'Budget Modifications',
-  'Calendar Events',
-  'Call Logs',
-  'Change Events',
-  'Change Order Change Reasons',
-  'Change Order Packages',
-  'Change Order Requests',
-  'Change Orders',
-  'Change Types',
-  'Checklists',
-  'Commitments',
-  'Communications',
-  'Companies',
-  'Company Folders and Files',
-  'Company Insurances',
-  'Company Offices',
-  'Company Users',
-  'Company Vendor Insurances',
-  'Company Vendors',
-  'Contract Payments',
-  'Cost Codes',
-  'Daily Construction Report Logs',
-  'Dashboards',
-  'Delivery Logs',
-  'Direct Costs',
-  'Draw Requests',
-  'Drawings',
-  'Dumpster Logs',
-  'ERP Integration',
-  'Equipment',
-  'Equipment Logs',
-  'Inspection Logs',
-  'Line Item Types',
-  'Manpower Logs',
-  'Markup Attachments',
-  'Markup Layer Elements',
-  'Markup Layers',
-  'Meetings',
-  'Notes Logs',
-  'Observations',
-  'Permission Templates',
-  'Permissions',
-  'Plan Revision Logs',
-  'Potential Change Orders',
-  'Prime Contracts',
-  'Productivity Logs',
-  'Project Configuration',
-  'Project Folders and Files',
-  'Project Insurances',
-  'Project Tools',
-  'Project Users',
-  'Project Vendor Insurances',
-  'Project Vendors',
-  'Punch Item Assignments',
-  'Punch Item Types',
-  'Punch Items',
-  'Punch List Assignee Options',
-  'Quantity Logs',
-  'RFI Replies',
-  'RFIs',
-  'RFQs',
-  'Reports',
-  'Requested Changes',
-  'Safety Violation Logs',
-  'Schedule Integration',
-  'Schedule Type',
-  'Specification Section Divisions',
-  'Specification Section Revisions',
-  'Specification Sections',
-  'Specification Sets',
-  'Specification Uploads',
-  'Sticky Filters',
-  'Sub Jobs',
-  'Submittals',
-  'Tasks',
-  'Timecards',
-  'ToDos',
-  'Trades',
-  'Transmittals',
-  'User Access Level',
-  'Visitor Logs',
-  'Waste Logs',
-  'Weather Logs',
-  'Work Logs',
-  'submittal_logs'
+  'Bids'
 ]
 
 describe('handlers.resources', () => {
