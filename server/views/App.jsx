@@ -1,12 +1,12 @@
 const React = require('react')
+import { Provider } from 'react-redux'
 
 const App = ({ auth }) => (
   <html>
     <head>
-      <title>Procore Resources | Explore The API</title>
+      <title>Node Procore Boilerplate</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
       <meta name="token" content={auth.access_token} />
-      <meta name="refresh" content={auth.refresh_token} />
     </head>
     <body>
       <div id="app"></div>

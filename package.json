@@ -15,7 +15,8 @@
     "server": "node -r babel-core/register -r dotenv/config server/main.js",
     "server:watch": "nodemon --ignore client --ignore public -r babel-core/register -r dotenv/config server/main.js",
     "rollup:watch": "rollup --watch -c",
-    "rollup:build": "rollup -c"
+    "rollup:build": "rollup -c",
+    "dev": "concurrently \"npm run rollup:watch\" \"npm run server:watch\""
   },
   "dependencies": {
     "alphanum-sort": "^1.0.2",
@@ -26,11 +27,16 @@
     "inert": "^4.1.0",
     "joi": "^10.2.0",
     "material-ui": "^0.16.7",
+    "procore": "file:../node-procore",
     "ramda": "^0.23.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
     "react-router": "^3.0.2",
     "react-tap-event-plugin": "^2.0.1",
+    "redux": "^3.6.0",
+    "redux-act": "^1.1.0",
+    "redux-form": "^6.5.0",
     "reflexbox": "^2.2.3",
     "string": "^3.3.3",
     "typescript": "^2.1.5",
@@ -44,6 +50,7 @@
     "babel-preset-react": "^6.22.0",
     "babel-register": "^6.22.0",
     "chai": "^3.5.0",
+    "concurrently": "^3.3.0",
     "mocha": "^3.2.0",
     "nodemon": "^1.11.0",
     "rollup": "^0.41.4",
@@ -51,6 +58,7 @@
     "rollup-plugin-commonjs": "^7.0.0",
     "rollup-plugin-node-globals": "^1.1.0",
     "rollup-plugin-node-resolve": "^2.0.0",
-    "rollup-watch": "^3.2.2"
+    "rollup-watch": "^3.2.2",
+    "lerna": "2.0.0-beta.37"
   }
 }

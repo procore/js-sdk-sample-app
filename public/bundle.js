@@ -1421,7 +1421,7 @@ function shouldUseNative() {
 	}
 }
 
-var index = shouldUseNative() ? Object.assign : function (target, source) {
+var index$1 = shouldUseNative() ? Object.assign : function (target, source) {
 	var from;
 	var to = toObject(target);
 	var symbols;
@@ -1547,7 +1547,7 @@ var PooledClass$1 = {
 
 var PooledClass_1 = PooledClass$1;
 
-var _assign = index;
+var _assign = index$1;
 
 var PooledClass = PooledClass_1;
 
@@ -2311,7 +2311,7 @@ var REACT_ELEMENT_TYPE$1 = typeof Symbol === 'function' && Symbol['for'] && Symb
 
 var ReactElementSymbol = REACT_ELEMENT_TYPE$1;
 
-var _assign$2 = index;
+var _assign$2 = index$1;
 
 var ReactCurrentOwner = ReactCurrentOwner_1;
 
@@ -3269,7 +3269,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 var ReactComponent_1 = ReactComponent$1;
 
-var _assign$3 = index;
+var _assign$3 = index$1;
 
 var ReactComponent$2 = ReactComponent_1;
 var ReactNoopUpdateQueue$2 = ReactNoopUpdateQueue_1;
@@ -3312,7 +3312,7 @@ if (process.env.NODE_ENV !== 'production') {
 var ReactPropTypeLocationNames_1 = ReactPropTypeLocationNames$1;
 
 var _prodInvariant$8 = reactProdInvariant_1$2;
-var _assign$4 = index;
+var _assign$4 = index$1;
 
 var ReactComponent$3 = ReactComponent_1;
 var ReactElement$3 = ReactElement_1;
@@ -5261,7 +5261,7 @@ function onlyChild$1(children) {
 
 var onlyChild_1 = onlyChild$1;
 
-var _assign$1 = index;
+var _assign$1 = index$1;
 
 var ReactChildren = ReactChildren_1;
 var ReactComponent = ReactComponent_1;
@@ -5341,6 +5341,9 @@ var React_1 = React$1;
 var react = React_1;
 
 var react_1 = react.PropTypes;
+var react_2 = react.createElement;
+var react_3 = react.Component;
+var react_4 = react.Children;
 
 var _prodInvariant$13 = reactProdInvariant_1;
 
@@ -5866,7 +5869,7 @@ function getTextContentAccessor$1() {
 
 var getTextContentAccessor_1 = getTextContentAccessor$1;
 
-var _assign$5 = index;
+var _assign$5 = index$1;
 
 var PooledClass$4 = PooledClass_1;
 
@@ -7467,7 +7470,7 @@ var TransactionImpl = {
 var Transaction$1 = TransactionImpl;
 
 var _prodInvariant$14 = reactProdInvariant_1;
-var _assign$6 = index;
+var _assign$6 = index$1;
 
 var CallbackQueue = CallbackQueue_1;
 var PooledClass$5 = PooledClass_1;
@@ -10353,7 +10356,7 @@ function getVendorPrefixedEventName$1(eventName) {
 
 var getVendorPrefixedEventName_1 = getVendorPrefixedEventName$1;
 
-var _assign$8 = index;
+var _assign$8 = index$1;
 
 var EventPluginRegistry$3 = EventPluginRegistry_1;
 var ReactEventEmitterMixin = ReactEventEmitterMixin_1;
@@ -10808,7 +10811,7 @@ var LinkedValueUtils$1 = {
 var LinkedValueUtils_1 = LinkedValueUtils$1;
 
 var _prodInvariant$20 = reactProdInvariant_1;
-var _assign$9 = index;
+var _assign$9 = index$1;
 
 var DOMPropertyOperations$2 = DOMPropertyOperations_1;
 var LinkedValueUtils = LinkedValueUtils_1;
@@ -11073,7 +11076,7 @@ function _handleChange(event) {
 
 var ReactDOMInput_1 = ReactDOMInput$1;
 
-var _assign$11 = index;
+var _assign$11 = index$1;
 
 var LinkedValueUtils$2 = LinkedValueUtils_1;
 var ReactDOMComponentTree$12 = ReactDOMComponentTree_1;
@@ -11261,7 +11264,7 @@ function _handleChange$1(event) {
 
 var ReactDOMSelect_1 = ReactDOMSelect$2;
 
-var _assign$10 = index;
+var _assign$10 = index$1;
 
 var React$3 = React_1;
 var ReactDOMComponentTree$11 = ReactDOMComponentTree_1;
@@ -11373,7 +11376,7 @@ var ReactDOMOption$1 = {
 var ReactDOMOption_1 = ReactDOMOption$1;
 
 var _prodInvariant$22 = reactProdInvariant_1;
-var _assign$12 = index;
+var _assign$12 = index$1;
 
 var LinkedValueUtils$3 = LinkedValueUtils_1;
 var ReactDOMComponentTree$13 = ReactDOMComponentTree_1;
@@ -11799,7 +11802,7 @@ function shouldUpdateReactComponent$2(prevElement, nextElement) {
 var shouldUpdateReactComponent_1 = shouldUpdateReactComponent$2;
 
 var _prodInvariant$26 = reactProdInvariant_1;
-var _assign$14 = index;
+var _assign$14 = index$1;
 
 var React$4 = React_1;
 var ReactComponentEnvironment$2 = ReactComponentEnvironment_1;
@@ -12792,7 +12795,7 @@ function getNextDebugID$1() {
 var getNextDebugID_1 = getNextDebugID$1;
 
 var _prodInvariant$25 = reactProdInvariant_1;
-var _assign$13 = index;
+var _assign$13 = index$1;
 
 var ReactCompositeComponent = ReactCompositeComponent_1;
 var ReactEmptyComponent = ReactEmptyComponent_1;
@@ -14156,7 +14159,7 @@ var ReactServerUpdateQueue$1 = function () {
 
 var ReactServerUpdateQueue_1 = ReactServerUpdateQueue$1;
 
-var _assign$15 = index;
+var _assign$15 = index$1;
 
 var PooledClass$7 = PooledClass_1;
 var Transaction$3 = Transaction$1;
@@ -14234,7 +14237,7 @@ PooledClass$7.addPoolingTo(ReactServerRenderingTransaction$1);
 
 var ReactServerRenderingTransaction_1 = ReactServerRenderingTransaction$1;
 
-var _assign$16 = index;
+var _assign$16 = index$1;
 
 var emptyFunction$8 = emptyFunction_1;
 var warning$35 = warning_1;
@@ -14605,7 +14608,7 @@ if (process.env.NODE_ENV !== 'production') {
 var validateDOMNesting_1 = validateDOMNesting$1;
 
 var _prodInvariant$19 = reactProdInvariant_1;
-var _assign$7 = index;
+var _assign$7 = index$1;
 
 var AutoFocusUtils = AutoFocusUtils_1;
 var CSSPropertyOperations = CSSPropertyOperations_1;
@@ -15591,7 +15594,7 @@ _assign$7(ReactDOMComponent$1.prototype, ReactDOMComponent$1.Mixin, ReactMultiCh
 
 var ReactDOMComponent_1 = ReactDOMComponent$1;
 
-var _assign$17 = index;
+var _assign$17 = index$1;
 
 var DOMLazyTree$4 = DOMLazyTree_1;
 var ReactDOMComponentTree$14 = ReactDOMComponentTree_1;
@@ -15764,7 +15767,7 @@ var ReactDOMTreeTraversal$1 = {
 };
 
 var _prodInvariant$33 = reactProdInvariant_1;
-var _assign$18 = index;
+var _assign$18 = index$1;
 
 var DOMChildrenOperations$3 = DOMChildrenOperations_1;
 var DOMLazyTree$5 = DOMLazyTree_1;
@@ -15915,7 +15918,7 @@ _assign$18(ReactDOMTextComponent$1.prototype, {
 
 var ReactDOMTextComponent_1 = ReactDOMTextComponent$1;
 
-var _assign$19 = index;
+var _assign$19 = index$1;
 
 var ReactUpdates$7 = ReactUpdates_1;
 var Transaction$4 = Transaction$1;
@@ -16061,7 +16064,7 @@ function getUnboundedScrollPosition$1(scrollable) {
 
 var getUnboundedScrollPosition_1 = getUnboundedScrollPosition$1;
 
-var _assign$20 = index;
+var _assign$20 = index$1;
 
 var EventListener = EventListener_1;
 var ExecutionEnvironment$15 = ExecutionEnvironment_1;
@@ -16661,7 +16664,7 @@ var ReactInputSelection$1 = {
 
 var ReactInputSelection_1 = ReactInputSelection$1;
 
-var _assign$21 = index;
+var _assign$21 = index$1;
 
 var CallbackQueue$2 = CallbackQueue_1;
 var PooledClass$9 = PooledClass_1;
@@ -19032,7 +19035,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 var ReactDOM_1 = ReactDOM$1;
 
-var index$2 = ReactDOM_1;
+var index$3 = ReactDOM_1;
 
 var invariant$42 = function(condition, format, a, b, c, d, e, f) {
   if (process.env.NODE_ENV !== 'production') {
@@ -20985,6 +20988,50 @@ var IndexLink = react.createClass({
  * Copyright 2015, Yahoo! Inc.
  * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
  */
+var REACT_STATICS = {
+    childContextTypes: true,
+    contextTypes: true,
+    defaultProps: true,
+    displayName: true,
+    getDefaultProps: true,
+    mixins: true,
+    propTypes: true,
+    type: true
+};
+
+var KNOWN_STATICS = {
+    name: true,
+    length: true,
+    prototype: true,
+    caller: true,
+    arguments: true,
+    arity: true
+};
+
+var isGetOwnPropertySymbolsAvailable = typeof Object.getOwnPropertySymbols === 'function';
+
+var index$4 = function hoistNonReactStatics(targetComponent, sourceComponent, customStatics) {
+    if (typeof sourceComponent !== 'string') { // don't hoist over string (html) components
+        var keys = Object.getOwnPropertyNames(sourceComponent);
+
+        /* istanbul ignore else */
+        if (isGetOwnPropertySymbolsAvailable) {
+            keys = keys.concat(Object.getOwnPropertySymbols(sourceComponent));
+        }
+
+        for (var i = 0; i < keys.length; ++i) {
+            if (!REACT_STATICS[keys[i]] && !KNOWN_STATICS[keys[i]] && (!customStatics || !customStatics[keys[i]])) {
+                try {
+                    targetComponent[keys[i]] = sourceComponent[keys[i]];
+                } catch (error) {
+
+                }
+            }
+        }
+    }
+
+    return targetComponent;
+};
 
 var _React$PropTypes$4 = react.PropTypes;
 var string$4 = _React$PropTypes$4.string;
@@ -21217,28 +21264,28 @@ var REPLACE = exports.REPLACE = 'REPLACE';
 var POP = exports.POP = 'POP';
 });
 
-var index$6 = function (str) {
+var index$7 = function (str) {
 	return encodeURIComponent(str).replace(/[!'()*]/g, function (c) {
 		return '%' + c.charCodeAt(0).toString(16).toUpperCase();
 	});
 };
 
-var strictUriEncode = index$6;
-var objectAssign = index;
+var strictUriEncode = index$7;
+var objectAssign = index$1;
 
 function encoderForArrayFormat(opts) {
 	switch (opts.arrayFormat) {
 		case 'index':
-			return function (key, value, index$$1) {
+			return function (key, value, index) {
 				return value === null ? [
 					encode(key, opts),
 					'[',
-					index$$1,
+					index,
 					']'
 				].join('') : [
 					encode(key, opts),
 					'[',
-					encode(index$$1, opts),
+					encode(index, opts),
 					']=',
 					encode(value, opts)
 				].join('');
@@ -21426,7 +21473,7 @@ var stringify = function (obj, opts) {
 	}).join('&') : '';
 };
 
-var index$4 = {
+var index$5 = {
 	extract: extract,
 	parse: parse,
 	stringify: stringify
@@ -21664,7 +21711,7 @@ exports.__esModule = true;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _queryString = index$4;
+var _queryString = index$5;
 
 var _runTransitionHook = runTransitionHook_1;
 
@@ -22967,6 +23014,8822 @@ createRouterHistory(createHashHistory);
 
 /* components */
 
+function _classCallCheck$4(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// encapsulates the subscription logic for connecting a component to the redux store, as
+// well as nesting subscriptions of descendant components, so that we can ensure the
+// ancestor components re-render before descendants
+
+var CLEARED = null;
+var nullListeners = {
+  notify: function notify() {}
+};
+
+function createListenerCollection() {
+  // the current/next pattern is copied from redux's createStore code.
+  // TODO: refactor+expose that code to be reusable here?
+  var current = [];
+  var next = [];
+
+  return {
+    clear: function clear() {
+      next = CLEARED;
+      current = CLEARED;
+    },
+    notify: function notify() {
+      var listeners = current = next;
+      for (var i = 0; i < listeners.length; i++) {
+        listeners[i]();
+      }
+    },
+    subscribe: function subscribe(listener) {
+      var isSubscribed = true;
+      if (next === current) next = current.slice();
+      next.push(listener);
+
+      return function unsubscribe() {
+        if (!isSubscribed || current === CLEARED) return;
+        isSubscribed = false;
+
+        if (next === current) next = current.slice();
+        next.splice(next.indexOf(listener), 1);
+      };
+    }
+  };
+}
+
+var Subscription = function () {
+  function Subscription(store, parentSub) {
+    _classCallCheck$4(this, Subscription);
+
+    this.store = store;
+    this.parentSub = parentSub;
+    this.unsubscribe = null;
+    this.listeners = nullListeners;
+  }
+
+  Subscription.prototype.addNestedSub = function addNestedSub(listener) {
+    this.trySubscribe();
+    return this.listeners.subscribe(listener);
+  };
+
+  Subscription.prototype.notifyNestedSubs = function notifyNestedSubs() {
+    this.listeners.notify();
+  };
+
+  Subscription.prototype.isSubscribed = function isSubscribed() {
+    return Boolean(this.unsubscribe);
+  };
+
+  Subscription.prototype.trySubscribe = function trySubscribe() {
+    if (!this.unsubscribe) {
+      // this.onStateChange is set by connectAdvanced.initSubscription()
+      this.unsubscribe = this.parentSub ? this.parentSub.addNestedSub(this.onStateChange) : this.store.subscribe(this.onStateChange);
+
+      this.listeners = createListenerCollection();
+    }
+  };
+
+  Subscription.prototype.tryUnsubscribe = function tryUnsubscribe() {
+    if (this.unsubscribe) {
+      this.unsubscribe();
+      this.unsubscribe = null;
+      this.listeners.clear();
+      this.listeners = nullListeners;
+    }
+  };
+
+  return Subscription;
+}();
+
+var storeShape = react_1.shape({
+  subscribe: react_1.func.isRequired,
+  dispatch: react_1.func.isRequired,
+  getState: react_1.func.isRequired
+});
+
+/**
+ * Prints a warning in the console if it exists.
+ *
+ * @param {String} message The warning message.
+ * @returns {void}
+ */
+function warning$43(message) {
+  /* eslint-disable no-console */
+  if (typeof console !== 'undefined' && typeof console.error === 'function') {
+    console.error(message);
+  }
+  /* eslint-enable no-console */
+  try {
+    // This error was thrown as a convenience so that if you enable
+    // "break on all exceptions" in your console,
+    // it would pause the execution at this line.
+    throw new Error(message);
+    /* eslint-disable no-empty */
+  } catch (e) {}
+  /* eslint-enable no-empty */
+}
+
+function _classCallCheck$3(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var didWarnAboutReceivingStore = false;
+function warnAboutReceivingStore() {
+  if (didWarnAboutReceivingStore) {
+    return;
+  }
+  didWarnAboutReceivingStore = true;
+
+  warning$43('<Provider> does not support changing `store` on the fly. ' + 'It is most likely that you see this error because you updated to ' + 'Redux 2.x and React Redux 2.x which no longer hot reload reducers ' + 'automatically. See https://github.com/reactjs/react-redux/releases/' + 'tag/v2.0.0 for the migration instructions.');
+}
+
+var Provider = function (_Component) {
+  _inherits(Provider, _Component);
+
+  Provider.prototype.getChildContext = function getChildContext() {
+    return { store: this.store, storeSubscription: null };
+  };
+
+  function Provider(props, context) {
+    _classCallCheck$3(this, Provider);
+
+    var _this = _possibleConstructorReturn(this, _Component.call(this, props, context));
+
+    _this.store = props.store;
+    return _this;
+  }
+
+  Provider.prototype.render = function render() {
+    return react_4.only(this.props.children);
+  };
+
+  return Provider;
+}(react_3);
+
+if (process.env.NODE_ENV !== 'production') {
+  Provider.prototype.componentWillReceiveProps = function (nextProps) {
+    var store = this.store;
+    var nextStore = nextProps.store;
+
+
+    if (store !== nextStore) {
+      warnAboutReceivingStore();
+    }
+  };
+}
+
+Provider.propTypes = {
+  store: storeShape.isRequired,
+  children: react_1.element.isRequired
+};
+Provider.childContextTypes = {
+  store: storeShape.isRequired,
+  storeSubscription: react_1.instanceOf(Subscription)
+};
+Provider.displayName = 'Provider';
+
+var _extends$11 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _classCallCheck$5(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn$1(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits$1(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _objectWithoutProperties$3(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var hotReloadingVersion = 0;
+function connectAdvanced(
+/*
+  selectorFactory is a func that is responsible for returning the selector function used to
+  compute new props from state, props, and dispatch. For example:
+     export default connectAdvanced((dispatch, options) => (state, props) => ({
+      thing: state.things[props.thingId],
+      saveThing: fields => dispatch(actionCreators.saveThing(props.thingId, fields)),
+    }))(YourComponent)
+   Access to dispatch is provided to the factory so selectorFactories can bind actionCreators
+  outside of their selector as an optimization. Options passed to connectAdvanced are passed to
+  the selectorFactory, along with displayName and WrappedComponent, as the second argument.
+   Note that selectorFactory is responsible for all caching/memoization of inbound and outbound
+  props. Do not use connectAdvanced directly without memoizing results between calls to your
+  selector, otherwise the Connect component will re-render on every state or props change.
+*/
+selectorFactory) {
+  var _contextTypes, _childContextTypes;
+
+  var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
+      _ref$getDisplayName = _ref.getDisplayName,
+      getDisplayName = _ref$getDisplayName === undefined ? function (name) {
+    return 'ConnectAdvanced(' + name + ')';
+  } : _ref$getDisplayName,
+      _ref$methodName = _ref.methodName,
+      methodName = _ref$methodName === undefined ? 'connectAdvanced' : _ref$methodName,
+      _ref$renderCountProp = _ref.renderCountProp,
+      renderCountProp = _ref$renderCountProp === undefined ? undefined : _ref$renderCountProp,
+      _ref$shouldHandleStat = _ref.shouldHandleStateChanges,
+      shouldHandleStateChanges = _ref$shouldHandleStat === undefined ? true : _ref$shouldHandleStat,
+      _ref$storeKey = _ref.storeKey,
+      storeKey = _ref$storeKey === undefined ? 'store' : _ref$storeKey,
+      _ref$withRef = _ref.withRef,
+      withRef = _ref$withRef === undefined ? false : _ref$withRef,
+      connectOptions = _objectWithoutProperties$3(_ref, ['getDisplayName', 'methodName', 'renderCountProp', 'shouldHandleStateChanges', 'storeKey', 'withRef']);
+
+  var subscriptionKey = storeKey + 'Subscription';
+  var version$$1 = hotReloadingVersion++;
+
+  var contextTypes = (_contextTypes = {}, _contextTypes[storeKey] = storeShape, _contextTypes[subscriptionKey] = react_1.instanceOf(Subscription), _contextTypes);
+  var childContextTypes = (_childContextTypes = {}, _childContextTypes[subscriptionKey] = react_1.instanceOf(Subscription), _childContextTypes);
+
+  return function wrapWithConnect(WrappedComponent) {
+    browser$1(typeof WrappedComponent == 'function', 'You must pass a component to the function returned by ' + ('connect. Instead received ' + WrappedComponent));
+
+    var wrappedComponentName = WrappedComponent.displayName || WrappedComponent.name || 'Component';
+
+    var displayName = getDisplayName(wrappedComponentName);
+
+    var selectorFactoryOptions = _extends$11({}, connectOptions, {
+      getDisplayName: getDisplayName,
+      methodName: methodName,
+      renderCountProp: renderCountProp,
+      shouldHandleStateChanges: shouldHandleStateChanges,
+      storeKey: storeKey,
+      withRef: withRef,
+      displayName: displayName,
+      wrappedComponentName: wrappedComponentName,
+      WrappedComponent: WrappedComponent
+    });
+
+    var Connect = function (_Component) {
+      _inherits$1(Connect, _Component);
+
+      function Connect(props, context) {
+        _classCallCheck$5(this, Connect);
+
+        var _this = _possibleConstructorReturn$1(this, _Component.call(this, props, context));
+
+        _this.version = version$$1;
+        _this.state = {};
+        _this.renderCount = 0;
+        _this.store = _this.props[storeKey] || _this.context[storeKey];
+        _this.parentSub = props[subscriptionKey] || context[subscriptionKey];
+
+        _this.setWrappedInstance = _this.setWrappedInstance.bind(_this);
+
+        browser$1(_this.store, 'Could not find "' + storeKey + '" in either the context or ' + ('props of "' + displayName + '". ') + 'Either wrap the root component in a <Provider>, ' + ('or explicitly pass "' + storeKey + '" as a prop to "' + displayName + '".'));
+
+        // make sure `getState` is properly bound in order to avoid breaking
+        // custom store implementations that rely on the store's context
+        _this.getState = _this.store.getState.bind(_this.store);
+
+        _this.initSelector();
+        _this.initSubscription();
+        return _this;
+      }
+
+      Connect.prototype.getChildContext = function getChildContext() {
+        var _ref2;
+
+        return _ref2 = {}, _ref2[subscriptionKey] = this.subscription || this.parentSub, _ref2;
+      };
+
+      Connect.prototype.componentDidMount = function componentDidMount() {
+        if (!shouldHandleStateChanges) return;
+
+        // componentWillMount fires during server side rendering, but componentDidMount and
+        // componentWillUnmount do not. Because of this, trySubscribe happens during ...didMount.
+        // Otherwise, unsubscription would never take place during SSR, causing a memory leak.
+        // To handle the case where a child component may have triggered a state change by
+        // dispatching an action in its componentWillMount, we have to re-run the select and maybe
+        // re-render.
+        this.subscription.trySubscribe();
+        this.selector.run(this.props);
+        if (this.selector.shouldComponentUpdate) this.forceUpdate();
+      };
+
+      Connect.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+        this.selector.run(nextProps);
+      };
+
+      Connect.prototype.shouldComponentUpdate = function shouldComponentUpdate() {
+        return this.selector.shouldComponentUpdate;
+      };
+
+      Connect.prototype.componentWillUnmount = function componentWillUnmount() {
+        if (this.subscription) this.subscription.tryUnsubscribe();
+        // these are just to guard against extra memory leakage if a parent element doesn't
+        // dereference this instance properly, such as an async callback that never finishes
+        this.subscription = null;
+        this.store = null;
+        this.parentSub = null;
+        this.selector.run = function () {};
+      };
+
+      Connect.prototype.getWrappedInstance = function getWrappedInstance() {
+        browser$1(withRef, 'To access the wrapped instance, you need to specify ' + ('{ withRef: true } in the options argument of the ' + methodName + '() call.'));
+        return this.wrappedInstance;
+      };
+
+      Connect.prototype.setWrappedInstance = function setWrappedInstance(ref) {
+        this.wrappedInstance = ref;
+      };
+
+      Connect.prototype.initSelector = function initSelector() {
+        var dispatch = this.store.dispatch;
+        var getState = this.getState;
+
+        var sourceSelector = selectorFactory(dispatch, selectorFactoryOptions);
+
+        // wrap the selector in an object that tracks its results between runs
+        var selector = this.selector = {
+          shouldComponentUpdate: true,
+          props: sourceSelector(getState(), this.props),
+          run: function runComponentSelector(props) {
+            try {
+              var nextProps = sourceSelector(getState(), props);
+              if (selector.error || nextProps !== selector.props) {
+                selector.shouldComponentUpdate = true;
+                selector.props = nextProps;
+                selector.error = null;
+              }
+            } catch (error) {
+              selector.shouldComponentUpdate = true;
+              selector.error = error;
+            }
+          }
+        };
+      };
+
+      Connect.prototype.initSubscription = function initSubscription() {
+        var _this2 = this;
+
+        if (shouldHandleStateChanges) {
+          (function () {
+            var subscription = _this2.subscription = new Subscription(_this2.store, _this2.parentSub);
+            var dummyState = {};
+
+            subscription.onStateChange = function onStateChange() {
+              this.selector.run(this.props);
+
+              if (!this.selector.shouldComponentUpdate) {
+                subscription.notifyNestedSubs();
+              } else {
+                this.componentDidUpdate = function componentDidUpdate() {
+                  this.componentDidUpdate = undefined;
+                  subscription.notifyNestedSubs();
+                };
+
+                this.setState(dummyState);
+              }
+            }.bind(_this2);
+          })();
+        }
+      };
+
+      Connect.prototype.isSubscribed = function isSubscribed() {
+        return Boolean(this.subscription) && this.subscription.isSubscribed();
+      };
+
+      Connect.prototype.addExtraProps = function addExtraProps(props) {
+        if (!withRef && !renderCountProp) return props;
+        // make a shallow copy so that fields added don't leak to the original selector.
+        // this is especially important for 'ref' since that's a reference back to the component
+        // instance. a singleton memoized selector would then be holding a reference to the
+        // instance, preventing the instance from being garbage collected, and that would be bad
+        var withExtras = _extends$11({}, props);
+        if (withRef) withExtras.ref = this.setWrappedInstance;
+        if (renderCountProp) withExtras[renderCountProp] = this.renderCount++;
+        return withExtras;
+      };
+
+      Connect.prototype.render = function render() {
+        var selector = this.selector;
+        selector.shouldComponentUpdate = false;
+
+        if (selector.error) {
+          throw selector.error;
+        } else {
+          return react_2(WrappedComponent, this.addExtraProps(selector.props));
+        }
+      };
+
+      return Connect;
+    }(react_3);
+
+    Connect.WrappedComponent = WrappedComponent;
+    Connect.displayName = displayName;
+    Connect.childContextTypes = childContextTypes;
+    Connect.contextTypes = contextTypes;
+    Connect.propTypes = contextTypes;
+
+    if (process.env.NODE_ENV !== 'production') {
+      Connect.prototype.componentWillUpdate = function componentWillUpdate() {
+        // We are hot reloading!
+        if (this.version !== version$$1) {
+          this.version = version$$1;
+          this.initSelector();
+
+          if (this.subscription) this.subscription.tryUnsubscribe();
+          this.initSubscription();
+          if (shouldHandleStateChanges) this.subscription.trySubscribe();
+        }
+      };
+    }
+
+    return index$4(Connect, WrappedComponent);
+  };
+}
+
+var hasOwn = Object.prototype.hasOwnProperty;
+
+function shallowEqual$4(a, b) {
+  if (a === b) return true;
+
+  var countA = 0;
+  var countB = 0;
+
+  for (var key in a) {
+    if (hasOwn.call(a, key) && a[key] !== b[key]) return false;
+    countA++;
+  }
+
+  for (var _key in b) {
+    if (hasOwn.call(b, _key)) countB++;
+  }
+
+  return countA === countB;
+}
+
+var freeGlobal = typeof global$1 == 'object' && global$1 && global$1.Object === Object && global$1;
+
+var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+/** Used as a reference to the global object. */
+var root = freeGlobal || freeSelf || Function('return this')();
+
+var Symbol$1 = root.Symbol;
+
+var objectProto$1 = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty$5 = objectProto$1.hasOwnProperty;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var nativeObjectToString = objectProto$1.toString;
+
+/** Built-in value references. */
+var symToStringTag$1 = Symbol$1 ? Symbol$1.toStringTag : undefined;
+
+/**
+ * A specialized version of `baseGetTag` which ignores `Symbol.toStringTag` values.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @returns {string} Returns the raw `toStringTag`.
+ */
+function getRawTag(value) {
+  var isOwn = hasOwnProperty$5.call(value, symToStringTag$1),
+      tag = value[symToStringTag$1];
+
+  try {
+    value[symToStringTag$1] = undefined;
+    var unmasked = true;
+  } catch (e) {}
+
+  var result = nativeObjectToString.call(value);
+  if (unmasked) {
+    if (isOwn) {
+      value[symToStringTag$1] = tag;
+    } else {
+      delete value[symToStringTag$1];
+    }
+  }
+  return result;
+}
+
+/** Used for built-in method references. */
+var objectProto$2 = Object.prototype;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var nativeObjectToString$1 = objectProto$2.toString;
+
+/**
+ * Converts `value` to a string using `Object.prototype.toString`.
+ *
+ * @private
+ * @param {*} value The value to convert.
+ * @returns {string} Returns the converted string.
+ */
+function objectToString(value) {
+  return nativeObjectToString$1.call(value);
+}
+
+var nullTag = '[object Null]';
+var undefinedTag = '[object Undefined]';
+
+/** Built-in value references. */
+var symToStringTag = Symbol$1 ? Symbol$1.toStringTag : undefined;
+
+/**
+ * The base implementation of `getTag` without fallbacks for buggy environments.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @returns {string} Returns the `toStringTag`.
+ */
+function baseGetTag(value) {
+  if (value == null) {
+    return value === undefined ? undefinedTag : nullTag;
+  }
+  return (symToStringTag && symToStringTag in Object(value))
+    ? getRawTag(value)
+    : objectToString(value);
+}
+
+/**
+ * Creates a unary function that invokes `func` with its argument transformed.
+ *
+ * @private
+ * @param {Function} func The function to wrap.
+ * @param {Function} transform The argument transform.
+ * @returns {Function} Returns the new function.
+ */
+function overArg(func, transform) {
+  return function(arg) {
+    return func(transform(arg));
+  };
+}
+
+var getPrototype = overArg(Object.getPrototypeOf, Object);
+
+/**
+ * Checks if `value` is object-like. A value is object-like if it's not `null`
+ * and has a `typeof` result of "object".
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+ * @example
+ *
+ * _.isObjectLike({});
+ * // => true
+ *
+ * _.isObjectLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isObjectLike(_.noop);
+ * // => false
+ *
+ * _.isObjectLike(null);
+ * // => false
+ */
+function isObjectLike(value) {
+  return value != null && typeof value == 'object';
+}
+
+var objectTag = '[object Object]';
+
+/** Used for built-in method references. */
+var funcProto = Function.prototype;
+var objectProto = Object.prototype;
+
+/** Used to resolve the decompiled source of functions. */
+var funcToString = funcProto.toString;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty$4 = objectProto.hasOwnProperty;
+
+/** Used to infer the `Object` constructor. */
+var objectCtorString = funcToString.call(Object);
+
+/**
+ * Checks if `value` is a plain object, that is, an object created by the
+ * `Object` constructor or one with a `[[Prototype]]` of `null`.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.8.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a plain object, else `false`.
+ * @example
+ *
+ * function Foo() {
+ *   this.a = 1;
+ * }
+ *
+ * _.isPlainObject(new Foo);
+ * // => false
+ *
+ * _.isPlainObject([1, 2, 3]);
+ * // => false
+ *
+ * _.isPlainObject({ 'x': 0, 'y': 0 });
+ * // => true
+ *
+ * _.isPlainObject(Object.create(null));
+ * // => true
+ */
+function isPlainObject(value) {
+  if (!isObjectLike(value) || baseGetTag(value) != objectTag) {
+    return false;
+  }
+  var proto = getPrototype(value);
+  if (proto === null) {
+    return true;
+  }
+  var Ctor = hasOwnProperty$4.call(proto, 'constructor') && proto.constructor;
+  return typeof Ctor == 'function' && Ctor instanceof Ctor &&
+    funcToString.call(Ctor) == objectCtorString;
+}
+
+var ponyfill = createCommonjsModule(function (module, exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports['default'] = symbolObservablePonyfill;
+function symbolObservablePonyfill(root) {
+	var result;
+	var _Symbol = root.Symbol;
+
+	if (typeof _Symbol === 'function') {
+		if (_Symbol.observable) {
+			result = _Symbol.observable;
+		} else {
+			result = _Symbol('observable');
+			_Symbol.observable = result;
+		}
+	} else {
+		result = '@@observable';
+	}
+
+	return result;
+}
+});
+
+var index$10 = createCommonjsModule(function (module, exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _ponyfill = ponyfill;
+
+var _ponyfill2 = _interopRequireDefault(_ponyfill);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var root; /* global window */
+
+
+if (typeof self !== 'undefined') {
+  root = self;
+} else if (typeof window !== 'undefined') {
+  root = window;
+} else if (typeof commonjsGlobal !== 'undefined') {
+  root = commonjsGlobal;
+} else {
+  root = module;
+}
+
+var result = (0, _ponyfill2['default'])(root);
+exports['default'] = result;
+});
+
+var index$9 = index$10;
+
+var ActionTypes = {
+  INIT: '@@redux/INIT'
+};
+
+/**
+ * Creates a Redux store that holds the state tree.
+ * The only way to change the data in the store is to call `dispatch()` on it.
+ *
+ * There should only be a single store in your app. To specify how different
+ * parts of the state tree respond to actions, you may combine several reducers
+ * into a single reducer function by using `combineReducers`.
+ *
+ * @param {Function} reducer A function that returns the next state tree, given
+ * the current state tree and the action to handle.
+ *
+ * @param {any} [preloadedState] The initial state. You may optionally specify it
+ * to hydrate the state from the server in universal apps, or to restore a
+ * previously serialized user session.
+ * If you use `combineReducers` to produce the root reducer function, this must be
+ * an object with the same shape as `combineReducers` keys.
+ *
+ * @param {Function} enhancer The store enhancer. You may optionally specify it
+ * to enhance the store with third-party capabilities such as middleware,
+ * time travel, persistence, etc. The only store enhancer that ships with Redux
+ * is `applyMiddleware()`.
+ *
+ * @returns {Store} A Redux store that lets you read the state, dispatch actions
+ * and subscribe to changes.
+ */
+function createStore(reducer, preloadedState, enhancer) {
+  var _ref2;
+
+  if (typeof preloadedState === 'function' && typeof enhancer === 'undefined') {
+    enhancer = preloadedState;
+    preloadedState = undefined;
+  }
+
+  if (typeof enhancer !== 'undefined') {
+    if (typeof enhancer !== 'function') {
+      throw new Error('Expected the enhancer to be a function.');
+    }
+
+    return enhancer(createStore)(reducer, preloadedState);
+  }
+
+  if (typeof reducer !== 'function') {
+    throw new Error('Expected the reducer to be a function.');
+  }
+
+  var currentReducer = reducer;
+  var currentState = preloadedState;
+  var currentListeners = [];
+  var nextListeners = currentListeners;
+  var isDispatching = false;
+
+  function ensureCanMutateNextListeners() {
+    if (nextListeners === currentListeners) {
+      nextListeners = currentListeners.slice();
+    }
+  }
+
+  /**
+   * Reads the state tree managed by the store.
+   *
+   * @returns {any} The current state tree of your application.
+   */
+  function getState() {
+    return currentState;
+  }
+
+  /**
+   * Adds a change listener. It will be called any time an action is dispatched,
+   * and some part of the state tree may potentially have changed. You may then
+   * call `getState()` to read the current state tree inside the callback.
+   *
+   * You may call `dispatch()` from a change listener, with the following
+   * caveats:
+   *
+   * 1. The subscriptions are snapshotted just before every `dispatch()` call.
+   * If you subscribe or unsubscribe while the listeners are being invoked, this
+   * will not have any effect on the `dispatch()` that is currently in progress.
+   * However, the next `dispatch()` call, whether nested or not, will use a more
+   * recent snapshot of the subscription list.
+   *
+   * 2. The listener should not expect to see all state changes, as the state
+   * might have been updated multiple times during a nested `dispatch()` before
+   * the listener is called. It is, however, guaranteed that all subscribers
+   * registered before the `dispatch()` started will be called with the latest
+   * state by the time it exits.
+   *
+   * @param {Function} listener A callback to be invoked on every dispatch.
+   * @returns {Function} A function to remove this change listener.
+   */
+  function subscribe(listener) {
+    if (typeof listener !== 'function') {
+      throw new Error('Expected listener to be a function.');
+    }
+
+    var isSubscribed = true;
+
+    ensureCanMutateNextListeners();
+    nextListeners.push(listener);
+
+    return function unsubscribe() {
+      if (!isSubscribed) {
+        return;
+      }
+
+      isSubscribed = false;
+
+      ensureCanMutateNextListeners();
+      var index = nextListeners.indexOf(listener);
+      nextListeners.splice(index, 1);
+    };
+  }
+
+  /**
+   * Dispatches an action. It is the only way to trigger a state change.
+   *
+   * The `reducer` function, used to create the store, will be called with the
+   * current state tree and the given `action`. Its return value will
+   * be considered the **next** state of the tree, and the change listeners
+   * will be notified.
+   *
+   * The base implementation only supports plain object actions. If you want to
+   * dispatch a Promise, an Observable, a thunk, or something else, you need to
+   * wrap your store creating function into the corresponding middleware. For
+   * example, see the documentation for the `redux-thunk` package. Even the
+   * middleware will eventually dispatch plain object actions using this method.
+   *
+   * @param {Object} action A plain object representing “what changed”. It is
+   * a good idea to keep actions serializable so you can record and replay user
+   * sessions, or use the time travelling `redux-devtools`. An action must have
+   * a `type` property which may not be `undefined`. It is a good idea to use
+   * string constants for action types.
+   *
+   * @returns {Object} For convenience, the same action object you dispatched.
+   *
+   * Note that, if you use a custom middleware, it may wrap `dispatch()` to
+   * return something else (for example, a Promise you can await).
+   */
+  function dispatch(action) {
+    if (!isPlainObject(action)) {
+      throw new Error('Actions must be plain objects. ' + 'Use custom middleware for async actions.');
+    }
+
+    if (typeof action.type === 'undefined') {
+      throw new Error('Actions may not have an undefined "type" property. ' + 'Have you misspelled a constant?');
+    }
+
+    if (isDispatching) {
+      throw new Error('Reducers may not dispatch actions.');
+    }
+
+    try {
+      isDispatching = true;
+      currentState = currentReducer(currentState, action);
+    } finally {
+      isDispatching = false;
+    }
+
+    var listeners = currentListeners = nextListeners;
+    for (var i = 0; i < listeners.length; i++) {
+      listeners[i]();
+    }
+
+    return action;
+  }
+
+  /**
+   * Replaces the reducer currently used by the store to calculate the state.
+   *
+   * You might need this if your app implements code splitting and you want to
+   * load some of the reducers dynamically. You might also need this if you
+   * implement a hot reloading mechanism for Redux.
+   *
+   * @param {Function} nextReducer The reducer for the store to use instead.
+   * @returns {void}
+   */
+  function replaceReducer(nextReducer) {
+    if (typeof nextReducer !== 'function') {
+      throw new Error('Expected the nextReducer to be a function.');
+    }
+
+    currentReducer = nextReducer;
+    dispatch({ type: ActionTypes.INIT });
+  }
+
+  /**
+   * Interoperability point for observable/reactive libraries.
+   * @returns {observable} A minimal observable of state changes.
+   * For more information, see the observable proposal:
+   * https://github.com/zenparsing/es-observable
+   */
+  function observable() {
+    var _ref;
+
+    var outerSubscribe = subscribe;
+    return _ref = {
+      /**
+       * The minimal observable subscription method.
+       * @param {Object} observer Any object that can be used as an observer.
+       * The observer object should have a `next` method.
+       * @returns {subscription} An object with an `unsubscribe` method that can
+       * be used to unsubscribe the observable from the store, and prevent further
+       * emission of values from the observable.
+       */
+      subscribe: function subscribe(observer) {
+        if (typeof observer !== 'object') {
+          throw new TypeError('Expected the observer to be an object.');
+        }
+
+        function observeState() {
+          if (observer.next) {
+            observer.next(getState());
+          }
+        }
+
+        observeState();
+        var unsubscribe = outerSubscribe(observeState);
+        return { unsubscribe: unsubscribe };
+      }
+    }, _ref[index$9] = function () {
+      return this;
+    }, _ref;
+  }
+
+  // When a store is created, an "INIT" action is dispatched so that every
+  // reducer returns their initial state. This effectively populates
+  // the initial state tree.
+  dispatch({ type: ActionTypes.INIT });
+
+  return _ref2 = {
+    dispatch: dispatch,
+    subscribe: subscribe,
+    getState: getState,
+    replaceReducer: replaceReducer
+  }, _ref2[index$9] = observable, _ref2;
+}
+
+/**
+ * Prints a warning in the console if it exists.
+ *
+ * @param {String} message The warning message.
+ * @returns {void}
+ */
+function warning$44(message) {
+  /* eslint-disable no-console */
+  if (typeof console !== 'undefined' && typeof console.error === 'function') {
+    console.error(message);
+  }
+  /* eslint-enable no-console */
+  try {
+    // This error was thrown as a convenience so that if you enable
+    // "break on all exceptions" in your console,
+    // it would pause the execution at this line.
+    throw new Error(message);
+    /* eslint-disable no-empty */
+  } catch (e) {}
+  /* eslint-enable no-empty */
+}
+
+function getUndefinedStateErrorMessage(key, action) {
+  var actionType = action && action.type;
+  var actionName = actionType && '"' + actionType.toString() + '"' || 'an action';
+
+  return 'Given action ' + actionName + ', reducer "' + key + '" returned undefined. ' + 'To ignore an action, you must explicitly return the previous state.';
+}
+
+function getUnexpectedStateShapeWarningMessage(inputState, reducers, action, unexpectedKeyCache) {
+  var reducerKeys = Object.keys(reducers);
+  var argumentName = action && action.type === ActionTypes.INIT ? 'preloadedState argument passed to createStore' : 'previous state received by the reducer';
+
+  if (reducerKeys.length === 0) {
+    return 'Store does not have a valid reducer. Make sure the argument passed ' + 'to combineReducers is an object whose values are reducers.';
+  }
+
+  if (!isPlainObject(inputState)) {
+    return 'The ' + argumentName + ' has unexpected type of "' + {}.toString.call(inputState).match(/\s([a-z|A-Z]+)/)[1] + '". Expected argument to be an object with the following ' + ('keys: "' + reducerKeys.join('", "') + '"');
+  }
+
+  var unexpectedKeys = Object.keys(inputState).filter(function (key) {
+    return !reducers.hasOwnProperty(key) && !unexpectedKeyCache[key];
+  });
+
+  unexpectedKeys.forEach(function (key) {
+    unexpectedKeyCache[key] = true;
+  });
+
+  if (unexpectedKeys.length > 0) {
+    return 'Unexpected ' + (unexpectedKeys.length > 1 ? 'keys' : 'key') + ' ' + ('"' + unexpectedKeys.join('", "') + '" found in ' + argumentName + '. ') + 'Expected to find one of the known reducer keys instead: ' + ('"' + reducerKeys.join('", "') + '". Unexpected keys will be ignored.');
+  }
+}
+
+function assertReducerSanity(reducers) {
+  Object.keys(reducers).forEach(function (key) {
+    var reducer = reducers[key];
+    var initialState = reducer(undefined, { type: ActionTypes.INIT });
+
+    if (typeof initialState === 'undefined') {
+      throw new Error('Reducer "' + key + '" returned undefined during initialization. ' + 'If the state passed to the reducer is undefined, you must ' + 'explicitly return the initial state. The initial state may ' + 'not be undefined.');
+    }
+
+    var type = '@@redux/PROBE_UNKNOWN_ACTION_' + Math.random().toString(36).substring(7).split('').join('.');
+    if (typeof reducer(undefined, { type: type }) === 'undefined') {
+      throw new Error('Reducer "' + key + '" returned undefined when probed with a random type. ' + ('Don\'t try to handle ' + ActionTypes.INIT + ' or other actions in "redux/*" ') + 'namespace. They are considered private. Instead, you must return the ' + 'current state for any unknown actions, unless it is undefined, ' + 'in which case you must return the initial state, regardless of the ' + 'action type. The initial state may not be undefined.');
+    }
+  });
+}
+
+/**
+ * Turns an object whose values are different reducer functions, into a single
+ * reducer function. It will call every child reducer, and gather their results
+ * into a single state object, whose keys correspond to the keys of the passed
+ * reducer functions.
+ *
+ * @param {Object} reducers An object whose values correspond to different
+ * reducer functions that need to be combined into one. One handy way to obtain
+ * it is to use ES6 `import * as reducers` syntax. The reducers may never return
+ * undefined for any action. Instead, they should return their initial state
+ * if the state passed to them was undefined, and the current state for any
+ * unrecognized action.
+ *
+ * @returns {Function} A reducer function that invokes every reducer inside the
+ * passed object, and builds a state object with the same shape.
+ */
+function combineReducers(reducers) {
+  var reducerKeys = Object.keys(reducers);
+  var finalReducers = {};
+  for (var i = 0; i < reducerKeys.length; i++) {
+    var key = reducerKeys[i];
+
+    if (process.env.NODE_ENV !== 'production') {
+      if (typeof reducers[key] === 'undefined') {
+        warning$44('No reducer provided for key "' + key + '"');
+      }
+    }
+
+    if (typeof reducers[key] === 'function') {
+      finalReducers[key] = reducers[key];
+    }
+  }
+  var finalReducerKeys = Object.keys(finalReducers);
+
+  if (process.env.NODE_ENV !== 'production') {
+    var unexpectedKeyCache = {};
+  }
+
+  var sanityError;
+  try {
+    assertReducerSanity(finalReducers);
+  } catch (e) {
+    sanityError = e;
+  }
+
+  return function combination() {
+    var state = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+    var action = arguments[1];
+
+    if (sanityError) {
+      throw sanityError;
+    }
+
+    if (process.env.NODE_ENV !== 'production') {
+      var warningMessage = getUnexpectedStateShapeWarningMessage(state, finalReducers, action, unexpectedKeyCache);
+      if (warningMessage) {
+        warning$44(warningMessage);
+      }
+    }
+
+    var hasChanged = false;
+    var nextState = {};
+    for (var i = 0; i < finalReducerKeys.length; i++) {
+      var key = finalReducerKeys[i];
+      var reducer = finalReducers[key];
+      var previousStateForKey = state[key];
+      var nextStateForKey = reducer(previousStateForKey, action);
+      if (typeof nextStateForKey === 'undefined') {
+        var errorMessage = getUndefinedStateErrorMessage(key, action);
+        throw new Error(errorMessage);
+      }
+      nextState[key] = nextStateForKey;
+      hasChanged = hasChanged || nextStateForKey !== previousStateForKey;
+    }
+    return hasChanged ? nextState : state;
+  };
+}
+
+function bindActionCreator(actionCreator, dispatch) {
+  return function () {
+    return dispatch(actionCreator.apply(undefined, arguments));
+  };
+}
+
+/**
+ * Turns an object whose values are action creators, into an object with the
+ * same keys, but with every function wrapped into a `dispatch` call so they
+ * may be invoked directly. This is just a convenience method, as you can call
+ * `store.dispatch(MyActionCreators.doSomething())` yourself just fine.
+ *
+ * For convenience, you can also pass a single function as the first argument,
+ * and get a function in return.
+ *
+ * @param {Function|Object} actionCreators An object whose values are action
+ * creator functions. One handy way to obtain it is to use ES6 `import * as`
+ * syntax. You may also pass a single function.
+ *
+ * @param {Function} dispatch The `dispatch` function available on your Redux
+ * store.
+ *
+ * @returns {Function|Object} The object mimicking the original object, but with
+ * every action creator wrapped into the `dispatch` call. If you passed a
+ * function as `actionCreators`, the return value will also be a single
+ * function.
+ */
+function bindActionCreators(actionCreators, dispatch) {
+  if (typeof actionCreators === 'function') {
+    return bindActionCreator(actionCreators, dispatch);
+  }
+
+  if (typeof actionCreators !== 'object' || actionCreators === null) {
+    throw new Error('bindActionCreators expected an object or a function, instead received ' + (actionCreators === null ? 'null' : typeof actionCreators) + '. ' + 'Did you write "import ActionCreators from" instead of "import * as ActionCreators from"?');
+  }
+
+  var keys = Object.keys(actionCreators);
+  var boundActionCreators = {};
+  for (var i = 0; i < keys.length; i++) {
+    var key = keys[i];
+    var actionCreator = actionCreators[key];
+    if (typeof actionCreator === 'function') {
+      boundActionCreators[key] = bindActionCreator(actionCreator, dispatch);
+    }
+  }
+  return boundActionCreators;
+}
+
+/**
+ * Composes single-argument functions from right to left. The rightmost
+ * function can take multiple arguments as it provides the signature for
+ * the resulting composite function.
+ *
+ * @param {...Function} funcs The functions to compose.
+ * @returns {Function} A function obtained by composing the argument functions
+ * from right to left. For example, compose(f, g, h) is identical to doing
+ * (...args) => f(g(h(...args))).
+ */
+
+function isCrushed() {}
+
+if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' && isCrushed.name !== 'isCrushed') {
+  warning$44('You are currently using minified code outside of NODE_ENV === \'production\'. ' + 'This means that you are running a slower development build of Redux. ' + 'You can use loose-envify (https://github.com/zertosh/loose-envify) for browserify ' + 'or DefinePlugin for webpack (http://stackoverflow.com/questions/30030031) ' + 'to ensure you have the correct code for your production build.');
+}
+
+function verifyPlainObject(value, displayName, methodName) {
+  if (!isPlainObject(value)) {
+    warning$43(methodName + '() in ' + displayName + ' must return a plain object. Instead received ' + value + '.');
+  }
+}
+
+function wrapMapToPropsConstant(getConstant) {
+  return function initConstantSelector(dispatch, options) {
+    var constant = getConstant(dispatch, options);
+
+    function constantSelector() {
+      return constant;
+    }
+    constantSelector.dependsOnOwnProps = false;
+    return constantSelector;
+  };
+}
+
+// dependsOnOwnProps is used by createMapToPropsProxy to determine whether to pass props as args
+// to the mapToProps function being wrapped. It is also used by makePurePropsSelector to determine
+// whether mapToProps needs to be invoked when props have changed.
+// 
+// A length of one signals that mapToProps does not depend on props from the parent component.
+// A length of zero is assumed to mean mapToProps is getting args via arguments or ...args and
+// therefore not reporting its length accurately..
+function getDependsOnOwnProps(mapToProps) {
+  return mapToProps.dependsOnOwnProps !== null && mapToProps.dependsOnOwnProps !== undefined ? Boolean(mapToProps.dependsOnOwnProps) : mapToProps.length !== 1;
+}
+
+// Used by whenMapStateToPropsIsFunction and whenMapDispatchToPropsIsFunction,
+// this function wraps mapToProps in a proxy function which does several things:
+// 
+//  * Detects whether the mapToProps function being called depends on props, which
+//    is used by selectorFactory to decide if it should reinvoke on props changes.
+//    
+//  * On first call, handles mapToProps if returns another function, and treats that
+//    new function as the true mapToProps for subsequent calls.
+//    
+//  * On first call, verifies the first result is a plain object, in order to warn
+//    the developer that their mapToProps function is not returning a valid result.
+//    
+function wrapMapToPropsFunc(mapToProps, methodName) {
+  return function initProxySelector(dispatch, _ref) {
+    var displayName = _ref.displayName;
+
+    var proxy = function mapToPropsProxy(stateOrDispatch, ownProps) {
+      return proxy.dependsOnOwnProps ? proxy.mapToProps(stateOrDispatch, ownProps) : proxy.mapToProps(stateOrDispatch);
+    };
+
+    proxy.dependsOnOwnProps = getDependsOnOwnProps(mapToProps);
+
+    proxy.mapToProps = function detectFactoryAndVerify(stateOrDispatch, ownProps) {
+      proxy.mapToProps = mapToProps;
+      var props = proxy(stateOrDispatch, ownProps);
+
+      if (typeof props === 'function') {
+        proxy.mapToProps = props;
+        proxy.dependsOnOwnProps = getDependsOnOwnProps(props);
+        props = proxy(stateOrDispatch, ownProps);
+      }
+
+      if (process.env.NODE_ENV !== 'production') verifyPlainObject(props, displayName, methodName);
+
+      return props;
+    };
+
+    return proxy;
+  };
+}
+
+function whenMapDispatchToPropsIsFunction(mapDispatchToProps) {
+  return typeof mapDispatchToProps === 'function' ? wrapMapToPropsFunc(mapDispatchToProps, 'mapDispatchToProps') : undefined;
+}
+
+function whenMapDispatchToPropsIsMissing(mapDispatchToProps) {
+  return !mapDispatchToProps ? wrapMapToPropsConstant(function (dispatch) {
+    return { dispatch: dispatch };
+  }) : undefined;
+}
+
+function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
+  return mapDispatchToProps && typeof mapDispatchToProps === 'object' ? wrapMapToPropsConstant(function (dispatch) {
+    return bindActionCreators(mapDispatchToProps, dispatch);
+  }) : undefined;
+}
+
+var defaultMapDispatchToPropsFactories = [whenMapDispatchToPropsIsFunction, whenMapDispatchToPropsIsMissing, whenMapDispatchToPropsIsObject];
+
+function whenMapStateToPropsIsFunction(mapStateToProps) {
+  return typeof mapStateToProps === 'function' ? wrapMapToPropsFunc(mapStateToProps, 'mapStateToProps') : undefined;
+}
+
+function whenMapStateToPropsIsMissing(mapStateToProps) {
+  return !mapStateToProps ? wrapMapToPropsConstant(function () {
+    return {};
+  }) : undefined;
+}
+
+var defaultMapStateToPropsFactories = [whenMapStateToPropsIsFunction, whenMapStateToPropsIsMissing];
+
+var _extends$14 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function defaultMergeProps(stateProps, dispatchProps, ownProps) {
+  return _extends$14({}, ownProps, stateProps, dispatchProps);
+}
+
+function wrapMergePropsFunc(mergeProps) {
+  return function initMergePropsProxy(dispatch, _ref) {
+    var displayName = _ref.displayName,
+        pure = _ref.pure,
+        areMergedPropsEqual = _ref.areMergedPropsEqual;
+
+    var hasRunOnce = false;
+    var mergedProps = void 0;
+
+    return function mergePropsProxy(stateProps, dispatchProps, ownProps) {
+      var nextMergedProps = mergeProps(stateProps, dispatchProps, ownProps);
+
+      if (hasRunOnce) {
+        if (!pure || !areMergedPropsEqual(nextMergedProps, mergedProps)) mergedProps = nextMergedProps;
+      } else {
+        hasRunOnce = true;
+        mergedProps = nextMergedProps;
+
+        if (process.env.NODE_ENV !== 'production') verifyPlainObject(mergedProps, displayName, 'mergeProps');
+      }
+
+      return mergedProps;
+    };
+  };
+}
+
+function whenMergePropsIsFunction(mergeProps) {
+  return typeof mergeProps === 'function' ? wrapMergePropsFunc(mergeProps) : undefined;
+}
+
+function whenMergePropsIsOmitted(mergeProps) {
+  return !mergeProps ? function () {
+    return defaultMergeProps;
+  } : undefined;
+}
+
+var defaultMergePropsFactories = [whenMergePropsIsFunction, whenMergePropsIsOmitted];
+
+function verify(selector, methodName, displayName) {
+  if (!selector) {
+    throw new Error('Unexpected value for ' + methodName + ' in ' + displayName + '.');
+  } else if (methodName === 'mapStateToProps' || methodName === 'mapDispatchToProps') {
+    if (!selector.hasOwnProperty('dependsOnOwnProps')) {
+      warning$43('The selector for ' + methodName + ' of ' + displayName + ' did not specify a value for dependsOnOwnProps.');
+    }
+  }
+}
+
+function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, displayName) {
+  verify(mapStateToProps, 'mapStateToProps', displayName);
+  verify(mapDispatchToProps, 'mapDispatchToProps', displayName);
+  verify(mergeProps, 'mergeProps', displayName);
+}
+
+function _objectWithoutProperties$5(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function impureFinalPropsSelectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch) {
+  return function impureFinalPropsSelector(state, ownProps) {
+    return mergeProps(mapStateToProps(state, ownProps), mapDispatchToProps(dispatch, ownProps), ownProps);
+  };
+}
+
+function pureFinalPropsSelectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch, _ref) {
+  var areStatesEqual = _ref.areStatesEqual,
+      areOwnPropsEqual = _ref.areOwnPropsEqual,
+      areStatePropsEqual = _ref.areStatePropsEqual;
+
+  var hasRunAtLeastOnce = false;
+  var state = void 0;
+  var ownProps = void 0;
+  var stateProps = void 0;
+  var dispatchProps = void 0;
+  var mergedProps = void 0;
+
+  function handleFirstCall(firstState, firstOwnProps) {
+    state = firstState;
+    ownProps = firstOwnProps;
+    stateProps = mapStateToProps(state, ownProps);
+    dispatchProps = mapDispatchToProps(dispatch, ownProps);
+    mergedProps = mergeProps(stateProps, dispatchProps, ownProps);
+    hasRunAtLeastOnce = true;
+    return mergedProps;
+  }
+
+  function handleNewPropsAndNewState() {
+    stateProps = mapStateToProps(state, ownProps);
+
+    if (mapDispatchToProps.dependsOnOwnProps) dispatchProps = mapDispatchToProps(dispatch, ownProps);
+
+    mergedProps = mergeProps(stateProps, dispatchProps, ownProps);
+    return mergedProps;
+  }
+
+  function handleNewProps() {
+    if (mapStateToProps.dependsOnOwnProps) stateProps = mapStateToProps(state, ownProps);
+
+    if (mapDispatchToProps.dependsOnOwnProps) dispatchProps = mapDispatchToProps(dispatch, ownProps);
+
+    mergedProps = mergeProps(stateProps, dispatchProps, ownProps);
+    return mergedProps;
+  }
+
+  function handleNewState() {
+    var nextStateProps = mapStateToProps(state, ownProps);
+    var statePropsChanged = !areStatePropsEqual(nextStateProps, stateProps);
+    stateProps = nextStateProps;
+
+    if (statePropsChanged) mergedProps = mergeProps(stateProps, dispatchProps, ownProps);
+
+    return mergedProps;
+  }
+
+  function handleSubsequentCalls(nextState, nextOwnProps) {
+    var propsChanged = !areOwnPropsEqual(nextOwnProps, ownProps);
+    var stateChanged = !areStatesEqual(nextState, state);
+    state = nextState;
+    ownProps = nextOwnProps;
+
+    if (propsChanged && stateChanged) return handleNewPropsAndNewState();
+    if (propsChanged) return handleNewProps();
+    if (stateChanged) return handleNewState();
+    return mergedProps;
+  }
+
+  return function pureFinalPropsSelector(nextState, nextOwnProps) {
+    return hasRunAtLeastOnce ? handleSubsequentCalls(nextState, nextOwnProps) : handleFirstCall(nextState, nextOwnProps);
+  };
+}
+
+// TODO: Add more comments
+
+// If pure is true, the selector returned by selectorFactory will memoize its results,
+// allowing connectAdvanced's shouldComponentUpdate to return false if final
+// props have not changed. If false, the selector will always return a new
+// object and shouldComponentUpdate will always return true.
+
+function finalPropsSelectorFactory(dispatch, _ref2) {
+  var initMapStateToProps = _ref2.initMapStateToProps,
+      initMapDispatchToProps = _ref2.initMapDispatchToProps,
+      initMergeProps = _ref2.initMergeProps,
+      options = _objectWithoutProperties$5(_ref2, ['initMapStateToProps', 'initMapDispatchToProps', 'initMergeProps']);
+
+  var mapStateToProps = initMapStateToProps(dispatch, options);
+  var mapDispatchToProps = initMapDispatchToProps(dispatch, options);
+  var mergeProps = initMergeProps(dispatch, options);
+
+  if (process.env.NODE_ENV !== 'production') {
+    verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, options.displayName);
+  }
+
+  var selectorFactory = options.pure ? pureFinalPropsSelectorFactory : impureFinalPropsSelectorFactory;
+
+  return selectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch, options);
+}
+
+var _extends$12 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _objectWithoutProperties$4(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function match$2(arg, factories, name) {
+  for (var i = factories.length - 1; i >= 0; i--) {
+    var result = factories[i](arg);
+    if (result) return result;
+  }
+
+  return function (dispatch, options) {
+    throw new Error('Invalid value of type ' + typeof arg + ' for ' + name + ' argument when connecting component ' + options.wrappedComponentName + '.');
+  };
+}
+
+function strictEqual(a, b) {
+  return a === b;
+}
+
+// createConnect with default args builds the 'official' connect behavior. Calling it with
+// different options opens up some testing and extensibility scenarios
+function createConnect() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      _ref$connectHOC = _ref.connectHOC,
+      connectHOC = _ref$connectHOC === undefined ? connectAdvanced : _ref$connectHOC,
+      _ref$mapStateToPropsF = _ref.mapStateToPropsFactories,
+      mapStateToPropsFactories = _ref$mapStateToPropsF === undefined ? defaultMapStateToPropsFactories : _ref$mapStateToPropsF,
+      _ref$mapDispatchToPro = _ref.mapDispatchToPropsFactories,
+      mapDispatchToPropsFactories = _ref$mapDispatchToPro === undefined ? defaultMapDispatchToPropsFactories : _ref$mapDispatchToPro,
+      _ref$mergePropsFactor = _ref.mergePropsFactories,
+      mergePropsFactories = _ref$mergePropsFactor === undefined ? defaultMergePropsFactories : _ref$mergePropsFactor,
+      _ref$selectorFactory = _ref.selectorFactory,
+      selectorFactory = _ref$selectorFactory === undefined ? finalPropsSelectorFactory : _ref$selectorFactory;
+
+  return function connect(mapStateToProps, mapDispatchToProps, mergeProps) {
+    var _ref2 = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {},
+        _ref2$pure = _ref2.pure,
+        pure = _ref2$pure === undefined ? true : _ref2$pure,
+        _ref2$areStatesEqual = _ref2.areStatesEqual,
+        areStatesEqual = _ref2$areStatesEqual === undefined ? strictEqual : _ref2$areStatesEqual,
+        _ref2$areOwnPropsEqua = _ref2.areOwnPropsEqual,
+        areOwnPropsEqual = _ref2$areOwnPropsEqua === undefined ? shallowEqual$4 : _ref2$areOwnPropsEqua,
+        _ref2$areStatePropsEq = _ref2.areStatePropsEqual,
+        areStatePropsEqual = _ref2$areStatePropsEq === undefined ? shallowEqual$4 : _ref2$areStatePropsEq,
+        _ref2$areMergedPropsE = _ref2.areMergedPropsEqual,
+        areMergedPropsEqual = _ref2$areMergedPropsE === undefined ? shallowEqual$4 : _ref2$areMergedPropsE,
+        extraOptions = _objectWithoutProperties$4(_ref2, ['pure', 'areStatesEqual', 'areOwnPropsEqual', 'areStatePropsEqual', 'areMergedPropsEqual']);
+
+    var initMapStateToProps = match$2(mapStateToProps, mapStateToPropsFactories, 'mapStateToProps');
+    var initMapDispatchToProps = match$2(mapDispatchToProps, mapDispatchToPropsFactories, 'mapDispatchToProps');
+    var initMergeProps = match$2(mergeProps, mergePropsFactories, 'mergeProps');
+
+    return connectHOC(selectorFactory, _extends$12({
+      // used in error messages
+      methodName: 'connect',
+
+      // used to compute Connect's displayName from the wrapped component's displayName.
+      getDisplayName: function getDisplayName(name) {
+        return 'Connect(' + name + ')';
+      },
+
+      // if mapStateToProps is falsy, the Connect component doesn't subscribe to store state changes
+      shouldHandleStateChanges: Boolean(mapStateToProps),
+
+      // passed through to selectorFactory
+      initMapStateToProps: initMapStateToProps,
+      initMapDispatchToProps: initMapDispatchToProps,
+      initMergeProps: initMergeProps,
+      pure: pure,
+      areStatesEqual: areStatesEqual,
+      areOwnPropsEqual: areOwnPropsEqual,
+      areStatePropsEqual: areStatePropsEqual,
+      areMergedPropsEqual: areMergedPropsEqual
+
+    }, extraOptions));
+  };
+}
+
+var connect = createConnect();
+
+var ARRAY_INSERT = '@@redux-form/ARRAY_INSERT';
+var ARRAY_MOVE = '@@redux-form/ARRAY_MOVE';
+var ARRAY_POP = '@@redux-form/ARRAY_POP';
+var ARRAY_PUSH = '@@redux-form/ARRAY_PUSH';
+var ARRAY_REMOVE = '@@redux-form/ARRAY_REMOVE';
+var ARRAY_REMOVE_ALL = '@@redux-form/ARRAY_REMOVE_ALL';
+var ARRAY_SHIFT = '@@redux-form/ARRAY_SHIFT';
+var ARRAY_SPLICE = '@@redux-form/ARRAY_SPLICE';
+var ARRAY_UNSHIFT = '@@redux-form/ARRAY_UNSHIFT';
+var ARRAY_SWAP = '@@redux-form/ARRAY_SWAP';
+var AUTOFILL = '@@redux-form/AUTOFILL';
+var BLUR = '@@redux-form/BLUR';
+var CHANGE = '@@redux-form/CHANGE';
+var CLEAR_SUBMIT = '@@redux-form/CLEAR_SUBMIT';
+var CLEAR_ASYNC_ERROR = '@redux-form/CLEAR_ASYNC_ERROR';
+var DESTROY = '@@redux-form/DESTROY';
+var FOCUS = '@@redux-form/FOCUS';
+var INITIALIZE = '@@redux-form/INITIALIZE';
+var REGISTER_FIELD = '@@redux-form/REGISTER_FIELD';
+var RESET = '@@redux-form/RESET';
+var SET_SUBMIT_FAILED = '@@redux-form/SET_SUBMIT_FAILED';
+var SET_SUBMIT_SUCCEEDED = '@@redux-form/SET_SUBMIT_SUCCEEDED';
+var START_ASYNC_VALIDATION = '@@redux-form/START_ASYNC_VALIDATION';
+var START_SUBMIT = '@@redux-form/START_SUBMIT';
+var STOP_ASYNC_VALIDATION = '@@redux-form/STOP_ASYNC_VALIDATION';
+var STOP_SUBMIT = '@@redux-form/STOP_SUBMIT';
+var SUBMIT = '@@redux-form/SUBMIT';
+var TOUCH = '@@redux-form/TOUCH';
+var UNREGISTER_FIELD = '@@redux-form/UNREGISTER_FIELD';
+var UNTOUCH = '@@redux-form/UNTOUCH';
+var UPDATE_SYNC_ERRORS = '@@redux-form/UPDATE_SYNC_ERRORS';
+var UPDATE_SYNC_WARNINGS = '@@redux-form/UPDATE_SYNC_WARNINGS';
+
+var actionTypes$1 = Object.freeze({
+	ARRAY_INSERT: ARRAY_INSERT,
+	ARRAY_MOVE: ARRAY_MOVE,
+	ARRAY_POP: ARRAY_POP,
+	ARRAY_PUSH: ARRAY_PUSH,
+	ARRAY_REMOVE: ARRAY_REMOVE,
+	ARRAY_REMOVE_ALL: ARRAY_REMOVE_ALL,
+	ARRAY_SHIFT: ARRAY_SHIFT,
+	ARRAY_SPLICE: ARRAY_SPLICE,
+	ARRAY_UNSHIFT: ARRAY_UNSHIFT,
+	ARRAY_SWAP: ARRAY_SWAP,
+	AUTOFILL: AUTOFILL,
+	BLUR: BLUR,
+	CHANGE: CHANGE,
+	CLEAR_SUBMIT: CLEAR_SUBMIT,
+	CLEAR_ASYNC_ERROR: CLEAR_ASYNC_ERROR,
+	DESTROY: DESTROY,
+	FOCUS: FOCUS,
+	INITIALIZE: INITIALIZE,
+	REGISTER_FIELD: REGISTER_FIELD,
+	RESET: RESET,
+	SET_SUBMIT_FAILED: SET_SUBMIT_FAILED,
+	SET_SUBMIT_SUCCEEDED: SET_SUBMIT_SUCCEEDED,
+	START_ASYNC_VALIDATION: START_ASYNC_VALIDATION,
+	START_SUBMIT: START_SUBMIT,
+	STOP_ASYNC_VALIDATION: STOP_ASYNC_VALIDATION,
+	STOP_SUBMIT: STOP_SUBMIT,
+	SUBMIT: SUBMIT,
+	TOUCH: TOUCH,
+	UNREGISTER_FIELD: UNREGISTER_FIELD,
+	UNTOUCH: UNTOUCH,
+	UPDATE_SYNC_ERRORS: UPDATE_SYNC_ERRORS,
+	UPDATE_SYNC_WARNINGS: UPDATE_SYNC_WARNINGS
+});
+
+/**
+ * A specialized version of `_.map` for arrays without support for iteratee
+ * shorthands.
+ *
+ * @private
+ * @param {Array} [array] The array to iterate over.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @returns {Array} Returns the new mapped array.
+ */
+function arrayMap(array, iteratee) {
+  var index = -1,
+      length = array == null ? 0 : array.length,
+      result = Array(length);
+
+  while (++index < length) {
+    result[index] = iteratee(array[index], index, array);
+  }
+  return result;
+}
+
+/**
+ * Copies the values of `source` to `array`.
+ *
+ * @private
+ * @param {Array} source The array to copy values from.
+ * @param {Array} [array=[]] The array to copy values to.
+ * @returns {Array} Returns `array`.
+ */
+function copyArray(source, array) {
+  var index = -1,
+      length = source.length;
+
+  array || (array = Array(length));
+  while (++index < length) {
+    array[index] = source[index];
+  }
+  return array;
+}
+
+/**
+ * Checks if `value` is classified as an `Array` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an array, else `false`.
+ * @example
+ *
+ * _.isArray([1, 2, 3]);
+ * // => true
+ *
+ * _.isArray(document.body.children);
+ * // => false
+ *
+ * _.isArray('abc');
+ * // => false
+ *
+ * _.isArray(_.noop);
+ * // => false
+ */
+var isArray = Array.isArray;
+
+var symbolTag = '[object Symbol]';
+
+/**
+ * Checks if `value` is classified as a `Symbol` primitive or object.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
+ * @example
+ *
+ * _.isSymbol(Symbol.iterator);
+ * // => true
+ *
+ * _.isSymbol('abc');
+ * // => false
+ */
+function isSymbol$1(value) {
+  return typeof value == 'symbol' ||
+    (isObjectLike(value) && baseGetTag(value) == symbolTag);
+}
+
+/**
+ * Checks if `value` is the
+ * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+ * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+ * @example
+ *
+ * _.isObject({});
+ * // => true
+ *
+ * _.isObject([1, 2, 3]);
+ * // => true
+ *
+ * _.isObject(_.noop);
+ * // => true
+ *
+ * _.isObject(null);
+ * // => false
+ */
+function isObject(value) {
+  var type = typeof value;
+  return value != null && (type == 'object' || type == 'function');
+}
+
+var asyncTag = '[object AsyncFunction]';
+var funcTag = '[object Function]';
+var genTag = '[object GeneratorFunction]';
+var proxyTag = '[object Proxy]';
+
+/**
+ * Checks if `value` is classified as a `Function` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a function, else `false`.
+ * @example
+ *
+ * _.isFunction(_);
+ * // => true
+ *
+ * _.isFunction(/abc/);
+ * // => false
+ */
+function isFunction(value) {
+  if (!isObject(value)) {
+    return false;
+  }
+  // The use of `Object#toString` avoids issues with the `typeof` operator
+  // in Safari 9 which returns 'object' for typed arrays and other constructors.
+  var tag = baseGetTag(value);
+  return tag == funcTag || tag == genTag || tag == asyncTag || tag == proxyTag;
+}
+
+var coreJsData = root['__core-js_shared__'];
+
+var maskSrcKey = (function() {
+  var uid = /[^.]+$/.exec(coreJsData && coreJsData.keys && coreJsData.keys.IE_PROTO || '');
+  return uid ? ('Symbol(src)_1.' + uid) : '';
+}());
+
+/**
+ * Checks if `func` has its source masked.
+ *
+ * @private
+ * @param {Function} func The function to check.
+ * @returns {boolean} Returns `true` if `func` is masked, else `false`.
+ */
+function isMasked(func) {
+  return !!maskSrcKey && (maskSrcKey in func);
+}
+
+/** Used for built-in method references. */
+var funcProto$2 = Function.prototype;
+
+/** Used to resolve the decompiled source of functions. */
+var funcToString$2 = funcProto$2.toString;
+
+/**
+ * Converts `func` to its source code.
+ *
+ * @private
+ * @param {Function} func The function to convert.
+ * @returns {string} Returns the source code.
+ */
+function toSource(func) {
+  if (func != null) {
+    try {
+      return funcToString$2.call(func);
+    } catch (e) {}
+    try {
+      return (func + '');
+    } catch (e) {}
+  }
+  return '';
+}
+
+var reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
+
+/** Used to detect host constructors (Safari). */
+var reIsHostCtor = /^\[object .+?Constructor\]$/;
+
+/** Used for built-in method references. */
+var funcProto$1 = Function.prototype;
+var objectProto$3 = Object.prototype;
+
+/** Used to resolve the decompiled source of functions. */
+var funcToString$1 = funcProto$1.toString;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty$6 = objectProto$3.hasOwnProperty;
+
+/** Used to detect if a method is native. */
+var reIsNative = RegExp('^' +
+  funcToString$1.call(hasOwnProperty$6).replace(reRegExpChar, '\\$&')
+  .replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$'
+);
+
+/**
+ * The base implementation of `_.isNative` without bad shim checks.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a native function,
+ *  else `false`.
+ */
+function baseIsNative(value) {
+  if (!isObject(value) || isMasked(value)) {
+    return false;
+  }
+  var pattern = isFunction(value) ? reIsNative : reIsHostCtor;
+  return pattern.test(toSource(value));
+}
+
+/**
+ * Gets the value at `key` of `object`.
+ *
+ * @private
+ * @param {Object} [object] The object to query.
+ * @param {string} key The key of the property to get.
+ * @returns {*} Returns the property value.
+ */
+function getValue(object, key) {
+  return object == null ? undefined : object[key];
+}
+
+function getNative(object, key) {
+  var value = getValue(object, key);
+  return baseIsNative(value) ? value : undefined;
+}
+
+var nativeCreate = getNative(Object, 'create');
+
+function hashClear() {
+  this.__data__ = nativeCreate ? nativeCreate(null) : {};
+  this.size = 0;
+}
+
+/**
+ * Removes `key` and its value from the hash.
+ *
+ * @private
+ * @name delete
+ * @memberOf Hash
+ * @param {Object} hash The hash to modify.
+ * @param {string} key The key of the value to remove.
+ * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+ */
+function hashDelete(key) {
+  var result = this.has(key) && delete this.__data__[key];
+  this.size -= result ? 1 : 0;
+  return result;
+}
+
+var HASH_UNDEFINED = '__lodash_hash_undefined__';
+
+/** Used for built-in method references. */
+var objectProto$4 = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty$7 = objectProto$4.hasOwnProperty;
+
+/**
+ * Gets the hash value for `key`.
+ *
+ * @private
+ * @name get
+ * @memberOf Hash
+ * @param {string} key The key of the value to get.
+ * @returns {*} Returns the entry value.
+ */
+function hashGet(key) {
+  var data = this.__data__;
+  if (nativeCreate) {
+    var result = data[key];
+    return result === HASH_UNDEFINED ? undefined : result;
+  }
+  return hasOwnProperty$7.call(data, key) ? data[key] : undefined;
+}
+
+var objectProto$5 = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty$8 = objectProto$5.hasOwnProperty;
+
+/**
+ * Checks if a hash value for `key` exists.
+ *
+ * @private
+ * @name has
+ * @memberOf Hash
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */
+function hashHas(key) {
+  var data = this.__data__;
+  return nativeCreate ? (data[key] !== undefined) : hasOwnProperty$8.call(data, key);
+}
+
+var HASH_UNDEFINED$1 = '__lodash_hash_undefined__';
+
+/**
+ * Sets the hash `key` to `value`.
+ *
+ * @private
+ * @name set
+ * @memberOf Hash
+ * @param {string} key The key of the value to set.
+ * @param {*} value The value to set.
+ * @returns {Object} Returns the hash instance.
+ */
+function hashSet(key, value) {
+  var data = this.__data__;
+  this.size += this.has(key) ? 0 : 1;
+  data[key] = (nativeCreate && value === undefined) ? HASH_UNDEFINED$1 : value;
+  return this;
+}
+
+function Hash(entries) {
+  var index = -1,
+      length = entries == null ? 0 : entries.length;
+
+  this.clear();
+  while (++index < length) {
+    var entry = entries[index];
+    this.set(entry[0], entry[1]);
+  }
+}
+
+// Add methods to `Hash`.
+Hash.prototype.clear = hashClear;
+Hash.prototype['delete'] = hashDelete;
+Hash.prototype.get = hashGet;
+Hash.prototype.has = hashHas;
+Hash.prototype.set = hashSet;
+
+/**
+ * Removes all key-value entries from the list cache.
+ *
+ * @private
+ * @name clear
+ * @memberOf ListCache
+ */
+function listCacheClear() {
+  this.__data__ = [];
+  this.size = 0;
+}
+
+/**
+ * Performs a
+ * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * comparison between two values to determine if they are equivalent.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to compare.
+ * @param {*} other The other value to compare.
+ * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ * var other = { 'a': 1 };
+ *
+ * _.eq(object, object);
+ * // => true
+ *
+ * _.eq(object, other);
+ * // => false
+ *
+ * _.eq('a', 'a');
+ * // => true
+ *
+ * _.eq('a', Object('a'));
+ * // => false
+ *
+ * _.eq(NaN, NaN);
+ * // => true
+ */
+function eq(value, other) {
+  return value === other || (value !== value && other !== other);
+}
+
+function assocIndexOf(array, key) {
+  var length = array.length;
+  while (length--) {
+    if (eq(array[length][0], key)) {
+      return length;
+    }
+  }
+  return -1;
+}
+
+var arrayProto = Array.prototype;
+
+/** Built-in value references. */
+var splice = arrayProto.splice;
+
+/**
+ * Removes `key` and its value from the list cache.
+ *
+ * @private
+ * @name delete
+ * @memberOf ListCache
+ * @param {string} key The key of the value to remove.
+ * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+ */
+function listCacheDelete(key) {
+  var data = this.__data__,
+      index = assocIndexOf(data, key);
+
+  if (index < 0) {
+    return false;
+  }
+  var lastIndex = data.length - 1;
+  if (index == lastIndex) {
+    data.pop();
+  } else {
+    splice.call(data, index, 1);
+  }
+  --this.size;
+  return true;
+}
+
+function listCacheGet(key) {
+  var data = this.__data__,
+      index = assocIndexOf(data, key);
+
+  return index < 0 ? undefined : data[index][1];
+}
+
+function listCacheHas(key) {
+  return assocIndexOf(this.__data__, key) > -1;
+}
+
+function listCacheSet(key, value) {
+  var data = this.__data__,
+      index = assocIndexOf(data, key);
+
+  if (index < 0) {
+    ++this.size;
+    data.push([key, value]);
+  } else {
+    data[index][1] = value;
+  }
+  return this;
+}
+
+function ListCache(entries) {
+  var index = -1,
+      length = entries == null ? 0 : entries.length;
+
+  this.clear();
+  while (++index < length) {
+    var entry = entries[index];
+    this.set(entry[0], entry[1]);
+  }
+}
+
+// Add methods to `ListCache`.
+ListCache.prototype.clear = listCacheClear;
+ListCache.prototype['delete'] = listCacheDelete;
+ListCache.prototype.get = listCacheGet;
+ListCache.prototype.has = listCacheHas;
+ListCache.prototype.set = listCacheSet;
+
+var Map$1 = getNative(root, 'Map');
+
+function mapCacheClear() {
+  this.size = 0;
+  this.__data__ = {
+    'hash': new Hash,
+    'map': new (Map$1 || ListCache),
+    'string': new Hash
+  };
+}
+
+/**
+ * Checks if `value` is suitable for use as unique object key.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is suitable, else `false`.
+ */
+function isKeyable(value) {
+  var type = typeof value;
+  return (type == 'string' || type == 'number' || type == 'symbol' || type == 'boolean')
+    ? (value !== '__proto__')
+    : (value === null);
+}
+
+function getMapData(map, key) {
+  var data = map.__data__;
+  return isKeyable(key)
+    ? data[typeof key == 'string' ? 'string' : 'hash']
+    : data.map;
+}
+
+function mapCacheDelete(key) {
+  var result = getMapData(this, key)['delete'](key);
+  this.size -= result ? 1 : 0;
+  return result;
+}
+
+function mapCacheGet(key) {
+  return getMapData(this, key).get(key);
+}
+
+function mapCacheHas(key) {
+  return getMapData(this, key).has(key);
+}
+
+function mapCacheSet(key, value) {
+  var data = getMapData(this, key),
+      size = data.size;
+
+  data.set(key, value);
+  this.size += data.size == size ? 0 : 1;
+  return this;
+}
+
+function MapCache(entries) {
+  var index = -1,
+      length = entries == null ? 0 : entries.length;
+
+  this.clear();
+  while (++index < length) {
+    var entry = entries[index];
+    this.set(entry[0], entry[1]);
+  }
+}
+
+// Add methods to `MapCache`.
+MapCache.prototype.clear = mapCacheClear;
+MapCache.prototype['delete'] = mapCacheDelete;
+MapCache.prototype.get = mapCacheGet;
+MapCache.prototype.has = mapCacheHas;
+MapCache.prototype.set = mapCacheSet;
+
+var FUNC_ERROR_TEXT = 'Expected a function';
+
+/**
+ * Creates a function that memoizes the result of `func`. If `resolver` is
+ * provided, it determines the cache key for storing the result based on the
+ * arguments provided to the memoized function. By default, the first argument
+ * provided to the memoized function is used as the map cache key. The `func`
+ * is invoked with the `this` binding of the memoized function.
+ *
+ * **Note:** The cache is exposed as the `cache` property on the memoized
+ * function. Its creation may be customized by replacing the `_.memoize.Cache`
+ * constructor with one whose instances implement the
+ * [`Map`](http://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
+ * method interface of `clear`, `delete`, `get`, `has`, and `set`.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Function
+ * @param {Function} func The function to have its output memoized.
+ * @param {Function} [resolver] The function to resolve the cache key.
+ * @returns {Function} Returns the new memoized function.
+ * @example
+ *
+ * var object = { 'a': 1, 'b': 2 };
+ * var other = { 'c': 3, 'd': 4 };
+ *
+ * var values = _.memoize(_.values);
+ * values(object);
+ * // => [1, 2]
+ *
+ * values(other);
+ * // => [3, 4]
+ *
+ * object.a = 2;
+ * values(object);
+ * // => [1, 2]
+ *
+ * // Modify the result cache.
+ * values.cache.set(object, ['a', 'b']);
+ * values(object);
+ * // => ['a', 'b']
+ *
+ * // Replace `_.memoize.Cache`.
+ * _.memoize.Cache = WeakMap;
+ */
+function memoize(func, resolver) {
+  if (typeof func != 'function' || (resolver != null && typeof resolver != 'function')) {
+    throw new TypeError(FUNC_ERROR_TEXT);
+  }
+  var memoized = function() {
+    var args = arguments,
+        key = resolver ? resolver.apply(this, args) : args[0],
+        cache = memoized.cache;
+
+    if (cache.has(key)) {
+      return cache.get(key);
+    }
+    var result = func.apply(this, args);
+    memoized.cache = cache.set(key, result) || cache;
+    return result;
+  };
+  memoized.cache = new (memoize.Cache || MapCache);
+  return memoized;
+}
+
+// Expose `MapCache`.
+memoize.Cache = MapCache;
+
+var MAX_MEMOIZE_SIZE = 500;
+
+/**
+ * A specialized version of `_.memoize` which clears the memoized function's
+ * cache when it exceeds `MAX_MEMOIZE_SIZE`.
+ *
+ * @private
+ * @param {Function} func The function to have its output memoized.
+ * @returns {Function} Returns the new memoized function.
+ */
+function memoizeCapped(func) {
+  var result = memoize(func, function(key) {
+    if (cache.size === MAX_MEMOIZE_SIZE) {
+      cache.clear();
+    }
+    return key;
+  });
+
+  var cache = result.cache;
+  return result;
+}
+
+var reLeadingDot = /^\./;
+var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
+
+/** Used to match backslashes in property paths. */
+var reEscapeChar = /\\(\\)?/g;
+
+/**
+ * Converts `string` to a property path array.
+ *
+ * @private
+ * @param {string} string The string to convert.
+ * @returns {Array} Returns the property path array.
+ */
+var stringToPath = memoizeCapped(function(string) {
+  var result = [];
+  if (reLeadingDot.test(string)) {
+    result.push('');
+  }
+  string.replace(rePropName, function(match, number, quote, string) {
+    result.push(quote ? string.replace(reEscapeChar, '$1') : (number || match));
+  });
+  return result;
+});
+
+var INFINITY = 1 / 0;
+
+/**
+ * Converts `value` to a string key if it's not a string or symbol.
+ *
+ * @private
+ * @param {*} value The value to inspect.
+ * @returns {string|symbol} Returns the key.
+ */
+function toKey(value) {
+  if (typeof value == 'string' || isSymbol$1(value)) {
+    return value;
+  }
+  var result = (value + '');
+  return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
+}
+
+var INFINITY$1 = 1 / 0;
+
+/** Used to convert symbols to primitives and strings. */
+var symbolProto = Symbol$1 ? Symbol$1.prototype : undefined;
+var symbolToString = symbolProto ? symbolProto.toString : undefined;
+
+/**
+ * The base implementation of `_.toString` which doesn't convert nullish
+ * values to empty strings.
+ *
+ * @private
+ * @param {*} value The value to process.
+ * @returns {string} Returns the string.
+ */
+function baseToString(value) {
+  // Exit early for strings to avoid a performance hit in some environments.
+  if (typeof value == 'string') {
+    return value;
+  }
+  if (isArray(value)) {
+    // Recursively convert values (susceptible to call stack limits).
+    return arrayMap(value, baseToString) + '';
+  }
+  if (isSymbol$1(value)) {
+    return symbolToString ? symbolToString.call(value) : '';
+  }
+  var result = (value + '');
+  return (result == '0' && (1 / value) == -INFINITY$1) ? '-0' : result;
+}
+
+function toString$1(value) {
+  return value == null ? '' : baseToString(value);
+}
+
+function toPath(value) {
+  if (isArray(value)) {
+    return arrayMap(value, toKey);
+  }
+  return isSymbol$1(value) ? [value] : copyArray(stringToPath(toString$1(value)));
+}
+
+var createDeleteInWithCleanUp = function createDeleteInWithCleanUp(_ref) {
+  var deepEqual = _ref.deepEqual,
+      empty = _ref.empty,
+      getIn = _ref.getIn,
+      deleteIn = _ref.deleteIn,
+      setIn = _ref.setIn;
+
+
+  var deleteInWithCleanUp = function deleteInWithCleanUp(state, path) {
+    if (path[path.length - 1] === ']') {
+      // array path
+      var pathTokens = toPath(path);
+      pathTokens.pop();
+      var parent = getIn(state, pathTokens.join('.'));
+      return parent ? setIn(state, path, undefined) : state;
+    }
+    var result = deleteIn(state, path);
+    var dotIndex = path.lastIndexOf('.');
+    if (dotIndex > 0) {
+      var parentPath = path.substring(0, dotIndex);
+      if (parentPath[parentPath.length - 1] !== ']') {
+        var _parent = getIn(result, parentPath);
+        if (deepEqual(_parent, empty)) {
+          return deleteInWithCleanUp(result, parentPath);
+        }
+      }
+    }
+    return result;
+  };
+
+  return deleteInWithCleanUp;
+};
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _objectWithoutProperties$6(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var createReducer = function createReducer(structure) {
+  var _behaviors;
+
+  var deepEqual = structure.deepEqual,
+      empty = structure.empty,
+      getIn = structure.getIn,
+      setIn = structure.setIn,
+      deleteIn = structure.deleteIn,
+      fromJS = structure.fromJS,
+      keys = structure.keys,
+      size = structure.size,
+      splice = structure.splice;
+
+  var deleteInWithCleanUp = createDeleteInWithCleanUp(structure);
+  var doSplice = function doSplice(state, key, field, index, removeNum, value, force) {
+    var existing = getIn(state, key + '.' + field);
+    return existing || force ? setIn(state, key + '.' + field, splice(existing, index, removeNum, value)) : state;
+  };
+  var rootKeys = ['values', 'fields', 'submitErrors', 'asyncErrors'];
+  var arraySplice = function arraySplice(state, field, index, removeNum, value) {
+    var result = state;
+    var nonValuesValue = value != null ? empty : undefined;
+    result = doSplice(result, 'values', field, index, removeNum, value, true);
+    result = doSplice(result, 'fields', field, index, removeNum, nonValuesValue);
+    result = doSplice(result, 'submitErrors', field, index, removeNum, nonValuesValue);
+    result = doSplice(result, 'asyncErrors', field, index, removeNum, nonValuesValue);
+    return result;
+  };
+
+  var behaviors = (_behaviors = {}, _defineProperty(_behaviors, ARRAY_INSERT, function (state, _ref) {
+    var _ref$meta = _ref.meta,
+        field = _ref$meta.field,
+        index = _ref$meta.index,
+        payload = _ref.payload;
+
+    return arraySplice(state, field, index, 0, payload);
+  }), _defineProperty(_behaviors, ARRAY_MOVE, function (state, _ref2) {
+    var _ref2$meta = _ref2.meta,
+        field = _ref2$meta.field,
+        from = _ref2$meta.from,
+        to = _ref2$meta.to;
+
+    var array = getIn(state, 'values.' + field);
+    var length = array ? size(array) : 0;
+    var result = state;
+    if (length) {
+      rootKeys.forEach(function (key) {
+        var path = key + '.' + field;
+        if (getIn(result, path)) {
+          var value = getIn(result, path + '[' + from + ']');
+          result = setIn(result, path, splice(getIn(result, path), from, 1)); // remove
+          result = setIn(result, path, splice(getIn(result, path), to, 0, value)); // insert
+        }
+      });
+    }
+    return result;
+  }), _defineProperty(_behaviors, ARRAY_POP, function (state, _ref3) {
+    var field = _ref3.meta.field;
+
+    var array = getIn(state, 'values.' + field);
+    var length = array ? size(array) : 0;
+    return length ? arraySplice(state, field, length - 1, 1) : state;
+  }), _defineProperty(_behaviors, ARRAY_PUSH, function (state, _ref4) {
+    var field = _ref4.meta.field,
+        payload = _ref4.payload;
+
+    var array = getIn(state, 'values.' + field);
+    var length = array ? size(array) : 0;
+    return arraySplice(state, field, length, 0, payload);
+  }), _defineProperty(_behaviors, ARRAY_REMOVE, function (state, _ref5) {
+    var _ref5$meta = _ref5.meta,
+        field = _ref5$meta.field,
+        index = _ref5$meta.index;
+
+    return arraySplice(state, field, index, 1);
+  }), _defineProperty(_behaviors, ARRAY_REMOVE_ALL, function (state, _ref6) {
+    var field = _ref6.meta.field;
+
+    var array = getIn(state, 'values.' + field);
+    var length = array ? size(array) : 0;
+    return length ? arraySplice(state, field, 0, length) : state;
+  }), _defineProperty(_behaviors, ARRAY_SHIFT, function (state, _ref7) {
+    var field = _ref7.meta.field;
+
+    return arraySplice(state, field, 0, 1);
+  }), _defineProperty(_behaviors, ARRAY_SPLICE, function (state, _ref8) {
+    var _ref8$meta = _ref8.meta,
+        field = _ref8$meta.field,
+        index = _ref8$meta.index,
+        removeNum = _ref8$meta.removeNum,
+        payload = _ref8.payload;
+
+    return arraySplice(state, field, index, removeNum, payload);
+  }), _defineProperty(_behaviors, ARRAY_SWAP, function (state, _ref9) {
+    var _ref9$meta = _ref9.meta,
+        field = _ref9$meta.field,
+        indexA = _ref9$meta.indexA,
+        indexB = _ref9$meta.indexB;
+
+    var result = state;
+    rootKeys.forEach(function (key) {
+      var valueA = getIn(result, key + '.' + field + '[' + indexA + ']');
+      var valueB = getIn(result, key + '.' + field + '[' + indexB + ']');
+      if (valueA !== undefined || valueB !== undefined) {
+        result = setIn(result, key + '.' + field + '[' + indexA + ']', valueB);
+        result = setIn(result, key + '.' + field + '[' + indexB + ']', valueA);
+      }
+    });
+    return result;
+  }), _defineProperty(_behaviors, ARRAY_UNSHIFT, function (state, _ref10) {
+    var field = _ref10.meta.field,
+        payload = _ref10.payload;
+
+    return arraySplice(state, field, 0, 0, payload);
+  }), _defineProperty(_behaviors, AUTOFILL, function (state, _ref11) {
+    var field = _ref11.meta.field,
+        payload = _ref11.payload;
+
+    var result = state;
+    result = deleteInWithCleanUp(result, 'asyncErrors.' + field);
+    result = deleteInWithCleanUp(result, 'submitErrors.' + field);
+    result = setIn(result, 'fields.' + field + '.autofilled', true);
+    result = setIn(result, 'values.' + field, payload);
+    return result;
+  }), _defineProperty(_behaviors, BLUR, function (state, _ref12) {
+    var _ref12$meta = _ref12.meta,
+        field = _ref12$meta.field,
+        touch = _ref12$meta.touch,
+        payload = _ref12.payload;
+
+    var result = state;
+    var initial = getIn(result, 'initial.' + field);
+    if (initial === undefined && payload === '') {
+      result = deleteInWithCleanUp(result, 'values.' + field);
+    } else if (payload !== undefined) {
+      result = setIn(result, 'values.' + field, payload);
+    }
+    if (field === getIn(result, 'active')) {
+      result = deleteIn(result, 'active');
+    }
+    result = deleteIn(result, 'fields.' + field + '.active');
+    if (touch) {
+      result = setIn(result, 'fields.' + field + '.touched', true);
+      result = setIn(result, 'anyTouched', true);
+    }
+    return result;
+  }), _defineProperty(_behaviors, CHANGE, function (state, _ref13) {
+    var _ref13$meta = _ref13.meta,
+        field = _ref13$meta.field,
+        touch = _ref13$meta.touch,
+        persistentSubmitErrors = _ref13$meta.persistentSubmitErrors,
+        payload = _ref13.payload;
+
+    var result = state;
+    var initial = getIn(result, 'initial.' + field);
+    if (initial === undefined && payload === '') {
+      result = deleteInWithCleanUp(result, 'values.' + field);
+    } else if (payload !== undefined) {
+      result = setIn(result, 'values.' + field, payload);
+    }
+    result = deleteInWithCleanUp(result, 'asyncErrors.' + field);
+    if (!persistentSubmitErrors) {
+      result = deleteInWithCleanUp(result, 'submitErrors.' + field);
+    }
+    result = deleteInWithCleanUp(result, 'fields.' + field + '.autofilled');
+    if (touch) {
+      result = setIn(result, 'fields.' + field + '.touched', true);
+      result = setIn(result, 'anyTouched', true);
+    }
+    return result;
+  }), _defineProperty(_behaviors, CLEAR_SUBMIT, function (state) {
+    return deleteIn(state, 'triggerSubmit');
+  }), _defineProperty(_behaviors, CLEAR_ASYNC_ERROR, function (state, _ref14) {
+    var field = _ref14.meta.field;
+
+    return deleteIn(state, 'asyncErrors.' + field);
+  }), _defineProperty(_behaviors, FOCUS, function (state, _ref15) {
+    var field = _ref15.meta.field;
+
+    var result = state;
+    var previouslyActive = getIn(state, 'active');
+    result = deleteIn(result, 'fields.' + previouslyActive + '.active');
+    result = setIn(result, 'fields.' + field + '.visited', true);
+    result = setIn(result, 'fields.' + field + '.active', true);
+    result = setIn(result, 'active', field);
+    return result;
+  }), _defineProperty(_behaviors, INITIALIZE, function (state, _ref16) {
+    var payload = _ref16.payload,
+        _ref16$meta = _ref16.meta,
+        keepDirty = _ref16$meta.keepDirty,
+        keepSubmitSucceeded = _ref16$meta.keepSubmitSucceeded;
+
+    var mapData = fromJS(payload);
+    var result = empty; // clean all field state
+
+    // persist old warnings, they will get recalculated if the new form values are different from the old values
+    var warning = getIn(state, 'warning');
+    if (warning) {
+      result = setIn(result, 'warning', warning);
+    }
+    var syncWarnings = getIn(state, 'syncWarnings');
+    if (syncWarnings) {
+      result = setIn(result, 'syncWarnings', syncWarnings);
+    }
+
+    // persist old errors, they will get recalculated if the new form values are different from the old values
+    var error = getIn(state, 'error');
+    if (error) {
+      result = setIn(result, 'error', error);
+    }
+    var syncErrors = getIn(state, 'syncErrors');
+    if (syncErrors) {
+      result = setIn(result, 'syncErrors', syncErrors);
+    }
+
+    var registeredFields = getIn(state, 'registeredFields');
+    if (registeredFields) {
+      result = setIn(result, 'registeredFields', registeredFields);
+    }
+    var newValues = mapData;
+    if (keepDirty && registeredFields) {
+      (function () {
+        //
+        // Keep the value of dirty fields while updating the value of
+        // pristine fields. This way, apps can reinitialize forms while
+        // avoiding stomping on user edits.
+        //
+        // Note 1: The initialize action replaces all initial values
+        // regardless of keepDirty.
+        //
+        // Note 2: When a field is dirty, keepDirty is enabled, and the field
+        // value is the same as the new initial value for the field, the
+        // initialize action causes the field to become pristine. That effect
+        // is what we want.
+        //
+        var previousValues = getIn(state, 'values');
+        var previousInitialValues = getIn(state, 'initial');
+        keys(registeredFields).forEach(function (name) {
+          var previousInitialValue = getIn(previousInitialValues, name);
+          var previousValue = getIn(previousValues, name);
+          if (!deepEqual(previousValue, previousInitialValue)) {
+            // This field was dirty. Restore the dirty value.
+            newValues = setIn(newValues, name, previousValue);
+          }
+        });
+      })();
+    }
+    if (keepSubmitSucceeded && getIn(state, 'submitSucceeded')) {
+      result = setIn(result, 'submitSucceeded', true);
+    }
+    result = setIn(result, 'values', newValues);
+    result = setIn(result, 'initial', mapData);
+    return result;
+  }), _defineProperty(_behaviors, REGISTER_FIELD, function (state, _ref17) {
+    var _ref17$payload = _ref17.payload,
+        name = _ref17$payload.name,
+        type = _ref17$payload.type;
+
+    var key = 'registeredFields[\'' + name + '\']';
+    var field = getIn(state, key);
+    if (field) {
+      var count = getIn(field, 'count') + 1;
+      field = setIn(field, 'count', count);
+    } else {
+      field = fromJS({ name: name, type: type, count: 1 });
+    }
+    return setIn(state, key, field);
+  }), _defineProperty(_behaviors, RESET, function (state) {
+    var result = empty;
+    var registeredFields = getIn(state, 'registeredFields');
+    if (registeredFields) {
+      result = setIn(result, 'registeredFields', registeredFields);
+    }
+    var values = getIn(state, 'initial');
+    if (values) {
+      result = setIn(result, 'values', values);
+      result = setIn(result, 'initial', values);
+    }
+    return result;
+  }), _defineProperty(_behaviors, SUBMIT, function (state) {
+    return setIn(state, 'triggerSubmit', true);
+  }), _defineProperty(_behaviors, START_ASYNC_VALIDATION, function (state, _ref18) {
+    var field = _ref18.meta.field;
+
+    return setIn(state, 'asyncValidating', field || true);
+  }), _defineProperty(_behaviors, START_SUBMIT, function (state) {
+    return setIn(state, 'submitting', true);
+  }), _defineProperty(_behaviors, STOP_ASYNC_VALIDATION, function (state, _ref19) {
+    var payload = _ref19.payload;
+
+    var result = state;
+    result = deleteIn(result, 'asyncValidating');
+    if (payload && Object.keys(payload).length) {
+      var _error = payload._error,
+          fieldErrors = _objectWithoutProperties$6(payload, ['_error']);
+
+      if (_error) {
+        result = setIn(result, 'error', _error);
+      }
+      if (Object.keys(fieldErrors).length) {
+        result = setIn(result, 'asyncErrors', fromJS(fieldErrors));
+      } else {
+        result = deleteIn(result, 'asyncErrors');
+      }
+    } else {
+      result = deleteIn(result, 'error');
+      result = deleteIn(result, 'asyncErrors');
+    }
+    return result;
+  }), _defineProperty(_behaviors, STOP_SUBMIT, function (state, _ref20) {
+    var payload = _ref20.payload;
+
+    var result = state;
+    result = deleteIn(result, 'submitting');
+    result = deleteIn(result, 'submitFailed');
+    result = deleteIn(result, 'submitSucceeded');
+    if (payload && Object.keys(payload).length) {
+      var _error = payload._error,
+          fieldErrors = _objectWithoutProperties$6(payload, ['_error']);
+
+      if (_error) {
+        result = setIn(result, 'error', _error);
+      } else {
+        result = deleteIn(result, 'error');
+      }
+      if (Object.keys(fieldErrors).length) {
+        result = setIn(result, 'submitErrors', fromJS(fieldErrors));
+      } else {
+        result = deleteIn(result, 'submitErrors');
+      }
+      result = setIn(result, 'submitFailed', true);
+    } else {
+      result = setIn(result, 'submitSucceeded', true);
+      result = deleteIn(result, 'error');
+      result = deleteIn(result, 'submitErrors');
+    }
+    return result;
+  }), _defineProperty(_behaviors, SET_SUBMIT_FAILED, function (state, _ref21) {
+    var fields = _ref21.meta.fields;
+
+    var result = state;
+    result = setIn(result, 'submitFailed', true);
+    result = deleteIn(result, 'submitSucceeded');
+    result = deleteIn(result, 'submitting');
+    fields.forEach(function (field) {
+      return result = setIn(result, 'fields.' + field + '.touched', true);
+    });
+    if (fields.length) {
+      result = setIn(result, 'anyTouched', true);
+    }
+    return result;
+  }), _defineProperty(_behaviors, SET_SUBMIT_SUCCEEDED, function (state) {
+    var result = state;
+    result = deleteIn(result, 'submitFailed');
+    result = setIn(result, 'submitSucceeded', true);
+    return result;
+  }), _defineProperty(_behaviors, TOUCH, function (state, _ref22) {
+    var fields = _ref22.meta.fields;
+
+    var result = state;
+    fields.forEach(function (field) {
+      return result = setIn(result, 'fields.' + field + '.touched', true);
+    });
+    result = setIn(result, 'anyTouched', true);
+    return result;
+  }), _defineProperty(_behaviors, UNREGISTER_FIELD, function (state, _ref23) {
+    var _ref23$payload = _ref23.payload,
+        name = _ref23$payload.name,
+        destroyOnUnmount = _ref23$payload.destroyOnUnmount;
+
+    var result = state;
+    var key = 'registeredFields[\'' + name + '\']';
+    var field = getIn(result, key);
+    if (!field) {
+      return result;
+    }
+
+    var count = getIn(field, 'count') - 1;
+    if (count <= 0 && destroyOnUnmount) {
+      result = deleteIn(result, key);
+      if (deepEqual(getIn(result, 'registeredFields'), empty)) {
+        result = deleteIn(result, 'registeredFields');
+      }
+    } else {
+      field = setIn(field, 'count', count);
+      result = setIn(result, key, field);
+    }
+    return result;
+  }), _defineProperty(_behaviors, UNTOUCH, function (state, _ref24) {
+    var fields = _ref24.meta.fields;
+
+    var result = state;
+    fields.forEach(function (field) {
+      return result = deleteIn(result, 'fields.' + field + '.touched');
+    });
+    return result;
+  }), _defineProperty(_behaviors, UPDATE_SYNC_ERRORS, function (state, _ref25) {
+    var _ref25$payload = _ref25.payload,
+        syncErrors = _ref25$payload.syncErrors,
+        error = _ref25$payload.error;
+
+    var result = state;
+    if (error) {
+      result = setIn(result, 'error', error);
+      result = setIn(result, 'syncError', true);
+    } else {
+      result = deleteIn(result, 'error');
+      result = deleteIn(result, 'syncError');
+    }
+    if (Object.keys(syncErrors).length) {
+      result = setIn(result, 'syncErrors', syncErrors);
+    } else {
+      result = deleteIn(result, 'syncErrors');
+    }
+    return result;
+  }), _defineProperty(_behaviors, UPDATE_SYNC_WARNINGS, function (state, _ref26) {
+    var _ref26$payload = _ref26.payload,
+        syncWarnings = _ref26$payload.syncWarnings,
+        warning = _ref26$payload.warning;
+
+    var result = state;
+    if (warning) {
+      result = setIn(result, 'warning', warning);
+    } else {
+      result = deleteIn(result, 'warning');
+    }
+    if (Object.keys(syncWarnings).length) {
+      result = setIn(result, 'syncWarnings', syncWarnings);
+    } else {
+      result = deleteIn(result, 'syncWarnings');
+    }
+    return result;
+  }), _behaviors);
+
+  var reducer = function reducer() {
+    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : empty;
+    var action = arguments[1];
+
+    var behavior = behaviors[action.type];
+    return behavior ? behavior(state, action) : state;
+  };
+
+  var byForm = function byForm(reducer) {
+    return function () {
+      var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : empty;
+      var action = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+      var form = action && action.meta && action.meta.form;
+      if (!form) {
+        return state;
+      }
+      if (action.type === DESTROY) {
+        return action.meta.form.reduce(function (result, form) {
+          return deleteInWithCleanUp(result, form);
+        }, state);
+      }
+      var formState = getIn(state, form);
+      var result = reducer(formState, action);
+      return result === formState ? state : setIn(state, form, result);
+    };
+  };
+
+  /**
+   * Adds additional functionality to the reducer
+   */
+  function decorate(target) {
+    target.plugin = function plugin(reducers) {
+      var _this = this;
+
+      // use 'function' keyword to enable 'this'
+      return decorate(function () {
+        var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : empty;
+        var action = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+        return Object.keys(reducers).reduce(function (accumulator, key) {
+          var previousState = getIn(accumulator, key);
+          var nextState = reducers[key](previousState, action, getIn(state, key));
+          return nextState === previousState ? accumulator : setIn(accumulator, key, nextState);
+        }, _this(state, action));
+      });
+    };
+
+    return target;
+  }
+
+  return decorate(byForm(reducer));
+};
+
+function stackClear() {
+  this.__data__ = new ListCache;
+  this.size = 0;
+}
+
+/**
+ * Removes `key` and its value from the stack.
+ *
+ * @private
+ * @name delete
+ * @memberOf Stack
+ * @param {string} key The key of the value to remove.
+ * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+ */
+function stackDelete(key) {
+  var data = this.__data__,
+      result = data['delete'](key);
+
+  this.size = data.size;
+  return result;
+}
+
+/**
+ * Gets the stack value for `key`.
+ *
+ * @private
+ * @name get
+ * @memberOf Stack
+ * @param {string} key The key of the value to get.
+ * @returns {*} Returns the entry value.
+ */
+function stackGet(key) {
+  return this.__data__.get(key);
+}
+
+/**
+ * Checks if a stack value for `key` exists.
+ *
+ * @private
+ * @name has
+ * @memberOf Stack
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */
+function stackHas(key) {
+  return this.__data__.has(key);
+}
+
+var LARGE_ARRAY_SIZE = 200;
+
+/**
+ * Sets the stack `key` to `value`.
+ *
+ * @private
+ * @name set
+ * @memberOf Stack
+ * @param {string} key The key of the value to set.
+ * @param {*} value The value to set.
+ * @returns {Object} Returns the stack cache instance.
+ */
+function stackSet(key, value) {
+  var data = this.__data__;
+  if (data instanceof ListCache) {
+    var pairs = data.__data__;
+    if (!Map$1 || (pairs.length < LARGE_ARRAY_SIZE - 1)) {
+      pairs.push([key, value]);
+      this.size = ++data.size;
+      return this;
+    }
+    data = this.__data__ = new MapCache(pairs);
+  }
+  data.set(key, value);
+  this.size = data.size;
+  return this;
+}
+
+function Stack(entries) {
+  var data = this.__data__ = new ListCache(entries);
+  this.size = data.size;
+}
+
+// Add methods to `Stack`.
+Stack.prototype.clear = stackClear;
+Stack.prototype['delete'] = stackDelete;
+Stack.prototype.get = stackGet;
+Stack.prototype.has = stackHas;
+Stack.prototype.set = stackSet;
+
+var defineProperty = (function() {
+  try {
+    var func = getNative(Object, 'defineProperty');
+    func({}, '', {});
+    return func;
+  } catch (e) {}
+}());
+
+function baseAssignValue(object, key, value) {
+  if (key == '__proto__' && defineProperty) {
+    defineProperty(object, key, {
+      'configurable': true,
+      'enumerable': true,
+      'value': value,
+      'writable': true
+    });
+  } else {
+    object[key] = value;
+  }
+}
+
+function assignMergeValue(object, key, value) {
+  if ((value !== undefined && !eq(object[key], value)) ||
+      (value === undefined && !(key in object))) {
+    baseAssignValue(object, key, value);
+  }
+}
+
+/**
+ * Creates a base function for methods like `_.forIn` and `_.forOwn`.
+ *
+ * @private
+ * @param {boolean} [fromRight] Specify iterating from right to left.
+ * @returns {Function} Returns the new base function.
+ */
+function createBaseFor(fromRight) {
+  return function(object, iteratee, keysFunc) {
+    var index = -1,
+        iterable = Object(object),
+        props = keysFunc(object),
+        length = props.length;
+
+    while (length--) {
+      var key = props[fromRight ? length : ++index];
+      if (iteratee(iterable[key], key, iterable) === false) {
+        break;
+      }
+    }
+    return object;
+  };
+}
+
+var baseFor = createBaseFor();
+
+var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
+
+/** Detect free variable `module`. */
+var freeModule = freeExports && typeof module == 'object' && module && !module.nodeType && module;
+
+/** Detect the popular CommonJS extension `module.exports`. */
+var moduleExports = freeModule && freeModule.exports === freeExports;
+
+/** Built-in value references. */
+var Buffer = moduleExports ? root.Buffer : undefined;
+var allocUnsafe = Buffer ? Buffer.allocUnsafe : undefined;
+
+/**
+ * Creates a clone of  `buffer`.
+ *
+ * @private
+ * @param {Buffer} buffer The buffer to clone.
+ * @param {boolean} [isDeep] Specify a deep clone.
+ * @returns {Buffer} Returns the cloned buffer.
+ */
+function cloneBuffer(buffer, isDeep) {
+  if (isDeep) {
+    return buffer.slice();
+  }
+  var length = buffer.length,
+      result = allocUnsafe ? allocUnsafe(length) : new buffer.constructor(length);
+
+  buffer.copy(result);
+  return result;
+}
+
+var Uint8Array$1 = root.Uint8Array;
+
+function cloneArrayBuffer(arrayBuffer) {
+  var result = new arrayBuffer.constructor(arrayBuffer.byteLength);
+  new Uint8Array$1(result).set(new Uint8Array$1(arrayBuffer));
+  return result;
+}
+
+function cloneTypedArray(typedArray, isDeep) {
+  var buffer = isDeep ? cloneArrayBuffer(typedArray.buffer) : typedArray.buffer;
+  return new typedArray.constructor(buffer, typedArray.byteOffset, typedArray.length);
+}
+
+var objectCreate = Object.create;
+
+/**
+ * The base implementation of `_.create` without support for assigning
+ * properties to the created object.
+ *
+ * @private
+ * @param {Object} proto The object to inherit from.
+ * @returns {Object} Returns the new object.
+ */
+var baseCreate = (function() {
+  function object() {}
+  return function(proto) {
+    if (!isObject(proto)) {
+      return {};
+    }
+    if (objectCreate) {
+      return objectCreate(proto);
+    }
+    object.prototype = proto;
+    var result = new object;
+    object.prototype = undefined;
+    return result;
+  };
+}());
+
+/** Used for built-in method references. */
+var objectProto$6 = Object.prototype;
+
+/**
+ * Checks if `value` is likely a prototype object.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a prototype, else `false`.
+ */
+function isPrototype(value) {
+  var Ctor = value && value.constructor,
+      proto = (typeof Ctor == 'function' && Ctor.prototype) || objectProto$6;
+
+  return value === proto;
+}
+
+function initCloneObject(object) {
+  return (typeof object.constructor == 'function' && !isPrototype(object))
+    ? baseCreate(getPrototype(object))
+    : {};
+}
+
+var argsTag = '[object Arguments]';
+
+/**
+ * The base implementation of `_.isArguments`.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+ */
+function baseIsArguments(value) {
+  return isObjectLike(value) && baseGetTag(value) == argsTag;
+}
+
+var objectProto$7 = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty$9 = objectProto$7.hasOwnProperty;
+
+/** Built-in value references. */
+var propertyIsEnumerable = objectProto$7.propertyIsEnumerable;
+
+/**
+ * Checks if `value` is likely an `arguments` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+ *  else `false`.
+ * @example
+ *
+ * _.isArguments(function() { return arguments; }());
+ * // => true
+ *
+ * _.isArguments([1, 2, 3]);
+ * // => false
+ */
+var isArguments = baseIsArguments(function() { return arguments; }()) ? baseIsArguments : function(value) {
+  return isObjectLike(value) && hasOwnProperty$9.call(value, 'callee') &&
+    !propertyIsEnumerable.call(value, 'callee');
+};
+
+/** Used as references for various `Number` constants. */
+var MAX_SAFE_INTEGER = 9007199254740991;
+
+/**
+ * Checks if `value` is a valid array-like length.
+ *
+ * **Note:** This method is loosely based on
+ * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
+ * @example
+ *
+ * _.isLength(3);
+ * // => true
+ *
+ * _.isLength(Number.MIN_VALUE);
+ * // => false
+ *
+ * _.isLength(Infinity);
+ * // => false
+ *
+ * _.isLength('3');
+ * // => false
+ */
+function isLength(value) {
+  return typeof value == 'number' &&
+    value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+}
+
+function isArrayLike(value) {
+  return value != null && isLength(value.length) && !isFunction(value);
+}
+
+function isArrayLikeObject(value) {
+  return isObjectLike(value) && isArrayLike(value);
+}
+
+/**
+ * This method returns `false`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {boolean} Returns `false`.
+ * @example
+ *
+ * _.times(2, _.stubFalse);
+ * // => [false, false]
+ */
+function stubFalse() {
+  return false;
+}
+
+var freeExports$1 = typeof exports == 'object' && exports && !exports.nodeType && exports;
+
+/** Detect free variable `module`. */
+var freeModule$1 = freeExports$1 && typeof module == 'object' && module && !module.nodeType && module;
+
+/** Detect the popular CommonJS extension `module.exports`. */
+var moduleExports$1 = freeModule$1 && freeModule$1.exports === freeExports$1;
+
+/** Built-in value references. */
+var Buffer$1 = moduleExports$1 ? root.Buffer : undefined;
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeIsBuffer = Buffer$1 ? Buffer$1.isBuffer : undefined;
+
+/**
+ * Checks if `value` is a buffer.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.3.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a buffer, else `false`.
+ * @example
+ *
+ * _.isBuffer(new Buffer(2));
+ * // => true
+ *
+ * _.isBuffer(new Uint8Array(2));
+ * // => false
+ */
+var isBuffer = nativeIsBuffer || stubFalse;
+
+var argsTag$1 = '[object Arguments]';
+var arrayTag = '[object Array]';
+var boolTag = '[object Boolean]';
+var dateTag = '[object Date]';
+var errorTag = '[object Error]';
+var funcTag$1 = '[object Function]';
+var mapTag = '[object Map]';
+var numberTag = '[object Number]';
+var objectTag$1 = '[object Object]';
+var regexpTag = '[object RegExp]';
+var setTag = '[object Set]';
+var stringTag = '[object String]';
+var weakMapTag = '[object WeakMap]';
+
+var arrayBufferTag = '[object ArrayBuffer]';
+var dataViewTag = '[object DataView]';
+var float32Tag = '[object Float32Array]';
+var float64Tag = '[object Float64Array]';
+var int8Tag = '[object Int8Array]';
+var int16Tag = '[object Int16Array]';
+var int32Tag = '[object Int32Array]';
+var uint8Tag = '[object Uint8Array]';
+var uint8ClampedTag = '[object Uint8ClampedArray]';
+var uint16Tag = '[object Uint16Array]';
+var uint32Tag = '[object Uint32Array]';
+
+/** Used to identify `toStringTag` values of typed arrays. */
+var typedArrayTags = {};
+typedArrayTags[float32Tag] = typedArrayTags[float64Tag] =
+typedArrayTags[int8Tag] = typedArrayTags[int16Tag] =
+typedArrayTags[int32Tag] = typedArrayTags[uint8Tag] =
+typedArrayTags[uint8ClampedTag] = typedArrayTags[uint16Tag] =
+typedArrayTags[uint32Tag] = true;
+typedArrayTags[argsTag$1] = typedArrayTags[arrayTag] =
+typedArrayTags[arrayBufferTag] = typedArrayTags[boolTag] =
+typedArrayTags[dataViewTag] = typedArrayTags[dateTag] =
+typedArrayTags[errorTag] = typedArrayTags[funcTag$1] =
+typedArrayTags[mapTag] = typedArrayTags[numberTag] =
+typedArrayTags[objectTag$1] = typedArrayTags[regexpTag] =
+typedArrayTags[setTag] = typedArrayTags[stringTag] =
+typedArrayTags[weakMapTag] = false;
+
+/**
+ * The base implementation of `_.isTypedArray` without Node.js optimizations.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a typed array, else `false`.
+ */
+function baseIsTypedArray(value) {
+  return isObjectLike(value) &&
+    isLength(value.length) && !!typedArrayTags[baseGetTag(value)];
+}
+
+/**
+ * The base implementation of `_.unary` without support for storing metadata.
+ *
+ * @private
+ * @param {Function} func The function to cap arguments for.
+ * @returns {Function} Returns the new capped function.
+ */
+function baseUnary(func) {
+  return function(value) {
+    return func(value);
+  };
+}
+
+var freeExports$2 = typeof exports == 'object' && exports && !exports.nodeType && exports;
+
+/** Detect free variable `module`. */
+var freeModule$2 = freeExports$2 && typeof module == 'object' && module && !module.nodeType && module;
+
+/** Detect the popular CommonJS extension `module.exports`. */
+var moduleExports$2 = freeModule$2 && freeModule$2.exports === freeExports$2;
+
+/** Detect free variable `process` from Node.js. */
+var freeProcess = moduleExports$2 && freeGlobal.process;
+
+/** Used to access faster Node.js helpers. */
+var nodeUtil = (function() {
+  try {
+    return freeProcess && freeProcess.binding && freeProcess.binding('util');
+  } catch (e) {}
+}());
+
+var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
+
+/**
+ * Checks if `value` is classified as a typed array.
+ *
+ * @static
+ * @memberOf _
+ * @since 3.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a typed array, else `false`.
+ * @example
+ *
+ * _.isTypedArray(new Uint8Array);
+ * // => true
+ *
+ * _.isTypedArray([]);
+ * // => false
+ */
+var isTypedArray = nodeIsTypedArray ? baseUnary(nodeIsTypedArray) : baseIsTypedArray;
+
+var objectProto$8 = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty$10 = objectProto$8.hasOwnProperty;
+
+/**
+ * Assigns `value` to `key` of `object` if the existing value is not equivalent
+ * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * for equality comparisons.
+ *
+ * @private
+ * @param {Object} object The object to modify.
+ * @param {string} key The key of the property to assign.
+ * @param {*} value The value to assign.
+ */
+function assignValue(object, key, value) {
+  var objValue = object[key];
+  if (!(hasOwnProperty$10.call(object, key) && eq(objValue, value)) ||
+      (value === undefined && !(key in object))) {
+    baseAssignValue(object, key, value);
+  }
+}
+
+function copyObject(source, props, object, customizer) {
+  var isNew = !object;
+  object || (object = {});
+
+  var index = -1,
+      length = props.length;
+
+  while (++index < length) {
+    var key = props[index];
+
+    var newValue = customizer
+      ? customizer(object[key], source[key], key, object, source)
+      : undefined;
+
+    if (newValue === undefined) {
+      newValue = source[key];
+    }
+    if (isNew) {
+      baseAssignValue(object, key, newValue);
+    } else {
+      assignValue(object, key, newValue);
+    }
+  }
+  return object;
+}
+
+/**
+ * The base implementation of `_.times` without support for iteratee shorthands
+ * or max array length checks.
+ *
+ * @private
+ * @param {number} n The number of times to invoke `iteratee`.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @returns {Array} Returns the array of results.
+ */
+function baseTimes(n, iteratee) {
+  var index = -1,
+      result = Array(n);
+
+  while (++index < n) {
+    result[index] = iteratee(index);
+  }
+  return result;
+}
+
+/** Used as references for various `Number` constants. */
+var MAX_SAFE_INTEGER$1 = 9007199254740991;
+
+/** Used to detect unsigned integer values. */
+var reIsUint = /^(?:0|[1-9]\d*)$/;
+
+/**
+ * Checks if `value` is a valid array-like index.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
+ * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
+ */
+function isIndex(value, length) {
+  length = length == null ? MAX_SAFE_INTEGER$1 : length;
+  return !!length &&
+    (typeof value == 'number' || reIsUint.test(value)) &&
+    (value > -1 && value % 1 == 0 && value < length);
+}
+
+var objectProto$9 = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty$11 = objectProto$9.hasOwnProperty;
+
+/**
+ * Creates an array of the enumerable property names of the array-like `value`.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @param {boolean} inherited Specify returning inherited property names.
+ * @returns {Array} Returns the array of property names.
+ */
+function arrayLikeKeys(value, inherited) {
+  var isArr = isArray(value),
+      isArg = !isArr && isArguments(value),
+      isBuff = !isArr && !isArg && isBuffer(value),
+      isType = !isArr && !isArg && !isBuff && isTypedArray(value),
+      skipIndexes = isArr || isArg || isBuff || isType,
+      result = skipIndexes ? baseTimes(value.length, String) : [],
+      length = result.length;
+
+  for (var key in value) {
+    if ((inherited || hasOwnProperty$11.call(value, key)) &&
+        !(skipIndexes && (
+           // Safari 9 has enumerable `arguments.length` in strict mode.
+           key == 'length' ||
+           // Node.js 0.10 has enumerable non-index properties on buffers.
+           (isBuff && (key == 'offset' || key == 'parent')) ||
+           // PhantomJS 2 has enumerable non-index properties on typed arrays.
+           (isType && (key == 'buffer' || key == 'byteLength' || key == 'byteOffset')) ||
+           // Skip index properties.
+           isIndex(key, length)
+        ))) {
+      result.push(key);
+    }
+  }
+  return result;
+}
+
+/**
+ * This function is like
+ * [`Object.keys`](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+ * except that it includes inherited enumerable properties.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ */
+function nativeKeysIn(object) {
+  var result = [];
+  if (object != null) {
+    for (var key in Object(object)) {
+      result.push(key);
+    }
+  }
+  return result;
+}
+
+var objectProto$10 = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty$12 = objectProto$10.hasOwnProperty;
+
+/**
+ * The base implementation of `_.keysIn` which doesn't treat sparse arrays as dense.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ */
+function baseKeysIn(object) {
+  if (!isObject(object)) {
+    return nativeKeysIn(object);
+  }
+  var isProto = isPrototype(object),
+      result = [];
+
+  for (var key in object) {
+    if (!(key == 'constructor' && (isProto || !hasOwnProperty$12.call(object, key)))) {
+      result.push(key);
+    }
+  }
+  return result;
+}
+
+function keysIn(object) {
+  return isArrayLike(object) ? arrayLikeKeys(object, true) : baseKeysIn(object);
+}
+
+function toPlainObject(value) {
+  return copyObject(value, keysIn(value));
+}
+
+function baseMergeDeep(object, source, key, srcIndex, mergeFunc, customizer, stack) {
+  var objValue = object[key],
+      srcValue = source[key],
+      stacked = stack.get(srcValue);
+
+  if (stacked) {
+    assignMergeValue(object, key, stacked);
+    return;
+  }
+  var newValue = customizer
+    ? customizer(objValue, srcValue, (key + ''), object, source, stack)
+    : undefined;
+
+  var isCommon = newValue === undefined;
+
+  if (isCommon) {
+    var isArr = isArray(srcValue),
+        isBuff = !isArr && isBuffer(srcValue),
+        isTyped = !isArr && !isBuff && isTypedArray(srcValue);
+
+    newValue = srcValue;
+    if (isArr || isBuff || isTyped) {
+      if (isArray(objValue)) {
+        newValue = objValue;
+      }
+      else if (isArrayLikeObject(objValue)) {
+        newValue = copyArray(objValue);
+      }
+      else if (isBuff) {
+        isCommon = false;
+        newValue = cloneBuffer(srcValue, true);
+      }
+      else if (isTyped) {
+        isCommon = false;
+        newValue = cloneTypedArray(srcValue, true);
+      }
+      else {
+        newValue = [];
+      }
+    }
+    else if (isPlainObject(srcValue) || isArguments(srcValue)) {
+      newValue = objValue;
+      if (isArguments(objValue)) {
+        newValue = toPlainObject(objValue);
+      }
+      else if (!isObject(objValue) || (srcIndex && isFunction(objValue))) {
+        newValue = initCloneObject(srcValue);
+      }
+    }
+    else {
+      isCommon = false;
+    }
+  }
+  if (isCommon) {
+    // Recursively merge objects and arrays (susceptible to call stack limits).
+    stack.set(srcValue, newValue);
+    mergeFunc(newValue, srcValue, srcIndex, customizer, stack);
+    stack['delete'](srcValue);
+  }
+  assignMergeValue(object, key, newValue);
+}
+
+function baseMerge(object, source, srcIndex, customizer, stack) {
+  if (object === source) {
+    return;
+  }
+  baseFor(source, function(srcValue, key) {
+    if (isObject(srcValue)) {
+      stack || (stack = new Stack);
+      baseMergeDeep(object, source, key, srcIndex, baseMerge, customizer, stack);
+    }
+    else {
+      var newValue = customizer
+        ? customizer(object[key], srcValue, (key + ''), object, source, stack)
+        : undefined;
+
+      if (newValue === undefined) {
+        newValue = srcValue;
+      }
+      assignMergeValue(object, key, newValue);
+    }
+  }, keysIn);
+}
+
+/**
+ * This method returns the first argument it receives.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Util
+ * @param {*} value Any value.
+ * @returns {*} Returns `value`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ *
+ * console.log(_.identity(object) === object);
+ * // => true
+ */
+function identity$1(value) {
+  return value;
+}
+
+/**
+ * A faster alternative to `Function#apply`, this function invokes `func`
+ * with the `this` binding of `thisArg` and the arguments of `args`.
+ *
+ * @private
+ * @param {Function} func The function to invoke.
+ * @param {*} thisArg The `this` binding of `func`.
+ * @param {Array} args The arguments to invoke `func` with.
+ * @returns {*} Returns the result of `func`.
+ */
+function apply(func, thisArg, args) {
+  switch (args.length) {
+    case 0: return func.call(thisArg);
+    case 1: return func.call(thisArg, args[0]);
+    case 2: return func.call(thisArg, args[0], args[1]);
+    case 3: return func.call(thisArg, args[0], args[1], args[2]);
+  }
+  return func.apply(thisArg, args);
+}
+
+var nativeMax = Math.max;
+
+/**
+ * A specialized version of `baseRest` which transforms the rest array.
+ *
+ * @private
+ * @param {Function} func The function to apply a rest parameter to.
+ * @param {number} [start=func.length-1] The start position of the rest parameter.
+ * @param {Function} transform The rest array transform.
+ * @returns {Function} Returns the new function.
+ */
+function overRest(func, start, transform) {
+  start = nativeMax(start === undefined ? (func.length - 1) : start, 0);
+  return function() {
+    var args = arguments,
+        index = -1,
+        length = nativeMax(args.length - start, 0),
+        array = Array(length);
+
+    while (++index < length) {
+      array[index] = args[start + index];
+    }
+    index = -1;
+    var otherArgs = Array(start + 1);
+    while (++index < start) {
+      otherArgs[index] = args[index];
+    }
+    otherArgs[start] = transform(array);
+    return apply(func, this, otherArgs);
+  };
+}
+
+/**
+ * Creates a function that returns `value`.
+ *
+ * @static
+ * @memberOf _
+ * @since 2.4.0
+ * @category Util
+ * @param {*} value The value to return from the new function.
+ * @returns {Function} Returns the new constant function.
+ * @example
+ *
+ * var objects = _.times(2, _.constant({ 'a': 1 }));
+ *
+ * console.log(objects);
+ * // => [{ 'a': 1 }, { 'a': 1 }]
+ *
+ * console.log(objects[0] === objects[1]);
+ * // => true
+ */
+function constant(value) {
+  return function() {
+    return value;
+  };
+}
+
+var baseSetToString = !defineProperty ? identity$1 : function(func, string) {
+  return defineProperty(func, 'toString', {
+    'configurable': true,
+    'enumerable': false,
+    'value': constant(string),
+    'writable': true
+  });
+};
+
+/** Used to detect hot functions by number of calls within a span of milliseconds. */
+var HOT_COUNT = 800;
+var HOT_SPAN = 16;
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeNow = Date.now;
+
+/**
+ * Creates a function that'll short out and invoke `identity` instead
+ * of `func` when it's called `HOT_COUNT` or more times in `HOT_SPAN`
+ * milliseconds.
+ *
+ * @private
+ * @param {Function} func The function to restrict.
+ * @returns {Function} Returns the new shortable function.
+ */
+function shortOut(func) {
+  var count = 0,
+      lastCalled = 0;
+
+  return function() {
+    var stamp = nativeNow(),
+        remaining = HOT_SPAN - (stamp - lastCalled);
+
+    lastCalled = stamp;
+    if (remaining > 0) {
+      if (++count >= HOT_COUNT) {
+        return arguments[0];
+      }
+    } else {
+      count = 0;
+    }
+    return func.apply(undefined, arguments);
+  };
+}
+
+var setToString = shortOut(baseSetToString);
+
+function baseRest(func, start) {
+  return setToString(overRest(func, start, identity$1), func + '');
+}
+
+function isIterateeCall(value, index, object) {
+  if (!isObject(object)) {
+    return false;
+  }
+  var type = typeof index;
+  if (type == 'number'
+        ? (isArrayLike(object) && isIndex(index, object.length))
+        : (type == 'string' && index in object)
+      ) {
+    return eq(object[index], value);
+  }
+  return false;
+}
+
+function createAssigner(assigner) {
+  return baseRest(function(object, sources) {
+    var index = -1,
+        length = sources.length,
+        customizer = length > 1 ? sources[length - 1] : undefined,
+        guard = length > 2 ? sources[2] : undefined;
+
+    customizer = (assigner.length > 3 && typeof customizer == 'function')
+      ? (length--, customizer)
+      : undefined;
+
+    if (guard && isIterateeCall(sources[0], sources[1], guard)) {
+      customizer = length < 3 ? undefined : customizer;
+      length = 1;
+    }
+    object = Object(object);
+    while (++index < length) {
+      var source = sources[index];
+      if (source) {
+        assigner(object, source, index, customizer);
+      }
+    }
+    return object;
+  });
+}
+
+var merge = createAssigner(function(object, source, srcIndex) {
+  baseMerge(object, source, srcIndex);
+});
+
+var nativeKeys = overArg(Object.keys, Object);
+
+var objectProto$11 = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty$13 = objectProto$11.hasOwnProperty;
+
+/**
+ * The base implementation of `_.keys` which doesn't treat sparse arrays as dense.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ */
+function baseKeys(object) {
+  if (!isPrototype(object)) {
+    return nativeKeys(object);
+  }
+  var result = [];
+  for (var key in Object(object)) {
+    if (hasOwnProperty$13.call(object, key) && key != 'constructor') {
+      result.push(key);
+    }
+  }
+  return result;
+}
+
+function keys(object) {
+  return isArrayLike(object) ? arrayLikeKeys(object) : baseKeys(object);
+}
+
+function baseForOwn(object, iteratee) {
+  return object && baseFor(object, iteratee, keys);
+}
+
+/** Used to stand-in for `undefined` hash values. */
+var HASH_UNDEFINED$2 = '__lodash_hash_undefined__';
+
+/**
+ * Adds `value` to the array cache.
+ *
+ * @private
+ * @name add
+ * @memberOf SetCache
+ * @alias push
+ * @param {*} value The value to cache.
+ * @returns {Object} Returns the cache instance.
+ */
+function setCacheAdd(value) {
+  this.__data__.set(value, HASH_UNDEFINED$2);
+  return this;
+}
+
+/**
+ * Checks if `value` is in the array cache.
+ *
+ * @private
+ * @name has
+ * @memberOf SetCache
+ * @param {*} value The value to search for.
+ * @returns {number} Returns `true` if `value` is found, else `false`.
+ */
+function setCacheHas(value) {
+  return this.__data__.has(value);
+}
+
+function SetCache(values) {
+  var index = -1,
+      length = values == null ? 0 : values.length;
+
+  this.__data__ = new MapCache;
+  while (++index < length) {
+    this.add(values[index]);
+  }
+}
+
+// Add methods to `SetCache`.
+SetCache.prototype.add = SetCache.prototype.push = setCacheAdd;
+SetCache.prototype.has = setCacheHas;
+
+/**
+ * A specialized version of `_.some` for arrays without support for iteratee
+ * shorthands.
+ *
+ * @private
+ * @param {Array} [array] The array to iterate over.
+ * @param {Function} predicate The function invoked per iteration.
+ * @returns {boolean} Returns `true` if any element passes the predicate check,
+ *  else `false`.
+ */
+function arraySome(array, predicate) {
+  var index = -1,
+      length = array == null ? 0 : array.length;
+
+  while (++index < length) {
+    if (predicate(array[index], index, array)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * Checks if a `cache` value for `key` exists.
+ *
+ * @private
+ * @param {Object} cache The cache to query.
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */
+function cacheHas(cache, key) {
+  return cache.has(key);
+}
+
+var COMPARE_PARTIAL_FLAG$2 = 1;
+var COMPARE_UNORDERED_FLAG$1 = 2;
+
+/**
+ * A specialized version of `baseIsEqualDeep` for arrays with support for
+ * partial deep comparisons.
+ *
+ * @private
+ * @param {Array} array The array to compare.
+ * @param {Array} other The other array to compare.
+ * @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
+ * @param {Function} customizer The function to customize comparisons.
+ * @param {Function} equalFunc The function to determine equivalents of values.
+ * @param {Object} stack Tracks traversed `array` and `other` objects.
+ * @returns {boolean} Returns `true` if the arrays are equivalent, else `false`.
+ */
+function equalArrays(array, other, bitmask, customizer, equalFunc, stack) {
+  var isPartial = bitmask & COMPARE_PARTIAL_FLAG$2,
+      arrLength = array.length,
+      othLength = other.length;
+
+  if (arrLength != othLength && !(isPartial && othLength > arrLength)) {
+    return false;
+  }
+  // Assume cyclic values are equal.
+  var stacked = stack.get(array);
+  if (stacked && stack.get(other)) {
+    return stacked == other;
+  }
+  var index = -1,
+      result = true,
+      seen = (bitmask & COMPARE_UNORDERED_FLAG$1) ? new SetCache : undefined;
+
+  stack.set(array, other);
+  stack.set(other, array);
+
+  // Ignore non-index properties.
+  while (++index < arrLength) {
+    var arrValue = array[index],
+        othValue = other[index];
+
+    if (customizer) {
+      var compared = isPartial
+        ? customizer(othValue, arrValue, index, other, array, stack)
+        : customizer(arrValue, othValue, index, array, other, stack);
+    }
+    if (compared !== undefined) {
+      if (compared) {
+        continue;
+      }
+      result = false;
+      break;
+    }
+    // Recursively compare arrays (susceptible to call stack limits).
+    if (seen) {
+      if (!arraySome(other, function(othValue, othIndex) {
+            if (!cacheHas(seen, othIndex) &&
+                (arrValue === othValue || equalFunc(arrValue, othValue, bitmask, customizer, stack))) {
+              return seen.push(othIndex);
+            }
+          })) {
+        result = false;
+        break;
+      }
+    } else if (!(
+          arrValue === othValue ||
+            equalFunc(arrValue, othValue, bitmask, customizer, stack)
+        )) {
+      result = false;
+      break;
+    }
+  }
+  stack['delete'](array);
+  stack['delete'](other);
+  return result;
+}
+
+/**
+ * Converts `map` to its key-value pairs.
+ *
+ * @private
+ * @param {Object} map The map to convert.
+ * @returns {Array} Returns the key-value pairs.
+ */
+function mapToArray(map) {
+  var index = -1,
+      result = Array(map.size);
+
+  map.forEach(function(value, key) {
+    result[++index] = [key, value];
+  });
+  return result;
+}
+
+/**
+ * Converts `set` to an array of its values.
+ *
+ * @private
+ * @param {Object} set The set to convert.
+ * @returns {Array} Returns the values.
+ */
+function setToArray(set) {
+  var index = -1,
+      result = Array(set.size);
+
+  set.forEach(function(value) {
+    result[++index] = value;
+  });
+  return result;
+}
+
+var COMPARE_PARTIAL_FLAG$3 = 1;
+var COMPARE_UNORDERED_FLAG$2 = 2;
+
+/** `Object#toString` result references. */
+var boolTag$1 = '[object Boolean]';
+var dateTag$1 = '[object Date]';
+var errorTag$1 = '[object Error]';
+var mapTag$1 = '[object Map]';
+var numberTag$1 = '[object Number]';
+var regexpTag$1 = '[object RegExp]';
+var setTag$1 = '[object Set]';
+var stringTag$1 = '[object String]';
+var symbolTag$1 = '[object Symbol]';
+
+var arrayBufferTag$1 = '[object ArrayBuffer]';
+var dataViewTag$1 = '[object DataView]';
+
+/** Used to convert symbols to primitives and strings. */
+var symbolProto$1 = Symbol$1 ? Symbol$1.prototype : undefined;
+var symbolValueOf = symbolProto$1 ? symbolProto$1.valueOf : undefined;
+
+/**
+ * A specialized version of `baseIsEqualDeep` for comparing objects of
+ * the same `toStringTag`.
+ *
+ * **Note:** This function only supports comparing values with tags of
+ * `Boolean`, `Date`, `Error`, `Number`, `RegExp`, or `String`.
+ *
+ * @private
+ * @param {Object} object The object to compare.
+ * @param {Object} other The other object to compare.
+ * @param {string} tag The `toStringTag` of the objects to compare.
+ * @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
+ * @param {Function} customizer The function to customize comparisons.
+ * @param {Function} equalFunc The function to determine equivalents of values.
+ * @param {Object} stack Tracks traversed `object` and `other` objects.
+ * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+ */
+function equalByTag(object, other, tag, bitmask, customizer, equalFunc, stack) {
+  switch (tag) {
+    case dataViewTag$1:
+      if ((object.byteLength != other.byteLength) ||
+          (object.byteOffset != other.byteOffset)) {
+        return false;
+      }
+      object = object.buffer;
+      other = other.buffer;
+
+    case arrayBufferTag$1:
+      if ((object.byteLength != other.byteLength) ||
+          !equalFunc(new Uint8Array$1(object), new Uint8Array$1(other))) {
+        return false;
+      }
+      return true;
+
+    case boolTag$1:
+    case dateTag$1:
+    case numberTag$1:
+      // Coerce booleans to `1` or `0` and dates to milliseconds.
+      // Invalid dates are coerced to `NaN`.
+      return eq(+object, +other);
+
+    case errorTag$1:
+      return object.name == other.name && object.message == other.message;
+
+    case regexpTag$1:
+    case stringTag$1:
+      // Coerce regexes to strings and treat strings, primitives and objects,
+      // as equal. See http://www.ecma-international.org/ecma-262/7.0/#sec-regexp.prototype.tostring
+      // for more details.
+      return object == (other + '');
+
+    case mapTag$1:
+      var convert = mapToArray;
+
+    case setTag$1:
+      var isPartial = bitmask & COMPARE_PARTIAL_FLAG$3;
+      convert || (convert = setToArray);
+
+      if (object.size != other.size && !isPartial) {
+        return false;
+      }
+      // Assume cyclic values are equal.
+      var stacked = stack.get(object);
+      if (stacked) {
+        return stacked == other;
+      }
+      bitmask |= COMPARE_UNORDERED_FLAG$2;
+
+      // Recursively compare objects (susceptible to call stack limits).
+      stack.set(object, other);
+      var result = equalArrays(convert(object), convert(other), bitmask, customizer, equalFunc, stack);
+      stack['delete'](object);
+      return result;
+
+    case symbolTag$1:
+      if (symbolValueOf) {
+        return symbolValueOf.call(object) == symbolValueOf.call(other);
+      }
+  }
+  return false;
+}
+
+/**
+ * Appends the elements of `values` to `array`.
+ *
+ * @private
+ * @param {Array} array The array to modify.
+ * @param {Array} values The values to append.
+ * @returns {Array} Returns `array`.
+ */
+function arrayPush$2(array, values) {
+  var index = -1,
+      length = values.length,
+      offset = array.length;
+
+  while (++index < length) {
+    array[offset + index] = values[index];
+  }
+  return array;
+}
+
+function baseGetAllKeys(object, keysFunc, symbolsFunc) {
+  var result = keysFunc(object);
+  return isArray(object) ? result : arrayPush$2(result, symbolsFunc(object));
+}
+
+/**
+ * A specialized version of `_.filter` for arrays without support for
+ * iteratee shorthands.
+ *
+ * @private
+ * @param {Array} [array] The array to iterate over.
+ * @param {Function} predicate The function invoked per iteration.
+ * @returns {Array} Returns the new filtered array.
+ */
+function arrayFilter(array, predicate) {
+  var index = -1,
+      length = array == null ? 0 : array.length,
+      resIndex = 0,
+      result = [];
+
+  while (++index < length) {
+    var value = array[index];
+    if (predicate(value, index, array)) {
+      result[resIndex++] = value;
+    }
+  }
+  return result;
+}
+
+/**
+ * This method returns a new empty array.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {Array} Returns the new empty array.
+ * @example
+ *
+ * var arrays = _.times(2, _.stubArray);
+ *
+ * console.log(arrays);
+ * // => [[], []]
+ *
+ * console.log(arrays[0] === arrays[1]);
+ * // => false
+ */
+function stubArray() {
+  return [];
+}
+
+var objectProto$14 = Object.prototype;
+
+/** Built-in value references. */
+var propertyIsEnumerable$1 = objectProto$14.propertyIsEnumerable;
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeGetSymbols = Object.getOwnPropertySymbols;
+
+/**
+ * Creates an array of the own enumerable symbols of `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of symbols.
+ */
+var getSymbols = !nativeGetSymbols ? stubArray : function(object) {
+  if (object == null) {
+    return [];
+  }
+  object = Object(object);
+  return arrayFilter(nativeGetSymbols(object), function(symbol) {
+    return propertyIsEnumerable$1.call(object, symbol);
+  });
+};
+
+function getAllKeys(object) {
+  return baseGetAllKeys(object, keys, getSymbols);
+}
+
+var COMPARE_PARTIAL_FLAG$4 = 1;
+
+/** Used for built-in method references. */
+var objectProto$13 = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty$15 = objectProto$13.hasOwnProperty;
+
+/**
+ * A specialized version of `baseIsEqualDeep` for objects with support for
+ * partial deep comparisons.
+ *
+ * @private
+ * @param {Object} object The object to compare.
+ * @param {Object} other The other object to compare.
+ * @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
+ * @param {Function} customizer The function to customize comparisons.
+ * @param {Function} equalFunc The function to determine equivalents of values.
+ * @param {Object} stack Tracks traversed `object` and `other` objects.
+ * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+ */
+function equalObjects(object, other, bitmask, customizer, equalFunc, stack) {
+  var isPartial = bitmask & COMPARE_PARTIAL_FLAG$4,
+      objProps = getAllKeys(object),
+      objLength = objProps.length,
+      othProps = getAllKeys(other),
+      othLength = othProps.length;
+
+  if (objLength != othLength && !isPartial) {
+    return false;
+  }
+  var index = objLength;
+  while (index--) {
+    var key = objProps[index];
+    if (!(isPartial ? key in other : hasOwnProperty$15.call(other, key))) {
+      return false;
+    }
+  }
+  // Assume cyclic values are equal.
+  var stacked = stack.get(object);
+  if (stacked && stack.get(other)) {
+    return stacked == other;
+  }
+  var result = true;
+  stack.set(object, other);
+  stack.set(other, object);
+
+  var skipCtor = isPartial;
+  while (++index < objLength) {
+    key = objProps[index];
+    var objValue = object[key],
+        othValue = other[key];
+
+    if (customizer) {
+      var compared = isPartial
+        ? customizer(othValue, objValue, key, other, object, stack)
+        : customizer(objValue, othValue, key, object, other, stack);
+    }
+    // Recursively compare objects (susceptible to call stack limits).
+    if (!(compared === undefined
+          ? (objValue === othValue || equalFunc(objValue, othValue, bitmask, customizer, stack))
+          : compared
+        )) {
+      result = false;
+      break;
+    }
+    skipCtor || (skipCtor = key == 'constructor');
+  }
+  if (result && !skipCtor) {
+    var objCtor = object.constructor,
+        othCtor = other.constructor;
+
+    // Non `Object` object instances with different constructors are not equal.
+    if (objCtor != othCtor &&
+        ('constructor' in object && 'constructor' in other) &&
+        !(typeof objCtor == 'function' && objCtor instanceof objCtor &&
+          typeof othCtor == 'function' && othCtor instanceof othCtor)) {
+      result = false;
+    }
+  }
+  stack['delete'](object);
+  stack['delete'](other);
+  return result;
+}
+
+var DataView$1 = getNative(root, 'DataView');
+
+var Promise$1 = getNative(root, 'Promise');
+
+var Set$1 = getNative(root, 'Set');
+
+var WeakMap = getNative(root, 'WeakMap');
+
+var mapTag$2 = '[object Map]';
+var objectTag$3 = '[object Object]';
+var promiseTag = '[object Promise]';
+var setTag$2 = '[object Set]';
+var weakMapTag$1 = '[object WeakMap]';
+
+var dataViewTag$2 = '[object DataView]';
+
+/** Used to detect maps, sets, and weakmaps. */
+var dataViewCtorString = toSource(DataView$1);
+var mapCtorString = toSource(Map$1);
+var promiseCtorString = toSource(Promise$1);
+var setCtorString = toSource(Set$1);
+var weakMapCtorString = toSource(WeakMap);
+
+/**
+ * Gets the `toStringTag` of `value`.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @returns {string} Returns the `toStringTag`.
+ */
+var getTag = baseGetTag;
+
+// Fallback for data views, maps, sets, and weak maps in IE 11 and promises in Node.js < 6.
+if ((DataView$1 && getTag(new DataView$1(new ArrayBuffer(1))) != dataViewTag$2) ||
+    (Map$1 && getTag(new Map$1) != mapTag$2) ||
+    (Promise$1 && getTag(Promise$1.resolve()) != promiseTag) ||
+    (Set$1 && getTag(new Set$1) != setTag$2) ||
+    (WeakMap && getTag(new WeakMap) != weakMapTag$1)) {
+  getTag = function(value) {
+    var result = baseGetTag(value),
+        Ctor = result == objectTag$3 ? value.constructor : undefined,
+        ctorString = Ctor ? toSource(Ctor) : '';
+
+    if (ctorString) {
+      switch (ctorString) {
+        case dataViewCtorString: return dataViewTag$2;
+        case mapCtorString: return mapTag$2;
+        case promiseCtorString: return promiseTag;
+        case setCtorString: return setTag$2;
+        case weakMapCtorString: return weakMapTag$1;
+      }
+    }
+    return result;
+  };
+}
+
+var getTag$1 = getTag;
+
+var COMPARE_PARTIAL_FLAG$1 = 1;
+
+/** `Object#toString` result references. */
+var argsTag$2 = '[object Arguments]';
+var arrayTag$1 = '[object Array]';
+var objectTag$2 = '[object Object]';
+
+/** Used for built-in method references. */
+var objectProto$12 = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty$14 = objectProto$12.hasOwnProperty;
+
+/**
+ * A specialized version of `baseIsEqual` for arrays and objects which performs
+ * deep comparisons and tracks traversed objects enabling objects with circular
+ * references to be compared.
+ *
+ * @private
+ * @param {Object} object The object to compare.
+ * @param {Object} other The other object to compare.
+ * @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
+ * @param {Function} customizer The function to customize comparisons.
+ * @param {Function} equalFunc The function to determine equivalents of values.
+ * @param {Object} [stack] Tracks traversed `object` and `other` objects.
+ * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+ */
+function baseIsEqualDeep(object, other, bitmask, customizer, equalFunc, stack) {
+  var objIsArr = isArray(object),
+      othIsArr = isArray(other),
+      objTag = objIsArr ? arrayTag$1 : getTag$1(object),
+      othTag = othIsArr ? arrayTag$1 : getTag$1(other);
+
+  objTag = objTag == argsTag$2 ? objectTag$2 : objTag;
+  othTag = othTag == argsTag$2 ? objectTag$2 : othTag;
+
+  var objIsObj = objTag == objectTag$2,
+      othIsObj = othTag == objectTag$2,
+      isSameTag = objTag == othTag;
+
+  if (isSameTag && isBuffer(object)) {
+    if (!isBuffer(other)) {
+      return false;
+    }
+    objIsArr = true;
+    objIsObj = false;
+  }
+  if (isSameTag && !objIsObj) {
+    stack || (stack = new Stack);
+    return (objIsArr || isTypedArray(object))
+      ? equalArrays(object, other, bitmask, customizer, equalFunc, stack)
+      : equalByTag(object, other, objTag, bitmask, customizer, equalFunc, stack);
+  }
+  if (!(bitmask & COMPARE_PARTIAL_FLAG$1)) {
+    var objIsWrapped = objIsObj && hasOwnProperty$14.call(object, '__wrapped__'),
+        othIsWrapped = othIsObj && hasOwnProperty$14.call(other, '__wrapped__');
+
+    if (objIsWrapped || othIsWrapped) {
+      var objUnwrapped = objIsWrapped ? object.value() : object,
+          othUnwrapped = othIsWrapped ? other.value() : other;
+
+      stack || (stack = new Stack);
+      return equalFunc(objUnwrapped, othUnwrapped, bitmask, customizer, stack);
+    }
+  }
+  if (!isSameTag) {
+    return false;
+  }
+  stack || (stack = new Stack);
+  return equalObjects(object, other, bitmask, customizer, equalFunc, stack);
+}
+
+function baseIsEqual(value, other, bitmask, customizer, stack) {
+  if (value === other) {
+    return true;
+  }
+  if (value == null || other == null || (!isObjectLike(value) && !isObjectLike(other))) {
+    return value !== value && other !== other;
+  }
+  return baseIsEqualDeep(value, other, bitmask, customizer, baseIsEqual, stack);
+}
+
+var COMPARE_PARTIAL_FLAG = 1;
+var COMPARE_UNORDERED_FLAG = 2;
+
+/**
+ * The base implementation of `_.isMatch` without support for iteratee shorthands.
+ *
+ * @private
+ * @param {Object} object The object to inspect.
+ * @param {Object} source The object of property values to match.
+ * @param {Array} matchData The property names, values, and compare flags to match.
+ * @param {Function} [customizer] The function to customize comparisons.
+ * @returns {boolean} Returns `true` if `object` is a match, else `false`.
+ */
+function baseIsMatch(object, source, matchData, customizer) {
+  var index = matchData.length,
+      length = index,
+      noCustomizer = !customizer;
+
+  if (object == null) {
+    return !length;
+  }
+  object = Object(object);
+  while (index--) {
+    var data = matchData[index];
+    if ((noCustomizer && data[2])
+          ? data[1] !== object[data[0]]
+          : !(data[0] in object)
+        ) {
+      return false;
+    }
+  }
+  while (++index < length) {
+    data = matchData[index];
+    var key = data[0],
+        objValue = object[key],
+        srcValue = data[1];
+
+    if (noCustomizer && data[2]) {
+      if (objValue === undefined && !(key in object)) {
+        return false;
+      }
+    } else {
+      var stack = new Stack;
+      if (customizer) {
+        var result = customizer(objValue, srcValue, key, object, source, stack);
+      }
+      if (!(result === undefined
+            ? baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG, customizer, stack)
+            : result
+          )) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
+function isStrictComparable(value) {
+  return value === value && !isObject(value);
+}
+
+function getMatchData(object) {
+  var result = keys(object),
+      length = result.length;
+
+  while (length--) {
+    var key = result[length],
+        value = object[key];
+
+    result[length] = [key, value, isStrictComparable(value)];
+  }
+  return result;
+}
+
+/**
+ * A specialized version of `matchesProperty` for source values suitable
+ * for strict equality comparisons, i.e. `===`.
+ *
+ * @private
+ * @param {string} key The key of the property to get.
+ * @param {*} srcValue The value to match.
+ * @returns {Function} Returns the new spec function.
+ */
+function matchesStrictComparable(key, srcValue) {
+  return function(object) {
+    if (object == null) {
+      return false;
+    }
+    return object[key] === srcValue &&
+      (srcValue !== undefined || (key in Object(object)));
+  };
+}
+
+function baseMatches(source) {
+  var matchData = getMatchData(source);
+  if (matchData.length == 1 && matchData[0][2]) {
+    return matchesStrictComparable(matchData[0][0], matchData[0][1]);
+  }
+  return function(object) {
+    return object === source || baseIsMatch(object, source, matchData);
+  };
+}
+
+var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/;
+var reIsPlainProp = /^\w*$/;
+
+/**
+ * Checks if `value` is a property name and not a property path.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @param {Object} [object] The object to query keys on.
+ * @returns {boolean} Returns `true` if `value` is a property name, else `false`.
+ */
+function isKey(value, object) {
+  if (isArray(value)) {
+    return false;
+  }
+  var type = typeof value;
+  if (type == 'number' || type == 'symbol' || type == 'boolean' ||
+      value == null || isSymbol$1(value)) {
+    return true;
+  }
+  return reIsPlainProp.test(value) || !reIsDeepProp.test(value) ||
+    (object != null && value in Object(object));
+}
+
+function castPath(value, object) {
+  if (isArray(value)) {
+    return value;
+  }
+  return isKey(value, object) ? [value] : stringToPath(toString$1(value));
+}
+
+function baseGet(object, path) {
+  path = castPath(path, object);
+
+  var index = 0,
+      length = path.length;
+
+  while (object != null && index < length) {
+    object = object[toKey(path[index++])];
+  }
+  return (index && index == length) ? object : undefined;
+}
+
+function get(object, path, defaultValue) {
+  var result = object == null ? undefined : baseGet(object, path);
+  return result === undefined ? defaultValue : result;
+}
+
+/**
+ * The base implementation of `_.hasIn` without support for deep paths.
+ *
+ * @private
+ * @param {Object} [object] The object to query.
+ * @param {Array|string} key The key to check.
+ * @returns {boolean} Returns `true` if `key` exists, else `false`.
+ */
+function baseHasIn(object, key) {
+  return object != null && key in Object(object);
+}
+
+function hasPath(object, path, hasFunc) {
+  path = castPath(path, object);
+
+  var index = -1,
+      length = path.length,
+      result = false;
+
+  while (++index < length) {
+    var key = toKey(path[index]);
+    if (!(result = object != null && hasFunc(object, key))) {
+      break;
+    }
+    object = object[key];
+  }
+  if (result || ++index != length) {
+    return result;
+  }
+  length = object == null ? 0 : object.length;
+  return !!length && isLength(length) && isIndex(key, length) &&
+    (isArray(object) || isArguments(object));
+}
+
+function hasIn(object, path) {
+  return object != null && hasPath(object, path, baseHasIn);
+}
+
+var COMPARE_PARTIAL_FLAG$5 = 1;
+var COMPARE_UNORDERED_FLAG$3 = 2;
+
+/**
+ * The base implementation of `_.matchesProperty` which doesn't clone `srcValue`.
+ *
+ * @private
+ * @param {string} path The path of the property to get.
+ * @param {*} srcValue The value to match.
+ * @returns {Function} Returns the new spec function.
+ */
+function baseMatchesProperty(path, srcValue) {
+  if (isKey(path) && isStrictComparable(srcValue)) {
+    return matchesStrictComparable(toKey(path), srcValue);
+  }
+  return function(object) {
+    var objValue = get(object, path);
+    return (objValue === undefined && objValue === srcValue)
+      ? hasIn(object, path)
+      : baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG$5 | COMPARE_UNORDERED_FLAG$3);
+  };
+}
+
+/**
+ * The base implementation of `_.property` without support for deep paths.
+ *
+ * @private
+ * @param {string} key The key of the property to get.
+ * @returns {Function} Returns the new accessor function.
+ */
+function baseProperty(key) {
+  return function(object) {
+    return object == null ? undefined : object[key];
+  };
+}
+
+function basePropertyDeep(path) {
+  return function(object) {
+    return baseGet(object, path);
+  };
+}
+
+function property(path) {
+  return isKey(path) ? baseProperty(toKey(path)) : basePropertyDeep(path);
+}
+
+function baseIteratee(value) {
+  // Don't store the `typeof` result in a variable to avoid a JIT bug in Safari 9.
+  // See https://bugs.webkit.org/show_bug.cgi?id=156034 for more details.
+  if (typeof value == 'function') {
+    return value;
+  }
+  if (value == null) {
+    return identity$1;
+  }
+  if (typeof value == 'object') {
+    return isArray(value)
+      ? baseMatchesProperty(value[0], value[1])
+      : baseMatches(value);
+  }
+  return property(value);
+}
+
+function mapValues(object, iteratee) {
+  var result = {};
+  iteratee = baseIteratee(iteratee, 3);
+
+  baseForOwn(object, function(value, key, object) {
+    baseAssignValue(result, key, iteratee(value, key, object));
+  });
+  return result;
+}
+
+var index$12 = isPromise$1;
+
+function isPromise$1(obj) {
+  return !!obj && (typeof obj === 'object' || typeof obj === 'function') && typeof obj.then === 'function';
+}
+
+var getDisplayName$2 = function getDisplayName(Comp) {
+  return Comp.displayName || Comp.name || 'Component';
+};
+
+var _extends$17 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var arrayInsert$2 = function arrayInsert(form, field, index, value) {
+  return { type: ARRAY_INSERT, meta: { form: form, field: field, index: index }, payload: value };
+};
+
+var arrayMove$2 = function arrayMove(form, field, from, to) {
+  return { type: ARRAY_MOVE, meta: { form: form, field: field, from: from, to: to } };
+};
+
+var arrayPop$2 = function arrayPop(form, field) {
+  return { type: ARRAY_POP, meta: { form: form, field: field } };
+};
+
+var arrayPush$4 = function arrayPush(form, field, value) {
+  return { type: ARRAY_PUSH, meta: { form: form, field: field }, payload: value };
+};
+
+var arrayRemove$2 = function arrayRemove(form, field, index) {
+  return { type: ARRAY_REMOVE, meta: { form: form, field: field, index: index } };
+};
+
+var arrayRemoveAll$2 = function arrayRemoveAll(form, field) {
+  return { type: ARRAY_REMOVE_ALL, meta: { form: form, field: field } };
+};
+
+var arrayShift$2 = function arrayShift(form, field) {
+  return { type: ARRAY_SHIFT, meta: { form: form, field: field } };
+};
+
+var arraySplice$2 = function arraySplice(form, field, index, removeNum, value) {
+  var action = {
+    type: ARRAY_SPLICE,
+    meta: { form: form, field: field, index: index, removeNum: removeNum }
+  };
+  if (value !== undefined) {
+    action.payload = value;
+  }
+  return action;
+};
+
+var arraySwap$2 = function arraySwap(form, field, indexA, indexB) {
+  if (indexA === indexB) {
+    throw new Error('Swap indices cannot be equal');
+  }
+  if (indexA < 0 || indexB < 0) {
+    throw new Error('Swap indices cannot be negative');
+  }
+  return { type: ARRAY_SWAP, meta: { form: form, field: field, indexA: indexA, indexB: indexB } };
+};
+
+var arrayUnshift$2 = function arrayUnshift(form, field, value) {
+  return { type: ARRAY_UNSHIFT, meta: { form: form, field: field }, payload: value };
+};
+
+var autofill$1 = function autofill(form, field, value) {
+  return { type: AUTOFILL, meta: { form: form, field: field }, payload: value };
+};
+
+var blur$2 = function blur(form, field, value, touch) {
+  return { type: BLUR, meta: { form: form, field: field, touch: touch }, payload: value };
+};
+
+var change$2 = function change(form, field, value, touch, persistentSubmitErrors) {
+  return { type: CHANGE, meta: { form: form, field: field, touch: touch, persistentSubmitErrors: persistentSubmitErrors }, payload: value };
+};
+
+var clearSubmit = function clearSubmit(form) {
+  return { type: CLEAR_SUBMIT, meta: { form: form } };
+};
+
+var clearAsyncError = function clearAsyncError(form, field) {
+  return { type: CLEAR_ASYNC_ERROR, meta: { form: form, field: field } };
+};
+
+var destroy$1 = function destroy() {
+  for (var _len = arguments.length, form = Array(_len), _key = 0; _key < _len; _key++) {
+    form[_key] = arguments[_key];
+  }
+
+  return { type: DESTROY, meta: { form: form } };
+};
+
+var focus$2 = function focus(form, field) {
+  return { type: FOCUS, meta: { form: form, field: field } };
+};
+
+var initialize$1 = function initialize(form, values, keepDirty) {
+  var otherMeta = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+
+  if (keepDirty instanceof Object) {
+    otherMeta = keepDirty;
+    keepDirty = false;
+  }
+  return { type: INITIALIZE, meta: _extends$17({ form: form, keepDirty: keepDirty }, otherMeta), payload: values };
+};
+
+var registerField$1 = function registerField(form, name, type) {
+  return { type: REGISTER_FIELD, meta: { form: form }, payload: { name: name, type: type } };
+};
+
+var reset$1 = function reset(form) {
+  return { type: RESET, meta: { form: form } };
+};
+
+var startAsyncValidation$1 = function startAsyncValidation(form, field) {
+  return { type: START_ASYNC_VALIDATION, meta: { form: form, field: field } };
+};
+
+var startSubmit$1 = function startSubmit(form) {
+  return { type: START_SUBMIT, meta: { form: form } };
+};
+
+var stopAsyncValidation$1 = function stopAsyncValidation(form, errors) {
+  var action = {
+    type: STOP_ASYNC_VALIDATION,
+    meta: { form: form },
+    payload: errors
+  };
+  if (errors && Object.keys(errors).length) {
+    action.error = true;
+  }
+  return action;
+};
+
+var stopSubmit$1 = function stopSubmit(form, errors) {
+  var action = {
+    type: STOP_SUBMIT,
+    meta: { form: form },
+    payload: errors
+  };
+  if (errors && Object.keys(errors).length) {
+    action.error = true;
+  }
+  return action;
+};
+
+var submit$1 = function submit(form) {
+  return { type: SUBMIT, meta: { form: form } };
+};
+
+var setSubmitFailed$1 = function setSubmitFailed(form) {
+  for (var _len2 = arguments.length, fields = Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+    fields[_key2 - 1] = arguments[_key2];
+  }
+
+  return { type: SET_SUBMIT_FAILED, meta: { form: form, fields: fields }, error: true };
+};
+
+var setSubmitSucceeded$1 = function setSubmitSucceeded(form) {
+  for (var _len3 = arguments.length, fields = Array(_len3 > 1 ? _len3 - 1 : 0), _key3 = 1; _key3 < _len3; _key3++) {
+    fields[_key3 - 1] = arguments[_key3];
+  }
+
+  return { type: SET_SUBMIT_SUCCEEDED, meta: { form: form, fields: fields }, error: false };
+};
+
+var touch$1 = function touch(form) {
+  for (var _len4 = arguments.length, fields = Array(_len4 > 1 ? _len4 - 1 : 0), _key4 = 1; _key4 < _len4; _key4++) {
+    fields[_key4 - 1] = arguments[_key4];
+  }
+
+  return { type: TOUCH, meta: { form: form, fields: fields } };
+};
+
+var unregisterField$1 = function unregisterField(form, name) {
+  var destroyOnUnmount = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+  return { type: UNREGISTER_FIELD, meta: { form: form }, payload: { name: name, destroyOnUnmount: destroyOnUnmount } };
+};
+
+var untouch$1 = function untouch(form) {
+  for (var _len5 = arguments.length, fields = Array(_len5 > 1 ? _len5 - 1 : 0), _key5 = 1; _key5 < _len5; _key5++) {
+    fields[_key5 - 1] = arguments[_key5];
+  }
+
+  return { type: UNTOUCH, meta: { form: form, fields: fields } };
+};
+
+var updateSyncErrors = function updateSyncErrors(form) {
+  var syncErrors = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  var error = arguments[2];
+  return { type: UPDATE_SYNC_ERRORS, meta: { form: form }, payload: { syncErrors: syncErrors, error: error } };
+};
+
+var updateSyncWarnings = function updateSyncWarnings(form) {
+  var syncWarnings = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  var warning = arguments[2];
+  return { type: UPDATE_SYNC_WARNINGS, meta: { form: form }, payload: { syncWarnings: syncWarnings, warning: warning } };
+};
+
+var importedActions = Object.freeze({
+	arrayInsert: arrayInsert$2,
+	arrayMove: arrayMove$2,
+	arrayPop: arrayPop$2,
+	arrayPush: arrayPush$4,
+	arrayRemove: arrayRemove$2,
+	arrayRemoveAll: arrayRemoveAll$2,
+	arrayShift: arrayShift$2,
+	arraySplice: arraySplice$2,
+	arraySwap: arraySwap$2,
+	arrayUnshift: arrayUnshift$2,
+	autofill: autofill$1,
+	blur: blur$2,
+	change: change$2,
+	clearSubmit: clearSubmit,
+	clearAsyncError: clearAsyncError,
+	destroy: destroy$1,
+	focus: focus$2,
+	initialize: initialize$1,
+	registerField: registerField$1,
+	reset: reset$1,
+	startAsyncValidation: startAsyncValidation$1,
+	startSubmit: startSubmit$1,
+	stopAsyncValidation: stopAsyncValidation$1,
+	stopSubmit: stopSubmit$1,
+	submit: submit$1,
+	setSubmitFailed: setSubmitFailed$1,
+	setSubmitSucceeded: setSubmitSucceeded$1,
+	touch: touch$1,
+	unregisterField: unregisterField$1,
+	untouch: untouch$1,
+	updateSyncErrors: updateSyncErrors,
+	updateSyncWarnings: updateSyncWarnings
+});
+
+var index$13 = createCommonjsModule(function (module, exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _extendableBuiltin(cls) {
+  function ExtendableBuiltin() {
+    cls.apply(this, arguments);
+  }
+
+  ExtendableBuiltin.prototype = Object.create(cls.prototype, {
+    constructor: {
+      value: cls,
+      enumerable: false,
+      writable: true,
+      configurable: true
+    }
+  });
+
+  if (Object.setPrototypeOf) {
+    Object.setPrototypeOf(ExtendableBuiltin, cls);
+  } else {
+    ExtendableBuiltin.__proto__ = cls;
+  }
+
+  return ExtendableBuiltin;
+}
+
+var ExtendableError = function (_extendableBuiltin2) {
+  _inherits(ExtendableError, _extendableBuiltin2);
+
+  function ExtendableError() {
+    var message = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+
+    _classCallCheck(this, ExtendableError);
+
+    // extending Error is weird and does not propagate `message`
+    var _this = _possibleConstructorReturn(this, (ExtendableError.__proto__ || Object.getPrototypeOf(ExtendableError)).call(this, message));
+
+    Object.defineProperty(_this, 'message', {
+      configurable: true,
+      enumerable: false,
+      value: message,
+      writable: true
+    });
+
+    Object.defineProperty(_this, 'name', {
+      configurable: true,
+      enumerable: false,
+      value: _this.constructor.name,
+      writable: true
+    });
+
+    if (Error.hasOwnProperty('captureStackTrace')) {
+      Error.captureStackTrace(_this, _this.constructor);
+      return _possibleConstructorReturn(_this);
+    }
+
+    Object.defineProperty(_this, 'stack', {
+      configurable: true,
+      enumerable: false,
+      value: new Error(message).stack,
+      writable: true
+    });
+    return _this;
+  }
+
+  return ExtendableError;
+}(_extendableBuiltin(Error));
+
+exports.default = ExtendableError;
+module.exports = exports['default'];
+});
+
+var ExtendableError = unwrapExports(index$13);
+
+function _classCallCheck$7(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn$3(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits$3(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SubmissionError$1 = function (_ExtendableError) {
+  _inherits$3(SubmissionError, _ExtendableError);
+
+  function SubmissionError(errors) {
+    _classCallCheck$7(this, SubmissionError);
+
+    var _this = _possibleConstructorReturn$3(this, (SubmissionError.__proto__ || Object.getPrototypeOf(SubmissionError)).call(this, 'Submit Validation Failed'));
+
+    _this.errors = errors;
+    return _this;
+  }
+
+  return SubmissionError;
+}(ExtendableError);
+
+var _typeof$4 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+function _toConsumableArray$1(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+var handleSubmit = function handleSubmit(submit, props, valid, asyncValidate, fields) {
+  var dispatch = props.dispatch,
+      onSubmitFail = props.onSubmitFail,
+      onSubmitSuccess = props.onSubmitSuccess,
+      startSubmit = props.startSubmit,
+      stopSubmit = props.stopSubmit,
+      setSubmitFailed = props.setSubmitFailed,
+      setSubmitSucceeded = props.setSubmitSucceeded,
+      syncErrors = props.syncErrors,
+      touch = props.touch,
+      values = props.values,
+      persistentSubmitErrors = props.persistentSubmitErrors;
+
+
+  touch.apply(undefined, _toConsumableArray$1(fields)); // mark all fields as touched
+
+  if (valid || persistentSubmitErrors) {
+    var _ret = function () {
+      var doSubmit = function doSubmit() {
+        var result = void 0;
+        try {
+          result = submit(values, dispatch, props);
+        } catch (submitError) {
+          var error = submitError instanceof SubmissionError$1 ? submitError.errors : undefined;
+          stopSubmit(error);
+          setSubmitFailed.apply(undefined, _toConsumableArray$1(fields));
+          if (onSubmitFail) {
+            onSubmitFail(error, dispatch, submitError, props);
+          }
+          if (error || onSubmitFail) {
+            // if you've provided an onSubmitFail callback, don't re-throw the error
+            return error;
+          } else {
+            throw submitError;
+          }
+        }
+        if (index$12(result)) {
+          startSubmit();
+          return result.then(function (submitResult) {
+            stopSubmit();
+            setSubmitSucceeded();
+            if (onSubmitSuccess) {
+              onSubmitSuccess(submitResult, dispatch, props);
+            }
+            return submitResult;
+          }, function (submitError) {
+            var error = submitError instanceof SubmissionError$1 ? submitError.errors : undefined;
+            stopSubmit(error);
+            setSubmitFailed.apply(undefined, _toConsumableArray$1(fields));
+            if (onSubmitFail) {
+              onSubmitFail(error, dispatch, submitError, props);
+            }
+            if (error || onSubmitFail) {
+              // if you've provided an onSubmitFail callback, don't re-throw the error
+              return error;
+            } else {
+              throw submitError;
+            }
+          });
+        } else {
+          setSubmitSucceeded();
+          if (onSubmitSuccess) {
+            onSubmitSuccess(result, dispatch, props);
+          }
+        }
+        return result;
+      };
+
+      var asyncValidateResult = asyncValidate && asyncValidate();
+      if (asyncValidateResult) {
+        return {
+          v: asyncValidateResult.then(function (asyncErrors) {
+            if (asyncErrors) {
+              throw asyncErrors;
+            }
+            return doSubmit();
+          }).catch(function (asyncErrors) {
+            setSubmitFailed.apply(undefined, _toConsumableArray$1(fields));
+            if (onSubmitFail) {
+              onSubmitFail(asyncErrors, dispatch, null, props);
+            }
+            return Promise.reject(asyncErrors);
+          })
+        };
+      } else {
+        return {
+          v: doSubmit()
+        };
+      }
+    }();
+
+    if ((typeof _ret === 'undefined' ? 'undefined' : _typeof$4(_ret)) === "object") return _ret.v;
+  } else {
+    setSubmitFailed.apply(undefined, _toConsumableArray$1(fields));
+    if (onSubmitFail) {
+      onSubmitFail(syncErrors, dispatch, null, props);
+    }
+    return syncErrors;
+  }
+};
+
+var isEvent = function isEvent(candidate) {
+  return !!(candidate && candidate.stopPropagation && candidate.preventDefault);
+};
+
+var silenceEvent = function silenceEvent(event) {
+  var is = isEvent(event);
+  if (is) {
+    event.preventDefault();
+  }
+  return is;
+};
+
+var silenceEvents = function silenceEvents(fn) {
+  return function (event) {
+    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+      args[_key - 1] = arguments[_key];
+    }
+
+    return silenceEvent(event) ? fn.apply(undefined, args) : fn.apply(undefined, [event].concat(args));
+  };
+};
+
+var asyncValidation = function asyncValidation(fn, start, stop, field) {
+  start(field);
+  var promise = fn();
+  if (!index$12(promise)) {
+    throw new Error('asyncValidate function passed to reduxForm must return a promise');
+  }
+  var handleErrors = function handleErrors(rejected) {
+    return function (errors) {
+      if (errors && Object.keys(errors).length) {
+        stop(errors);
+        return errors;
+      } else if (rejected) {
+        stop();
+        throw new Error('Asynchronous validation promise was rejected without errors.');
+      }
+      stop();
+      return Promise.resolve();
+    };
+  };
+  return promise.then(handleErrors(false), handleErrors(true));
+};
+
+var defaultShouldAsyncValidate = function defaultShouldAsyncValidate(_ref) {
+  var initialized = _ref.initialized,
+      trigger = _ref.trigger,
+      pristine = _ref.pristine,
+      syncValidationPasses = _ref.syncValidationPasses;
+
+  if (!syncValidationPasses) {
+    return false;
+  }
+  switch (trigger) {
+    case 'blur':
+      // blurring
+      return true;
+    case 'submit':
+      // submitting, so only async validate if form is dirty or was never initialized
+      // conversely, DON'T async validate if the form is pristine just as it was initialized
+      return !pristine || !initialized;
+    default:
+      return false;
+  }
+};
+
+var defaultShouldValidate = function defaultShouldValidate(_ref) {
+  var values = _ref.values,
+      nextProps = _ref.nextProps,
+      initialRender = _ref.initialRender,
+      lastFieldValidatorKeys = _ref.lastFieldValidatorKeys,
+      fieldValidatorKeys = _ref.fieldValidatorKeys,
+      structure = _ref.structure;
+
+  if (initialRender) {
+    return true;
+  }
+  return !structure.deepEqual(values, nextProps.values) || !structure.deepEqual(lastFieldValidatorKeys, fieldValidatorKeys);
+};
+
+function _toConsumableArray$2(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+var splice$1 = function splice(array, index, removeNum, value) {
+  array = array || [];
+
+  if (index < array.length) {
+    if (value === undefined && !removeNum) {
+      // inserting undefined
+      var _copy2 = [].concat(_toConsumableArray$2(array));
+      _copy2.splice(index, 0, null);
+      _copy2[index] = undefined;
+      return _copy2;
+    }
+    if (value != null) {
+      var _copy3 = [].concat(_toConsumableArray$2(array));
+      _copy3.splice(index, removeNum, value); // removing and adding
+      return _copy3;
+    }
+    var _copy = [].concat(_toConsumableArray$2(array));
+    _copy.splice(index, removeNum); // removing
+    return _copy;
+  }
+  if (removeNum) {
+    // trying to remove non-existant item: return original array
+    return array;
+  }
+  // trying to add outside of range: just set value
+  var copy = [].concat(_toConsumableArray$2(array));
+  copy[index] = value;
+  return copy;
+};
+
+var getIn = function getIn(state, field) {
+  if (!state) {
+    return state;
+  }
+
+  var path = toPath(field);
+  var length = path.length;
+  if (!length) {
+    return undefined;
+  }
+
+  var result = state;
+  for (var i = 0; i < length && !!result; ++i) {
+    result = result[path[i]];
+  }
+
+  return result;
+};
+
+var _extends$18 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _defineProperty$2(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var setInWithPath = function setInWithPath(state, value, path, pathIndex) {
+  if (pathIndex >= path.length) {
+    return value;
+  }
+
+  var first = path[pathIndex];
+  var next = setInWithPath(state && state[first], value, path, pathIndex + 1);
+
+  if (!state) {
+    var initialized = isNaN(first) ? {} : [];
+    initialized[first] = next;
+    return initialized;
+  }
+
+  if (Array.isArray(state)) {
+    var copy = [].concat(state);
+    copy[first] = next;
+    return copy;
+  }
+
+  return _extends$18({}, state, _defineProperty$2({}, first, next));
+};
+
+var setIn = function setIn(state, field, value) {
+  return setInWithPath(state, value, toPath(field), 0);
+};
+
+function isEqualWith(value, other, customizer) {
+  customizer = typeof customizer == 'function' ? customizer : undefined;
+  var result = customizer ? customizer(value, other) : undefined;
+  return result === undefined ? baseIsEqual(value, other, undefined, customizer) : !!result;
+}
+
+var customizer = function customizer(obj, other) {
+  if (obj === other) return true;
+  if ((obj == null || obj === '' || obj === false) && (other == null || other === '' || other === false)) return true;
+
+  if (obj && other && obj._error !== other._error) return false;
+  if (obj && other && obj._warning !== other._warning) return false;
+};
+
+var deepEqual$1 = function deepEqual(a, b) {
+  return isEqualWith(a, b, customizer);
+};
+
+var _extends$19 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _defineProperty$3(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _toConsumableArray$3(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+var deleteInWithPath = function deleteInWithPath(state, first) {
+  for (var _len = arguments.length, rest = Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+    rest[_key - 2] = arguments[_key];
+  }
+
+  if (state === undefined || first === undefined) {
+    return state;
+  }
+  if (rest.length) {
+    if (Array.isArray(state)) {
+      if (first < state.length) {
+        var result = deleteInWithPath.apply(undefined, [state && state[first]].concat(rest));
+        if (result !== state[first]) {
+          var copy = [].concat(_toConsumableArray$3(state));
+          copy[first] = result;
+          return copy;
+        }
+      }
+      return state;
+    }
+    if (first in state) {
+      var _result = deleteInWithPath.apply(undefined, [state && state[first]].concat(rest));
+      return state[first] === _result ? state : _extends$19({}, state, _defineProperty$3({}, first, _result));
+    }
+    return state;
+  }
+  if (Array.isArray(state)) {
+    if (isNaN(first)) {
+      throw new Error('Cannot delete non-numerical index from an array');
+    }
+    if (first < state.length) {
+      var _copy = [].concat(_toConsumableArray$3(state));
+      _copy.splice(first, 1);
+      return _copy;
+    }
+    return state;
+  }
+  if (first in state) {
+    var _copy2 = _extends$19({}, state);
+    delete _copy2[first];
+    return _copy2;
+  }
+  return state;
+};
+
+var deleteIn = function deleteIn(state, field) {
+  return deleteInWithPath.apply(undefined, [state].concat(_toConsumableArray$3(toPath(field))));
+};
+
+var keys$2 = function keys(value) {
+  return value ? Object.keys(value) : [];
+};
+
+var structure = {
+  empty: {},
+  emptyList: [],
+  getIn: getIn,
+  setIn: setIn,
+  deepEqual: deepEqual$1,
+  deleteIn: deleteIn,
+  fromJS: function fromJS(value) {
+    return value;
+  },
+  keys: keys$2,
+  size: function size(array) {
+    return array ? array.length : 0;
+  },
+  splice: splice$1,
+  toJS: function toJS(value) {
+    return value;
+  }
+};
+
+var toArray$2 = function toArray(value) {
+  return Array.isArray(value) ? value : [value];
+};
+
+var getError = function getError(value, values, props, validators) {
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
+
+  try {
+    for (var _iterator = toArray$2(validators)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var validator = _step.value;
+
+      var error = validator(value, values, props);
+      if (error) {
+        return error;
+      }
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator.return) {
+        _iterator.return();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
+  }
+};
+
+var generateValidator = function generateValidator(validators, _ref) {
+  var getIn = _ref.getIn;
+  return function (values, props) {
+    var errors = {};
+    Object.keys(validators).forEach(function (name) {
+      var value = getIn(values, name);
+      var error = getError(value, values, props, validators[name]);
+      if (error) {
+        errors = structure.setIn(errors, name, error);
+      }
+    });
+    return errors;
+  };
+};
+
+var getErrorKeys = function getErrorKeys(name, type) {
+  switch (type) {
+    case 'Field':
+      return [name, name + '._error'];
+    case 'FieldArray':
+      return [name + '._error'];
+  }
+};
+
+var createHasError = function createHasError(_ref) {
+  var getIn$$1 = _ref.getIn;
+
+  var hasError = function hasError(field, syncErrors, asyncErrors, submitErrors) {
+    if (!syncErrors && !asyncErrors && !submitErrors) {
+      return false;
+    }
+
+    var name = getIn$$1(field, 'name');
+    var type = getIn$$1(field, 'type');
+    return getErrorKeys(name, type).some(function (key) {
+      return getIn(syncErrors, key) || getIn$$1(asyncErrors, key) || getIn$$1(submitErrors, key);
+    });
+  };
+  return hasError;
+};
+
+var createIsValid = function createIsValid(structure) {
+  var getIn = structure.getIn,
+      keys = structure.keys;
+
+  var hasError = createHasError(structure);
+  return function (form) {
+    var getFormState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function (state) {
+      return getIn(state, 'form');
+    };
+    var ignoreSubmitErrors = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+    return function (state) {
+      var formState = getFormState(state);
+      var syncError = getIn(formState, form + '.syncError');
+      if (syncError) {
+        return false;
+      }
+      if (!ignoreSubmitErrors) {
+        var error = getIn(formState, form + '.error');
+        if (error) {
+          return false;
+        }
+      }
+      var syncErrors = getIn(formState, form + '.syncErrors');
+      var asyncErrors = getIn(formState, form + '.asyncErrors');
+      var submitErrors = ignoreSubmitErrors ? undefined : getIn(formState, form + '.submitErrors');
+      if (!syncErrors && !asyncErrors && !submitErrors) {
+        return true;
+      }
+
+      var registeredFields = getIn(formState, form + '.registeredFields');
+      if (!registeredFields) {
+        return true;
+      }
+
+      return !keys(registeredFields).filter(function (name) {
+        return getIn(registeredFields, '[\'' + name + '\'].count') > 0;
+      }).some(function (name) {
+        return hasError(getIn(registeredFields, '[\'' + name + '\']'), syncErrors, asyncErrors, submitErrors);
+      });
+    };
+  };
+};
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _extends$16 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _typeof$3 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+function _defineProperty$1(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck$6(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn$2(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits$2(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function _objectWithoutProperties$7(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var isClassComponent = function isClassComponent(Component$$1) {
+  return Boolean(Component$$1 && Component$$1.prototype && _typeof$3(Component$$1.prototype.isReactComponent) === 'object');
+};
+
+// extract field-specific actions
+
+var arrayInsert$1 = arrayInsert$2;
+var arrayMove$1 = arrayMove$2;
+var arrayPop$1 = arrayPop$2;
+var arrayPush$1 = arrayPush$4;
+var arrayRemove$1 = arrayRemove$2;
+var arrayRemoveAll$1 = arrayRemoveAll$2;
+var arrayShift$1 = arrayShift$2;
+var arraySplice$1 = arraySplice$2;
+var arraySwap$1 = arraySwap$2;
+var arrayUnshift$1 = arrayUnshift$2;
+var blur$1 = blur$2;
+var change$1 = change$2;
+var focus$1 = focus$2;
+var formActions = _objectWithoutProperties$7(importedActions, ['arrayInsert', 'arrayMove', 'arrayPop', 'arrayPush', 'arrayRemove', 'arrayRemoveAll', 'arrayShift', 'arraySplice', 'arraySwap', 'arrayUnshift', 'blur', 'change', 'focus']);
+
+var arrayActions = {
+  arrayInsert: arrayInsert$1,
+  arrayMove: arrayMove$1,
+  arrayPop: arrayPop$1,
+  arrayPush: arrayPush$1,
+  arrayRemove: arrayRemove$1,
+  arrayRemoveAll: arrayRemoveAll$1,
+  arrayShift: arrayShift$1,
+  arraySplice: arraySplice$1,
+  arraySwap: arraySwap$1,
+  arrayUnshift: arrayUnshift$1
+};
+
+var propsToNotUpdateFor = [].concat(_toConsumableArray(Object.keys(importedActions)), ['array', 'asyncErrors', 'initialized', 'initialValues', 'syncErrors', 'syncWarnings', 'values', 'registeredFields']);
+
+var checkSubmit = function checkSubmit(submit$$1) {
+  if (!submit$$1 || typeof submit$$1 !== 'function') {
+    throw new Error('You must either pass handleSubmit() an onSubmit function or pass onSubmit as a prop');
+  }
+  return submit$$1;
+};
+
+/**
+ * The decorator that is the main API to redux-form
+ */
+var createReduxForm = function createReduxForm(structure$$1) {
+  var deepEqual = structure$$1.deepEqual,
+      empty = structure$$1.empty,
+      getIn = structure$$1.getIn,
+      setIn = structure$$1.setIn,
+      keys = structure$$1.keys,
+      fromJS = structure$$1.fromJS;
+
+  var isValid = createIsValid(structure$$1);
+  return function (initialConfig) {
+    var config = _extends$16({
+      touchOnBlur: true,
+      touchOnChange: false,
+      persistentSubmitErrors: false,
+      destroyOnUnmount: true,
+      shouldAsyncValidate: defaultShouldAsyncValidate,
+      shouldValidate: defaultShouldValidate,
+      enableReinitialize: false,
+      keepDirtyOnReinitialize: false,
+      getFormState: function getFormState(state) {
+        return getIn(state, 'form');
+      },
+      pure: true,
+      forceUnregisterOnUnmount: false
+    }, initialConfig);
+
+    return function (WrappedComponent) {
+      var Form = function (_Component) {
+        _inherits$2(Form, _Component);
+
+        function Form(props) {
+          _classCallCheck$6(this, Form);
+
+          var _this = _possibleConstructorReturn$2(this, (Form.__proto__ || Object.getPrototypeOf(Form)).call(this, props));
+
+          _this.submit = _this.submit.bind(_this);
+          _this.reset = _this.reset.bind(_this);
+          _this.asyncValidate = _this.asyncValidate.bind(_this);
+          _this.getValues = _this.getValues.bind(_this);
+          _this.register = _this.register.bind(_this);
+          _this.unregister = _this.unregister.bind(_this);
+          _this.submitCompleted = _this.submitCompleted.bind(_this);
+          _this.submitFailed = _this.submitFailed.bind(_this);
+          _this.fieldValidators = {};
+          _this.lastFieldValidatorKeys = [];
+          _this.fieldWarners = {};
+          _this.lastFieldWarnerKeys = [];
+          return _this;
+        }
+
+        _createClass(Form, [{
+          key: 'getChildContext',
+          value: function getChildContext() {
+            var _this2 = this;
+
+            return {
+              _reduxForm: _extends$16({}, this.props, {
+                getFormState: function getFormState(state) {
+                  return getIn(_this2.props.getFormState(state), _this2.props.form);
+                },
+                asyncValidate: this.asyncValidate,
+                getValues: this.getValues,
+                sectionPrefix: undefined,
+                register: this.register,
+                unregister: this.unregister,
+                registerInnerOnSubmit: function registerInnerOnSubmit(innerOnSubmit) {
+                  return _this2.innerOnSubmit = innerOnSubmit;
+                }
+              })
+            };
+          }
+        }, {
+          key: 'initIfNeeded',
+          value: function initIfNeeded(nextProps) {
+            var enableReinitialize = this.props.enableReinitialize;
+
+            if (nextProps) {
+              if ((enableReinitialize || !nextProps.initialized) && !deepEqual(this.props.initialValues, nextProps.initialValues)) {
+                var keepDirty = nextProps.initialized && this.props.keepDirtyOnReinitialize;
+                this.props.initialize(nextProps.initialValues, keepDirty);
+              }
+            } else if (this.props.initialValues && (!this.props.initialized || enableReinitialize)) {
+              this.props.initialize(this.props.initialValues, this.props.keepDirtyOnReinitialize);
+            }
+          }
+        }, {
+          key: 'updateSyncErrorsIfNeeded',
+          value: function updateSyncErrorsIfNeeded(nextSyncErrors, nextError) {
+            var _props = this.props,
+                error = _props.error,
+                syncErrors = _props.syncErrors,
+                updateSyncErrors$$1 = _props.updateSyncErrors;
+
+            var noErrors = (!syncErrors || !Object.keys(syncErrors).length) && !error;
+            var nextNoErrors = (!nextSyncErrors || !Object.keys(nextSyncErrors).length) && !nextError;
+            if (!(noErrors && nextNoErrors) && (!structure.deepEqual(syncErrors, nextSyncErrors) || !structure.deepEqual(error, nextError))) {
+              updateSyncErrors$$1(nextSyncErrors, nextError);
+            }
+          }
+        }, {
+          key: 'submitIfNeeded',
+          value: function submitIfNeeded(nextProps) {
+            var _props2 = this.props,
+                clearSubmit$$1 = _props2.clearSubmit,
+                triggerSubmit = _props2.triggerSubmit;
+
+            if (!triggerSubmit && nextProps.triggerSubmit) {
+              clearSubmit$$1();
+              this.submit();
+            }
+          }
+        }, {
+          key: 'validateIfNeeded',
+          value: function validateIfNeeded(nextProps) {
+            var _props3 = this.props,
+                shouldValidate = _props3.shouldValidate,
+                validate = _props3.validate,
+                values = _props3.values;
+
+            var fieldLevelValidate = this.generateValidator();
+            if (validate || fieldLevelValidate) {
+              var initialRender = nextProps === undefined;
+              var fieldValidatorKeys = Object.keys(this.fieldValidators);
+              var shouldValidateResult = shouldValidate({
+                values: values,
+                nextProps: nextProps,
+                props: this.props,
+                initialRender: initialRender,
+                lastFieldValidatorKeys: this.lastFieldValidatorKeys,
+                fieldValidatorKeys: fieldValidatorKeys,
+                structure: structure$$1
+              });
+
+              if (shouldValidateResult) {
+                var propsToValidate = initialRender ? this.props : nextProps;
+
+                var _merge2 = merge(validate ? validate(propsToValidate.values, propsToValidate) || {} : {}, fieldLevelValidate ? fieldLevelValidate(propsToValidate.values, propsToValidate) || {} : {}),
+                    _error = _merge2._error,
+                    nextSyncErrors = _objectWithoutProperties$7(_merge2, ['_error']);
+
+                this.lastFieldValidatorKeys = fieldValidatorKeys;
+                this.updateSyncErrorsIfNeeded(nextSyncErrors, _error);
+              }
+            }
+          }
+        }, {
+          key: 'updateSyncWarningsIfNeeded',
+          value: function updateSyncWarningsIfNeeded(nextSyncWarnings, nextWarning) {
+            var _props4 = this.props,
+                warning = _props4.warning,
+                syncWarnings = _props4.syncWarnings,
+                updateSyncWarnings$$1 = _props4.updateSyncWarnings;
+
+            var noWarnings = (!syncWarnings || !Object.keys(syncWarnings).length) && !warning;
+            var nextNoWarnings = (!nextSyncWarnings || !Object.keys(nextSyncWarnings).length) && !nextWarning;
+            if (!(noWarnings && nextNoWarnings) && (!structure.deepEqual(syncWarnings, nextSyncWarnings) || !structure.deepEqual(warning, nextWarning))) {
+              updateSyncWarnings$$1(nextSyncWarnings, nextWarning);
+            }
+          }
+        }, {
+          key: 'warnIfNeeded',
+          value: function warnIfNeeded(nextProps) {
+            var _props5 = this.props,
+                shouldValidate = _props5.shouldValidate,
+                warn = _props5.warn,
+                values = _props5.values;
+
+            var fieldLevelWarn = this.generateWarner();
+            if (warn || fieldLevelWarn) {
+              var initialRender = nextProps === undefined;
+              var fieldWarnerKeys = Object.keys(this.fieldWarners);
+              var shouldWarnResult = shouldValidate({
+                values: values,
+                nextProps: nextProps,
+                props: this.props,
+                initialRender: initialRender,
+                lastFieldValidatorKeys: this.lastFieldWarnerKeys,
+                fieldValidatorKeys: fieldWarnerKeys,
+                structure: structure$$1
+              });
+
+              if (shouldWarnResult) {
+                var propsToWarn = initialRender ? this.props : nextProps;
+
+                var _merge3 = merge(warn ? warn(propsToWarn.values, propsToWarn) : {}, fieldLevelWarn ? fieldLevelWarn(propsToWarn.values, propsToWarn) : {}),
+                    _warning = _merge3._warning,
+                    nextSyncWarnings = _objectWithoutProperties$7(_merge3, ['_warning']);
+
+                this.lastFieldWarnerKeys = fieldWarnerKeys;
+                this.updateSyncWarningsIfNeeded(nextSyncWarnings, _warning);
+              }
+            }
+          }
+        }, {
+          key: 'componentWillMount',
+          value: function componentWillMount() {
+            this.initIfNeeded();
+            this.validateIfNeeded();
+            this.warnIfNeeded();
+          }
+        }, {
+          key: 'componentWillReceiveProps',
+          value: function componentWillReceiveProps(nextProps) {
+            this.initIfNeeded(nextProps);
+            this.validateIfNeeded(nextProps);
+            this.warnIfNeeded(nextProps);
+            this.submitIfNeeded(nextProps);
+          }
+        }, {
+          key: 'shouldComponentUpdate',
+          value: function shouldComponentUpdate(nextProps) {
+            var _this3 = this;
+
+            if (!config.pure) return true;
+            return Object.keys(nextProps).some(function (prop) {
+              // useful to debug rerenders
+              // if (!plain.deepEqual(this.props[ prop ], nextProps[ prop ])) {
+              //   console.info(prop, 'changed', this.props[ prop ], '==>', nextProps[ prop ])
+              // }
+              return !~propsToNotUpdateFor.indexOf(prop) && !deepEqual(_this3.props[prop], nextProps[prop]);
+            });
+          }
+        }, {
+          key: 'componentWillUnmount',
+          value: function componentWillUnmount() {
+            var _props6 = this.props,
+                destroyOnUnmount = _props6.destroyOnUnmount,
+                destroy$$1 = _props6.destroy;
+
+            if (destroyOnUnmount) {
+              this.destroyed = true;
+              destroy$$1();
+            }
+          }
+        }, {
+          key: 'getValues',
+          value: function getValues() {
+            return this.props.values;
+          }
+        }, {
+          key: 'isValid',
+          value: function isValid() {
+            return this.props.valid;
+          }
+        }, {
+          key: 'isPristine',
+          value: function isPristine() {
+            return this.props.pristine;
+          }
+        }, {
+          key: 'register',
+          value: function register(name, type, getValidator, getWarner) {
+            this.props.registerField(name, type);
+            if (getValidator) {
+              this.fieldValidators[name] = getValidator;
+            }
+            if (getWarner) {
+              this.fieldWarners[name] = getWarner;
+            }
+          }
+        }, {
+          key: 'unregister',
+          value: function unregister(name) {
+            if (!this.destroyed) {
+              if (this.props.destroyOnUnmount || this.props.forceUnregisterOnUnmount) {
+                this.props.unregisterField(name);
+                delete this.fieldValidators[name];
+                delete this.fieldWarners[name];
+              } else {
+                this.props.unregisterField(name, false);
+              }
+            }
+          }
+        }, {
+          key: 'getFieldList',
+          value: function getFieldList(options) {
+            var registeredFields = this.props.registeredFields;
+            var list = [];
+            if (!registeredFields) {
+              return list;
+            }
+            var keySeq = keys(registeredFields);
+            if (options && options.excludeFieldArray) {
+              keySeq = keySeq.filter(function (name) {
+                return getIn(registeredFields, '[\'' + name + '\'].type') !== 'FieldArray';
+              });
+            }
+            return fromJS(keySeq.reduce(function (acc, key) {
+              acc.push(key);
+              return acc;
+            }, list));
+          }
+        }, {
+          key: 'generateValidator',
+          value: function generateValidator$$1() {
+            var _this4 = this;
+
+            var validators = {};
+            Object.keys(this.fieldValidators).forEach(function (name) {
+              var validator = _this4.fieldValidators[name]();
+              if (validator) {
+                validators[name] = validator;
+              }
+            });
+            return Object.keys(validators).length ? generateValidator(validators, structure$$1) : undefined;
+          }
+        }, {
+          key: 'generateWarner',
+          value: function generateWarner() {
+            var _this5 = this;
+
+            var warners = {};
+            Object.keys(this.fieldWarners).forEach(function (name) {
+              var warner = _this5.fieldWarners[name]();
+              if (warner) {
+                warners[name] = warner;
+              }
+            });
+            return Object.keys(warners).length ? generateValidator(warners, structure$$1) : undefined;
+          }
+        }, {
+          key: 'asyncValidate',
+          value: function asyncValidate(name, value) {
+            var _this6 = this;
+
+            var _props7 = this.props,
+                asyncBlurFields = _props7.asyncBlurFields,
+                asyncErrors = _props7.asyncErrors,
+                asyncValidate = _props7.asyncValidate,
+                dispatch = _props7.dispatch,
+                initialized = _props7.initialized,
+                pristine = _props7.pristine,
+                shouldAsyncValidate = _props7.shouldAsyncValidate,
+                startAsyncValidation$$1 = _props7.startAsyncValidation,
+                stopAsyncValidation$$1 = _props7.stopAsyncValidation,
+                syncErrors = _props7.syncErrors,
+                values = _props7.values;
+
+            var submitting = !name;
+            if (asyncValidate) {
+              var _ret = function () {
+                var valuesToValidate = submitting ? values : setIn(values, name, value);
+                var syncValidationPasses = submitting || !getIn(syncErrors, name);
+                var isBlurredField = !submitting && (!asyncBlurFields || ~asyncBlurFields.indexOf(name.replace(/\[[0-9]+\]/g, '[]')));
+                if ((isBlurredField || submitting) && shouldAsyncValidate({
+                  asyncErrors: asyncErrors,
+                  initialized: initialized,
+                  trigger: submitting ? 'submit' : 'blur',
+                  blurredField: name,
+                  pristine: pristine,
+                  syncValidationPasses: syncValidationPasses
+                })) {
+                  return {
+                    v: asyncValidation(function () {
+                      return asyncValidate(valuesToValidate, dispatch, _this6.props, name);
+                    }, startAsyncValidation$$1, stopAsyncValidation$$1, name)
+                  };
+                }
+              }();
+
+              if ((typeof _ret === 'undefined' ? 'undefined' : _typeof$3(_ret)) === "object") return _ret.v;
+            }
+          }
+        }, {
+          key: 'submitCompleted',
+          value: function submitCompleted(result) {
+            delete this.submitPromise;
+            return result;
+          }
+        }, {
+          key: 'submitFailed',
+          value: function submitFailed(error) {
+            delete this.submitPromise;
+            throw error;
+          }
+        }, {
+          key: 'listenToSubmit',
+          value: function listenToSubmit(promise) {
+            if (!index$12(promise)) {
+              return promise;
+            }
+            this.submitPromise = promise;
+            return promise.then(this.submitCompleted, this.submitFailed);
+          }
+        }, {
+          key: 'submit',
+          value: function submit$$1(submitOrEvent) {
+            var _this7 = this;
+
+            var onSubmit = this.props.onSubmit;
+
+
+            if (!submitOrEvent || silenceEvent(submitOrEvent)) {
+              // submitOrEvent is an event: fire submit if not already submitting
+              if (!this.submitPromise) {
+                if (this.innerOnSubmit) {
+                  // will call "submitOrEvent is the submit function" block below
+                  return this.innerOnSubmit();
+                } else {
+                  return this.listenToSubmit(handleSubmit(checkSubmit(onSubmit), this.props, this.props.validExceptSubmit, this.asyncValidate, this.getFieldList({ excludeFieldArray: true })));
+                }
+              }
+            } else {
+              // submitOrEvent is the submit function: return deferred submit thunk
+              return silenceEvents(function () {
+                return !_this7.submitPromise && _this7.listenToSubmit(handleSubmit(checkSubmit(submitOrEvent), _this7.props, _this7.props.validExceptSubmit, _this7.asyncValidate, _this7.getFieldList({ excludeFieldArray: true })));
+              });
+            }
+          }
+        }, {
+          key: 'reset',
+          value: function reset$$1() {
+            this.props.reset();
+          }
+        }, {
+          key: 'render',
+          value: function render() {
+            // remove some redux-form config-only props
+            /* eslint-disable no-unused-vars */
+            var _props8 = this.props,
+                anyTouched = _props8.anyTouched,
+                arrayInsert$$1 = _props8.arrayInsert,
+                arrayMove$$1 = _props8.arrayMove,
+                arrayPop$$1 = _props8.arrayPop,
+                arrayPush$$1 = _props8.arrayPush,
+                arrayRemove$$1 = _props8.arrayRemove,
+                arrayRemoveAll$$1 = _props8.arrayRemoveAll,
+                arrayShift$$1 = _props8.arrayShift,
+                arraySplice$$1 = _props8.arraySplice,
+                arraySwap$$1 = _props8.arraySwap,
+                arrayUnshift$$1 = _props8.arrayUnshift,
+                asyncErrors = _props8.asyncErrors,
+                asyncValidate = _props8.asyncValidate,
+                asyncValidating = _props8.asyncValidating,
+                blur$$1 = _props8.blur,
+                change$$1 = _props8.change,
+                destroy$$1 = _props8.destroy,
+                destroyOnUnmount = _props8.destroyOnUnmount,
+                forceUnregisterOnUnmount = _props8.forceUnregisterOnUnmount,
+                dirty = _props8.dirty,
+                dispatch = _props8.dispatch,
+                enableReinitialize = _props8.enableReinitialize,
+                error = _props8.error,
+                focus$$1 = _props8.focus,
+                form = _props8.form,
+                getFormState = _props8.getFormState,
+                initialize$$1 = _props8.initialize,
+                initialized = _props8.initialized,
+                initialValues = _props8.initialValues,
+                invalid = _props8.invalid,
+                keepDirtyOnReinitialize = _props8.keepDirtyOnReinitialize,
+                pristine = _props8.pristine,
+                propNamespace = _props8.propNamespace,
+                registeredFields = _props8.registeredFields,
+                registerField$$1 = _props8.registerField,
+                reset$$1 = _props8.reset,
+                setSubmitFailed$$1 = _props8.setSubmitFailed,
+                setSubmitSucceeded$$1 = _props8.setSubmitSucceeded,
+                shouldAsyncValidate = _props8.shouldAsyncValidate,
+                shouldValidate = _props8.shouldValidate,
+                startAsyncValidation$$1 = _props8.startAsyncValidation,
+                startSubmit$$1 = _props8.startSubmit,
+                stopAsyncValidation$$1 = _props8.stopAsyncValidation,
+                stopSubmit$$1 = _props8.stopSubmit,
+                submitting = _props8.submitting,
+                submitFailed = _props8.submitFailed,
+                submitSucceeded = _props8.submitSucceeded,
+                touch$$1 = _props8.touch,
+                touchOnBlur = _props8.touchOnBlur,
+                touchOnChange = _props8.touchOnChange,
+                persistentSubmitErrors = _props8.persistentSubmitErrors,
+                syncErrors = _props8.syncErrors,
+                syncWarnings = _props8.syncWarnings,
+                unregisterField$$1 = _props8.unregisterField,
+                untouch$$1 = _props8.untouch,
+                updateSyncErrors$$1 = _props8.updateSyncErrors,
+                updateSyncWarnings$$1 = _props8.updateSyncWarnings,
+                valid = _props8.valid,
+                validExceptSubmit = _props8.validExceptSubmit,
+                values = _props8.values,
+                warning = _props8.warning,
+                rest = _objectWithoutProperties$7(_props8, ['anyTouched', 'arrayInsert', 'arrayMove', 'arrayPop', 'arrayPush', 'arrayRemove', 'arrayRemoveAll', 'arrayShift', 'arraySplice', 'arraySwap', 'arrayUnshift', 'asyncErrors', 'asyncValidate', 'asyncValidating', 'blur', 'change', 'destroy', 'destroyOnUnmount', 'forceUnregisterOnUnmount', 'dirty', 'dispatch', 'enableReinitialize', 'error', 'focus', 'form', 'getFormState', 'initialize', 'initialized', 'initialValues', 'invalid', 'keepDirtyOnReinitialize', 'pristine', 'propNamespace', 'registeredFields', 'registerField', 'reset', 'setSubmitFailed', 'setSubmitSucceeded', 'shouldAsyncValidate', 'shouldValidate', 'startAsyncValidation', 'startSubmit', 'stopAsyncValidation', 'stopSubmit', 'submitting', 'submitFailed', 'submitSucceeded', 'touch', 'touchOnBlur', 'touchOnChange', 'persistentSubmitErrors', 'syncErrors', 'syncWarnings', 'unregisterField', 'untouch', 'updateSyncErrors', 'updateSyncWarnings', 'valid', 'validExceptSubmit', 'values', 'warning']);
+            /* eslint-enable no-unused-vars */
+
+
+            var reduxFormProps = _extends$16({
+              anyTouched: anyTouched,
+              asyncValidate: this.asyncValidate,
+              asyncValidating: asyncValidating
+            }, bindActionCreators({ blur: blur$$1, change: change$$1 }, dispatch), {
+              destroy: destroy$$1,
+              dirty: dirty,
+              dispatch: dispatch,
+              error: error,
+              form: form,
+              handleSubmit: this.submit,
+              initialize: initialize$$1,
+              initialized: initialized,
+              initialValues: initialValues,
+              invalid: invalid,
+              pristine: pristine,
+              reset: reset$$1,
+              submitting: submitting,
+              submitFailed: submitFailed,
+              submitSucceeded: submitSucceeded,
+              touch: touch$$1,
+              untouch: untouch$$1,
+              valid: valid,
+              warning: warning
+            });
+            var propsToPass = _extends$16({}, propNamespace ? _defineProperty$1({}, propNamespace, reduxFormProps) : reduxFormProps, rest);
+            if (isClassComponent(WrappedComponent)) {
+              propsToPass.ref = 'wrapped';
+            }
+            return react_2(WrappedComponent, propsToPass);
+          }
+        }]);
+
+        return Form;
+      }(react_3);
+
+      Form.displayName = 'Form(' + getDisplayName$2(WrappedComponent) + ')';
+      Form.WrappedComponent = WrappedComponent;
+      Form.childContextTypes = {
+        _reduxForm: react_1.object.isRequired
+      };
+      Form.propTypes = {
+        destroyOnUnmount: react_1.bool,
+        forceUnregisterOnUnmount: react_1.bool,
+        form: react_1.string.isRequired,
+        initialValues: react_1.object,
+        getFormState: react_1.func,
+        onSubmitFail: react_1.func,
+        onSubmitSuccess: react_1.func,
+        propNameSpace: react_1.string,
+        validate: react_1.func,
+        warn: react_1.func,
+        touchOnBlur: react_1.bool,
+        touchOnChange: react_1.bool,
+        triggerSubmit: react_1.bool,
+        persistentSubmitErrors: react_1.bool,
+        registeredFields: react_1.any
+      };
+
+      var connector = connect(function (state, props) {
+        var form = props.form,
+            getFormState = props.getFormState,
+            initialValues = props.initialValues,
+            enableReinitialize = props.enableReinitialize,
+            keepDirtyOnReinitialize = props.keepDirtyOnReinitialize;
+
+        var formState = getIn(getFormState(state) || empty, form) || empty;
+        var stateInitial = getIn(formState, 'initial');
+        var initialized = !!stateInitial;
+
+        var shouldUpdateInitialValues = enableReinitialize && initialized && !deepEqual(initialValues, stateInitial);
+        var shouldResetValues = shouldUpdateInitialValues && !keepDirtyOnReinitialize;
+
+        var initial = initialValues || stateInitial || empty;
+
+        if (shouldUpdateInitialValues) {
+          initial = stateInitial || empty;
+        }
+
+        var values = getIn(formState, 'values') || initial;
+
+        if (shouldResetValues) {
+          values = initial;
+        }
+
+        var pristine = shouldResetValues || deepEqual(initial, values);
+        var asyncErrors = getIn(formState, 'asyncErrors');
+        var syncErrors = getIn(formState, 'syncErrors') || {};
+        var syncWarnings = getIn(formState, 'syncWarnings') || {};
+        var registeredFields = getIn(formState, 'registeredFields');
+        var valid = isValid(form, getFormState, false)(state);
+        var validExceptSubmit = isValid(form, getFormState, true)(state);
+        var anyTouched = !!getIn(formState, 'anyTouched');
+        var submitting = !!getIn(formState, 'submitting');
+        var submitFailed = !!getIn(formState, 'submitFailed');
+        var submitSucceeded = !!getIn(formState, 'submitSucceeded');
+        var error = getIn(formState, 'error');
+        var warning = getIn(formState, 'warning');
+        var triggerSubmit = getIn(formState, 'triggerSubmit');
+        return {
+          anyTouched: anyTouched,
+          asyncErrors: asyncErrors,
+          asyncValidating: getIn(formState, 'asyncValidating') || false,
+          dirty: !pristine,
+          error: error,
+          initialized: initialized,
+          invalid: !valid,
+          pristine: pristine,
+          registeredFields: registeredFields,
+          submitting: submitting,
+          submitFailed: submitFailed,
+          submitSucceeded: submitSucceeded,
+          syncErrors: syncErrors,
+          syncWarnings: syncWarnings,
+          triggerSubmit: triggerSubmit,
+          values: values,
+          valid: valid,
+          validExceptSubmit: validExceptSubmit,
+          warning: warning
+        };
+      }, function (dispatch, initialProps) {
+        var bindForm = function bindForm(actionCreator) {
+          return actionCreator.bind(null, initialProps.form);
+        };
+
+        // Bind the first parameter on `props.form`
+        var boundFormACs = mapValues(formActions, bindForm);
+        var boundArrayACs = mapValues(arrayActions, bindForm);
+        var boundBlur = function boundBlur(field, value) {
+          return blur$1(initialProps.form, field, value, !!initialProps.touchOnBlur);
+        };
+        var boundChange = function boundChange(field, value) {
+          return change$1(initialProps.form, field, value, !!initialProps.touchOnChange, !!initialProps.persistentSubmitErrors);
+        };
+        var boundFocus = bindForm(focus$1);
+
+        // Wrap action creators with `dispatch`
+        var connectedFormACs = bindActionCreators(boundFormACs, dispatch);
+        var connectedArrayACs = {
+          insert: bindActionCreators(boundArrayACs.arrayInsert, dispatch),
+          move: bindActionCreators(boundArrayACs.arrayMove, dispatch),
+          pop: bindActionCreators(boundArrayACs.arrayPop, dispatch),
+          push: bindActionCreators(boundArrayACs.arrayPush, dispatch),
+          remove: bindActionCreators(boundArrayACs.arrayRemove, dispatch),
+          removeAll: bindActionCreators(boundArrayACs.arrayRemoveAll, dispatch),
+          shift: bindActionCreators(boundArrayACs.arrayShift, dispatch),
+          splice: bindActionCreators(boundArrayACs.arraySplice, dispatch),
+          swap: bindActionCreators(boundArrayACs.arraySwap, dispatch),
+          unshift: bindActionCreators(boundArrayACs.arrayUnshift, dispatch)
+        };
+
+        var computedActions = _extends$16({}, connectedFormACs, boundArrayACs, {
+          blur: boundBlur,
+          change: boundChange,
+          array: connectedArrayACs,
+          focus: boundFocus,
+          dispatch: dispatch
+        });
+
+        return function () {
+          return computedActions;
+        };
+      }, undefined, { withRef: true });
+      var ConnectedForm = index$4(connector(Form), WrappedComponent);
+      ConnectedForm.defaultProps = config;
+
+      // build outer component to expose instance api
+      return function (_Component2) {
+        _inherits$2(ReduxForm, _Component2);
+
+        function ReduxForm() {
+          _classCallCheck$6(this, ReduxForm);
+
+          return _possibleConstructorReturn$2(this, (ReduxForm.__proto__ || Object.getPrototypeOf(ReduxForm)).apply(this, arguments));
+        }
+
+        _createClass(ReduxForm, [{
+          key: 'submit',
+          value: function submit$$1() {
+            return this.refs.wrapped.getWrappedInstance().submit();
+          }
+        }, {
+          key: 'reset',
+          value: function reset$$1() {
+            return this.refs.wrapped.getWrappedInstance().reset();
+          }
+        }, {
+          key: 'render',
+          value: function render() {
+            var _props9 = this.props,
+                initialValues = _props9.initialValues,
+                rest = _objectWithoutProperties$7(_props9, ['initialValues']);
+
+            return react_2(ConnectedForm, _extends$16({}, rest, {
+              ref: 'wrapped',
+              // convert initialValues if need to
+              initialValues: fromJS(initialValues)
+            }));
+          }
+        }, {
+          key: 'valid',
+          get: function get() {
+            return this.refs.wrapped.getWrappedInstance().isValid();
+          }
+        }, {
+          key: 'invalid',
+          get: function get() {
+            return !this.valid;
+          }
+        }, {
+          key: 'pristine',
+          get: function get() {
+            return this.refs.wrapped.getWrappedInstance().isPristine();
+          }
+        }, {
+          key: 'dirty',
+          get: function get() {
+            return !this.pristine;
+          }
+        }, {
+          key: 'values',
+          get: function get() {
+            return this.refs.wrapped.getWrappedInstance().getValues();
+          }
+        }, {
+          key: 'fieldList',
+          get: function get() {
+            // mainly provided for testing
+            return this.refs.wrapped.getWrappedInstance().getFieldList();
+          }
+        }, {
+          key: 'wrappedInstance',
+          get: function get() {
+            // for testine
+            return this.refs.wrapped.getWrappedInstance().refs.wrapped;
+          }
+        }]);
+
+        return ReduxForm;
+      }(react_3);
+    };
+  };
+};
+
+var _extends$22 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _objectWithoutProperties$9(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var processProps = function processProps(type, props, _value) {
+  var value = props.value;
+
+  if (type === 'checkbox') {
+    return _extends$22({}, props, {
+      checked: !!value
+    });
+  }
+  if (type === 'radio') {
+    return _extends$22({}, props, {
+      checked: value === _value,
+      value: _value
+    });
+  }
+  if (type === 'select-multiple') {
+    return _extends$22({}, props, {
+      value: value || []
+    });
+  }
+  if (type === 'file') {
+    return _extends$22({}, props, {
+      value: value || undefined
+    });
+  }
+  return props;
+};
+
+var createFieldProps = function createFieldProps(_ref2, name, _ref) {
+  var getIn = _ref2.getIn,
+      toJS = _ref2.toJS;
+
+  var asyncError = _ref.asyncError,
+      asyncValidating = _ref.asyncValidating,
+      onBlur = _ref.onBlur,
+      onChange = _ref.onChange,
+      onDrop = _ref.onDrop,
+      onDragStart = _ref.onDragStart,
+      dirty = _ref.dirty,
+      dispatch = _ref.dispatch,
+      onFocus = _ref.onFocus,
+      form = _ref.form,
+      format = _ref.format,
+      parse = _ref.parse,
+      pristine = _ref.pristine,
+      props = _ref.props,
+      state = _ref.state,
+      submitError = _ref.submitError,
+      submitFailed = _ref.submitFailed,
+      submitting = _ref.submitting,
+      syncError = _ref.syncError,
+      syncWarning = _ref.syncWarning,
+      validate = _ref.validate,
+      value = _ref.value,
+      _value = _ref._value,
+      warn = _ref.warn,
+      custom = _objectWithoutProperties$9(_ref, ['asyncError', 'asyncValidating', 'onBlur', 'onChange', 'onDrop', 'onDragStart', 'dirty', 'dispatch', 'onFocus', 'form', 'format', 'parse', 'pristine', 'props', 'state', 'submitError', 'submitFailed', 'submitting', 'syncError', 'syncWarning', 'validate', 'value', '_value', 'warn']);
+
+  var error = syncError || asyncError || submitError;
+  var warning = syncWarning;
+
+  var formatFieldValue = function formatFieldValue(value, format) {
+    if (format === null) {
+      return value;
+    }
+    var defaultFormattedValue = value == null ? '' : value;
+    return format ? format(value, name) : defaultFormattedValue;
+  };
+
+  var formattedFieldValue = formatFieldValue(value, format);
+
+  return {
+    input: processProps(custom.type, {
+      name: name,
+      onBlur: onBlur,
+      onChange: onChange,
+      onDragStart: onDragStart,
+      onDrop: onDrop,
+      onFocus: onFocus,
+      value: formattedFieldValue
+    }, _value),
+    meta: _extends$22({}, toJS(state), {
+      active: !!(state && getIn(state, 'active')),
+      asyncValidating: asyncValidating,
+      autofilled: !!(state && getIn(state, 'autofilled')),
+      dirty: dirty,
+      dispatch: dispatch,
+      error: error,
+      form: form,
+      warning: warning,
+      invalid: !!error,
+      pristine: pristine,
+      submitting: !!submitting,
+      submitFailed: !!submitFailed,
+      touched: !!(state && getIn(state, 'touched')),
+      valid: !error,
+      visited: !!(state && getIn(state, 'visited'))
+    }),
+    custom: _extends$22({}, custom, props)
+  };
+};
+
+var getSelectedValues = function getSelectedValues(options) {
+  var result = [];
+  if (options) {
+    for (var index = 0; index < options.length; index++) {
+      var option = options[index];
+      if (option.selected) {
+        result.push(option.value);
+      }
+    }
+  }
+  return result;
+};
+
+var getValue$2 = function getValue(event, isReactNative) {
+  if (isEvent(event)) {
+    if (!isReactNative && event.nativeEvent && event.nativeEvent.text !== undefined) {
+      return event.nativeEvent.text;
+    }
+    if (isReactNative && event.nativeEvent !== undefined) {
+      return event.nativeEvent.text;
+    }
+    var _event$target = event.target,
+        type = _event$target.type,
+        value = _event$target.value,
+        checked = _event$target.checked,
+        files = _event$target.files,
+        dataTransfer = event.dataTransfer;
+
+    if (type === 'checkbox') {
+      return checked;
+    }
+    if (type === 'file') {
+      return files || dataTransfer && dataTransfer.files;
+    }
+    if (type === 'select-multiple') {
+      return getSelectedValues(event.target.options);
+    }
+    return value;
+  }
+  return event;
+};
+
+var isReactNative = typeof window !== 'undefined' && window.navigator && window.navigator.product && window.navigator.product === 'ReactNative';
+
+var onChangeValue = function onChangeValue(event, _ref) {
+  var name = _ref.name,
+      parse = _ref.parse,
+      normalize = _ref.normalize;
+
+  // read value from input
+  var value = getValue$2(event, isReactNative);
+
+  // parse value if we have a parser
+  if (parse) {
+    value = parse(value, name);
+  }
+
+  // normalize value
+  if (normalize) {
+    value = normalize(name, value);
+  }
+
+  return value;
+};
+
+var dataKey = 'text';
+
+var _extends$21 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass$2 = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _objectWithoutProperties$8(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _classCallCheck$9(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn$5(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits$5(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var propsToNotUpdateFor$1 = ['_reduxForm'];
+
+var createConnectedField = function createConnectedField(_ref) {
+  var deepEqual = _ref.deepEqual,
+      getIn = _ref.getIn,
+      toJS = _ref.toJS;
+
+
+  var getSyncError = function getSyncError(syncErrors, name) {
+    var error = structure.getIn(syncErrors, name);
+    // Because the error for this field might not be at a level in the error structure where
+    // it can be set directly, it might need to be unwrapped from the _error property
+    return error && error._error ? error._error : error;
+  };
+
+  var getSyncWarning = function getSyncWarning(syncWarnings, name) {
+    var warning = structure.getIn(syncWarnings, name);
+    // Because the warning for this field might not be at a level in the warning structure where
+    // it can be set directly, it might need to be unwrapped from the _warning property
+    return warning && warning._warning ? warning._warning : warning;
+  };
+
+  var ConnectedField = function (_Component) {
+    _inherits$5(ConnectedField, _Component);
+
+    function ConnectedField(props) {
+      _classCallCheck$9(this, ConnectedField);
+
+      var _this = _possibleConstructorReturn$5(this, (ConnectedField.__proto__ || Object.getPrototypeOf(ConnectedField)).call(this, props));
+
+      _this.handleChange = _this.handleChange.bind(_this);
+      _this.handleFocus = _this.handleFocus.bind(_this);
+      _this.handleBlur = _this.handleBlur.bind(_this);
+      _this.handleDragStart = _this.handleDragStart.bind(_this);
+      _this.handleDrop = _this.handleDrop.bind(_this);
+      return _this;
+    }
+
+    _createClass$2(ConnectedField, [{
+      key: 'shouldComponentUpdate',
+      value: function shouldComponentUpdate(nextProps) {
+        var _this2 = this;
+
+        var nextPropsKeys = Object.keys(nextProps);
+        var thisPropsKeys = Object.keys(this.props);
+        return nextPropsKeys.length !== thisPropsKeys.length || nextPropsKeys.some(function (prop) {
+          return !~propsToNotUpdateFor$1.indexOf(prop) && !deepEqual(_this2.props[prop], nextProps[prop]);
+        });
+      }
+    }, {
+      key: 'isPristine',
+      value: function isPristine() {
+        return this.props.pristine;
+      }
+    }, {
+      key: 'getValue',
+      value: function getValue() {
+        return this.props.value;
+      }
+    }, {
+      key: 'getRenderedComponent',
+      value: function getRenderedComponent() {
+        return this.refs.renderedComponent;
+      }
+    }, {
+      key: 'handleChange',
+      value: function handleChange(event) {
+        var _props = this.props,
+            name = _props.name,
+            dispatch = _props.dispatch,
+            parse = _props.parse,
+            normalize = _props.normalize,
+            onChange = _props.onChange,
+            _reduxForm = _props._reduxForm,
+            previousValue = _props.value;
+
+        var newValue = onChangeValue(event, { name: name, parse: parse, normalize: normalize });
+
+        var defaultPrevented = false;
+        if (onChange) {
+          onChange(_extends$21({}, event, {
+            preventDefault: function preventDefault() {
+              defaultPrevented = true;
+              return event.preventDefault();
+            }
+          }), newValue, previousValue);
+        }
+        if (!defaultPrevented) {
+          // dispatch change action
+          dispatch(_reduxForm.change(name, newValue));
+        }
+      }
+    }, {
+      key: 'handleFocus',
+      value: function handleFocus(event) {
+        var _props2 = this.props,
+            name = _props2.name,
+            dispatch = _props2.dispatch,
+            onFocus = _props2.onFocus,
+            _reduxForm = _props2._reduxForm;
+
+
+        var defaultPrevented = false;
+        if (onFocus) {
+          onFocus(_extends$21({}, event, {
+            preventDefault: function preventDefault() {
+              defaultPrevented = true;
+              return event.preventDefault();
+            }
+          }));
+        }
+
+        if (!defaultPrevented) {
+          dispatch(_reduxForm.focus(name));
+        }
+      }
+    }, {
+      key: 'handleBlur',
+      value: function handleBlur(event) {
+        var _props3 = this.props,
+            name = _props3.name,
+            dispatch = _props3.dispatch,
+            parse = _props3.parse,
+            normalize = _props3.normalize,
+            onBlur = _props3.onBlur,
+            _reduxForm = _props3._reduxForm,
+            _value = _props3._value,
+            previousValue = _props3.value;
+
+        var newValue = onChangeValue(event, { name: name, parse: parse, normalize: normalize });
+
+        // for checkbox and radio, if the value property of checkbox or radio equals
+        // the value passed by blur event, then fire blur action with previousValue.
+        if (newValue === _value && _value !== undefined) {
+          newValue = previousValue;
+        }
+
+        var defaultPrevented = false;
+        if (onBlur) {
+          onBlur(_extends$21({}, event, {
+            preventDefault: function preventDefault() {
+              defaultPrevented = true;
+              return event.preventDefault();
+            }
+          }), newValue, previousValue);
+        }
+
+        if (!defaultPrevented) {
+          // dispatch blur action
+          dispatch(_reduxForm.blur(name, newValue));
+
+          // call post-blur callback
+          if (_reduxForm.asyncValidate) {
+            _reduxForm.asyncValidate(name, newValue);
+          }
+        }
+      }
+    }, {
+      key: 'handleDragStart',
+      value: function handleDragStart(event) {
+        var _props4 = this.props,
+            onDragStart = _props4.onDragStart,
+            value = _props4.value;
+
+        event.dataTransfer.setData(dataKey, value == null ? '' : value);
+
+        if (onDragStart) {
+          onDragStart(event);
+        }
+      }
+    }, {
+      key: 'handleDrop',
+      value: function handleDrop(event) {
+        var _props5 = this.props,
+            name = _props5.name,
+            dispatch = _props5.dispatch,
+            onDrop = _props5.onDrop,
+            _reduxForm = _props5._reduxForm,
+            previousValue = _props5.value;
+
+        var newValue = event.dataTransfer.getData(dataKey);
+
+        var defaultPrevented = false;
+        if (onDrop) {
+          onDrop(_extends$21({}, event, {
+            preventDefault: function preventDefault() {
+              defaultPrevented = true;
+              return event.preventDefault();
+            }
+          }), newValue, previousValue);
+        }
+
+        if (!defaultPrevented) {
+          // dispatch change action
+          dispatch(_reduxForm.change(name, newValue));
+          event.preventDefault();
+        }
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+        var _props6 = this.props,
+            component = _props6.component,
+            withRef = _props6.withRef,
+            name = _props6.name,
+            _reduxForm = _props6._reduxForm,
+            normalize = _props6.normalize,
+            onBlur = _props6.onBlur,
+            onChange = _props6.onChange,
+            onFocus = _props6.onFocus,
+            onDragStart = _props6.onDragStart,
+            onDrop = _props6.onDrop,
+            rest = _objectWithoutProperties$8(_props6, ['component', 'withRef', 'name', '_reduxForm', 'normalize', 'onBlur', 'onChange', 'onFocus', 'onDragStart', 'onDrop']);
+
+        var _createFieldProps = createFieldProps({ getIn: getIn, toJS: toJS }, name, _extends$21({}, rest, {
+          form: _reduxForm.form,
+          onBlur: this.handleBlur,
+          onChange: this.handleChange,
+          onDrop: this.handleDrop,
+          onDragStart: this.handleDragStart,
+          onFocus: this.handleFocus
+        })),
+            custom = _createFieldProps.custom,
+            props = _objectWithoutProperties$8(_createFieldProps, ['custom']);
+
+        if (withRef) {
+          custom.ref = 'renderedComponent';
+        }
+        if (typeof component === 'string') {
+          var input = props.input,
+              meta = props.meta; // eslint-disable-line no-unused-vars
+          // flatten input into other props
+
+          return react_2(component, _extends$21({}, input, custom));
+        } else {
+          return react_2(component, _extends$21({}, props, custom));
+        }
+      }
+    }]);
+
+    return ConnectedField;
+  }(react_3);
+
+  ConnectedField.propTypes = {
+    component: react_1.oneOfType([react_1.func, react_1.string]).isRequired,
+    props: react_1.object
+  };
+
+  var connector = connect(function (state, ownProps) {
+    var name = ownProps.name,
+        _ownProps$_reduxForm = ownProps._reduxForm,
+        initialValues = _ownProps$_reduxForm.initialValues,
+        getFormState = _ownProps$_reduxForm.getFormState;
+
+    var formState = getFormState(state);
+    var initialState = getIn(formState, 'initial.' + name);
+    var initial = initialState !== undefined ? initialState : initialValues && getIn(initialValues, name);
+    var value = getIn(formState, 'values.' + name);
+    var submitting = getIn(formState, 'submitting');
+    var syncError = getSyncError(getIn(formState, 'syncErrors'), name);
+    var syncWarning = getSyncWarning(getIn(formState, 'syncWarnings'), name);
+    var pristine = value === initial;
+    return {
+      asyncError: getIn(formState, 'asyncErrors.' + name),
+      asyncValidating: getIn(formState, 'asyncValidating') === name,
+      dirty: !pristine,
+      pristine: pristine,
+      state: getIn(formState, 'fields.' + name),
+      submitError: getIn(formState, 'submitErrors.' + name),
+      submitFailed: getIn(formState, 'submitFailed'),
+      submitting: submitting,
+      syncError: syncError,
+      syncWarning: syncWarning,
+      value: value,
+      _value: ownProps.value // save value passed in (for checkboxes)
+    };
+  }, undefined, undefined, { withRef: true });
+  return connector(ConnectedField);
+};
+
+var customizer$1 = function customizer(objectValue, otherValue, indexOrkey, object, other, stack) {
+  // https://lodash.com/docs/4.17.4#isEqualWith
+  if (stack) {
+    // Shallow compares
+    // For 1st level, stack === undefined.
+    //   -> Do nothing (and implicitly return undefined so that it goes to compare 2nd level)
+    // For 2nd level and up, stack !== undefined.
+    //   -> Compare by === operator
+    return objectValue === otherValue;
+  }
+};
+
+var shallowCompare = function shallowCompare(instance, nextProps, nextState) {
+  return !isEqualWith(instance.props, nextProps, customizer$1) || !isEqualWith(instance.state, nextState, customizer$1);
+};
+
+function formatName(context, name) {
+  var sectionPrefix = context._reduxForm.sectionPrefix;
+
+  return !sectionPrefix ? name : sectionPrefix + "." + name;
+}
+
+var _extends$20 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass$1 = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck$8(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn$4(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits$4(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var createField = function createField(_ref) {
+  var deepEqual = _ref.deepEqual,
+      getIn = _ref.getIn,
+      setIn = _ref.setIn,
+      toJS = _ref.toJS;
+
+
+  var ConnectedField = createConnectedField({
+    deepEqual: deepEqual,
+    getIn: getIn,
+    toJS: toJS
+  });
+
+  var Field = function (_Component) {
+    _inherits$4(Field, _Component);
+
+    function Field(props, context) {
+      _classCallCheck$8(this, Field);
+
+      var _this = _possibleConstructorReturn$4(this, (Field.__proto__ || Object.getPrototypeOf(Field)).call(this, props, context));
+
+      if (!context._reduxForm) {
+        throw new Error('Field must be inside a component decorated with reduxForm()');
+      }
+
+      _this.normalize = _this.normalize.bind(_this);
+      return _this;
+    }
+
+    _createClass$1(Field, [{
+      key: 'shouldComponentUpdate',
+      value: function shouldComponentUpdate(nextProps, nextState) {
+        return shallowCompare(this, nextProps, nextState);
+      }
+    }, {
+      key: 'componentWillMount',
+      value: function componentWillMount() {
+        var _this2 = this;
+
+        this.context._reduxForm.register(this.name, 'Field', function () {
+          return _this2.props.validate;
+        }, function () {
+          return _this2.props.warn;
+        });
+      }
+    }, {
+      key: 'componentWillReceiveProps',
+      value: function componentWillReceiveProps(nextProps) {
+        if (this.props.name !== nextProps.name) {
+          // unregister old name
+          this.context._reduxForm.unregister(this.name);
+          // register new name
+          this.context._reduxForm.register(formatName(this.context, nextProps.name), 'Field');
+        }
+      }
+    }, {
+      key: 'componentWillUnmount',
+      value: function componentWillUnmount() {
+        this.context._reduxForm.unregister(this.name);
+      }
+    }, {
+      key: 'getRenderedComponent',
+      value: function getRenderedComponent() {
+        browser$1(this.props.withRef, 'If you want to access getRenderedComponent(), ' + 'you must specify a withRef prop to Field');
+        return this.refs.connected.getWrappedInstance().getRenderedComponent();
+      }
+    }, {
+      key: 'normalize',
+      value: function normalize(name, value) {
+        var normalize = this.props.normalize;
+
+        if (!normalize) {
+          return value;
+        }
+        var previousValues = this.context._reduxForm.getValues();
+        var previousValue = this.value;
+        var nextValues = setIn(previousValues, name, value);
+        return normalize(value, previousValue, nextValues, previousValues);
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+        return react_2(ConnectedField, _extends$20({}, this.props, {
+          name: this.name,
+          normalize: this.normalize,
+          _reduxForm: this.context._reduxForm,
+          ref: 'connected'
+        }));
+      }
+    }, {
+      key: 'name',
+      get: function get() {
+        return formatName(this.context, this.props.name);
+      }
+    }, {
+      key: 'dirty',
+      get: function get() {
+        return !this.pristine;
+      }
+    }, {
+      key: 'pristine',
+      get: function get() {
+        return this.refs.connected.getWrappedInstance().isPristine();
+      }
+    }, {
+      key: 'value',
+      get: function get() {
+        return this.refs.connected && this.refs.connected.getWrappedInstance().getValue();
+      }
+    }]);
+
+    return Field;
+  }(react_3);
+
+  Field.propTypes = {
+    name: react_1.string.isRequired,
+    component: react_1.oneOfType([react_1.func, react_1.string]).isRequired,
+    format: react_1.func,
+    normalize: react_1.func,
+    onBlur: react_1.func,
+    onChange: react_1.func,
+    onFocus: react_1.func,
+    onDragStart: react_1.func,
+    onDrop: react_1.func,
+    parse: react_1.func,
+    props: react_1.object
+  };
+  Field.contextTypes = {
+    _reduxForm: react_1.object
+  };
+
+  return Field;
+};
+
+var _extends$24 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass$4 = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _objectWithoutProperties$10(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _classCallCheck$11(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn$7(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits$7(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var propsToNotUpdateFor$2 = ['_reduxForm'];
+
+var createConnectedFields = function createConnectedFields(_ref) {
+  var deepEqual = _ref.deepEqual,
+      getIn = _ref.getIn,
+      toJS = _ref.toJS,
+      size = _ref.size;
+
+
+  var getSyncError = function getSyncError(syncErrors, name) {
+    var error = structure.getIn(syncErrors, name);
+    // Because the error for this field might not be at a level in the error structure where
+    // it can be set directly, it might need to be unwrapped from the _error property
+    return error && error._error ? error._error : error;
+  };
+
+  var getSyncWarning = function getSyncWarning(syncWarnings, name) {
+    var warning = structure.getIn(syncWarnings, name);
+    // Because the warning for this field might not be at a level in the warning structure where
+    // it can be set directly, it might need to be unwrapped from the _warning property
+    return warning && warning._warning ? warning._warning : warning;
+  };
+
+  var ConnectedFields = function (_Component) {
+    _inherits$7(ConnectedFields, _Component);
+
+    function ConnectedFields(props) {
+      _classCallCheck$11(this, ConnectedFields);
+
+      var _this = _possibleConstructorReturn$7(this, (ConnectedFields.__proto__ || Object.getPrototypeOf(ConnectedFields)).call(this, props));
+
+      _this.handleChange = _this.handleChange.bind(_this);
+      _this.handleFocus = _this.handleFocus.bind(_this);
+      _this.handleBlur = _this.handleBlur.bind(_this);
+
+      _this.onChangeFns = props.names.reduce(function (acc, name) {
+        acc[name] = function (event) {
+          return _this.handleChange(name, event);
+        };
+        return acc;
+      }, {});
+
+      _this.onFocusFns = props.names.reduce(function (acc, name) {
+        acc[name] = function () {
+          return _this.handleFocus(name);
+        };
+        return acc;
+      }, {});
+
+      _this.onBlurFns = props.names.reduce(function (acc, name) {
+        acc[name] = function (event) {
+          return _this.handleBlur(name, event);
+        };
+        return acc;
+      }, {});
+      return _this;
+    }
+
+    _createClass$4(ConnectedFields, [{
+      key: 'componentWillReceiveProps',
+      value: function componentWillReceiveProps(nextProps) {
+        var _this2 = this;
+
+        if (this.props.names !== nextProps.names && (size(this.props.names) !== size(nextProps.names) || nextProps.names.some(function (nextName) {
+          return !_this2.props._fields[nextName];
+        }))) {
+
+          // names is changed. The cached event handlers need to be updated
+          this.onChangeFns = nextProps.names.reduce(function (acc, name) {
+            acc[name] = function (event) {
+              return _this2.handleChange(name, event);
+            };
+            return acc;
+          }, {});
+
+          this.onFocusFns = nextProps.names.reduce(function (acc, name) {
+            acc[name] = function () {
+              return _this2.handleFocus(name);
+            };
+            return acc;
+          }, {});
+
+          this.onBlurFns = nextProps.names.reduce(function (acc, name) {
+            acc[name] = function (event) {
+              return _this2.handleBlur(name, event);
+            };
+            return acc;
+          }, {});
+        }
+      }
+    }, {
+      key: 'shouldComponentUpdate',
+      value: function shouldComponentUpdate(nextProps) {
+        var _this3 = this;
+
+        var nextPropsKeys = Object.keys(nextProps);
+        var thisPropsKeys = Object.keys(this.props);
+        return nextPropsKeys.length !== thisPropsKeys.length || nextPropsKeys.some(function (prop) {
+          return !~propsToNotUpdateFor$2.indexOf(prop) && !deepEqual(_this3.props[prop], nextProps[prop]);
+        });
+      }
+    }, {
+      key: 'isDirty',
+      value: function isDirty() {
+        var _fields = this.props._fields;
+
+        return Object.keys(_fields).some(function (name) {
+          return _fields[name].dirty;
+        });
+      }
+    }, {
+      key: 'getValues',
+      value: function getValues() {
+        var _fields = this.props._fields;
+
+        return Object.keys(_fields).reduce(function (accumulator, name) {
+          return structure.setIn(accumulator, name, _fields[name].value);
+        }, {});
+      }
+    }, {
+      key: 'getRenderedComponent',
+      value: function getRenderedComponent() {
+        return this.refs.renderedComponent;
+      }
+    }, {
+      key: 'handleChange',
+      value: function handleChange(name, event) {
+        var _props = this.props,
+            dispatch = _props.dispatch,
+            parse = _props.parse,
+            normalize = _props.normalize,
+            _reduxForm = _props._reduxForm;
+
+        var value = onChangeValue(event, { name: name, parse: parse, normalize: normalize });
+
+        dispatch(_reduxForm.change(name, value));
+      }
+    }, {
+      key: 'handleFocus',
+      value: function handleFocus(name) {
+        var _props2 = this.props,
+            dispatch = _props2.dispatch,
+            _reduxForm = _props2._reduxForm;
+
+        dispatch(_reduxForm.focus(name));
+      }
+    }, {
+      key: 'handleBlur',
+      value: function handleBlur(name, event) {
+        var _props3 = this.props,
+            dispatch = _props3.dispatch,
+            parse = _props3.parse,
+            normalize = _props3.normalize,
+            _reduxForm = _props3._reduxForm;
+
+        var value = onChangeValue(event, { name: name, parse: parse, normalize: normalize });
+
+        // dispatch blur action
+        dispatch(_reduxForm.blur(name, value));
+
+        // call post-blur callback
+        if (_reduxForm.asyncValidate) {
+          _reduxForm.asyncValidate(name, value);
+        }
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+        var _this4 = this;
+
+        var _props4 = this.props,
+            component = _props4.component,
+            withRef = _props4.withRef,
+            _fields = _props4._fields,
+            _reduxForm = _props4._reduxForm,
+            rest = _objectWithoutProperties$10(_props4, ['component', 'withRef', '_fields', '_reduxForm']);
+
+        var sectionPrefix = _reduxForm.sectionPrefix;
+
+        var _Object$keys$reduce = Object.keys(_fields).reduce(function (accumulator, name) {
+          var connectedProps = _fields[name];
+
+          var _createFieldProps = createFieldProps({ getIn: getIn, toJS: toJS }, name, _extends$24({}, connectedProps, rest, {
+            onBlur: _this4.onBlurFns[name],
+            onChange: _this4.onChangeFns[name],
+            onFocus: _this4.onFocusFns[name]
+          })),
+              custom = _createFieldProps.custom,
+              fieldProps = _objectWithoutProperties$10(_createFieldProps, ['custom']);
+
+          accumulator.custom = custom;
+          var fieldName = sectionPrefix ? name.replace(sectionPrefix + '.', '') : name;
+          return structure.setIn(accumulator, fieldName, fieldProps);
+        }, {}),
+            custom = _Object$keys$reduce.custom,
+            props = _objectWithoutProperties$10(_Object$keys$reduce, ['custom']);
+
+        if (withRef) {
+          props.ref = 'renderedComponent';
+        }
+
+        return react_2(component, _extends$24({}, props, custom));
+      }
+    }]);
+
+    return ConnectedFields;
+  }(react_3);
+
+  ConnectedFields.propTypes = {
+    component: react_1.oneOfType([react_1.func, react_1.string]).isRequired,
+    _fields: react_1.object.isRequired,
+    props: react_1.object
+  };
+
+  var connector = connect(function (state, ownProps) {
+    var names = ownProps.names,
+        _ownProps$_reduxForm = ownProps._reduxForm,
+        initialValues = _ownProps$_reduxForm.initialValues,
+        getFormState = _ownProps$_reduxForm.getFormState;
+
+    var formState = getFormState(state);
+    return {
+      _fields: names.reduce(function (accumulator, name) {
+        var initialState = getIn(formState, 'initial.' + name);
+        var initial = initialState !== undefined ? initialState : initialValues && getIn(initialValues, name);
+        var value = getIn(formState, 'values.' + name);
+        var syncError = getSyncError(getIn(formState, 'syncErrors'), name);
+        var syncWarning = getSyncWarning(getIn(formState, 'syncWarnings'), name);
+        var submitting = getIn(formState, 'submitting');
+        var pristine = value === initial;
+        accumulator[name] = {
+          asyncError: getIn(formState, 'asyncErrors.' + name),
+          asyncValidating: getIn(formState, 'asyncValidating') === name,
+          dirty: !pristine,
+          pristine: pristine,
+          state: getIn(formState, 'fields.' + name),
+          submitError: getIn(formState, 'submitErrors.' + name),
+          submitFailed: getIn(formState, 'submitFailed'),
+          submitting: submitting,
+          syncError: syncError,
+          syncWarning: syncWarning,
+          value: value,
+          _value: ownProps.value // save value passed in (for checkboxes)
+        };
+        return accumulator;
+      }, {})
+    };
+  }, undefined, undefined, { withRef: true });
+  return connector(ConnectedFields);
+};
+
+var _extends$23 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass$3 = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck$10(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn$6(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits$6(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var validateNameProp = function validateNameProp(prop) {
+  if (!prop) {
+    return new Error('No "names" prop was specified <Fields/>');
+  }
+  if (!Array.isArray(prop) && !prop._isFieldArray) {
+    return new Error('Invalid prop "names" supplied to <Fields/>. Must be either an array of strings or the fields array generated by FieldArray.');
+  }
+};
+
+var createFields = function createFields(_ref) {
+  var deepEqual = _ref.deepEqual,
+      getIn = _ref.getIn,
+      toJS = _ref.toJS,
+      size = _ref.size;
+
+
+  var ConnectedFields = createConnectedFields({
+    deepEqual: deepEqual,
+    getIn: getIn,
+    toJS: toJS,
+    size: size
+  });
+
+  var Fields = function (_Component) {
+    _inherits$6(Fields, _Component);
+
+    function Fields(props, context) {
+      _classCallCheck$10(this, Fields);
+
+      var _this = _possibleConstructorReturn$6(this, (Fields.__proto__ || Object.getPrototypeOf(Fields)).call(this, props, context));
+
+      if (!context._reduxForm) {
+        throw new Error('Fields must be inside a component decorated with reduxForm()');
+      }
+      return _this;
+    }
+
+    _createClass$3(Fields, [{
+      key: 'shouldComponentUpdate',
+      value: function shouldComponentUpdate(nextProps, nextState) {
+        return shallowCompare(this, nextProps, nextState);
+      }
+    }, {
+      key: 'componentWillMount',
+      value: function componentWillMount() {
+        var error = validateNameProp(this.props.names);
+        if (error) {
+          throw error;
+        }
+        var context = this.context;
+        var register = context._reduxForm.register;
+
+        this.names.forEach(function (name) {
+          return register(name, 'Field');
+        });
+      }
+    }, {
+      key: 'componentWillReceiveProps',
+      value: function componentWillReceiveProps(nextProps) {
+        var _this2 = this;
+
+        if (!structure.deepEqual(this.props.names, nextProps.names)) {
+          (function () {
+            var context = _this2.context;
+            var _context$_reduxForm = context._reduxForm,
+                register = _context$_reduxForm.register,
+                unregister = _context$_reduxForm.unregister;
+            // unregister old name
+
+            _this2.props.names.forEach(function (name) {
+              return unregister(formatName(context, name));
+            });
+            // register new name
+            nextProps.names.forEach(function (name) {
+              return register(formatName(context, name), 'Field');
+            });
+          })();
+        }
+      }
+    }, {
+      key: 'componentWillUnmount',
+      value: function componentWillUnmount() {
+        var context = this.context;
+        var unregister = context._reduxForm.unregister;
+
+        this.props.names.forEach(function (name) {
+          return unregister(formatName(context, name));
+        });
+      }
+    }, {
+      key: 'getRenderedComponent',
+      value: function getRenderedComponent() {
+        browser$1(this.props.withRef, 'If you want to access getRenderedComponent(), ' + 'you must specify a withRef prop to Fields');
+        return this.refs.connected.getWrappedInstance().getRenderedComponent();
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+        var context = this.context;
+
+        return react_2(ConnectedFields, _extends$23({}, this.props, {
+          names: this.props.names.map(function (name) {
+            return formatName(context, name);
+          }),
+          _reduxForm: this.context._reduxForm,
+          ref: 'connected'
+        }));
+      }
+    }, {
+      key: 'names',
+      get: function get() {
+        var context = this.context;
+
+        return this.props.names.map(function (name) {
+          return formatName(context, name);
+        });
+      }
+    }, {
+      key: 'dirty',
+      get: function get() {
+        return this.refs.connected.getWrappedInstance().isDirty();
+      }
+    }, {
+      key: 'pristine',
+      get: function get() {
+        return !this.dirty;
+      }
+    }, {
+      key: 'values',
+      get: function get() {
+        return this.refs.connected && this.refs.connected.getWrappedInstance().getValues();
+      }
+    }]);
+
+    return Fields;
+  }(react_3);
+
+  Fields.propTypes = {
+    names: function names(props, propName) {
+      return validateNameProp(props[propName]);
+    },
+    component: react_1.oneOfType([react_1.func, react_1.string]).isRequired,
+    format: react_1.func,
+    parse: react_1.func,
+    props: react_1.object
+  };
+  Fields.contextTypes = {
+    _reduxForm: react_1.object
+  };
+
+  return Fields;
+};
+
+var _extends$26 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _objectWithoutProperties$12(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var createFieldArrayProps = function createFieldArrayProps(getIn, name, sectionPrefix, getValue, _ref) {
+  var arrayInsert = _ref.arrayInsert,
+      arrayMove = _ref.arrayMove,
+      arrayPop = _ref.arrayPop,
+      arrayPush = _ref.arrayPush,
+      arrayRemove = _ref.arrayRemove,
+      arrayRemoveAll = _ref.arrayRemoveAll,
+      arrayShift = _ref.arrayShift,
+      arraySplice = _ref.arraySplice,
+      arraySwap = _ref.arraySwap,
+      arrayUnshift = _ref.arrayUnshift,
+      asyncError = _ref.asyncError,
+      dirty = _ref.dirty,
+      length = _ref.length,
+      pristine = _ref.pristine,
+      submitError = _ref.submitError,
+      state = _ref.state,
+      submitFailed = _ref.submitFailed,
+      submitting = _ref.submitting,
+      syncError = _ref.syncError,
+      syncWarning = _ref.syncWarning,
+      value = _ref.value,
+      props = _ref.props,
+      rest = _objectWithoutProperties$12(_ref, ['arrayInsert', 'arrayMove', 'arrayPop', 'arrayPush', 'arrayRemove', 'arrayRemoveAll', 'arrayShift', 'arraySplice', 'arraySwap', 'arrayUnshift', 'asyncError', 'dirty', 'length', 'pristine', 'submitError', 'state', 'submitFailed', 'submitting', 'syncError', 'syncWarning', 'value', 'props']);
+
+  var error = syncError || asyncError || submitError;
+  var warning = syncWarning;
+  var fieldName = sectionPrefix ? name.replace(sectionPrefix + '.', '') : name;
+  var finalProps = _extends$26({
+    fields: {
+      _isFieldArray: true,
+      forEach: function forEach(callback) {
+        return (value || []).forEach(function (item, index) {
+          return callback(fieldName + '[' + index + ']', index, finalProps.fields);
+        });
+      },
+      get: getValue,
+      getAll: function getAll() {
+        return value;
+      },
+      insert: arrayInsert,
+      length: length,
+      map: function map(callback) {
+        return (value || []).map(function (item, index) {
+          return callback(fieldName + '[' + index + ']', index, finalProps.fields);
+        });
+      },
+      move: arrayMove,
+      name: name,
+      pop: function pop() {
+        arrayPop();
+        return getIn(value, length - 1);
+      },
+      push: arrayPush,
+      reduce: function reduce(callback, initial) {
+        return (value || []).reduce(function (accumulator, item, index) {
+          return callback(accumulator, fieldName + '[' + index + ']', index, finalProps.fields);
+        }, initial);
+      },
+      remove: arrayRemove,
+      removeAll: arrayRemoveAll,
+      shift: function shift() {
+        arrayShift();
+        return getIn(value, 0);
+      },
+      swap: arraySwap,
+      unshift: arrayUnshift
+    },
+    meta: {
+      dirty: dirty,
+      error: error,
+      warning: warning,
+      invalid: !!error,
+      pristine: pristine,
+      submitting: submitting,
+      touched: !!(state && getIn(state, 'touched')),
+      valid: !error
+    }
+  }, props, rest);
+  return finalProps;
+};
+
+var _createClass$6 = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _objectWithoutProperties$11(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _classCallCheck$13(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn$9(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits$9(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var propsToNotUpdateFor$3 = ['_reduxForm', 'value'];
+
+var createConnectedFieldArray = function createConnectedFieldArray(_ref) {
+  var deepEqual = _ref.deepEqual,
+      getIn = _ref.getIn,
+      size = _ref.size;
+
+
+  var getSyncError = function getSyncError(syncErrors, name) {
+    // For an array, the error can _ONLY_ be under _error.
+    // This is why this getSyncError is not the same as the
+    // one in Field.
+    return structure.getIn(syncErrors, name + '._error');
+  };
+
+  var getSyncWarning = function getSyncWarning(syncWarnings, name) {
+    // For an array, the warning can _ONLY_ be under _warning.
+    // This is why this getSyncError is not the same as the
+    // one in Field.
+    return structure.getIn(syncWarnings, name + '._warning');
+  };
+
+  var ConnectedFieldArray = function (_Component) {
+    _inherits$9(ConnectedFieldArray, _Component);
+
+    function ConnectedFieldArray() {
+      _classCallCheck$13(this, ConnectedFieldArray);
+
+      var _this = _possibleConstructorReturn$9(this, (ConnectedFieldArray.__proto__ || Object.getPrototypeOf(ConnectedFieldArray)).call(this));
+
+      _this.getValue = _this.getValue.bind(_this);
+      return _this;
+    }
+
+    _createClass$6(ConnectedFieldArray, [{
+      key: 'shouldComponentUpdate',
+      value: function shouldComponentUpdate(nextProps) {
+        var _this2 = this;
+
+        var nextPropsKeys = Object.keys(nextProps);
+        var thisPropsKeys = Object.keys(this.props);
+        return nextPropsKeys.length !== thisPropsKeys.length || nextPropsKeys.some(function (prop) {
+          // useful to debug rerenders
+          // if (!plain.deepEqual(this.props[ prop ], nextProps[ prop ])) {
+          //   console.info(prop, 'changed', this.props[ prop ], '==>', nextProps[ prop ])
+          // }
+          return !~propsToNotUpdateFor$3.indexOf(prop) && !deepEqual(_this2.props[prop], nextProps[prop]);
+        });
+      }
+    }, {
+      key: 'getRenderedComponent',
+      value: function getRenderedComponent() {
+        return this.refs.renderedComponent;
+      }
+    }, {
+      key: 'getValue',
+      value: function getValue(index) {
+        return this.props.value && getIn(this.props.value, index);
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+        var _props = this.props,
+            component = _props.component,
+            withRef = _props.withRef,
+            name = _props.name,
+            _reduxForm = _props._reduxForm,
+            validate = _props.validate,
+            warn = _props.warn,
+            rest = _objectWithoutProperties$11(_props, ['component', 'withRef', 'name', '_reduxForm', 'validate', 'warn']);
+
+        var props = createFieldArrayProps(getIn, name, _reduxForm.sectionPrefix, this.getValue, rest);
+        if (withRef) {
+          props.ref = 'renderedComponent';
+        }
+        return react_2(component, props);
+      }
+    }, {
+      key: 'dirty',
+      get: function get() {
+        return this.props.dirty;
+      }
+    }, {
+      key: 'pristine',
+      get: function get() {
+        return this.props.pristine;
+      }
+    }, {
+      key: 'value',
+      get: function get() {
+        return this.props.value;
+      }
+    }]);
+
+    return ConnectedFieldArray;
+  }(react_3);
+
+  ConnectedFieldArray.propTypes = {
+    component: react_1.oneOfType([react_1.func, react_1.string]).isRequired,
+    props: react_1.object
+  };
+
+  ConnectedFieldArray.contextTypes = {
+    _reduxForm: react_1.object
+  };
+
+  var connector = connect(function (state, ownProps) {
+    var name = ownProps.name,
+        _ownProps$_reduxForm = ownProps._reduxForm,
+        initialValues = _ownProps$_reduxForm.initialValues,
+        getFormState = _ownProps$_reduxForm.getFormState;
+
+    var formState = getFormState(state);
+    var initial = getIn(formState, 'initial.' + name) || initialValues && getIn(initialValues, name);
+    var value = getIn(formState, 'values.' + name);
+    var submitting = getIn(formState, 'submitting');
+    var syncError = getSyncError(getIn(formState, 'syncErrors'), name);
+    var syncWarning = getSyncWarning(getIn(formState, 'syncWarnings'), name);
+    var pristine = deepEqual(value, initial);
+    return {
+      asyncError: getIn(formState, 'asyncErrors.' + name + '._error'),
+      dirty: !pristine,
+      pristine: pristine,
+      state: getIn(formState, 'fields.' + name),
+      submitError: getIn(formState, 'submitErrors.' + name + '._error'),
+      submitting: submitting,
+      syncError: syncError,
+      syncWarning: syncWarning,
+      value: value,
+      length: size(value)
+    };
+  }, function (dispatch, ownProps) {
+    var name = ownProps.name,
+        _reduxForm = ownProps._reduxForm;
+    var arrayInsert = _reduxForm.arrayInsert,
+        arrayMove = _reduxForm.arrayMove,
+        arrayPop = _reduxForm.arrayPop,
+        arrayPush = _reduxForm.arrayPush,
+        arrayRemove = _reduxForm.arrayRemove,
+        arrayRemoveAll = _reduxForm.arrayRemoveAll,
+        arrayShift = _reduxForm.arrayShift,
+        arraySplice = _reduxForm.arraySplice,
+        arraySwap = _reduxForm.arraySwap,
+        arrayUnshift = _reduxForm.arrayUnshift;
+
+    return mapValues({
+      arrayInsert: arrayInsert,
+      arrayMove: arrayMove,
+      arrayPop: arrayPop,
+      arrayPush: arrayPush,
+      arrayRemove: arrayRemove,
+      arrayRemoveAll: arrayRemoveAll,
+      arrayShift: arrayShift,
+      arraySplice: arraySplice,
+      arraySwap: arraySwap,
+      arrayUnshift: arrayUnshift
+    }, function (actionCreator) {
+      return bindActionCreators(actionCreator.bind(null, name), dispatch);
+    });
+  }, undefined, { withRef: true });
+  return connector(ConnectedFieldArray);
+};
+
+var _extends$25 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass$5 = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck$12(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn$8(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits$8(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _defineProperty$4(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var toArray$3 = function toArray(value) {
+  return Array.isArray(value) ? value : [value];
+};
+
+var wrapError = function wrapError(fn, key) {
+  return fn && function () {
+    var validators = toArray$3(fn);
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = validators[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var validator = _step.value;
+
+        var result = validator.apply(undefined, arguments);
+        if (result) {
+          return _defineProperty$4({}, key, result);
+        }
+      }
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator.return) {
+          _iterator.return();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
+      }
+    }
+  };
+};
+
+var createFieldArray = function createFieldArray(_ref2) {
+  var deepEqual = _ref2.deepEqual,
+      getIn = _ref2.getIn,
+      size = _ref2.size;
+
+
+  var ConnectedFieldArray = createConnectedFieldArray({ deepEqual: deepEqual, getIn: getIn, size: size });
+
+  var FieldArray = function (_Component) {
+    _inherits$8(FieldArray, _Component);
+
+    function FieldArray(props, context) {
+      _classCallCheck$12(this, FieldArray);
+
+      var _this = _possibleConstructorReturn$8(this, (FieldArray.__proto__ || Object.getPrototypeOf(FieldArray)).call(this, props, context));
+
+      if (!context._reduxForm) {
+        throw new Error('FieldArray must be inside a component decorated with reduxForm()');
+      }
+      return _this;
+    }
+
+    _createClass$5(FieldArray, [{
+      key: 'shouldComponentUpdate',
+      value: function shouldComponentUpdate(nextProps, nextState) {
+        return shallowCompare(this, nextProps, nextState);
+      }
+    }, {
+      key: 'componentWillMount',
+      value: function componentWillMount() {
+        var _this2 = this;
+
+        this.context._reduxForm.register(this.name, 'FieldArray', function () {
+          return wrapError(_this2.props.validate, '_error');
+        }, function () {
+          return wrapError(_this2.props.warn, '_warning');
+        });
+      }
+    }, {
+      key: 'componentWillReceiveProps',
+      value: function componentWillReceiveProps(nextProps) {
+        if (this.props.name !== nextProps.name) {
+          // unregister old name
+          this.context._reduxForm.unregister(this.name);
+          // register new name
+          this.context._reduxForm.register(formatName(this.context, nextProps.name), 'FieldArray');
+        }
+      }
+    }, {
+      key: 'componentWillUnmount',
+      value: function componentWillUnmount() {
+        this.context._reduxForm.unregister(this.name);
+      }
+    }, {
+      key: 'getRenderedComponent',
+      value: function getRenderedComponent() {
+        browser$1(this.props.withRef, 'If you want to access getRenderedComponent(), ' + 'you must specify a withRef prop to FieldArray');
+        return this.refs.connected.getWrappedInstance().getRenderedComponent();
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+        return react_2(ConnectedFieldArray, _extends$25({}, this.props, {
+          name: this.name,
+          syncError: this.syncError,
+          syncWarning: this.syncWarning,
+          _reduxForm: this.context._reduxForm,
+          ref: 'connected'
+        }));
+      }
+    }, {
+      key: 'name',
+      get: function get() {
+        return formatName(this.context, this.props.name);
+      }
+    }, {
+      key: 'dirty',
+      get: function get() {
+        return this.refs.connected.getWrappedInstance().dirty;
+      }
+    }, {
+      key: 'pristine',
+      get: function get() {
+        return this.refs.connected.getWrappedInstance().pristine;
+      }
+    }, {
+      key: 'value',
+      get: function get() {
+        return this.refs.connected.getWrappedInstance().value;
+      }
+    }]);
+
+    return FieldArray;
+  }(react_3);
+
+  FieldArray.propTypes = {
+    name: react_1.string.isRequired,
+    component: react_1.func.isRequired,
+    props: react_1.object
+  };
+  FieldArray.contextTypes = {
+    _reduxForm: react_1.object
+  };
+
+  return FieldArray;
+};
+
+var createFormValueSelector = function createFormValueSelector(_ref) {
+  var getIn = _ref.getIn;
+  return function (form) {
+    var getFormState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function (state) {
+      return getIn(state, 'form');
+    };
+
+    browser$1(form, 'Form value must be specified');
+    return function (state) {
+      for (var _len = arguments.length, fields = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+        fields[_key - 1] = arguments[_key];
+      }
+
+      browser$1(fields.length, 'No fields specified');
+      return fields.length === 1 ?
+      // only selecting one field, so return its value
+      getIn(getFormState(state), form + '.values.' + fields[0]) :
+      // selecting many fields, so return an object of field values
+      fields.reduce(function (accumulator, field) {
+        var value = getIn(getFormState(state), form + '.values.' + field);
+        return value === undefined ? accumulator : structure.setIn(accumulator, field, value);
+      }, {});
+    };
+  };
+};
+
+var _extends$27 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _defineProperty$5(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var createValues = function createValues(_ref) {
+  var getIn = _ref.getIn;
+  return function (config) {
+    var _prop$getFormState$co = _extends$27({
+      prop: 'values',
+      getFormState: function getFormState(state) {
+        return getIn(state, 'form');
+      }
+    }, config),
+        form = _prop$getFormState$co.form,
+        prop = _prop$getFormState$co.prop,
+        getFormState = _prop$getFormState$co.getFormState;
+
+    return connect(function (state) {
+      return _defineProperty$5({}, prop, getIn(getFormState(state), form + '.values'));
+    }, function () {
+      return {};
+    } // ignore dispatch
+    );
+  };
+};
+
+var createGetFormValues = function createGetFormValues(_ref) {
+  var getIn = _ref.getIn;
+  return function (form) {
+    var getFormState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function (state) {
+      return getIn(state, 'form');
+    };
+    return function (state) {
+      return getIn(getFormState(state), form + '.values');
+    };
+  };
+};
+
+var createGetFormInitialValues = function createGetFormInitialValues(_ref) {
+  var getIn = _ref.getIn;
+  return function (form) {
+    var getFormState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function (state) {
+      return getIn(state, 'form');
+    };
+    return function (state) {
+      return getIn(getFormState(state), form + '.initial');
+    };
+  };
+};
+
+var createGetFormSyncErrors = function createGetFormSyncErrors(_ref) {
+  var getIn = _ref.getIn;
+  return function (form) {
+    var getFormState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function (state) {
+      return getIn(state, 'form');
+    };
+    return function (state) {
+      return getIn(getFormState(state), form + '.syncErrors');
+    };
+  };
+};
+
+var createGetFormAsyncErrors = function createGetFormAsyncErrors(_ref) {
+  var getIn = _ref.getIn;
+  return function (form) {
+    var getFormState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function (state) {
+      return getIn(state, 'form');
+    };
+    return function (state) {
+      return getIn(getFormState(state), form + '.asyncErrors');
+    };
+  };
+};
+
+var createGetFormSubmitErrors = function createGetFormSubmitErrors(_ref) {
+  var getIn = _ref.getIn;
+  return function (form) {
+    var getFormState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function (state) {
+      return getIn(state, 'form');
+    };
+    return function (state) {
+      return getIn(getFormState(state), form + '.submitErrors');
+    };
+  };
+};
+
+var createIsPristine = function createIsPristine(_ref) {
+  var deepEqual = _ref.deepEqual,
+      empty = _ref.empty,
+      getIn = _ref.getIn;
+  return function (form) {
+    var getFormState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function (state) {
+      return getIn(state, 'form');
+    };
+    return function (state) {
+      var formState = getFormState(state);
+      var initial = getIn(formState, form + '.initial') || empty;
+      var values = getIn(formState, form + '.values') || initial;
+      return deepEqual(initial, values);
+    };
+  };
+};
+
+var createIsDirty = function createIsDirty(structure) {
+  return function (form, getFormState) {
+    var isPristine = createIsPristine(structure)(form, getFormState);
+    return function (state) {
+      return !isPristine(state);
+    };
+  };
+};
+
+var createIsInvalid = function createIsInvalid(structure) {
+  return function (form, getFormState) {
+    var isValid = createIsValid(structure)(form, getFormState);
+    return function (state) {
+      return !isValid(state);
+    };
+  };
+};
+
+var createIsSubmitting = function createIsSubmitting(_ref) {
+  var getIn = _ref.getIn;
+  return function (form) {
+    var getFormState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function (state) {
+      return getIn(state, 'form');
+    };
+    return function (state) {
+      var formState = getFormState(state);
+      return getIn(formState, form + '.submitting') || false;
+    };
+  };
+};
+
+var createHasSubmitSucceeded = function createHasSubmitSucceeded(_ref) {
+  var getIn = _ref.getIn;
+  return function (form) {
+    var getFormState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function (state) {
+      return getIn(state, 'form');
+    };
+    return function (state) {
+      var formState = getFormState(state);
+      return getIn(formState, form + '.submitSucceeded') || false;
+    };
+  };
+};
+
+var createHasSubmitFailed = function createHasSubmitFailed(_ref) {
+  var getIn = _ref.getIn;
+  return function (form) {
+    var getFormState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function (state) {
+      return getIn(state, 'form');
+    };
+    return function (state) {
+      var formState = getFormState(state);
+      return getIn(formState, form + '.submitFailed') || false;
+    };
+  };
+};
+
+var _createClass$7 = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck$14(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn$10(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits$10(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Form$1 = function (_Component) {
+  _inherits$10(Form, _Component);
+
+  function Form(props, context) {
+    _classCallCheck$14(this, Form);
+
+    var _this = _possibleConstructorReturn$10(this, (Form.__proto__ || Object.getPrototypeOf(Form)).call(this, props, context));
+
+    if (!context._reduxForm) {
+      throw new Error('Form must be inside a component decorated with reduxForm()');
+    }
+    return _this;
+  }
+
+  _createClass$7(Form, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.context._reduxForm.registerInnerOnSubmit(this.props.onSubmit);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return react.createElement('form', this.props);
+    }
+  }]);
+
+  return Form;
+}(react_3);
+
+Form$1.propTypes = {
+  onSubmit: react_1.func.isRequired
+};
+Form$1.contextTypes = {
+  _reduxForm: react_1.object
+};
+
+var _extends$28 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass$8 = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _objectWithoutProperties$13(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _classCallCheck$15(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn$11(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits$11(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var FormSection$1 = function (_Component) {
+  _inherits$11(FormSection, _Component);
+
+  function FormSection(props, context) {
+    _classCallCheck$15(this, FormSection);
+
+    var _this = _possibleConstructorReturn$11(this, (FormSection.__proto__ || Object.getPrototypeOf(FormSection)).call(this, props, context));
+
+    if (!context._reduxForm) {
+      throw new Error('FormSection must be inside a component decorated with reduxForm()');
+    }
+    return _this;
+  }
+
+  _createClass$8(FormSection, [{
+    key: 'getChildContext',
+    value: function getChildContext() {
+      var context = this.context,
+          name = this.props.name;
+
+      return {
+        _reduxForm: _extends$28({}, context._reduxForm, {
+          sectionPrefix: formatName(context, name)
+        })
+      };
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          children = _props.children,
+          name = _props.name,
+          component = _props.component,
+          rest = _objectWithoutProperties$13(_props, ['children', 'name', 'component']);
+
+      if (react.isValidElement(children)) {
+        return children;
+      }
+
+      return react_2(component, _extends$28({}, rest, {
+        children: children
+      }));
+    }
+  }]);
+
+  return FormSection;
+}(react_3);
+
+FormSection$1.propTypes = {
+  name: react_1.string.isRequired,
+  component: react_1.oneOfType([react_1.func, react_1.string])
+};
+
+FormSection$1.defaultProps = {
+  component: 'div'
+};
+
+FormSection$1.childContextTypes = {
+  _reduxForm: react_1.object.isRequired
+};
+
+FormSection$1.contextTypes = {
+  _reduxForm: react_1.object
+};
+
+var any = react_1.any;
+var bool$1 = react_1.bool;
+var func$7 = react_1.func;
+var shape$2 = react_1.shape;
+
+
+var propTypes$2 = {
+  // State:
+  asyncValidating: bool$1.isRequired, // true if async validation is running
+  dirty: bool$1.isRequired, // true if any values are different from initialValues
+  error: any, // form-wide error from '_error' key in validation result
+  warning: any, // form-wide warning from '_warning' key in validation result
+  invalid: bool$1.isRequired, // true if there are any validation errors
+  initialized: bool$1.isRequired, // true if the form has been initialized
+  pristine: bool$1.isRequired, // true if the values are the same as initialValues
+  submitting: bool$1.isRequired, // true if the form is in the process of being submitted
+  submitFailed: bool$1.isRequired, // true if the form was submitted and failed for any reason
+  submitSucceeded: bool$1.isRequired, // true if the form was successfully submitted
+  valid: bool$1.isRequired, // true if there are no validation errors
+  // Actions:
+  array: shape$2({
+    insert: func$7.isRequired, // function to insert a value into an array field
+    move: func$7.isRequired, // function to move a value within an array field
+    pop: func$7.isRequired, // function to pop a value off of an array field
+    push: func$7.isRequired, // function to push a value onto an array field
+    remove: func$7.isRequired, // function to remove a value from an array field
+    removeAll: func$7.isRequired, // function to remove all the values from an array field
+    shift: func$7.isRequired, // function to shift a value out of an array field
+    splice: func$7.isRequired, // function to splice a value into an array field
+    swap: func$7.isRequired, // function to swap values in an array field
+    unshift: func$7.isRequired // function to unshift a value into an array field
+  }),
+  asyncValidate: func$7.isRequired, // function to trigger async validation
+  blur: func$7.isRequired, // action to mark a field as blurred
+  change: func$7.isRequired, // action to change the value of a field
+  destroy: func$7.isRequired, // action to destroy the form's data in Redux
+  dispatch: func$7.isRequired, // the Redux dispatch action
+  handleSubmit: func$7.isRequired, // function to submit the form
+  initialize: func$7.isRequired, // action to initialize form data
+  reset: func$7.isRequired, // action to reset the form data to previously initialized values
+  touch: func$7.isRequired, // action to mark fields as touched
+  untouch: func$7.isRequired // action to mark fields as untouched
+};
+
+var _extends$15 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var createAll = function createAll(structure) {
+  return _extends$15({
+    // separate out field actions
+    actionTypes: actionTypes$1
+  }, importedActions, {
+    Field: createField(structure),
+    Fields: createFields(structure),
+    FieldArray: createFieldArray(structure),
+    Form: Form$1,
+    FormSection: FormSection$1,
+    formValueSelector: createFormValueSelector(structure),
+    getFormValues: createGetFormValues(structure),
+    getFormInitialValues: createGetFormInitialValues(structure),
+    getFormSyncErrors: createGetFormSyncErrors(structure),
+    getFormAsyncErrors: createGetFormAsyncErrors(structure),
+    getFormSubmitErrors: createGetFormSubmitErrors(structure),
+    isDirty: createIsDirty(structure),
+    isInvalid: createIsInvalid(structure),
+    isPristine: createIsPristine(structure),
+    isValid: createIsValid(structure),
+    isSubmitting: createIsSubmitting(structure),
+    hasSubmitSucceeded: createHasSubmitSucceeded(structure),
+    hasSubmitFailed: createHasSubmitFailed(structure),
+    propTypes: propTypes$2,
+    reduxForm: createReduxForm(structure),
+    reducer: createReducer(structure),
+    SubmissionError: SubmissionError$1,
+    values: createValues(structure)
+  });
+};
+
+var _createAll$1 = createAll(structure);
+
+var Field = _createAll$1.Field;
+var FieldArray = _createAll$1.FieldArray;
+var reducer$1 = _createAll$1.reducer;
+var reduxForm = _createAll$1.reduxForm;
+
+var types_1 = createCommonjsModule(function (module, exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.add = add;
+exports.remove = remove;
+exports.has = has;
+exports.all = all;
+exports.clear = clear;
+var types = {};
+
+function add(name) {
+  types[name] = true;
+}
+
+function remove(name) {
+  types[name] = false;
+}
+
+function has(name) {
+  return !!types[name];
+}
+
+function all() {
+  return Object.keys(types).filter(has);
+}
+
+function clear() {
+  all().forEach(remove);
+}
+});
+
+var createAction_1 = createCommonjsModule(function (module, exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
+exports.default = createAction;
+
+var _types = types_1;
+
+var id = 0;
+
+var identity = function identity(arg) {
+  return arg;
+};
+
+var normalize = function normalize(dispatchOrStore) {
+  if (dispatchOrStore && typeof dispatchOrStore.dispatch === 'function') {
+    return dispatchOrStore.dispatch;
+  } else {
+    return dispatchOrStore;
+  }
+};
+
+var normalizeAll = function normalizeAll(dispatchOrStores) {
+  if (Array.isArray(dispatchOrStores)) {
+    return dispatchOrStores.map(normalize);
+  } else {
+    return normalize(dispatchOrStores);
+  }
+};
+
+function createAction(description, payloadReducer, metaReducer) {
+  var _arguments2 = arguments;
+
+  if (typeof description === 'function') {
+    metaReducer = payloadReducer;
+    payloadReducer = description;
+    description = undefined;
+  }
+
+  if (typeof payloadReducer !== 'function') {
+    payloadReducer = identity;
+  }
+
+  if (typeof metaReducer !== 'function') {
+    metaReducer = undefined;
+  }
+
+  var isSerializable = typeof description === 'string' && /^[0-9A-Z_]+$/.test(description);
+
+  if (isSerializable) {
+    if ((0, _types.has)(description)) {
+      throw new TypeError('Duplicate action type: ' + description);
+    }
+
+    (0, _types.add)(description);
+  } else {
+    ++id;
+  }
+
+  var type = isSerializable ? description : '[' + id + ']' + (description ? ' ' + description : '');
+
+  var dispatchFunctions = undefined;
+
+  function makeAction() {
+    if (metaReducer) {
+      return {
+        type: type,
+        payload: payloadReducer.apply(undefined, arguments),
+        meta: metaReducer.apply(undefined, arguments)
+      };
+    }
+
+    return {
+      type: type,
+      payload: payloadReducer.apply(undefined, arguments)
+    };
+  }
+
+  var makeAndDispatch = function makeAndDispatch(dispatchs) {
+    return function () {
+      var _arguments = _arguments2;
+
+      if (Array.isArray(dispatchs)) {
+        var _ret = function () {
+          var payloadedAction = makeAction.apply(undefined, _arguments);
+          return {
+            v: dispatchs.map(function (dispatch) {
+              return dispatch(payloadedAction);
+            })
+          };
+        }();
+
+        if ((typeof _ret === 'undefined' ? 'undefined' : _typeof(_ret)) === "object") return _ret.v;
+      } else if (dispatchs) {
+        return dispatchs(makeAction.apply(undefined, arguments));
+      } else {
+        return makeAction.apply(undefined, arguments);
+      }
+    };
+  };
+
+  function actionCreator() {
+    return makeAndDispatch(dispatchFunctions).apply(undefined, arguments);
+  }
+
+  actionCreator.getType = function () {
+    return type;
+  };
+  actionCreator.toString = function () {
+    return type;
+  };
+
+  actionCreator.raw = makeAction;
+
+  actionCreator.assignTo = function (dispatchOrStores) {
+    dispatchFunctions = normalizeAll(dispatchOrStores);
+    return actionCreator;
+  };
+
+  actionCreator.assigned = function () {
+    return !!dispatchFunctions;
+  };
+  actionCreator.bound = function () {
+    return false;
+  };
+  actionCreator.dispatched = actionCreator.assigned;
+
+  actionCreator.bindTo = function (dispatchOrStores) {
+    var boundActionCreator = makeAndDispatch(normalizeAll(dispatchOrStores));
+    boundActionCreator.raw = makeAction;
+    boundActionCreator.getType = actionCreator.getType;
+    boundActionCreator.toString = actionCreator.toString;
+    boundActionCreator.assignTo = function () {
+      return boundActionCreator;
+    };
+    boundActionCreator.bindTo = function () {
+      return boundActionCreator;
+    };
+    boundActionCreator.assigned = function () {
+      return false;
+    };
+    boundActionCreator.bound = function () {
+      return true;
+    };
+    boundActionCreator.dispatched = boundActionCreator.bound;
+    return boundActionCreator;
+  };
+
+  return actionCreator;
+}
+});
+
+var batch = createCommonjsModule(function (module, exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createAction = createAction_1;
+
+var _createAction2 = _interopRequireDefault(_createAction);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = (0, _createAction2.default)('Batch', function () {
+  for (var _len = arguments.length, actions = Array(_len), _key = 0; _key < _len; _key++) {
+    actions[_key] = arguments[_key];
+  }
+
+  if (actions.length === 1 && Array.isArray(actions[0])) {
+    return actions[0];
+  }
+  return actions;
+});
+});
+
+var createReducer_1 = createCommonjsModule(function (module, exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = createReducer;
+
+var _batch = batch;
+
+var _batch2 = _interopRequireDefault(_batch);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function normalizeType(typeOrActionCreator) {
+  if (typeOrActionCreator && typeOrActionCreator.getType) {
+    return typeOrActionCreator.toString();
+  }
+  return typeOrActionCreator;
+}
+
+function createReducer() {
+  var handlers = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+  var defaultState = arguments[1];
+
+  var opts = {
+    payload: true
+  };
+
+  function has(typeOrActionCreator) {
+    return !!handlers[normalizeType(typeOrActionCreator)];
+  }
+
+  function on(typeOrActionCreator, handler) {
+    handlers[normalizeType(typeOrActionCreator)] = handler;
+  }
+
+  function off(typeOrActionCreator) {
+    delete handlers[normalizeType(typeOrActionCreator)];
+  }
+
+  function options(newOpts) {
+    Object.keys(newOpts).forEach(function (name) {
+      return opts[name] = newOpts[name];
+    });
+  }
+
+  if (typeof handlers === 'function') {
+    var factory = handlers;
+    handlers = {};
+    factory(on, off);
+  }
+
+  if (!has(_batch2.default)) {
+    on(_batch2.default, function (state, payload) {
+      if (opts.payload) {
+        return payload.reduce(reduce, state);
+      } else {
+        return payload.payload.reduce(reduce, state);
+      }
+    });
+  }
+
+  function reduce() {
+    var state = arguments.length <= 0 || arguments[0] === undefined ? defaultState : arguments[0];
+    var action = arguments[1];
+
+    if (action && handlers[action.type]) {
+      if (opts.payload) {
+        return handlers[action.type](state, action.payload, action.meta);
+      } else {
+        return handlers[action.type](state, action);
+      }
+    } else {
+      return state;
+    }
+  }
+
+  reduce.has = has;
+  reduce.on = on;
+  reduce.off = off;
+  reduce.options = options;
+
+  return reduce;
+}
+});
+
+var assignAll_1 = createCommonjsModule(function (module, exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = assignAll;
+function assignAll(actions, stores) {
+  if (Array.isArray(actions)) {
+    return actions.map(function (action) {
+      return action.assignTo(stores);
+    });
+  } else {
+    return Object.keys(actions).reduce(function (assigns, action) {
+      assigns[action] = actions[action].assignTo(stores);
+      return assigns;
+    }, {});
+  }
+}
+});
+
+var bindAll_1 = createCommonjsModule(function (module, exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = bindAll;
+function bindAll(actions, stores) {
+  if (Array.isArray(actions)) {
+    return actions.map(function (action) {
+      return action.bindTo(stores);
+    });
+  } else {
+    return Object.keys(actions).reduce(function (binds, action) {
+      binds[action] = actions[action].bindTo(stores);
+      return binds;
+    }, {});
+  }
+}
+});
+
+var disbatch_1 = createCommonjsModule(function (module, exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = disbatch;
+
+var _batch = batch;
+
+var _batch2 = _interopRequireDefault(_batch);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function disbatch(store) {
+  for (var _len = arguments.length, actions = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    actions[_key - 1] = arguments[_key];
+  }
+
+  if (actions && actions.length > 0) {
+    if (!store || typeof store !== 'function' && typeof store.dispatch !== 'function') {
+      throw new TypeError('disbatch must take either a valid Redux store or a dispatch function as first parameter');
+    }
+
+    if (typeof store.dispatch === 'function') {
+      store = store.dispatch;
+    }
+
+    // store is actually the dispatch function here
+    return store(_batch2.default.apply(undefined, actions));
+  } else {
+    if (!store || typeof store.dispatch !== 'function') {
+      throw new TypeError('disbatch must take a valid Redux store with a dispatch function as first parameter');
+    }
+
+    store.disbatch = disbatch.bind(undefined, store);
+    return store;
+  }
+}
+});
+
+var reduxLogger = createCommonjsModule(function (module, exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.logger = undefined;
+exports.actionTransformer = actionTransformer;
+
+var _batch = batch;
+
+var _batch2 = _interopRequireDefault(_batch);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var batchType = _batch2.default.getType();
+
+function actionTransformer(action) {
+  if (action && action.type === batchType) {
+    action.payload.type = batchType;
+    return action.payload;
+  }
+  return action;
+}
+
+var logger = exports.logger = {};
+
+var _loop = function _loop(level) {
+  if (typeof console[level] === 'function') {
+    logger[level] = function levelFn() {
+      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      var lastArg = args.pop();
+
+      if (Array.isArray(lastArg) && lastArg.type === batchType) {
+        lastArg.forEach(function (action) {
+          console[level].apply(console, [].concat(args, [action]));
+        });
+      } else {
+        args.push(lastArg);
+        console[level].apply(console, args);
+      }
+    };
+  }
+};
+
+for (var level in console) {
+  _loop(level);
+}
+});
+
+var index$16 = createCommonjsModule(function (module, exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _reduxLogger = reduxLogger;
+
+var reduxLogger$$1 = _interopRequireWildcard(_reduxLogger);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+exports.default = {
+  reduxLogger: reduxLogger$$1
+};
+});
+
+var index$14 = createCommonjsModule(function (module, exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.types = exports.loggers = exports.disbatch = exports.batch = exports.bindAll = exports.assignAll = exports.createReducer = exports.createAction = undefined;
+
+var _createAction = createAction_1;
+
+Object.defineProperty(exports, 'createAction', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_createAction).default;
+  }
+});
+
+var _createReducer = createReducer_1;
+
+Object.defineProperty(exports, 'createReducer', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_createReducer).default;
+  }
+});
+
+var _assignAll = assignAll_1;
+
+Object.defineProperty(exports, 'assignAll', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_assignAll).default;
+  }
+});
+
+var _bindAll = bindAll_1;
+
+Object.defineProperty(exports, 'bindAll', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_bindAll).default;
+  }
+});
+
+var _batch = batch;
+
+Object.defineProperty(exports, 'batch', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_batch).default;
+  }
+});
+
+var _disbatch = disbatch_1;
+
+Object.defineProperty(exports, 'disbatch', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_disbatch).default;
+  }
+});
+
+var _loggers = index$16;
+
+Object.defineProperty(exports, 'loggers', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_loggers).default;
+  }
+});
+
+var _types2 = types_1;
+
+var _types = _interopRequireWildcard(_types2);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var types = exports.types = _types;
+});
+
+var index_7 = index$14.createReducer;
+var index_8 = index$14.createAction;
+
+var classCallCheck = function (instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+};
+
+var createClass = function () {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+
+  return function (Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) defineProperties(Constructor, staticProps);
+    return Constructor;
+  };
+}();
+
+
+
+
+
+var defineProperty$2 = function (obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+};
+
+
+
+var inherits = function (subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      enumerable: false,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+};
+
+
+
+
+
+
+
+
+
+
+
+var possibleConstructorReturn = function (self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return call && (typeof call === "object" || typeof call === "function") ? call : self;
+};
+
+
+
+
+
+var slicedToArray = function () {
+  function sliceIterator(arr, i) {
+    var _arr = [];
+    var _n = true;
+    var _d = false;
+    var _e = undefined;
+
+    try {
+      for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+        _arr.push(_s.value);
+
+        if (i && _arr.length === i) break;
+      }
+    } catch (err) {
+      _d = true;
+      _e = err;
+    } finally {
+      try {
+        if (!_n && _i["return"]) _i["return"]();
+      } finally {
+        if (_d) throw _e;
+      }
+    }
+
+    return _arr;
+  }
+
+  return function (arr, i) {
+    if (Array.isArray(arr)) {
+      return arr;
+    } else if (Symbol.iterator in Object(arr)) {
+      return sliceIterator(arr, i);
+    } else {
+      throw new TypeError("Invalid attempt to destructure non-iterable instance");
+    }
+  };
+}();
+
+var setResponse = index_8('set response');
+
+var reducer$$1 = index_7(defineProperty$2({}, setResponse, function (state, action) {
+  return state;
+}), {});
+
+var store = createStore(combineReducers({
+  app: reducer$$1,
+  form: reducer$1
+}));
+
 // 7.2.1 RequireObjectCoercible(argument)
 var _defined = function(it){
   if(it == undefined)throw TypeError("Can't call method on  " + it);
@@ -22978,9 +31841,9 @@ var _toObject = function(it){
   return Object(defined(it));
 };
 
-var hasOwnProperty$4 = {}.hasOwnProperty;
+var hasOwnProperty$16 = {}.hasOwnProperty;
 var _has = function(it, key){
-  return hasOwnProperty$4.call(it, key);
+  return hasOwnProperty$16.call(it, key);
 };
 
 var _global = createCommonjsModule(function (module) {
@@ -22992,9 +31855,9 @@ if(typeof __g == 'number')__g = global; // eslint-disable-line no-undef
 
 var global$2 = _global;
 var SHARED = '__core-js_shared__';
-var store  = global$2[SHARED] || (global$2[SHARED] = {});
+var store$1  = global$2[SHARED] || (global$2[SHARED] = {});
 var _shared = function(key){
-  return store[key] || (store[key] = {});
+  return store$1[key] || (store$1[key] = {});
 };
 
 var id = 0;
@@ -23056,9 +31919,9 @@ var _isObject = function(it){
   return typeof it === 'object' ? it !== null : typeof it === 'function';
 };
 
-var isObject = _isObject;
+var isObject$2 = _isObject;
 var _anObject = function(it){
-  if(!isObject(it))throw TypeError(it + ' is not an object!');
+  if(!isObject$2(it))throw TypeError(it + ' is not an object!');
   return it;
 };
 
@@ -23074,9 +31937,9 @@ var _descriptors = !_fails(function(){
   return Object.defineProperty({}, 'a', {get: function(){ return 7; }}).a != 7;
 });
 
-var isObject$1 = _isObject;
+var isObject$3 = _isObject;
 var document$1 = _global.document;
-var is$2 = isObject$1(document$1) && isObject$1(document$1.createElement);
+var is$2 = isObject$3(document$1) && isObject$3(document$1.createElement);
 var _domCreate = function(it){
   return is$2 ? document$1.createElement(it) : {};
 };
@@ -23085,15 +31948,15 @@ var _ie8DomDefine = !_descriptors && !_fails(function(){
   return Object.defineProperty(_domCreate('div'), 'a', {get: function(){ return 7; }}).a != 7;
 });
 
-var isObject$2 = _isObject;
+var isObject$4 = _isObject;
 // instead of the ES6 spec version, we didn't implement @@toPrimitive case
 // and the second argument - flag - preferred type is a string
 var _toPrimitive = function(it, S){
-  if(!isObject$2(it))return it;
+  if(!isObject$4(it))return it;
   var fn, val;
-  if(S && typeof (fn = it.toString) == 'function' && !isObject$2(val = fn.call(it)))return val;
-  if(typeof (fn = it.valueOf) == 'function' && !isObject$2(val = fn.call(it)))return val;
-  if(!S && typeof (fn = it.toString) == 'function' && !isObject$2(val = fn.call(it)))return val;
+  if(S && typeof (fn = it.toString) == 'function' && !isObject$4(val = fn.call(it)))return val;
+  if(typeof (fn = it.valueOf) == 'function' && !isObject$4(val = fn.call(it)))return val;
+  if(!S && typeof (fn = it.toString) == 'function' && !isObject$4(val = fn.call(it)))return val;
   throw TypeError("Can't convert object to primitive value");
 };
 
@@ -23223,7 +32086,7 @@ var getPrototypeOf = createCommonjsModule(function (module) {
 module.exports = { "default": getPrototypeOf$2, __esModule: true };
 });
 
-var classCallCheck = createCommonjsModule(function (module, exports) {
+var classCallCheck$1 = createCommonjsModule(function (module, exports) {
 "use strict";
 
 exports.__esModule = true;
@@ -23240,20 +32103,20 @@ var $export$2 = _export;
 $export$2($export$2.S + $export$2.F * !_descriptors, 'Object', {defineProperty: _objectDp.f});
 
 var $Object = _core.Object;
-var defineProperty$2 = function defineProperty(it, key, desc){
+var defineProperty$5 = function defineProperty(it, key, desc){
   return $Object.defineProperty(it, key, desc);
 };
 
-var defineProperty = createCommonjsModule(function (module) {
-module.exports = { "default": defineProperty$2, __esModule: true };
+var defineProperty$3 = createCommonjsModule(function (module) {
+module.exports = { "default": defineProperty$5, __esModule: true };
 });
 
-var createClass = createCommonjsModule(function (module, exports) {
+var createClass$1 = createCommonjsModule(function (module, exports) {
 "use strict";
 
 exports.__esModule = true;
 
-var _defineProperty = defineProperty;
+var _defineProperty = defineProperty$3;
 
 var _defineProperty2 = _interopRequireDefault(_defineProperty);
 
@@ -23309,10 +32172,10 @@ var _redefine = _hide;
 
 var _iterators = {};
 
-var toString$1 = {}.toString;
+var toString$3 = {}.toString;
 
 var _cof = function(it){
-  return toString$1.call(it).slice(8, -1);
+  return toString$3.call(it).slice(8, -1);
 };
 
 var cof = _cof;
@@ -23694,10 +32557,10 @@ var global$6         = _global;
 var core$2           = _core;
 var LIBRARY$1        = _library;
 var wksExt$1         = _wksExt;
-var defineProperty$4 = _objectDp.f;
+var defineProperty$7 = _objectDp.f;
 var _wksDefine = function(name){
   var $Symbol = core$2.Symbol || (core$2.Symbol = LIBRARY$1 ? {} : global$6.Symbol || {});
-  if(name.charAt(0) != '_' && !(name in $Symbol))defineProperty$4($Symbol, name, {value: wksExt$1.f(name)});
+  if(name.charAt(0) != '_' && !(name in $Symbol))defineProperty$7($Symbol, name, {value: wksExt$1.f(name)});
 };
 
 var getKeys$1   = _objectKeys;
@@ -23756,7 +32619,7 @@ var _objectGopn = {
 
 var toIObject$5 = _toIobject;
 var gOPN$1      = _objectGopn.f;
-var toString$2  = {}.toString;
+var toString$4  = {}.toString;
 
 var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames
   ? Object.getOwnPropertyNames(window) : [];
@@ -23770,7 +32633,7 @@ var getWindowNames = function(it){
 };
 
 var f$4 = function getOwnPropertyNames(it){
-  return windowNames && toString$2.call(it) == '[object Window]' ? getWindowNames(it) : gOPN$1(toIObject$5(it));
+  return windowNames && toString$4.call(it) == '[object Window]' ? getWindowNames(it) : gOPN$1(toIObject$5(it));
 };
 
 var _objectGopnExt = {
@@ -23813,7 +32676,7 @@ var wksExt         = _wksExt;
 var wksDefine      = _wksDefine;
 var keyOf$2          = _keyof;
 var enumKeys       = _enumKeys;
-var isArray        = _isArray;
+var isArray$2        = _isArray;
 var anObject$3       = _anObject;
 var toIObject$3      = _toIobject;
 var toPrimitive$1    = _toPrimitive;
@@ -23860,7 +32723,7 @@ var wrap = function(tag){
   return sym;
 };
 
-var isSymbol$1 = USE_NATIVE && typeof $Symbol.iterator == 'symbol' ? function(it){
+var isSymbol$3 = USE_NATIVE && typeof $Symbol.iterator == 'symbol' ? function(it){
   return typeof it == 'symbol';
 } : function(it){
   return it instanceof $Symbol;
@@ -23976,7 +32839,7 @@ $export$4($export$4.S + $export$4.F * !USE_NATIVE, 'Symbol', {
   },
   // 19.4.2.5 Symbol.keyFor(sym)
   keyFor: function keyFor(key){
-    if(isSymbol$1(key))return keyOf$2(SymbolRegistry, key);
+    if(isSymbol$3(key))return keyOf$2(SymbolRegistry, key);
     throw TypeError(key + ' is not a symbol!');
   },
   useSetter: function(){ setter = true; },
@@ -24007,16 +32870,16 @@ $JSON && $export$4($export$4.S + $export$4.F * (!USE_NATIVE || $fails(function()
   return _stringify([S]) != '[null]' || _stringify({a: S}) != '{}' || _stringify(Object(S)) != '{}';
 })), 'JSON', {
   stringify: function stringify(it){
-    if(it === undefined || isSymbol$1(it))return; // IE8 returns string on undefined
+    if(it === undefined || isSymbol$3(it))return; // IE8 returns string on undefined
     var args = [it]
       , i    = 1
       , replacer, $replacer;
     while(arguments.length > i)args.push(arguments[i++]);
     replacer = args[1];
     if(typeof replacer == 'function')$replacer = replacer;
-    if($replacer || !isArray(replacer))replacer = function(key, value){
+    if($replacer || !isArray$2(replacer))replacer = function(key, value){
       if($replacer)value = $replacer.call(this, key, value);
-      if(!isSymbol$1(value))return value;
+      if(!isSymbol$3(value))return value;
     };
     args[1] = replacer;
     return _stringify.apply($JSON, args);
@@ -24036,10 +32899,10 @@ _wksDefine('asyncIterator');
 
 _wksDefine('observable');
 
-var index$8 = _core.Symbol;
+var index$18 = _core.Symbol;
 
 var symbol = createCommonjsModule(function (module) {
-module.exports = { "default": index$8, __esModule: true };
+module.exports = { "default": index$18, __esModule: true };
 });
 
 var _typeof_1 = createCommonjsModule(function (module, exports) {
@@ -24066,7 +32929,7 @@ exports.default = typeof _symbol2.default === "function" && _typeof(_iterator2.d
 };
 });
 
-var possibleConstructorReturn = createCommonjsModule(function (module, exports) {
+var possibleConstructorReturn$1 = createCommonjsModule(function (module, exports) {
 "use strict";
 
 exports.__esModule = true;
@@ -24086,11 +32949,11 @@ exports.default = function (self, call) {
 };
 });
 
-var isObject$3 = _isObject;
+var isObject$5 = _isObject;
 var anObject$4 = _anObject;
 var check = function(O, proto){
   anObject$4(O);
-  if(!isObject$3(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
+  if(!isObject$5(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
 };
 var _setProto = {
   set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
@@ -24132,7 +32995,7 @@ var create$1 = createCommonjsModule(function (module) {
 module.exports = { "default": create$3, __esModule: true };
 });
 
-var inherits = createCommonjsModule(function (module, exports) {
+var inherits$1 = createCommonjsModule(function (module, exports) {
 "use strict";
 
 exports.__esModule = true;
@@ -24292,7 +33155,7 @@ var from = createCommonjsModule(function (module) {
 module.exports = { "default": from$2, __esModule: true };
 });
 
-var toConsumableArray = createCommonjsModule(function (module, exports) {
+var toConsumableArray$1 = createCommonjsModule(function (module, exports) {
 "use strict";
 
 exports.__esModule = true;
@@ -24316,7 +33179,7 @@ exports.default = function (arr) {
 };
 });
 
-var index$10 = createCommonjsModule(function (module, exports) {
+var index$20 = createCommonjsModule(function (module, exports) {
 /**
  * lodash (Custom Build) <https://lodash.com/>
  * Build: `lodash modularize exports="npm" -o ./`
@@ -27424,7 +36287,7 @@ function hyphenateStyleName$2(string) {
       .replace(msPattern$2, '-ms-');
 }
 
-var index$12 = hyphenateStyleName$2;
+var index$22 = hyphenateStyleName$2;
 
 var transition_1 = createCommonjsModule(function (module, exports) {
 'use strict';
@@ -27434,7 +36297,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = transition;
 
-var _hyphenateStyleName = index$12;
+var _hyphenateStyleName = index$22;
 
 var _hyphenateStyleName2 = _interopRequireDefault(_hyphenateStyleName);
 
@@ -28715,7 +37578,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 exports.default = transition;
 
-var _hyphenateStyleName = index$12;
+var _hyphenateStyleName = index$22;
 
 var _hyphenateStyleName2 = _interopRequireDefault(_hyphenateStyleName);
 
@@ -29246,10 +38109,10 @@ _objectSap('keys', function(){
   };
 });
 
-var keys$2 = _core.Object.keys;
+var keys$6 = _core.Object.keys;
 
-var keys = createCommonjsModule(function (module) {
-module.exports = { "default": keys$2, __esModule: true };
+var keys$4 = createCommonjsModule(function (module) {
+module.exports = { "default": keys$6, __esModule: true };
 });
 
 var rtl_1 = createCommonjsModule(function (module, exports) {
@@ -29259,7 +38122,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _keys = keys;
+var _keys = keys$4;
 
 var _keys2 = _interopRequireDefault(_keys);
 
@@ -29387,7 +38250,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
@@ -29425,13 +38288,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _toConsumableArray2 = toConsumableArray;
+var _toConsumableArray2 = toConsumableArray$1;
 
 var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
 
 exports.default = getMuiTheme;
 
-var _lodash = index$10;
+var _lodash = index$20;
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -29813,19 +38676,19 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -29915,7 +38778,7 @@ var assign = createCommonjsModule(function (module) {
 module.exports = { "default": assign$2, __esModule: true };
 });
 
-var _extends$11 = createCommonjsModule(function (module, exports) {
+var _extends$30 = createCommonjsModule(function (module, exports) {
 "use strict";
 
 exports.__esModule = true;
@@ -29941,7 +38804,7 @@ exports.default = _assign2.default || function (target) {
 };
 });
 
-var objectWithoutProperties = createCommonjsModule(function (module, exports) {
+var objectWithoutProperties$1 = createCommonjsModule(function (module, exports) {
 "use strict";
 
 exports.__esModule = true;
@@ -29959,7 +38822,7 @@ exports.default = function (obj, keys) {
 };
 });
 
-var index$15 = function (target) {
+var index$26 = function (target) {
   for (var i = 1; i < arguments.length; i++) {
     var source = arguments[i];
     for (var key in source) {
@@ -30008,7 +38871,7 @@ exports.default = {
 };
 });
 
-var propTypes$1 = createCommonjsModule(function (module, exports) {
+var propTypes$4 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -30049,7 +38912,7 @@ var ReactElement$8 = ReactElement_1;
 
 var emptyFunction$12 = emptyFunction_1;
 var invariant$44 = invariant_1;
-var warning$43 = warning_1;
+var warning$45 = warning_1;
 
 /**
  * We used to allow keyed objects to serve as a collection of ReactElements,
@@ -30071,11 +38934,11 @@ var ReactFragment = {
    */
   create: function (object) {
     if (typeof object !== 'object' || !object || Array.isArray(object)) {
-      process.env.NODE_ENV !== 'production' ? warning$43(false, 'React.addons.createFragment only accepts a single object. Got: %s', object) : void 0;
+      process.env.NODE_ENV !== 'production' ? warning$45(false, 'React.addons.createFragment only accepts a single object. Got: %s', object) : void 0;
       return object;
     }
     if (ReactElement$8.isValidElement(object)) {
-      process.env.NODE_ENV !== 'production' ? warning$43(false, 'React.addons.createFragment does not accept a ReactElement ' + 'without a wrapper object.') : void 0;
+      process.env.NODE_ENV !== 'production' ? warning$45(false, 'React.addons.createFragment does not accept a ReactElement ' + 'without a wrapper object.') : void 0;
       return object;
     }
 
@@ -30086,7 +38949,7 @@ var ReactFragment = {
     for (var key in object) {
       if (process.env.NODE_ENV !== 'production') {
         if (!warnedAboutNumeric && numericPropertyRegex.test(key)) {
-          process.env.NODE_ENV !== 'production' ? warning$43(false, 'React.addons.createFragment(...): Child objects should have ' + 'non-numeric keys so ordering is preserved.') : void 0;
+          process.env.NODE_ENV !== 'production' ? warning$45(false, 'React.addons.createFragment(...): Child objects should have ' + 'non-numeric keys so ordering is preserved.') : void 0;
           warnedAboutNumeric = true;
         }
       }
@@ -30099,7 +38962,7 @@ var ReactFragment = {
 
 var ReactFragment_1 = ReactFragment;
 
-var index$19 = ReactFragment_1.create;
+var index$30 = ReactFragment_1.create;
 
 var childUtils = createCommonjsModule(function (module, exports) {
 'use strict';
@@ -30114,7 +38977,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactAddonsCreateFragment = index$19;
+var _reactAddonsCreateFragment = index$30;
 
 var _reactAddonsCreateFragment2 = _interopRequireDefault(_reactAddonsCreateFragment);
 
@@ -30198,7 +39061,7 @@ exports.default = {
 };
 });
 
-var index$21 = createCommonjsModule(function (module, exports) {
+var index$32 = createCommonjsModule(function (module, exports) {
 // Source: http://jsfiddle.net/vWx8V/
 // http://stackoverflow.com/questions/5603195/full-list-of-javascript-keycodes
 
@@ -30347,7 +39210,7 @@ for (var alias in aliases) {
 }
 });
 
-var shallowEqual$4 = createCommonjsModule(function (module, exports) {
+var shallowEqual$5 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -30376,7 +39239,7 @@ exports.default = {
 
 var KeyEscapeUtils$6 = KeyEscapeUtils_1;
 var traverseAllChildren$5 = traverseAllChildren_1;
-var warning$44 = warning_1;
+var warning$46 = warning_1;
 
 var ReactComponentTreeHook$10;
 
@@ -30405,7 +39268,7 @@ function flattenSingleChildIntoContext$1(traverseContext, child, name, selfDebug
         ReactComponentTreeHook$10 = ReactComponentTreeHook_1;
       }
       if (!keyUnique) {
-        process.env.NODE_ENV !== 'production' ? warning$44(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils$6.unescape(name), ReactComponentTreeHook$10.getStackAddendumByID(selfDebugID)) : void 0;
+        process.env.NODE_ENV !== 'production' ? warning$46(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils$6.unescape(name), ReactComponentTreeHook$10.getStackAddendumByID(selfDebugID)) : void 0;
       }
     }
     if (keyUnique && child != null) {
@@ -30528,13 +39391,13 @@ var ReactTransitionChildMapping$1 = {
 
 var ReactTransitionChildMapping_1 = ReactTransitionChildMapping$1;
 
-var _assign$22 = index;
+var _assign$22 = index$1;
 
-function _classCallCheck$3(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck$16(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _possibleConstructorReturn$12(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits$12(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var React$7 = React_1;
 var ReactTransitionChildMapping = ReactTransitionChildMapping_1;
@@ -30548,18 +39411,18 @@ var emptyFunction$13 = emptyFunction_1;
  */
 
 var ReactTransitionGroup = function (_React$Component) {
-  _inherits(ReactTransitionGroup, _React$Component);
+  _inherits$12(ReactTransitionGroup, _React$Component);
 
   function ReactTransitionGroup() {
     var _temp, _this, _ret;
 
-    _classCallCheck$3(this, ReactTransitionGroup);
+    _classCallCheck$16(this, ReactTransitionGroup);
 
     for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+    return _ret = (_temp = (_this = _possibleConstructorReturn$12(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
       // TODO: can we get useful debug information to show at this point?
       children: ReactTransitionChildMapping.getChildMapping(_this.props.children)
     }, _this.performAppear = function (key) {
@@ -30643,7 +39506,7 @@ var ReactTransitionGroup = function (_React$Component) {
           return { children: newChildren };
         });
       }
-    }, _temp), _possibleConstructorReturn(_this, _ret);
+    }, _temp), _possibleConstructorReturn$12(_this, _ret);
   }
 
   ReactTransitionGroup.prototype.componentWillMount = function componentWillMount() {
@@ -30745,7 +39608,7 @@ ReactTransitionGroup.defaultProps = {
 
 var ReactTransitionGroup_1 = ReactTransitionGroup;
 
-var index$23 = ReactTransitionGroup_1;
+var index$34 = ReactTransitionGroup_1;
 
 var ScaleInChild_1 = createCommonjsModule(function (module, exports) {
 'use strict';
@@ -30754,11 +39617,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -30766,23 +39629,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -30790,7 +39653,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -30923,11 +39786,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -30935,23 +39798,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -30959,7 +39822,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactAddonsTransitionGroup = index$23;
+var _reactAddonsTransitionGroup = index$34;
 
 var _reactAddonsTransitionGroup2 = _interopRequireDefault(_reactAddonsTransitionGroup);
 
@@ -31055,23 +39918,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -31079,11 +39942,11 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _shallowEqual = shallowEqual$4;
+var _shallowEqual = shallowEqual$5;
 
 var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
@@ -31242,7 +40105,7 @@ process.env.NODE_ENV !== "production" ? FocusRipple.propTypes = {
 exports.default = FocusRipple;
 });
 
-var toArray$2 = createCommonjsModule(function (module, exports) {
+var toArray$5 = createCommonjsModule(function (module, exports) {
 "use strict";
 
 exports.__esModule = true;
@@ -31292,11 +40155,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -31304,23 +40167,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -31328,11 +40191,11 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _shallowEqual = shallowEqual$4;
+var _shallowEqual = shallowEqual$5;
 
 var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
@@ -31463,7 +40326,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _toConsumableArray2 = toConsumableArray;
+var _toConsumableArray2 = toConsumableArray$1;
 
 var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
 
@@ -31471,27 +40334,27 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _toArray2 = toArray$2;
+var _toArray2 = toArray$5;
 
 var _toArray3 = _interopRequireDefault(_toArray2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -31499,11 +40362,11 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactAddonsTransitionGroup = index$23;
+var _reactAddonsTransitionGroup = index$34;
 
 var _reactAddonsTransitionGroup2 = _interopRequireDefault(_reactAddonsTransitionGroup);
 
@@ -31772,11 +40635,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -31784,23 +40647,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -31814,7 +40677,7 @@ var _events = events;
 
 var _events2 = _interopRequireDefault(_events);
 
-var _keycode = index$21;
+var _keycode = index$32;
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
@@ -32171,11 +41034,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -32183,23 +41046,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -32321,7 +41184,7 @@ process.env.NODE_ENV !== "production" ? FontIcon.propTypes = {
 exports.default = FontIcon;
 });
 
-var index$25 = createCommonjsModule(function (module, exports) {
+var index$36 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -32345,11 +41208,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -32357,23 +41220,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -32571,11 +41434,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -32583,23 +41446,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -32611,7 +41474,7 @@ var _transitions = transitions;
 
 var _transitions2 = _interopRequireDefault(_transitions);
 
-var _propTypes = propTypes$1;
+var _propTypes = propTypes$4;
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -32619,7 +41482,7 @@ var _EnhancedButton = EnhancedButton_1;
 
 var _EnhancedButton2 = _interopRequireDefault(_EnhancedButton);
 
-var _FontIcon = index$25;
+var _FontIcon = index$36;
 
 var _FontIcon2 = _interopRequireDefault(_FontIcon);
 
@@ -32941,7 +41804,7 @@ process.env.NODE_ENV !== "production" ? IconButton.propTypes = {
 exports.default = IconButton;
 });
 
-var index$17 = createCommonjsModule(function (module, exports) {
+var index$28 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -33194,7 +42057,7 @@ var _shouldUpdate = shouldUpdate_1;
 
 var _shouldUpdate2 = _interopRequireDefault(_shouldUpdate);
 
-var _shallowEqual = shallowEqual$4;
+var _shallowEqual = shallowEqual$5;
 
 var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
@@ -33218,11 +42081,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -33230,23 +42093,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -33375,7 +42238,7 @@ process.env.NODE_ENV !== "production" ? SvgIcon.propTypes = {
 exports.default = SvgIcon;
 });
 
-var index$27 = createCommonjsModule(function (module, exports) {
+var index$38 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -33407,7 +42270,7 @@ var _pure = pure_1;
 
 var _pure2 = _interopRequireDefault(_pure);
 
-var _SvgIcon = index$27;
+var _SvgIcon = index$38;
 
 var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -33434,11 +42297,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -33446,23 +42309,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -33470,7 +42333,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = propTypes$1;
+var _propTypes = propTypes$4;
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -33576,7 +42439,7 @@ process.env.NODE_ENV !== "production" ? Paper.propTypes = {
 exports.default = Paper;
 });
 
-var index$29 = createCommonjsModule(function (module, exports) {
+var index$40 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -33600,15 +42463,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _keys = keys;
+var _keys = keys$4;
 
 var _keys2 = _interopRequireDefault(_keys);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -33616,25 +42479,25 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
 exports.getStyles = getStyles;
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -33642,7 +42505,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _IconButton = index$17;
+var _IconButton = index$28;
 
 var _IconButton2 = _interopRequireDefault(_IconButton);
 
@@ -33650,11 +42513,11 @@ var _menu = menu;
 
 var _menu2 = _interopRequireDefault(_menu);
 
-var _Paper = index$29;
+var _Paper = index$40;
 
 var _Paper2 = _interopRequireDefault(_Paper);
 
-var _propTypes = propTypes$1;
+var _propTypes = propTypes$4;
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -33976,7 +42839,7 @@ process.env.NODE_ENV !== "production" ? AppBar.propTypes = {
 exports.default = AppBar;
 });
 
-var index$14 = createCommonjsModule(function (module, exports) {
+var index$24 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -33993,22 +42856,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _AppBar2.default;
 });
 
-var AppBar = unwrapExports(index$14);
-
-var shallowEqual$6 = shallowEqual_1;
+var shallowEqual$7 = shallowEqual_1;
 
 /**
  * Does a shallow comparison for props and state.
  * See ReactComponentWithPureRenderMixin
  * See also https://facebook.github.io/react/docs/shallow-compare.html
  */
-function shallowCompare(instance, nextProps, nextState) {
-  return !shallowEqual$6(instance.props, nextProps) || !shallowEqual$6(instance.state, nextState);
+function shallowCompare$2(instance, nextProps, nextState) {
+  return !shallowEqual$7(instance.props, nextProps) || !shallowEqual$7(instance.state, nextState);
 }
 
-var shallowCompare_1 = shallowCompare;
+var shallowCompare_1 = shallowCompare$2;
 
-var index$37 = shallowCompare_1;
+var index$47 = shallowCompare_1;
 
 var defineProperty_1 = createCommonjsModule(function (module, exports) {
 "use strict";
@@ -34017,17 +42878,17 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _defineProperty = defineProperty;
+var _defineProperty = defineProperty$3;
 
 var _defineProperty2 = _interopRequireDefault(_defineProperty);
 
-exports.default = defineProperty$$1;
+exports.default = defineProperty;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //  weak
 
-function defineProperty$$1(o, p, attr) {
+function defineProperty(o, p, attr) {
   return (0, _defineProperty2.default)(o, p, attr);
 }
 });
@@ -34083,7 +42944,7 @@ var passiveOption = exports.passiveOption = function () {
 }();
 });
 
-var index$35 = createCommonjsModule(function (module, exports) {
+var index$45 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -34094,19 +42955,19 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -34114,7 +42975,7 @@ var _typeof2 = _typeof_1;
 
 var _typeof3 = _interopRequireDefault(_typeof2);
 
-var _keys = keys;
+var _keys = keys$4;
 
 var _keys2 = _interopRequireDefault(_keys);
 
@@ -34128,7 +42989,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactAddonsShallowCompare = index$37;
+var _reactAddonsShallowCompare = index$47;
 
 var _reactAddonsShallowCompare2 = _interopRequireDefault(_reactAddonsShallowCompare);
 
@@ -34310,11 +43171,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -34322,23 +43183,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -34346,7 +43207,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactEventListener = index$35;
+var _reactEventListener = index$45;
 
 var _reactEventListener2 = _interopRequireDefault(_reactEventListener);
 
@@ -34553,7 +43414,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -34632,7 +43493,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -34748,7 +43609,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -34883,11 +43744,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -34895,23 +43756,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -34919,11 +43780,11 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _shallowEqual = shallowEqual$4;
+var _shallowEqual = shallowEqual$5;
 
 var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
@@ -35454,7 +44315,7 @@ process.env.NODE_ENV !== "production" ? TextField.propTypes = {
 exports.default = TextField;
 });
 
-var index$33 = createCommonjsModule(function (module, exports) {
+var index$44 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -35471,6 +44332,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _TextField2.default;
 });
 
+var TextField = unwrapExports(index$44);
+
 var ClickAwayListener_1 = createCommonjsModule(function (module, exports) {
 'use strict';
 
@@ -35482,25 +44345,25 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
 var _react = react;
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -35606,15 +44469,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -35681,7 +44544,7 @@ Subheader.contextTypes = {
 exports.default = Subheader;
 });
 
-var index$41 = createCommonjsModule(function (module, exports) {
+var index$51 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -35698,6 +44561,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _Subheader2.default;
 });
 
+var Subheader = unwrapExports(index$51);
+
 var List_1 = createCommonjsModule(function (module, exports) {
 'use strict';
 
@@ -35705,11 +44570,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -35717,23 +44582,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -35741,7 +44606,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Subheader = index$41;
+var _Subheader = index$51;
 
 var _Subheader2 = _interopRequireDefault(_Subheader);
 
@@ -35813,11 +44678,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.HotKeyHolder = undefined;
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
@@ -35854,15 +44719,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
-var _toArray2 = toArray$2;
+var _toArray2 = toArray$5;
 
 var _toArray3 = _interopRequireDefault(_toArray2);
 
@@ -35870,23 +44735,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -35894,11 +44759,11 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _shallowEqual = shallowEqual$4;
+var _shallowEqual = shallowEqual$5;
 
 var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
@@ -35906,11 +44771,11 @@ var _ClickAwayListener = ClickAwayListener_1;
 
 var _ClickAwayListener2 = _interopRequireDefault(_ClickAwayListener);
 
-var _keycode = index$21;
+var _keycode = index$32;
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
-var _propTypes = propTypes$1;
+var _propTypes = propTypes$4;
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -36541,25 +45406,25 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
 var _react = react;
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _dom = dom;
 
@@ -36712,13 +45577,13 @@ process.env.NODE_ENV !== "production" ? RenderToLayer.propTypes = {
 exports.default = RenderToLayer;
 });
 
-var FUNC_ERROR_TEXT = 'Expected a function';
+var FUNC_ERROR_TEXT$1 = 'Expected a function';
 
 /** Used as references for various `Number` constants. */
 var NAN = 0 / 0;
 
 /** `Object#toString` result references. */
-var symbolTag = '[object Symbol]';
+var symbolTag$2 = '[object Symbol]';
 
 /** Used to match leading and trailing whitespace. */
 var reTrim = /^\s+|\s+$/g;
@@ -36736,26 +45601,26 @@ var reIsOctal = /^0o[0-7]+$/i;
 var freeParseInt = parseInt;
 
 /** Detect free variable `global` from Node.js. */
-var freeGlobal = typeof commonjsGlobal == 'object' && commonjsGlobal && commonjsGlobal.Object === Object && commonjsGlobal;
+var freeGlobal$2 = typeof commonjsGlobal == 'object' && commonjsGlobal && commonjsGlobal.Object === Object && commonjsGlobal;
 
 /** Detect free variable `self`. */
-var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+var freeSelf$1 = typeof self == 'object' && self && self.Object === Object && self;
 
 /** Used as a reference to the global object. */
-var root = freeGlobal || freeSelf || Function('return this')();
+var root$2 = freeGlobal$2 || freeSelf$1 || Function('return this')();
 
 /** Used for built-in method references. */
-var objectProto = Object.prototype;
+var objectProto$15 = Object.prototype;
 
 /**
  * Used to resolve the
  * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
  * of values.
  */
-var objectToString = objectProto.toString;
+var objectToString$2 = objectProto$15.toString;
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
-var nativeMax = Math.max;
+var nativeMax$1 = Math.max;
 var nativeMin = Math.min;
 
 /**
@@ -36775,7 +45640,7 @@ var nativeMin = Math.min;
  * // => Logs the number of milliseconds it took for the deferred invocation.
  */
 var now$1 = function() {
-  return root.Date.now();
+  return root$2.Date.now();
 };
 
 /**
@@ -36845,13 +45710,13 @@ function debounce(func, wait, options) {
       trailing = true;
 
   if (typeof func != 'function') {
-    throw new TypeError(FUNC_ERROR_TEXT);
+    throw new TypeError(FUNC_ERROR_TEXT$1);
   }
   wait = toNumber(wait) || 0;
-  if (isObject$4(options)) {
+  if (isObject$6(options)) {
     leading = !!options.leading;
     maxing = 'maxWait' in options;
-    maxWait = maxing ? nativeMax(toNumber(options.maxWait) || 0, wait) : maxWait;
+    maxWait = maxing ? nativeMax$1(toNumber(options.maxWait) || 0, wait) : maxWait;
     trailing = 'trailing' in options ? !!options.trailing : trailing;
   }
 
@@ -37003,9 +45868,9 @@ function throttle(func, wait, options) {
       trailing = true;
 
   if (typeof func != 'function') {
-    throw new TypeError(FUNC_ERROR_TEXT);
+    throw new TypeError(FUNC_ERROR_TEXT$1);
   }
-  if (isObject$4(options)) {
+  if (isObject$6(options)) {
     leading = 'leading' in options ? !!options.leading : leading;
     trailing = 'trailing' in options ? !!options.trailing : trailing;
   }
@@ -37041,7 +45906,7 @@ function throttle(func, wait, options) {
  * _.isObject(null);
  * // => false
  */
-function isObject$4(value) {
+function isObject$6(value) {
   var type = typeof value;
   return !!value && (type == 'object' || type == 'function');
 }
@@ -37070,7 +45935,7 @@ function isObject$4(value) {
  * _.isObjectLike(null);
  * // => false
  */
-function isObjectLike(value) {
+function isObjectLike$2(value) {
   return !!value && typeof value == 'object';
 }
 
@@ -37091,9 +45956,9 @@ function isObjectLike(value) {
  * _.isSymbol('abc');
  * // => false
  */
-function isSymbol$2(value) {
+function isSymbol$4(value) {
   return typeof value == 'symbol' ||
-    (isObjectLike(value) && objectToString.call(value) == symbolTag);
+    (isObjectLike$2(value) && objectToString$2.call(value) == symbolTag$2);
 }
 
 /**
@@ -37123,12 +45988,12 @@ function toNumber(value) {
   if (typeof value == 'number') {
     return value;
   }
-  if (isSymbol$2(value)) {
+  if (isSymbol$4(value)) {
     return NAN;
   }
-  if (isObject$4(value)) {
+  if (isObject$6(value)) {
     var other = typeof value.valueOf == 'function' ? value.valueOf() : value;
-    value = isObject$4(other) ? (other + '') : other;
+    value = isObject$6(other) ? (other + '') : other;
   }
   if (typeof value != 'string') {
     return value === 0 ? value : +value;
@@ -37140,7 +46005,7 @@ function toNumber(value) {
     : (reIsBadHex.test(value) ? NAN : +value);
 }
 
-var index$44 = throttle;
+var index$53 = throttle;
 
 var PopoverAnimationDefault_1 = createCommonjsModule(function (module, exports) {
 'use strict';
@@ -37153,23 +46018,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -37181,11 +46046,11 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = propTypes$1;
+var _propTypes = propTypes$4;
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Paper = index$29;
+var _Paper = index$40;
 
 var _Paper2 = _interopRequireDefault(_Paper);
 
@@ -37350,11 +46215,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -37362,23 +46227,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -37386,11 +46251,11 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactEventListener = index$35;
+var _reactEventListener = index$45;
 
 var _reactEventListener2 = _interopRequireDefault(_reactEventListener);
 
@@ -37398,15 +46263,15 @@ var _RenderToLayer = RenderToLayer_1;
 
 var _RenderToLayer2 = _interopRequireDefault(_RenderToLayer);
 
-var _propTypes = propTypes$1;
+var _propTypes = propTypes$4;
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Paper = index$29;
+var _Paper = index$40;
 
 var _Paper2 = _interopRequireDefault(_Paper);
 
-var _lodash = index$44;
+var _lodash = index$53;
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -37869,7 +46734,7 @@ var _pure = pure_1;
 
 var _pure2 = _interopRequireDefault(_pure);
 
-var _SvgIcon = index$27;
+var _SvgIcon = index$38;
 
 var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -37904,7 +46769,7 @@ var _pure = pure_1;
 
 var _pure2 = _interopRequireDefault(_pure);
 
-var _SvgIcon = index$27;
+var _SvgIcon = index$38;
 
 var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -37939,7 +46804,7 @@ var _pure = pure_1;
 
 var _pure2 = _interopRequireDefault(_pure);
 
-var _SvgIcon = index$27;
+var _SvgIcon = index$38;
 
 var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -38018,11 +46883,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
@@ -38030,23 +46895,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -38054,11 +46919,11 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _shallowEqual = shallowEqual$4;
+var _shallowEqual = shallowEqual$5;
 
 var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
@@ -38072,7 +46937,7 @@ var _EnhancedButton = EnhancedButton_1;
 
 var _EnhancedButton2 = _interopRequireDefault(_EnhancedButton);
 
-var _IconButton = index$17;
+var _IconButton = index$28;
 
 var _IconButton2 = _interopRequireDefault(_IconButton);
 
@@ -38732,11 +47597,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -38744,23 +47609,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -38768,11 +47633,11 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _shallowEqual = shallowEqual$4;
+var _shallowEqual = shallowEqual$5;
 
 var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
@@ -39104,7 +47969,7 @@ process.env.NODE_ENV !== "production" ? MenuItem.propTypes = {
 exports.default = MenuItem;
 });
 
-var index$43 = createCommonjsModule(function (module, exports) {
+var index$52 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -39121,9 +47986,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _MenuItem2.default;
 });
 
-var MenuItem = unwrapExports(index$43);
+var MenuItem = unwrapExports(index$52);
 
-var index$39 = createCommonjsModule(function (module, exports) {
+var index$49 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -39135,7 +48000,7 @@ var _Menu2 = Menu_1;
 
 var _Menu3 = _interopRequireDefault(_Menu2);
 
-var _MenuItem2 = index$43;
+var _MenuItem2 = index$52;
 
 var _MenuItem3 = _interopRequireDefault(_MenuItem2);
 
@@ -39153,15 +48018,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -39218,7 +48083,7 @@ Divider.contextTypes = {
 exports.default = Divider;
 });
 
-var index$46 = createCommonjsModule(function (module, exports) {
+var index$55 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -39242,7 +48107,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
@@ -39250,7 +48115,7 @@ var _typeof2 = _typeof_1;
 
 var _typeof3 = _interopRequireDefault(_typeof2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -39258,23 +48123,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -39282,27 +48147,27 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _keycode = index$21;
+var _keycode = index$32;
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
-var _TextField = index$33;
+var _TextField = index$44;
 
 var _TextField2 = _interopRequireDefault(_TextField);
 
-var _Menu = index$39;
+var _Menu = index$49;
 
 var _Menu2 = _interopRequireDefault(_Menu);
 
-var _MenuItem = index$43;
+var _MenuItem = index$52;
 
 var _MenuItem2 = _interopRequireDefault(_MenuItem);
 
-var _Divider = index$46;
+var _Divider = index$55;
 
 var _Divider2 = _interopRequireDefault(_Divider);
 
@@ -39310,7 +48175,7 @@ var _Popover = Popover_1;
 
 var _Popover2 = _interopRequireDefault(_Popover);
 
-var _propTypes = propTypes$1;
+var _propTypes = propTypes$4;
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -39915,7 +48780,7 @@ AutoComplete.Divider = _Divider2.default;
 exports.default = AutoComplete;
 });
 
-var index$31 = createCommonjsModule(function (module, exports) {
+var index$42 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -39939,11 +48804,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -39951,23 +48816,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -40101,7 +48966,7 @@ process.env.NODE_ENV !== "production" ? Avatar.propTypes = {
 exports.default = Avatar;
 });
 
-var index$48 = createCommonjsModule(function (module, exports) {
+var index$57 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -40125,11 +48990,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -40137,23 +49002,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -40291,7 +49156,7 @@ process.env.NODE_ENV !== "production" ? Badge.propTypes = {
 exports.default = Badge;
 });
 
-var index$50 = createCommonjsModule(function (module, exports) {
+var index$59 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -40315,15 +49180,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -40407,15 +49272,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -40513,7 +49378,7 @@ BottomNavigationItem.contextTypes = {
 exports.default = BottomNavigationItem;
 });
 
-var index$52 = createCommonjsModule(function (module, exports) {
+var index$61 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -40551,7 +49416,7 @@ var _pure = pure_1;
 
 var _pure2 = _interopRequireDefault(_pure);
 
-var _SvgIcon = index$27;
+var _SvgIcon = index$38;
 
 var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -40586,7 +49451,7 @@ var _pure = pure_1;
 
 var _pure2 = _interopRequireDefault(_pure);
 
-var _SvgIcon = index$27;
+var _SvgIcon = index$38;
 
 var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -40617,23 +49482,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -40649,7 +49514,7 @@ var _keyboardArrowDown = keyboardArrowDown;
 
 var _keyboardArrowDown2 = _interopRequireDefault(_keyboardArrowDown);
 
-var _IconButton = index$17;
+var _IconButton = index$28;
 
 var _IconButton2 = _interopRequireDefault(_IconButton);
 
@@ -40717,11 +49582,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -40729,23 +49594,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -40753,7 +49618,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Paper = index$29;
+var _Paper = index$40;
 
 var _Paper2 = _interopRequireDefault(_Paper);
 
@@ -40934,11 +49799,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -40946,23 +49811,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -40970,7 +49835,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Avatar = index$48;
+var _Avatar = index$57;
 
 var _Avatar2 = _interopRequireDefault(_Avatar);
 
@@ -41158,11 +50023,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -41170,23 +50035,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -41330,11 +50195,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -41342,23 +50207,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -41538,11 +50403,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -41550,23 +50415,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -41658,11 +50523,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -41670,23 +50535,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -41775,7 +50640,7 @@ process.env.NODE_ENV !== "production" ? CardActions.propTypes = {
 exports.default = CardActions;
 });
 
-var index$54 = createCommonjsModule(function (module, exports) {
+var index$63 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -41830,11 +50695,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -41842,23 +50707,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -41866,11 +50731,11 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactEventListener = index$35;
+var _reactEventListener = index$45;
 
 var _reactEventListener2 = _interopRequireDefault(_reactEventListener);
 
-var _keycode = index$21;
+var _keycode = index$32;
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
@@ -41886,7 +50751,7 @@ var _TouchRipple = TouchRipple_1;
 
 var _TouchRipple2 = _interopRequireDefault(_TouchRipple);
 
-var _Paper = index$29;
+var _Paper = index$40;
 
 var _Paper2 = _interopRequireDefault(_Paper);
 
@@ -42292,7 +51157,7 @@ var _pure = pure_1;
 
 var _pure2 = _interopRequireDefault(_pure);
 
-var _SvgIcon = index$27;
+var _SvgIcon = index$38;
 
 var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -42327,7 +51192,7 @@ var _pure = pure_1;
 
 var _pure2 = _interopRequireDefault(_pure);
 
-var _SvgIcon = index$27;
+var _SvgIcon = index$38;
 
 var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -42354,11 +51219,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -42366,23 +51231,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -42640,7 +51505,7 @@ process.env.NODE_ENV !== "production" ? Checkbox.propTypes = {
 exports.default = Checkbox;
 });
 
-var index$56 = createCommonjsModule(function (module, exports) {
+var index$65 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -42672,7 +51537,7 @@ var _pure = pure_1;
 
 var _pure2 = _interopRequireDefault(_pure);
 
-var _SvgIcon = index$27;
+var _SvgIcon = index$38;
 
 var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -42699,11 +51564,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -42711,23 +51576,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -42735,7 +51600,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _keycode = index$21;
+var _keycode = index$32;
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
@@ -43031,7 +51896,7 @@ process.env.NODE_ENV !== "production" ? Chip.propTypes = {
 exports.default = Chip;
 });
 
-var index$58 = createCommonjsModule(function (module, exports) {
+var index$67 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -43055,11 +51920,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -43067,23 +51932,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -43318,7 +52183,7 @@ process.env.NODE_ENV !== "production" ? CircularProgress.propTypes = {
 exports.default = CircularProgress;
 });
 
-var index$60 = createCommonjsModule(function (module, exports) {
+var index$69 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -43529,23 +52394,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -43614,11 +52479,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -43626,23 +52491,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -43934,7 +52799,7 @@ process.env.NODE_ENV !== "production" ? FlatButton.propTypes = {
 exports.default = FlatButton;
 });
 
-var index$64 = createCommonjsModule(function (module, exports) {
+var index$73 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -43951,6 +52816,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _FlatButton2.default;
 });
 
+var FlatButton = unwrapExports(index$73);
+
 var CalendarActionButtons = createCommonjsModule(function (module, exports) {
 'use strict';
 
@@ -43962,19 +52829,19 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -43982,7 +52849,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _FlatButton = index$64;
+var _FlatButton = index$73;
 
 var _FlatButton2 = _interopRequireDefault(_FlatButton);
 
@@ -44061,11 +52928,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -44073,19 +52940,19 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -44263,19 +53130,19 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -44428,11 +53295,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -44440,19 +53307,19 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -44585,7 +53452,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
@@ -44593,19 +53460,19 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -44613,7 +53480,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -44785,7 +53652,7 @@ var _pure = pure_1;
 
 var _pure2 = _interopRequireDefault(_pure);
 
-var _SvgIcon = index$27;
+var _SvgIcon = index$38;
 
 var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -44820,7 +53687,7 @@ var _pure = pure_1;
 
 var _pure2 = _interopRequireDefault(_pure);
 
-var _SvgIcon = index$27;
+var _SvgIcon = index$38;
 
 var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -44847,11 +53714,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -44859,23 +53726,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -44883,7 +53750,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -44998,11 +53865,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -45010,23 +53877,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -45034,7 +53901,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactAddonsTransitionGroup = index$23;
+var _reactAddonsTransitionGroup = index$34;
 
 var _reactAddonsTransitionGroup2 = _interopRequireDefault(_reactAddonsTransitionGroup);
 
@@ -45139,19 +54006,19 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -45159,7 +54026,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _IconButton = index$17;
+var _IconButton = index$28;
 
 var _IconButton2 = _interopRequireDefault(_IconButton);
 
@@ -45306,11 +54173,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -45318,19 +54185,19 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -45550,23 +54417,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _toConsumableArray2 = toConsumableArray;
+var _toConsumableArray2 = toConsumableArray$1;
 
 var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
 
@@ -45574,11 +54441,11 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactEventListener = index$35;
+var _reactEventListener = index$45;
 
 var _reactEventListener2 = _interopRequireDefault(_reactEventListener);
 
-var _keycode = index$21;
+var _keycode = index$32;
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
@@ -46001,19 +54868,19 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -46120,11 +54987,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -46132,23 +54999,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -46263,11 +55130,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -46275,23 +55142,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -46299,15 +55166,15 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactEventListener = index$35;
+var _reactEventListener = index$45;
 
 var _reactEventListener2 = _interopRequireDefault(_reactEventListener);
 
-var _keycode = index$21;
+var _keycode = index$32;
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
@@ -46323,11 +55190,11 @@ var _RenderToLayer = RenderToLayer_1;
 
 var _RenderToLayer2 = _interopRequireDefault(_RenderToLayer);
 
-var _Paper = index$29;
+var _Paper = index$40;
 
 var _Paper2 = _interopRequireDefault(_Paper);
 
-var _reactAddonsTransitionGroup = index$23;
+var _reactAddonsTransitionGroup = index$34;
 
 var _reactAddonsTransitionGroup2 = _interopRequireDefault(_reactAddonsTransitionGroup);
 
@@ -46846,7 +55713,7 @@ process.env.NODE_ENV !== "production" ? Dialog.propTypes = {
 exports.default = Dialog;
 });
 
-var index$66 = createCommonjsModule(function (module, exports) {
+var index$74 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -46874,23 +55741,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -46898,7 +55765,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Paper = index$29;
+var _Paper = index$40;
 
 var _Paper2 = _interopRequireDefault(_Paper);
 
@@ -46906,7 +55773,7 @@ var _transitions = transitions;
 
 var _transitions2 = _interopRequireDefault(_transitions);
 
-var _propTypes = propTypes$1;
+var _propTypes = propTypes$4;
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -47016,11 +55883,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -47028,23 +55895,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -47052,11 +55919,11 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactEventListener = index$35;
+var _reactEventListener = index$45;
 
 var _reactEventListener2 = _interopRequireDefault(_reactEventListener);
 
-var _keycode = index$21;
+var _keycode = index$32;
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
@@ -47064,7 +55931,7 @@ var _Calendar = Calendar_1;
 
 var _Calendar2 = _interopRequireDefault(_Calendar);
 
-var _Dialog = index$66;
+var _Dialog = index$74;
 
 var _Dialog2 = _interopRequireDefault(_Dialog);
 
@@ -47265,11 +56132,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -47277,23 +56144,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -47307,7 +56174,7 @@ var _DatePickerDialog = DatePickerDialog_1;
 
 var _DatePickerDialog2 = _interopRequireDefault(_DatePickerDialog);
 
-var _TextField = index$33;
+var _TextField = index$44;
 
 var _TextField2 = _interopRequireDefault(_TextField);
 
@@ -47649,7 +56516,7 @@ process.env.NODE_ENV !== "production" ? DatePicker.propTypes = {
 exports.default = DatePicker;
 });
 
-var index$62 = createCommonjsModule(function (module, exports) {
+var index$71 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -47677,23 +56544,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -47701,15 +56568,15 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactEventListener = index$35;
+var _reactEventListener = index$45;
 
 var _reactEventListener2 = _interopRequireDefault(_reactEventListener);
 
-var _keycode = index$21;
+var _keycode = index$32;
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
@@ -47725,11 +56592,11 @@ var _Overlay = Overlay_1;
 
 var _Overlay2 = _interopRequireDefault(_Overlay);
 
-var _Paper = index$29;
+var _Paper = index$40;
 
 var _Paper2 = _interopRequireDefault(_Paper);
 
-var _propTypes = propTypes$1;
+var _propTypes = propTypes$4;
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -48129,7 +56996,7 @@ process.env.NODE_ENV !== "production" ? Drawer.propTypes = {
 exports.default = Drawer;
 });
 
-var index$68 = createCommonjsModule(function (module, exports) {
+var index$76 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -48146,8 +57013,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _Drawer2.default;
 });
 
-var Drawer = unwrapExports(index$68);
-
 var arrowDropDown = createCommonjsModule(function (module, exports) {
 'use strict';
 
@@ -48163,7 +57028,7 @@ var _pure = pure_1;
 
 var _pure2 = _interopRequireDefault(_pure);
 
-var _SvgIcon = index$27;
+var _SvgIcon = index$38;
 
 var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -48190,7 +57055,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -48198,23 +57063,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -48343,11 +57208,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -48408,11 +57273,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -48420,23 +57285,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -48444,7 +57309,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -48472,7 +57337,7 @@ var _PopoverAnimationVertical = PopoverAnimationVertical_1;
 
 var _PopoverAnimationVertical2 = _interopRequireDefault(_PopoverAnimationVertical);
 
-var _keycode = index$21;
+var _keycode = index$32;
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
@@ -48480,7 +57345,7 @@ var _events = events;
 
 var _events2 = _interopRequireDefault(_events);
 
-var _IconButton = index$17;
+var _IconButton = index$28;
 
 var _IconButton2 = _interopRequireDefault(_IconButton);
 
@@ -48898,7 +57763,7 @@ process.env.NODE_ENV !== "production" ? DropDownMenu.propTypes = {
 exports.default = DropDownMenu;
 });
 
-var index$69 = createCommonjsModule(function (module, exports) {
+var index$78 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -48921,6 +57786,8 @@ exports.MenuItem = _MenuItem3.default;
 exports.default = _DropDownMenu3.default;
 });
 
+var DropDownMenu = unwrapExports(index$78);
+
 var FloatingActionButton_1 = createCommonjsModule(function (module, exports) {
 'use strict';
 
@@ -48928,11 +57795,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -48940,23 +57807,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -48974,11 +57841,11 @@ var _EnhancedButton = EnhancedButton_1;
 
 var _EnhancedButton2 = _interopRequireDefault(_EnhancedButton);
 
-var _FontIcon = index$25;
+var _FontIcon = index$36;
 
 var _FontIcon2 = _interopRequireDefault(_FontIcon);
 
-var _Paper = index$29;
+var _Paper = index$40;
 
 var _Paper2 = _interopRequireDefault(_Paper);
 
@@ -48988,7 +57855,7 @@ var _warning = browser$2;
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _propTypes = propTypes$1;
+var _propTypes = propTypes$4;
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -49305,7 +58172,7 @@ process.env.NODE_ENV !== "production" ? FloatingActionButton.propTypes = {
 exports.default = FloatingActionButton;
 });
 
-var index$71 = createCommonjsModule(function (module, exports) {
+var index$79 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -49329,11 +58196,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -49341,23 +58208,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -49466,12 +58333,12 @@ process.env.NODE_ENV !== "production" ? GridList.propTypes = {
 exports.default = GridList;
 });
 
-var defineProperty$6 = createCommonjsModule(function (module, exports) {
+var defineProperty$9 = createCommonjsModule(function (module, exports) {
 "use strict";
 
 exports.__esModule = true;
 
-var _defineProperty = defineProperty;
+var _defineProperty = defineProperty$3;
 
 var _defineProperty2 = _interopRequireDefault(_defineProperty);
 
@@ -49500,11 +58367,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -49512,27 +58379,27 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _defineProperty2 = defineProperty$6;
+var _defineProperty2 = defineProperty$9;
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -49796,7 +58663,7 @@ process.env.NODE_ENV !== "production" ? GridTile.propTypes = {
 exports.default = GridTile;
 });
 
-var index$73 = createCommonjsModule(function (module, exports) {
+var index$81 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -49826,11 +58693,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -49838,23 +58705,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -49862,7 +58729,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -49870,7 +58737,7 @@ var _events = events;
 
 var _events2 = _interopRequireDefault(_events);
 
-var _propTypes = propTypes$1;
+var _propTypes = propTypes$4;
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -50237,7 +59104,7 @@ process.env.NODE_ENV !== "production" ? IconMenu.propTypes = {
 exports.default = IconMenu;
 });
 
-var index$75 = createCommonjsModule(function (module, exports) {
+var index$83 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -50267,11 +59134,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -50279,23 +59146,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -50488,7 +59355,7 @@ process.env.NODE_ENV !== "production" ? LinearProgress.propTypes = {
 exports.default = LinearProgress;
 });
 
-var index$77 = createCommonjsModule(function (module, exports) {
+var index$85 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -50513,11 +59380,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.makeSelectable = undefined;
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -50525,23 +59392,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -50675,7 +59542,7 @@ var makeSelectable = exports.makeSelectable = function makeSelectable(MyComponen
 exports.default = makeSelectable;
 });
 
-var index$79 = createCommonjsModule(function (module, exports) {
+var index$87 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -50703,7 +59570,10 @@ exports.makeSelectable = _makeSelectable3.default;
 exports.default = _List3.default;
 });
 
-var index$81 = createCommonjsModule(function (module, exports) {
+var index_2$8 = index$87.ListItem;
+var index_3$3 = index$87.List;
+
+var index$89 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -50741,7 +59611,7 @@ var _pure = pure_1;
 
 var _pure2 = _interopRequireDefault(_pure);
 
-var _SvgIcon = index$27;
+var _SvgIcon = index$38;
 
 var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -50776,7 +59646,7 @@ var _pure = pure_1;
 
 var _pure2 = _interopRequireDefault(_pure);
 
-var _SvgIcon = index$27;
+var _SvgIcon = index$38;
 
 var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -50803,11 +59673,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -50815,23 +59685,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -51077,11 +59947,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -51089,23 +59959,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -51113,7 +59983,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _RadioButton = index$83;
+var _RadioButton = index$91;
 
 var _RadioButton2 = _interopRequireDefault(_RadioButton);
 
@@ -51308,7 +60178,7 @@ process.env.NODE_ENV !== "production" ? RadioButtonGroup.propTypes = {
 exports.default = RadioButtonGroup;
 });
 
-var index$83 = createCommonjsModule(function (module, exports) {
+var index$91 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -51338,11 +60208,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -51350,23 +60220,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -51386,7 +60256,7 @@ var _EnhancedButton = EnhancedButton_1;
 
 var _EnhancedButton2 = _interopRequireDefault(_EnhancedButton);
 
-var _Paper = index$29;
+var _Paper = index$40;
 
 var _Paper2 = _interopRequireDefault(_Paper);
 
@@ -51808,7 +60678,7 @@ process.env.NODE_ENV !== "production" ? RaisedButton.propTypes = {
 exports.default = RaisedButton;
 });
 
-var index$85 = createCommonjsModule(function (module, exports) {
+var index$93 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -51825,7 +60695,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _RaisedButton2.default;
 });
 
-var RaisedButton = unwrapExports(index$85);
+var RaisedButton = unwrapExports(index$93);
 
 var classof$1   = _classof;
 var ITERATOR$4  = _wks('iterator');
@@ -51844,9 +60714,9 @@ module.exports = { "default": isIterable$2, __esModule: true };
 });
 
 var anObject$6 = _anObject;
-var get      = core_getIteratorMethod;
+var get$3      = core_getIteratorMethod;
 var core_getIterator = _core.getIterator = function(it){
-  var iterFn = get(it);
+  var iterFn = get$3(it);
   if(typeof iterFn != 'function')throw TypeError(it + ' is not iterable!');
   return anObject$6(iterFn.call(it));
 };
@@ -51857,7 +60727,7 @@ var getIterator = createCommonjsModule(function (module) {
 module.exports = { "default": getIterator$2, __esModule: true };
 });
 
-var slicedToArray = createCommonjsModule(function (module, exports) {
+var slicedToArray$1 = createCommonjsModule(function (module, exports) {
 "use strict";
 
 exports.__esModule = true;
@@ -51918,15 +60788,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
-var _slicedToArray2 = slicedToArray;
+var _slicedToArray2 = slicedToArray$1;
 
 var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
@@ -51934,23 +60804,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -51966,7 +60836,7 @@ var _transitions = transitions;
 
 var _transitions2 = _interopRequireDefault(_transitions);
 
-var _Paper = index$29;
+var _Paper = index$40;
 
 var _Paper2 = _interopRequireDefault(_Paper);
 
@@ -52327,7 +61197,7 @@ process.env.NODE_ENV !== "production" ? RefreshIndicator.propTypes = {
 exports.default = RefreshIndicator;
 });
 
-var index$86 = createCommonjsModule(function (module, exports) {
+var index$94 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -52351,11 +61221,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -52363,23 +61233,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -52387,11 +61257,11 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _TextField = index$33;
+var _TextField = index$44;
 
 var _TextField2 = _interopRequireDefault(_TextField);
 
-var _DropDownMenu = index$69;
+var _DropDownMenu = index$78;
 
 var _DropDownMenu2 = _interopRequireDefault(_DropDownMenu);
 
@@ -52632,7 +61502,7 @@ process.env.NODE_ENV !== "production" ? SelectField.propTypes = {
 exports.default = SelectField;
 });
 
-var index$88 = createCommonjsModule(function (module, exports) {
+var index$96 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -52697,11 +61567,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -52709,27 +61579,27 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _defineProperty2 = defineProperty$6;
+var _defineProperty2 = defineProperty$9;
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -52737,7 +61607,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _keycode = index$21;
+var _keycode = index$32;
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
@@ -53541,7 +62411,7 @@ process.env.NODE_ENV !== "production" ? Slider.propTypes = {
 exports.default = Slider;
 });
 
-var index$90 = createCommonjsModule(function (module, exports) {
+var index$98 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -53565,11 +62435,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -53577,23 +62447,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -53734,7 +62604,7 @@ var _pure = pure_1;
 
 var _pure2 = _interopRequireDefault(_pure);
 
-var _SvgIcon = index$27;
+var _SvgIcon = index$38;
 
 var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -53761,11 +62631,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -53773,7 +62643,7 @@ var _typeof2 = _typeof_1;
 
 var _typeof3 = _interopRequireDefault(_typeof2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -53785,7 +62655,7 @@ var _checkCircle = checkCircle;
 
 var _checkCircle2 = _interopRequireDefault(_checkCircle);
 
-var _SvgIcon = index$27;
+var _SvgIcon = index$38;
 
 var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -53954,11 +62824,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -53966,23 +62836,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -54170,11 +63040,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -54182,23 +63052,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -54206,7 +63076,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -54364,11 +63234,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -54376,23 +63246,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -54400,7 +63270,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactAddonsTransitionGroup = index$23;
+var _reactAddonsTransitionGroup = index$34;
 
 var _reactAddonsTransitionGroup2 = _interopRequireDefault(_reactAddonsTransitionGroup);
 
@@ -54504,11 +63374,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -54516,23 +63386,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -54751,23 +63621,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -54902,7 +63772,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.LARGE = exports.MEDIUM = exports.SMALL = undefined;
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
@@ -54910,19 +63780,19 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -54932,7 +63802,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactEventListener = index$35;
+var _reactEventListener = index$45;
 
 var _reactEventListener2 = _interopRequireDefault(_reactEventListener);
 
@@ -55050,15 +63920,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.SnackbarBody = undefined;
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -55074,7 +63944,7 @@ var _withWidth = withWidth_1;
 
 var _withWidth2 = _interopRequireDefault(_withWidth);
 
-var _FlatButton = index$64;
+var _FlatButton = index$73;
 
 var _FlatButton2 = _interopRequireDefault(_FlatButton);
 
@@ -55216,11 +64086,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -55228,23 +64098,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -55521,7 +64391,7 @@ process.env.NODE_ENV !== "production" ? Snackbar.propTypes = {
 exports.default = Snackbar;
 });
 
-var index$92 = createCommonjsModule(function (module, exports) {
+var index$100 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -55545,11 +64415,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -55557,23 +64427,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -55759,7 +64629,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -55813,23 +64683,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -55906,11 +64776,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -55918,23 +64788,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -56217,7 +65087,7 @@ process.env.NODE_ENV !== "production" ? Tabs.propTypes = {
 exports.default = Tabs;
 });
 
-var index$94 = createCommonjsModule(function (module, exports) {
+var index$102 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -56251,23 +65121,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -56611,11 +65481,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -56623,23 +65493,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -56797,7 +65667,7 @@ var _getIterator2 = getIterator;
 
 var _getIterator3 = _interopRequireDefault(_getIterator2);
 
-var _toConsumableArray2 = toConsumableArray;
+var _toConsumableArray2 = toConsumableArray$1;
 
 var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
 
@@ -56805,7 +65675,7 @@ var _typeof2 = _typeof_1;
 
 var _typeof3 = _interopRequireDefault(_typeof2);
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
@@ -56813,23 +65683,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -56837,7 +65707,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Checkbox = index$56;
+var _Checkbox = index$65;
 
 var _Checkbox2 = _interopRequireDefault(_Checkbox);
 
@@ -57322,15 +66192,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _toConsumableArray2 = toConsumableArray;
+var _toConsumableArray2 = toConsumableArray$1;
 
 var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -57338,23 +66208,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -57475,11 +66345,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -57487,23 +66357,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -57680,23 +66550,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -57704,7 +66574,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Checkbox = index$56;
+var _Checkbox = index$65;
 
 var _Checkbox2 = _interopRequireDefault(_Checkbox);
 
@@ -57927,11 +66797,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -57939,23 +66809,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -58197,7 +67067,7 @@ process.env.NODE_ENV !== "production" ? TableRow.propTypes = {
 exports.default = TableRow;
 });
 
-var index$96 = createCommonjsModule(function (module, exports) {
+var index$104 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -58252,15 +67122,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _slicedToArray2 = slicedToArray;
+var _slicedToArray2 = slicedToArray$1;
 
 var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -58268,23 +67138,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -58600,23 +67470,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _slicedToArray2 = slicedToArray;
+var _slicedToArray2 = slicedToArray$1;
 
 var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
 
@@ -58741,19 +67611,19 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -58890,19 +67760,19 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -58910,7 +67780,7 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = index$2;
+var _reactDom = index$3;
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -59131,19 +68001,19 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -59345,19 +68215,19 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
@@ -59578,11 +68448,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -59590,23 +68460,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -59614,11 +68484,11 @@ var _react = react;
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactEventListener = index$35;
+var _reactEventListener = index$45;
 
 var _reactEventListener2 = _interopRequireDefault(_reactEventListener);
 
-var _keycode = index$21;
+var _keycode = index$32;
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
@@ -59626,11 +68496,11 @@ var _Clock = Clock_1;
 
 var _Clock2 = _interopRequireDefault(_Clock);
 
-var _Dialog = index$66;
+var _Dialog = index$74;
 
 var _Dialog2 = _interopRequireDefault(_Dialog);
 
-var _FlatButton = index$64;
+var _FlatButton = index$73;
 
 var _FlatButton2 = _interopRequireDefault(_FlatButton);
 
@@ -59784,11 +68654,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -59796,23 +68666,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -59824,7 +68694,7 @@ var _TimePickerDialog = TimePickerDialog_1;
 
 var _TimePickerDialog2 = _interopRequireDefault(_TimePickerDialog);
 
-var _TextField = index$33;
+var _TextField = index$44;
 
 var _TextField2 = _interopRequireDefault(_TextField);
 
@@ -60073,7 +68943,7 @@ process.env.NODE_ENV !== "production" ? TimePicker.propTypes = {
 exports.default = TimePicker;
 });
 
-var index$98 = createCommonjsModule(function (module, exports) {
+var index$106 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60097,11 +68967,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -60109,23 +68979,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -60137,7 +69007,7 @@ var _transitions = transitions;
 
 var _transitions2 = _interopRequireDefault(_transitions);
 
-var _Paper = index$29;
+var _Paper = index$40;
 
 var _Paper2 = _interopRequireDefault(_Paper);
 
@@ -60419,7 +69289,7 @@ process.env.NODE_ENV !== "production" ? Toggle.propTypes = {
 exports.default = Toggle;
 });
 
-var index$100 = createCommonjsModule(function (module, exports) {
+var index$108 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -60443,11 +69313,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -60455,23 +69325,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -60566,11 +69436,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -60578,23 +69448,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -60777,11 +69647,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -60789,23 +69659,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -60881,11 +69751,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends2 = _extends$11;
+var _extends2 = _extends$30;
 
 var _extends3 = _interopRequireDefault(_extends2);
 
-var _objectWithoutProperties2 = objectWithoutProperties;
+var _objectWithoutProperties2 = objectWithoutProperties$1;
 
 var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 
@@ -60893,23 +69763,23 @@ var _getPrototypeOf = getPrototypeOf;
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
 
-var _classCallCheck2 = classCallCheck;
+var _classCallCheck2 = classCallCheck$1;
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = createClass;
+var _createClass2 = createClass$1;
 
 var _createClass3 = _interopRequireDefault(_createClass2);
 
-var _possibleConstructorReturn2 = possibleConstructorReturn;
+var _possibleConstructorReturn2 = possibleConstructorReturn$1;
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _inherits2 = inherits;
+var _inherits2 = inherits$1;
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _simpleAssign = index$15;
+var _simpleAssign = index$26;
 
 var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
 
@@ -60990,7 +69860,7 @@ process.env.NODE_ENV !== "production" ? ToolbarTitle.propTypes = {
 exports.default = ToolbarTitle;
 });
 
-var index$102 = createCommonjsModule(function (module, exports) {
+var index$110 = createCommonjsModule(function (module, exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -61023,139 +69893,30 @@ exports.ToolbarTitle = _ToolbarTitle3.default;
 exports.default = _Toolbar3.default;
 });
 
-var classCallCheck$2 = function (instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-};
-
-var createClass$2 = function () {
-  function defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];
-      descriptor.enumerable = descriptor.enumerable || false;
-      descriptor.configurable = true;
-      if ("value" in descriptor) descriptor.writable = true;
-      Object.defineProperty(target, descriptor.key, descriptor);
-    }
-  }
-
-  return function (Constructor, protoProps, staticProps) {
-    if (protoProps) defineProperties(Constructor.prototype, protoProps);
-    if (staticProps) defineProperties(Constructor, staticProps);
-    return Constructor;
-  };
-}();
-
-
-
-
-
-
-
-
-
-var inherits$2 = function (subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      enumerable: false,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-};
-
-
-
-
-
-
-
-
-
-
-
-var possibleConstructorReturn$2 = function (self, call) {
-  if (!self) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return call && (typeof call === "object" || typeof call === "function") ? call : self;
-};
+var index_3$5 = index$110.ToolbarGroup;
+var index_4$4 = index$110.Toolbar;
 
 var App = function (_React$Component) {
-  inherits$2(App, _React$Component);
+  inherits(App, _React$Component);
 
   function App() {
-    classCallCheck$2(this, App);
+    classCallCheck(this, App);
 
-    var _this = possibleConstructorReturn$2(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
+    var _this = possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 
-    _this.state = { open: false, groups: [] };
+    _this.state = { open: false };
     return _this;
   }
 
-  createClass$2(App, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      var _this2 = this;
-
-      fetch('/api/resources', { headers: { 'Content-Type': 'application/json' } }).then(function (res) {
-        return res.json();
-      }).then(function (_ref) {
-        var groups = _ref.groups;
-
-        console.log(groups);
-        _this2.setState({ groups: groups });
-      });
-    }
-  }, {
+  createClass(App, [{
     key: 'render',
     value: function render() {
-      var _this3 = this;
-
-      var onRoute = function onRoute(path) {
-        _this3.setState({ open: false }, function () {
-          _this3.props.router.push(path);
-        });
-      };
-
       return react.createElement(
         MuiThemeProvider,
         { muiTheme: getMuiTheme(lightBaseTheme$1) },
         react.createElement(
           'div',
           null,
-          react.createElement(
-            Drawer,
-            { open: this.state.open, onRequestChange: function onRequestChange(open) {
-                return _this3.setState({ open: open });
-              } },
-            this.state.groups.map(function (_ref2) {
-              var label = _ref2.label,
-                  path = _ref2.path;
-              return react.createElement(
-                MenuItem,
-                { key: path, onTouchTap: function onTouchTap() {
-                    return onRoute(path);
-                  } },
-                label
-              );
-            })
-          ),
-          react.createElement(AppBar, {
-            title: 'Procore Resources',
-            iconClassNameRight: 'muidocs-icon-navigation-expand-more',
-            onLeftIconButtonTouchTap: function onLeftIconButtonTouchTap() {
-              return _this3.setState({ open: true });
-            }
-          }),
           this.props.children
         )
       );
@@ -61164,36 +69925,1351 @@ var App = function (_React$Component) {
   return App;
 }(react.Component);
 
-var Home = function (_React$Component) {
-  inherits$2(Home, _React$Component);
+var hostname = createCommonjsModule(function (module, exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = "https://app.procore.com";
+});
 
-  function Home() {
-    classCallCheck$2(this, Home);
-    return possibleConstructorReturn$2(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+var authorize_1$1 = createCommonjsModule(function (module, exports) {
+"use strict";
+var hostname_1 = hostname;
+function authorize(_a) {
+    var clientId = _a.clientId, uri = _a.uri;
+    return hostname_1.default + "/oauth/authorize?client_id=" + clientId + "&response_type=code&redirect_uri=" + uri;
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = authorize;
+});
+
+(function(self) {
+  'use strict';
+
+  if (self.fetch) {
+    return
   }
 
-  createClass$2(Home, [{
-    key: 'render',
-    value: function render() {
-      return react.createElement(
-        'div',
-        null,
-        'Home more'
-      );
+  var support = {
+    searchParams: 'URLSearchParams' in self,
+    iterable: 'Symbol' in self && 'iterator' in Symbol,
+    blob: 'FileReader' in self && 'Blob' in self && (function() {
+      try {
+        new Blob();
+        return true
+      } catch(e) {
+        return false
+      }
+    })(),
+    formData: 'FormData' in self,
+    arrayBuffer: 'ArrayBuffer' in self
+  };
+
+  if (support.arrayBuffer) {
+    var viewClasses = [
+      '[object Int8Array]',
+      '[object Uint8Array]',
+      '[object Uint8ClampedArray]',
+      '[object Int16Array]',
+      '[object Uint16Array]',
+      '[object Int32Array]',
+      '[object Uint32Array]',
+      '[object Float32Array]',
+      '[object Float64Array]'
+    ];
+
+    var isDataView = function(obj) {
+      return obj && DataView.prototype.isPrototypeOf(obj)
+    };
+
+    var isArrayBufferView = ArrayBuffer.isView || function(obj) {
+      return obj && viewClasses.indexOf(Object.prototype.toString.call(obj)) > -1
+    };
+  }
+
+  function normalizeName(name) {
+    if (typeof name !== 'string') {
+      name = String(name);
     }
-  }]);
-  return Home;
-}(react.Component);
+    if (/[^a-z0-9\-#$%&'*+.\^_`|~]/i.test(name)) {
+      throw new TypeError('Invalid character in header field name')
+    }
+    return name.toLowerCase()
+  }
+
+  function normalizeValue(value) {
+    if (typeof value !== 'string') {
+      value = String(value);
+    }
+    return value
+  }
+
+  // Build a destructive iterator for the value list
+  function iteratorFor(items) {
+    var iterator = {
+      next: function() {
+        var value = items.shift();
+        return {done: value === undefined, value: value}
+      }
+    };
+
+    if (support.iterable) {
+      iterator[Symbol.iterator] = function() {
+        return iterator
+      };
+    }
+
+    return iterator
+  }
+
+  function Headers(headers) {
+    this.map = {};
+
+    if (headers instanceof Headers) {
+      headers.forEach(function(value, name) {
+        this.append(name, value);
+      }, this);
+
+    } else if (headers) {
+      Object.getOwnPropertyNames(headers).forEach(function(name) {
+        this.append(name, headers[name]);
+      }, this);
+    }
+  }
+
+  Headers.prototype.append = function(name, value) {
+    name = normalizeName(name);
+    value = normalizeValue(value);
+    var oldValue = this.map[name];
+    this.map[name] = oldValue ? oldValue+','+value : value;
+  };
+
+  Headers.prototype['delete'] = function(name) {
+    delete this.map[normalizeName(name)];
+  };
+
+  Headers.prototype.get = function(name) {
+    name = normalizeName(name);
+    return this.has(name) ? this.map[name] : null
+  };
+
+  Headers.prototype.has = function(name) {
+    return this.map.hasOwnProperty(normalizeName(name))
+  };
+
+  Headers.prototype.set = function(name, value) {
+    this.map[normalizeName(name)] = normalizeValue(value);
+  };
+
+  Headers.prototype.forEach = function(callback, thisArg) {
+    for (var name in this.map) {
+      if (this.map.hasOwnProperty(name)) {
+        callback.call(thisArg, this.map[name], name, this);
+      }
+    }
+  };
+
+  Headers.prototype.keys = function() {
+    var items = [];
+    this.forEach(function(value, name) { items.push(name); });
+    return iteratorFor(items)
+  };
+
+  Headers.prototype.values = function() {
+    var items = [];
+    this.forEach(function(value) { items.push(value); });
+    return iteratorFor(items)
+  };
+
+  Headers.prototype.entries = function() {
+    var items = [];
+    this.forEach(function(value, name) { items.push([name, value]); });
+    return iteratorFor(items)
+  };
+
+  if (support.iterable) {
+    Headers.prototype[Symbol.iterator] = Headers.prototype.entries;
+  }
+
+  function consumed(body) {
+    if (body.bodyUsed) {
+      return Promise.reject(new TypeError('Already read'))
+    }
+    body.bodyUsed = true;
+  }
+
+  function fileReaderReady(reader) {
+    return new Promise(function(resolve, reject) {
+      reader.onload = function() {
+        resolve(reader.result);
+      };
+      reader.onerror = function() {
+        reject(reader.error);
+      };
+    })
+  }
+
+  function readBlobAsArrayBuffer(blob) {
+    var reader = new FileReader();
+    var promise = fileReaderReady(reader);
+    reader.readAsArrayBuffer(blob);
+    return promise
+  }
+
+  function readBlobAsText(blob) {
+    var reader = new FileReader();
+    var promise = fileReaderReady(reader);
+    reader.readAsText(blob);
+    return promise
+  }
+
+  function readArrayBufferAsText(buf) {
+    var view = new Uint8Array(buf);
+    var chars = new Array(view.length);
+
+    for (var i = 0; i < view.length; i++) {
+      chars[i] = String.fromCharCode(view[i]);
+    }
+    return chars.join('')
+  }
+
+  function bufferClone(buf) {
+    if (buf.slice) {
+      return buf.slice(0)
+    } else {
+      var view = new Uint8Array(buf.byteLength);
+      view.set(new Uint8Array(buf));
+      return view.buffer
+    }
+  }
+
+  function Body() {
+    this.bodyUsed = false;
+
+    this._initBody = function(body) {
+      this._bodyInit = body;
+      if (!body) {
+        this._bodyText = '';
+      } else if (typeof body === 'string') {
+        this._bodyText = body;
+      } else if (support.blob && Blob.prototype.isPrototypeOf(body)) {
+        this._bodyBlob = body;
+      } else if (support.formData && FormData.prototype.isPrototypeOf(body)) {
+        this._bodyFormData = body;
+      } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {
+        this._bodyText = body.toString();
+      } else if (support.arrayBuffer && support.blob && isDataView(body)) {
+        this._bodyArrayBuffer = bufferClone(body.buffer);
+        // IE 10-11 can't handle a DataView body.
+        this._bodyInit = new Blob([this._bodyArrayBuffer]);
+      } else if (support.arrayBuffer && (ArrayBuffer.prototype.isPrototypeOf(body) || isArrayBufferView(body))) {
+        this._bodyArrayBuffer = bufferClone(body);
+      } else {
+        throw new Error('unsupported BodyInit type')
+      }
+
+      if (!this.headers.get('content-type')) {
+        if (typeof body === 'string') {
+          this.headers.set('content-type', 'text/plain;charset=UTF-8');
+        } else if (this._bodyBlob && this._bodyBlob.type) {
+          this.headers.set('content-type', this._bodyBlob.type);
+        } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {
+          this.headers.set('content-type', 'application/x-www-form-urlencoded;charset=UTF-8');
+        }
+      }
+    };
+
+    if (support.blob) {
+      this.blob = function() {
+        var rejected = consumed(this);
+        if (rejected) {
+          return rejected
+        }
+
+        if (this._bodyBlob) {
+          return Promise.resolve(this._bodyBlob)
+        } else if (this._bodyArrayBuffer) {
+          return Promise.resolve(new Blob([this._bodyArrayBuffer]))
+        } else if (this._bodyFormData) {
+          throw new Error('could not read FormData body as blob')
+        } else {
+          return Promise.resolve(new Blob([this._bodyText]))
+        }
+      };
+
+      this.arrayBuffer = function() {
+        if (this._bodyArrayBuffer) {
+          return consumed(this) || Promise.resolve(this._bodyArrayBuffer)
+        } else {
+          return this.blob().then(readBlobAsArrayBuffer)
+        }
+      };
+    }
+
+    this.text = function() {
+      var rejected = consumed(this);
+      if (rejected) {
+        return rejected
+      }
+
+      if (this._bodyBlob) {
+        return readBlobAsText(this._bodyBlob)
+      } else if (this._bodyArrayBuffer) {
+        return Promise.resolve(readArrayBufferAsText(this._bodyArrayBuffer))
+      } else if (this._bodyFormData) {
+        throw new Error('could not read FormData body as text')
+      } else {
+        return Promise.resolve(this._bodyText)
+      }
+    };
+
+    if (support.formData) {
+      this.formData = function() {
+        return this.text().then(decode)
+      };
+    }
+
+    this.json = function() {
+      return this.text().then(JSON.parse)
+    };
+
+    return this
+  }
+
+  // HTTP methods whose capitalization should be normalized
+  var methods = ['DELETE', 'GET', 'HEAD', 'OPTIONS', 'POST', 'PUT'];
+
+  function normalizeMethod(method) {
+    var upcased = method.toUpperCase();
+    return (methods.indexOf(upcased) > -1) ? upcased : method
+  }
+
+  function Request(input, options) {
+    options = options || {};
+    var body = options.body;
+
+    if (input instanceof Request) {
+      if (input.bodyUsed) {
+        throw new TypeError('Already read')
+      }
+      this.url = input.url;
+      this.credentials = input.credentials;
+      if (!options.headers) {
+        this.headers = new Headers(input.headers);
+      }
+      this.method = input.method;
+      this.mode = input.mode;
+      if (!body && input._bodyInit != null) {
+        body = input._bodyInit;
+        input.bodyUsed = true;
+      }
+    } else {
+      this.url = String(input);
+    }
+
+    this.credentials = options.credentials || this.credentials || 'omit';
+    if (options.headers || !this.headers) {
+      this.headers = new Headers(options.headers);
+    }
+    this.method = normalizeMethod(options.method || this.method || 'GET');
+    this.mode = options.mode || this.mode || null;
+    this.referrer = null;
+
+    if ((this.method === 'GET' || this.method === 'HEAD') && body) {
+      throw new TypeError('Body not allowed for GET or HEAD requests')
+    }
+    this._initBody(body);
+  }
+
+  Request.prototype.clone = function() {
+    return new Request(this, { body: this._bodyInit })
+  };
+
+  function decode(body) {
+    var form = new FormData();
+    body.trim().split('&').forEach(function(bytes) {
+      if (bytes) {
+        var split = bytes.split('=');
+        var name = split.shift().replace(/\+/g, ' ');
+        var value = split.join('=').replace(/\+/g, ' ');
+        form.append(decodeURIComponent(name), decodeURIComponent(value));
+      }
+    });
+    return form
+  }
+
+  function parseHeaders(rawHeaders) {
+    var headers = new Headers();
+    rawHeaders.split(/\r?\n/).forEach(function(line) {
+      var parts = line.split(':');
+      var key = parts.shift().trim();
+      if (key) {
+        var value = parts.join(':').trim();
+        headers.append(key, value);
+      }
+    });
+    return headers
+  }
+
+  Body.call(Request.prototype);
+
+  function Response(bodyInit, options) {
+    if (!options) {
+      options = {};
+    }
+
+    this.type = 'default';
+    this.status = 'status' in options ? options.status : 200;
+    this.ok = this.status >= 200 && this.status < 300;
+    this.statusText = 'statusText' in options ? options.statusText : 'OK';
+    this.headers = new Headers(options.headers);
+    this.url = options.url || '';
+    this._initBody(bodyInit);
+  }
+
+  Body.call(Response.prototype);
+
+  Response.prototype.clone = function() {
+    return new Response(this._bodyInit, {
+      status: this.status,
+      statusText: this.statusText,
+      headers: new Headers(this.headers),
+      url: this.url
+    })
+  };
+
+  Response.error = function() {
+    var response = new Response(null, {status: 0, statusText: ''});
+    response.type = 'error';
+    return response
+  };
+
+  var redirectStatuses = [301, 302, 303, 307, 308];
+
+  Response.redirect = function(url, status) {
+    if (redirectStatuses.indexOf(status) === -1) {
+      throw new RangeError('Invalid status code')
+    }
+
+    return new Response(null, {status: status, headers: {location: url}})
+  };
+
+  self.Headers = Headers;
+  self.Request = Request;
+  self.Response = Response;
+
+  self.fetch = function(input, init) {
+    return new Promise(function(resolve, reject) {
+      var request = new Request(input, init);
+      var xhr = new XMLHttpRequest();
+
+      xhr.onload = function() {
+        var options = {
+          status: xhr.status,
+          statusText: xhr.statusText,
+          headers: parseHeaders(xhr.getAllResponseHeaders() || '')
+        };
+        options.url = 'responseURL' in xhr ? xhr.responseURL : options.headers.get('X-Request-URL');
+        var body = 'response' in xhr ? xhr.response : xhr.responseText;
+        resolve(new Response(body, options));
+      };
+
+      xhr.onerror = function() {
+        reject(new TypeError('Network request failed'));
+      };
+
+      xhr.ontimeout = function() {
+        reject(new TypeError('Network request failed'));
+      };
+
+      xhr.open(request.method, request.url, true);
+
+      if (request.credentials === 'include') {
+        xhr.withCredentials = true;
+      }
+
+      if ('responseType' in xhr && support.blob) {
+        xhr.responseType = 'blob';
+      }
+
+      request.headers.forEach(function(value, name) {
+        xhr.setRequestHeader(name, value);
+      });
+
+      xhr.send(typeof request._bodyInit === 'undefined' ? null : request._bodyInit);
+    })
+  };
+  self.fetch.polyfill = true;
+})(typeof self !== 'undefined' ? self : undefined);
+
+var fetchNpmBrowserify = self.fetch.bind(self);
+
+var token_1$1 = createCommonjsModule(function (module, exports) {
+"use strict";
+
+var hostname_1 = hostname;
+function token(_a) {
+    var id = _a.id, secret = _a.secret, code = _a.code, uri = _a.uri;
+    return fetch(hostname_1.default + "/oauth/token?grant_type=authorization_code&code=" + code + "&client_id=" + id + "&client_secret=" + secret + "&redirect_uri=" + uri, { method: 'POST' })
+        .then(function (res) { return res.json(); });
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = token;
+});
+
+var oauth_1$2 = createCommonjsModule(function (module, exports) {
+"use strict";
+function header(token) {
+    return ['Authorization', "Bearer " + token];
+}
+var OauthAuthorizer = (function () {
+    function OauthAuthorizer(token) {
+        var _this = this;
+        this.authorize = function (request) { return request(header(_this.token)); };
+        this.setToken = function (token) {
+            _this.token = token;
+        };
+        this.getToken = function () { return _this.token; };
+        this.token = token;
+    }
+    return OauthAuthorizer;
+}());
+exports.OauthAuthorizer = OauthAuthorizer;
+function oauth(token) {
+    return new OauthAuthorizer(token);
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = oauth;
+});
+
+var refresh_1$1 = createCommonjsModule(function (module, exports) {
+"use strict";
+
+var hostname_1 = hostname;
+function refresh(_a) {
+    var id = _a.id, secret = _a.secret, uri = _a.uri, token = _a.token, refresh = _a.refresh;
+    return fetch(hostname_1.default + "/oauth/token?grant_type=refresh_token&$client_id=" + id + "&client_secret=" + secret + "&redirect_uri=" + uri + "&refresh_token=" + refresh, { method: 'POST', headers: { 'Authorization': "Bearer " + token } })
+        .then(function (res) { return res.json(); });
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = refresh;
+});
+
+var utils$1 = createCommonjsModule(function (module, exports) {
+'use strict';
+
+var has = Object.prototype.hasOwnProperty;
+
+var hexTable = (function () {
+    var array = [];
+    for (var i = 0; i < 256; ++i) {
+        array.push('%' + ((i < 16 ? '0' : '') + i.toString(16)).toUpperCase());
+    }
+
+    return array;
+}());
+
+exports.arrayToObject = function (source, options) {
+    var obj = options && options.plainObjects ? Object.create(null) : {};
+    for (var i = 0; i < source.length; ++i) {
+        if (typeof source[i] !== 'undefined') {
+            obj[i] = source[i];
+        }
+    }
+
+    return obj;
+};
+
+exports.merge = function (target, source, options) {
+    if (!source) {
+        return target;
+    }
+
+    if (typeof source !== 'object') {
+        if (Array.isArray(target)) {
+            target.push(source);
+        } else if (typeof target === 'object') {
+            target[source] = true;
+        } else {
+            return [target, source];
+        }
+
+        return target;
+    }
+
+    if (typeof target !== 'object') {
+        return [target].concat(source);
+    }
+
+    var mergeTarget = target;
+    if (Array.isArray(target) && !Array.isArray(source)) {
+        mergeTarget = exports.arrayToObject(target, options);
+    }
+
+    if (Array.isArray(target) && Array.isArray(source)) {
+        source.forEach(function (item, i) {
+            if (has.call(target, i)) {
+                if (target[i] && typeof target[i] === 'object') {
+                    target[i] = exports.merge(target[i], item, options);
+                } else {
+                    target.push(item);
+                }
+            } else {
+                target[i] = item;
+            }
+        });
+        return target;
+    }
+
+    return Object.keys(source).reduce(function (acc, key) {
+        var value = source[key];
+
+        if (Object.prototype.hasOwnProperty.call(acc, key)) {
+            acc[key] = exports.merge(acc[key], value, options);
+        } else {
+            acc[key] = value;
+        }
+        return acc;
+    }, mergeTarget);
+};
+
+exports.decode = function (str) {
+    try {
+        return decodeURIComponent(str.replace(/\+/g, ' '));
+    } catch (e) {
+        return str;
+    }
+};
+
+exports.encode = function (str) {
+    // This code was originally written by Brian White (mscdex) for the io.js core querystring library.
+    // It has been adapted here for stricter adherence to RFC 3986
+    if (str.length === 0) {
+        return str;
+    }
+
+    var string = typeof str === 'string' ? str : String(str);
+
+    var out = '';
+    for (var i = 0; i < string.length; ++i) {
+        var c = string.charCodeAt(i);
+
+        if (
+            c === 0x2D || // -
+            c === 0x2E || // .
+            c === 0x5F || // _
+            c === 0x7E || // ~
+            (c >= 0x30 && c <= 0x39) || // 0-9
+            (c >= 0x41 && c <= 0x5A) || // a-z
+            (c >= 0x61 && c <= 0x7A) // A-Z
+        ) {
+            out += string.charAt(i);
+            continue;
+        }
+
+        if (c < 0x80) {
+            out = out + hexTable[c];
+            continue;
+        }
+
+        if (c < 0x800) {
+            out = out + (hexTable[0xC0 | (c >> 6)] + hexTable[0x80 | (c & 0x3F)]);
+            continue;
+        }
+
+        if (c < 0xD800 || c >= 0xE000) {
+            out = out + (hexTable[0xE0 | (c >> 12)] + hexTable[0x80 | ((c >> 6) & 0x3F)] + hexTable[0x80 | (c & 0x3F)]);
+            continue;
+        }
+
+        i += 1;
+        c = 0x10000 + (((c & 0x3FF) << 10) | (string.charCodeAt(i) & 0x3FF));
+        out += hexTable[0xF0 | (c >> 18)] + hexTable[0x80 | ((c >> 12) & 0x3F)] + hexTable[0x80 | ((c >> 6) & 0x3F)] + hexTable[0x80 | (c & 0x3F)];
+    }
+
+    return out;
+};
+
+exports.compact = function (obj, references) {
+    if (typeof obj !== 'object' || obj === null) {
+        return obj;
+    }
+
+    var refs = references || [];
+    var lookup = refs.indexOf(obj);
+    if (lookup !== -1) {
+        return refs[lookup];
+    }
+
+    refs.push(obj);
+
+    if (Array.isArray(obj)) {
+        var compacted = [];
+
+        for (var i = 0; i < obj.length; ++i) {
+            if (obj[i] && typeof obj[i] === 'object') {
+                compacted.push(exports.compact(obj[i], refs));
+            } else if (typeof obj[i] !== 'undefined') {
+                compacted.push(obj[i]);
+            }
+        }
+
+        return compacted;
+    }
+
+    var keys = Object.keys(obj);
+    keys.forEach(function (key) {
+        obj[key] = exports.compact(obj[key], refs);
+    });
+
+    return obj;
+};
+
+exports.isRegExp = function (obj) {
+    return Object.prototype.toString.call(obj) === '[object RegExp]';
+};
+
+exports.isBuffer = function (obj) {
+    if (obj === null || typeof obj === 'undefined') {
+        return false;
+    }
+
+    return !!(obj.constructor && obj.constructor.isBuffer && obj.constructor.isBuffer(obj));
+};
+});
+
+var replace = String.prototype.replace;
+var percentTwenties = /%20/g;
+
+var formats$2 = {
+    'default': 'RFC3986',
+    formatters: {
+        RFC1738: function (value) {
+            return replace.call(value, percentTwenties, '+');
+        },
+        RFC3986: function (value) {
+            return value;
+        }
+    },
+    RFC1738: 'RFC1738',
+    RFC3986: 'RFC3986'
+};
+
+var utils = utils$1;
+var formats$1 = formats$2;
+
+var arrayPrefixGenerators = {
+    brackets: function brackets(prefix) {
+        return prefix + '[]';
+    },
+    indices: function indices(prefix, key) {
+        return prefix + '[' + key + ']';
+    },
+    repeat: function repeat(prefix) {
+        return prefix;
+    }
+};
+
+var toISO = Date.prototype.toISOString;
+
+var defaults$1 = {
+    delimiter: '&',
+    encode: true,
+    encoder: utils.encode,
+    serializeDate: function serializeDate(date) {
+        return toISO.call(date);
+    },
+    skipNulls: false,
+    strictNullHandling: false
+};
+
+var stringify$2 = function stringify(object, prefix, generateArrayPrefix, strictNullHandling, skipNulls, encoder, filter, sort, allowDots, serializeDate, formatter) {
+    var obj = object;
+    if (typeof filter === 'function') {
+        obj = filter(prefix, obj);
+    } else if (obj instanceof Date) {
+        obj = serializeDate(obj);
+    } else if (obj === null) {
+        if (strictNullHandling) {
+            return encoder ? encoder(prefix) : prefix;
+        }
+
+        obj = '';
+    }
+
+    if (typeof obj === 'string' || typeof obj === 'number' || typeof obj === 'boolean' || utils.isBuffer(obj)) {
+        if (encoder) {
+            return [formatter(encoder(prefix)) + '=' + formatter(encoder(obj))];
+        }
+        return [formatter(prefix) + '=' + formatter(String(obj))];
+    }
+
+    var values = [];
+
+    if (typeof obj === 'undefined') {
+        return values;
+    }
+
+    var objKeys;
+    if (Array.isArray(filter)) {
+        objKeys = filter;
+    } else {
+        var keys = Object.keys(obj);
+        objKeys = sort ? keys.sort(sort) : keys;
+    }
+
+    for (var i = 0; i < objKeys.length; ++i) {
+        var key = objKeys[i];
+
+        if (skipNulls && obj[key] === null) {
+            continue;
+        }
+
+        if (Array.isArray(obj)) {
+            values = values.concat(stringify(
+                obj[key],
+                generateArrayPrefix(prefix, key),
+                generateArrayPrefix,
+                strictNullHandling,
+                skipNulls,
+                encoder,
+                filter,
+                sort,
+                allowDots,
+                serializeDate,
+                formatter
+            ));
+        } else {
+            values = values.concat(stringify(
+                obj[key],
+                prefix + (allowDots ? '.' + key : '[' + key + ']'),
+                generateArrayPrefix,
+                strictNullHandling,
+                skipNulls,
+                encoder,
+                filter,
+                sort,
+                allowDots,
+                serializeDate,
+                formatter
+            ));
+        }
+    }
+
+    return values;
+};
+
+var stringify_1 = function (object, opts) {
+    var obj = object;
+    var options = opts || {};
+    var delimiter = typeof options.delimiter === 'undefined' ? defaults$1.delimiter : options.delimiter;
+    var strictNullHandling = typeof options.strictNullHandling === 'boolean' ? options.strictNullHandling : defaults$1.strictNullHandling;
+    var skipNulls = typeof options.skipNulls === 'boolean' ? options.skipNulls : defaults$1.skipNulls;
+    var encode = typeof options.encode === 'boolean' ? options.encode : defaults$1.encode;
+    var encoder = encode ? (typeof options.encoder === 'function' ? options.encoder : defaults$1.encoder) : null;
+    var sort = typeof options.sort === 'function' ? options.sort : null;
+    var allowDots = typeof options.allowDots === 'undefined' ? false : options.allowDots;
+    var serializeDate = typeof options.serializeDate === 'function' ? options.serializeDate : defaults$1.serializeDate;
+    if (typeof options.format === 'undefined') {
+        options.format = formats$1.default;
+    } else if (!Object.prototype.hasOwnProperty.call(formats$1.formatters, options.format)) {
+        throw new TypeError('Unknown format option provided.');
+    }
+    var formatter = formats$1.formatters[options.format];
+    var objKeys;
+    var filter;
+
+    if (options.encoder !== null && options.encoder !== undefined && typeof options.encoder !== 'function') {
+        throw new TypeError('Encoder has to be a function.');
+    }
+
+    if (typeof options.filter === 'function') {
+        filter = options.filter;
+        obj = filter('', obj);
+    } else if (Array.isArray(options.filter)) {
+        filter = options.filter;
+        objKeys = filter;
+    }
+
+    var keys = [];
+
+    if (typeof obj !== 'object' || obj === null) {
+        return '';
+    }
+
+    var arrayFormat;
+    if (options.arrayFormat in arrayPrefixGenerators) {
+        arrayFormat = options.arrayFormat;
+    } else if ('indices' in options) {
+        arrayFormat = options.indices ? 'indices' : 'repeat';
+    } else {
+        arrayFormat = 'indices';
+    }
+
+    var generateArrayPrefix = arrayPrefixGenerators[arrayFormat];
+
+    if (!objKeys) {
+        objKeys = Object.keys(obj);
+    }
+
+    if (sort) {
+        objKeys.sort(sort);
+    }
+
+    for (var i = 0; i < objKeys.length; ++i) {
+        var key = objKeys[i];
+
+        if (skipNulls && obj[key] === null) {
+            continue;
+        }
+
+        keys = keys.concat(stringify$2(
+            obj[key],
+            key,
+            generateArrayPrefix,
+            strictNullHandling,
+            skipNulls,
+            encoder,
+            filter,
+            sort,
+            allowDots,
+            serializeDate,
+            formatter
+        ));
+    }
+
+    return keys.join(delimiter);
+};
+
+var utils$3 = utils$1;
+
+var has$6 = Object.prototype.hasOwnProperty;
+
+var defaults$2 = {
+    allowDots: false,
+    allowPrototypes: false,
+    arrayLimit: 20,
+    decoder: utils$3.decode,
+    delimiter: '&',
+    depth: 5,
+    parameterLimit: 1000,
+    plainObjects: false,
+    strictNullHandling: false
+};
+
+var parseValues = function parseValues(str, options) {
+    var obj = {};
+    var parts = str.split(options.delimiter, options.parameterLimit === Infinity ? undefined : options.parameterLimit);
+
+    for (var i = 0; i < parts.length; ++i) {
+        var part = parts[i];
+        var pos = part.indexOf(']=') === -1 ? part.indexOf('=') : part.indexOf(']=') + 1;
+
+        var key, val;
+        if (pos === -1) {
+            key = options.decoder(part);
+            val = options.strictNullHandling ? null : '';
+        } else {
+            key = options.decoder(part.slice(0, pos));
+            val = options.decoder(part.slice(pos + 1));
+        }
+        if (has$6.call(obj, key)) {
+            obj[key] = [].concat(obj[key]).concat(val);
+        } else {
+            obj[key] = val;
+        }
+    }
+
+    return obj;
+};
+
+var parseObject = function parseObject(chain, val, options) {
+    if (!chain.length) {
+        return val;
+    }
+
+    var root = chain.shift();
+
+    var obj;
+    if (root === '[]') {
+        obj = [];
+        obj = obj.concat(parseObject(chain, val, options));
+    } else {
+        obj = options.plainObjects ? Object.create(null) : {};
+        var cleanRoot = root[0] === '[' && root[root.length - 1] === ']' ? root.slice(1, root.length - 1) : root;
+        var index = parseInt(cleanRoot, 10);
+        if (
+            !isNaN(index) &&
+            root !== cleanRoot &&
+            String(index) === cleanRoot &&
+            index >= 0 &&
+            (options.parseArrays && index <= options.arrayLimit)
+        ) {
+            obj = [];
+            obj[index] = parseObject(chain, val, options);
+        } else {
+            obj[cleanRoot] = parseObject(chain, val, options);
+        }
+    }
+
+    return obj;
+};
+
+var parseKeys = function parseKeys(givenKey, val, options) {
+    if (!givenKey) {
+        return;
+    }
+
+    // Transform dot notation to bracket notation
+    var key = options.allowDots ? givenKey.replace(/\.([^\.\[]+)/g, '[$1]') : givenKey;
+
+    // The regex chunks
+
+    var parent = /^([^\[\]]*)/;
+    var child = /(\[[^\[\]]*\])/g;
+
+    // Get the parent
+
+    var segment = parent.exec(key);
+
+    // Stash the parent if it exists
+
+    var keys = [];
+    if (segment[1]) {
+        // If we aren't using plain objects, optionally prefix keys
+        // that would overwrite object prototype properties
+        if (!options.plainObjects && has$6.call(Object.prototype, segment[1])) {
+            if (!options.allowPrototypes) {
+                return;
+            }
+        }
+
+        keys.push(segment[1]);
+    }
+
+    // Loop through children appending to the array until we hit depth
+
+    var i = 0;
+    while ((segment = child.exec(key)) !== null && i < options.depth) {
+        i += 1;
+        if (!options.plainObjects && has$6.call(Object.prototype, segment[1].replace(/\[|\]/g, ''))) {
+            if (!options.allowPrototypes) {
+                continue;
+            }
+        }
+        keys.push(segment[1]);
+    }
+
+    // If there's a remainder, just add whatever is left
+
+    if (segment) {
+        keys.push('[' + key.slice(segment.index) + ']');
+    }
+
+    return parseObject(keys, val, options);
+};
+
+var parse$2 = function (str, opts) {
+    var options = opts || {};
+
+    if (options.decoder !== null && options.decoder !== undefined && typeof options.decoder !== 'function') {
+        throw new TypeError('Decoder has to be a function.');
+    }
+
+    options.delimiter = typeof options.delimiter === 'string' || utils$3.isRegExp(options.delimiter) ? options.delimiter : defaults$2.delimiter;
+    options.depth = typeof options.depth === 'number' ? options.depth : defaults$2.depth;
+    options.arrayLimit = typeof options.arrayLimit === 'number' ? options.arrayLimit : defaults$2.arrayLimit;
+    options.parseArrays = options.parseArrays !== false;
+    options.decoder = typeof options.decoder === 'function' ? options.decoder : defaults$2.decoder;
+    options.allowDots = typeof options.allowDots === 'boolean' ? options.allowDots : defaults$2.allowDots;
+    options.plainObjects = typeof options.plainObjects === 'boolean' ? options.plainObjects : defaults$2.plainObjects;
+    options.allowPrototypes = typeof options.allowPrototypes === 'boolean' ? options.allowPrototypes : defaults$2.allowPrototypes;
+    options.parameterLimit = typeof options.parameterLimit === 'number' ? options.parameterLimit : defaults$2.parameterLimit;
+    options.strictNullHandling = typeof options.strictNullHandling === 'boolean' ? options.strictNullHandling : defaults$2.strictNullHandling;
+
+    if (str === '' || str === null || typeof str === 'undefined') {
+        return options.plainObjects ? Object.create(null) : {};
+    }
+
+    var tempObj = typeof str === 'string' ? parseValues(str, options) : str;
+    var obj = options.plainObjects ? Object.create(null) : {};
+
+    // Iterate over the keys and setup the new object
+
+    var keys = Object.keys(tempObj);
+    for (var i = 0; i < keys.length; ++i) {
+        var key = keys[i];
+        var newObj = parseKeys(key, tempObj[key], options);
+        obj = utils$3.merge(obj, newObj, options);
+    }
+
+    return utils$3.compact(obj);
+};
+
+var stringify$1 = stringify_1;
+var parse$1 = parse$2;
+var formats = formats$2;
+
+var index$114 = {
+    formats: formats,
+    parse: parse$1,
+    stringify: stringify$1
+};
+
+var client_1$2 = createCommonjsModule(function (module, exports) {
+"use strict";
+
+var qs_1 = index$114;
+var hostname_1 = hostname;
+function authValid(response) {
+    if (response.status === 403) {
+        throw new Error(response.status + " " + response.statusText);
+    }
+    else {
+        return response;
+    }
+}
+function unauthorizedRequest(url, payload, method) {
+    return function authorizedRequest(_a) {
+        var authKey = _a[0], authValue = _a[1];
+        var headers = (_b = {
+                'Content-Type': 'application/json'
+            },
+            _b[authKey] = authValue,
+            _b);
+        return fetch(url, { method: method, headers: headers, body: JSON.stringify(payload) })
+            .then(authValid)
+            .then(function (res) { return res.json(); });
+        var _b;
+    };
+}
+var Globals;
+(function (Globals) {
+    var Foo = (function () {
+        function Foo() {
+        }
+        return Foo;
+    }());
+    Globals.Foo = Foo;
+})(Globals || (Globals = {}));
+var Client = (function () {
+    function Client(authorizer) {
+        var _this = this;
+        this.hostname = hostname_1.default;
+        this.get = function (_a) {
+            var endpoint = _a.endpoint, payload = _a.payload, qs = _a.qs;
+            var url = _this.url(endpoint, qs);
+            return _this.authorize(unauthorizedRequest(url, payload, 'GET'));
+        };
+        this.post = function (_a) {
+            var endpoint = _a.endpoint, payload = _a.payload, qs = _a.qs;
+            var url = _this.url(endpoint, qs);
+            return _this.authorize(unauthorizedRequest(url, payload, 'POST'));
+        };
+        this.patch = function (_a) {
+            var endpoint = _a.endpoint, payload = _a.payload, qs = _a.qs;
+            var url = _this.url(endpoint, qs);
+            return _this.authorize(unauthorizedRequest(url, payload, 'PATCH'));
+        };
+        this.destroy = function (_a) {
+            var endpoint = _a.endpoint, payload = _a.payload, qs = _a.qs;
+            var url = _this.url(endpoint, qs);
+            return _this.authorize(unauthorizedRequest(url, payload, 'DESTROY'));
+        };
+        this.url = function (endpoint, qs) { return _this.hostname + "/vapid/" + endpoint + "?" + qs_1.stringify(qs); };
+        this.authorize = authorizer.authorize;
+    }
+    return Client;
+}());
+exports.Client = Client;
+function client(authorizer) {
+    return new Client(authorizer);
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = client;
+});
+
+var csrf_1$1 = createCommonjsModule(function (module, exports) {
+"use strict";
+var Csrf = (function () {
+    function Csrf() {
+    }
+    Csrf.prototype.authorize = function (request) {
+        return request(['X-CSRF-TOKEN', window.document.head.querySelector("[value=csrf-token]").getAttribute('content')]);
+    };
+    return Csrf;
+}());
+function csrf() {
+    return new Csrf();
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = csrf;
+});
+
+var refresher_1$1 = createCommonjsModule(function (module, exports) {
+"use strict";
+
+var Refresher = (function () {
+    function Refresher(oauth, refresh) {
+        var _this = this;
+        this.authorize = function (request) {
+            var self = _this;
+            return self.oauth.authorize(request)
+                .catch(function () { return self.refresh(self.oauth.getToken())
+                .then(function (_a) {
+                var auth_token = _a.auth_token;
+                self.oauth.setToken(auth_token);
+                return self.oauth.authorize(request);
+            }); });
+        };
+        this.oauth = oauth;
+        this.refresh = refresh;
+    }
+    return Refresher;
+}());
+function refresher(oauth, refreshToken) {
+    return new Refresher(oauth, refreshToken);
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = refresher;
+});
+
+var oauth_1$1 = oauth_1$2;
+var oauth = oauth_1$1.default;
+var client_1$1 = client_1$2;
+var client = client_1$1.default;
+
+var ReduxFormDropdownMenu = function ReduxFormDropdownMenu(_ref) {
+  var children = _ref.children,
+      field = _ref.field,
+      options = _ref.options,
+      input = _ref.input;
+
+  return react.createElement(
+    DropDownMenu,
+    {
+      value: input.value,
+      onChange: function onChange(event, idx, value) {
+        return input.onChange(value);
+      }
+    },
+    options.map(function (_ref2) {
+      var _ref3 = slicedToArray(_ref2, 2),
+          value = _ref3[0],
+          label = _ref3[1];
+
+      return react.createElement(MenuItem, { key: value, value: value, primaryText: label });
+    })
+  );
+};
+
+var ReduxFormTextField = function ReduxFormTextField(_ref) {
+  var hintText = _ref.hintText,
+      fullWidth = _ref.fullWidth,
+      input = _ref.input,
+      meta = _ref.meta;
+
+  return react.createElement(TextField, {
+    hintText: hintText,
+    value: input.value,
+    fullWidth: true,
+    onChange: function onChange(event, value) {
+      return input.onChange(value);
+    }
+  });
+};
+
+var ReduxFormKeyValueFields = function ReduxFormKeyValueFields(_ref) {
+  var addLabel = _ref.addLabel,
+      fields = _ref.fields;
+
+  return react.createElement(
+    index_3$3,
+    null,
+    react.createElement(
+      Subheader,
+      null,
+      react.createElement(FlatButton, { label: addLabel, onClick: function onClick() {
+          return fields.push({});
+        } })
+    ),
+    fields.map(function (member, index, field) {
+      return react.createElement(
+        index_2$8,
+        { key: member, disabled: true },
+        react.createElement(Field, { name: member + '.key', hintText: 'Key', component: ReduxFormTextField }),
+        react.createElement(Field, { name: member + '.value', hintText: 'Value', component: ReduxFormTextField }),
+        react.createElement(FlatButton, { label: 'Remove', onClick: function onClick() {
+            return fields.remove(index);
+          } })
+      );
+    })
+  );
+};
+
+var procore = client(oauth(document.head.querySelector('[name=token]').getAttribute('content')));
+
+var startResponseChange = function startResponseChange(_ref, dispatch) {
+  var endpoint = _ref.endpoint,
+      method = _ref.method;
+
+  console.log(endpoint, dispatch, procore);
+  return procore[method]({ endpoint: endpoint }).then(function (response) {
+    return dispatch(changeResponse(response));
+  });
+};
+
+var Home = function Home(_ref2) {
+  var dispatch = _ref2.dispatch,
+      option = _ref2.option,
+      method = _ref2.method,
+      endpoint = _ref2.endpoint,
+      value = _ref2.value,
+      source = _ref2.source,
+      handleSubmit = _ref2.handleSubmit;
+
+  return react.createElement(
+    'div',
+    null,
+    react.createElement(
+      index_4$4,
+      null,
+      react.createElement(
+        index_3$5,
+        null,
+        react.createElement(Field, { component: ReduxFormTextField, name: 'endpoint', hintText: 'Endpoint', fullWidth: true })
+      ),
+      react.createElement(
+        index_3$5,
+        null,
+        react.createElement(Field, {
+          component: ReduxFormDropdownMenu,
+          name: 'method',
+          options: [['get', 'Get'], ['post', 'Post'], ['patch', 'Patch'], ['destroy', 'Destroy']]
+        }),
+        react.createElement(RaisedButton, { label: 'Submit', primary: true, onClick: function onClick() {
+            return handleSubmit();
+          } })
+      )
+    ),
+    react.createElement(FieldArray, { name: 'qs', addLabel: 'Query', component: ReduxFormKeyValueFields })
+  );
+};
+
+var Home$1 = reduxForm({
+  form: 'home',
+  initialValues: { method: 'get' },
+  onSubmit: startResponseChange
+})(Home);
 
 var Login = function (_React$Component) {
-  inherits$2(Login, _React$Component);
+  inherits(Login, _React$Component);
 
   function Login() {
-    classCallCheck$2(this, Login);
-    return possibleConstructorReturn$2(this, (Login.__proto__ || Object.getPrototypeOf(Login)).apply(this, arguments));
+    classCallCheck(this, Login);
+    return possibleConstructorReturn(this, (Login.__proto__ || Object.getPrototypeOf(Login)).apply(this, arguments));
   }
 
-  createClass$2(Login, [{
+  createClass(Login, [{
     key: 'render',
     value: function render() {
       return react.createElement(
@@ -61210,85 +71286,20 @@ var Login = function (_React$Component) {
   return Login;
 }(react.Component);
 
-var Resource = function (_React$Component) {
-  inherits$2(Resource, _React$Component);
-
-  function Resource() {
-    classCallCheck$2(this, Resource);
-    return possibleConstructorReturn$2(this, (Resource.__proto__ || Object.getPrototypeOf(Resource)).apply(this, arguments));
-  }
-
-  createClass$2(Resource, [{
-    key: 'render',
-    value: function render() {
-      return react.createElement(
-        'div',
-        null,
-        this.props.children
-      );
-    }
-  }]);
-  return Resource;
-}(react.Component);
-
-var List$1 = function (_React$Component) {
-  inherits$2(List, _React$Component);
-
-  function List() {
-    classCallCheck$2(this, List);
-    return possibleConstructorReturn$2(this, (List.__proto__ || Object.getPrototypeOf(List)).apply(this, arguments));
-  }
-
-  createClass$2(List, [{
-    key: 'render',
-    value: function render() {
-      return react.createElement(
-        'div',
-        null,
-        'List more'
-      );
-    }
-  }]);
-  return List;
-}(react.Component);
-
-var Get = function (_React$Component) {
-  inherits$2(Get, _React$Component);
-
-  function Get() {
-    classCallCheck$2(this, Get);
-    return possibleConstructorReturn$2(this, (Get.__proto__ || Object.getPrototypeOf(Get)).apply(this, arguments));
-  }
-
-  createClass$2(Get, [{
-    key: 'render',
-    value: function render() {
-      return react.createElement(
-        'div',
-        null,
-        'Get more'
-      );
-    }
-  }]);
-  return Get;
-}(react.Component);
-
 injectTapEventPlugin();
 
-index$2.render(react.createElement(
-  Router,
-  { history: browserHistory },
-  react.createElement(Route, { path: '/login', component: Login }),
+index$3.render(react.createElement(
+  Provider,
+  { store: store },
   react.createElement(
-    Route,
-    { path: '/', component: App },
+    Router,
+    { history: browserHistory },
+    react.createElement(Route, { path: '/login', component: Login }),
     react.createElement(
       Route,
-      { path: '/:resource', component: Resource },
-      react.createElement(Route, { path: '/:id', component: Get }),
-      react.createElement(IndexRoute, { component: List$1 })
-    ),
-    react.createElement(IndexRoute, { component: Home })
+      { path: '/', component: App },
+      react.createElement(IndexRoute, { component: Home$1 })
+    )
   )
 ), document.getElementById('app'));
 

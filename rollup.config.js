@@ -17,7 +17,7 @@ export default {
     commonjs({
       include: 'node_modules/**',
       namedExports: {
-        'node_modules/react/react.js': ['PropTypes', 'createElement', 'Component']
+        'node_modules/react/react.js': ['PropTypes', 'createElement', 'Component', 'Children']
       }
     }),
     globals(),

@@ -2,28 +2,26 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, browserHistory } from 'react-router/es'
+import { Provider } from 'react-redux'
+import { reducer, store } from './duck'
 
-import App from './components/App.jsx'
-import Home from './components/Home.jsx'
-import Login from './components/Login.jsx'
-import Resource from './components/Resource.jsx'
-import List from './components/List.jsx'
-import Get from './components/Get.jsx'
+import App from './screens/App.jsx'
+import Home from './screens/Home.jsx'
+import Login from './screens/Login.jsx'
+
 
 injectTapEventPlugin()
 
 ReactDOM.render(
   (
-    <Router history={browserHistory}>
-      <Route path="/login" component={Login}/>
-      <Route path="/" component={App}>
-        <Route path="/:resource" component={Resource}>
-          <Route path="/:id" component={Get}/>
-          <IndexRoute component={List}/>
+    <Provider store={store}>
+      <Router history={browserHistory}>
+        <Route path="/login" component={Login}/>
+        <Route path="/" component={App}>
+          <IndexRoute component={Home}/>
         </Route>
-        <IndexRoute component={Home}/>
-      </Route>
-    </Router>
+      </Router>
+    </Provider>
   ),
   document.getElementById('app')
 )
