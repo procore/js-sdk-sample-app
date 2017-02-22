@@ -5,7 +5,7 @@ const Inert = require('inert')
 const Auth = require('hapi-auth-cookie')
 const Joi = require('joi')
 const { v4 } = require('uuid')
-const { token, authorize, oauth, client } = require('procore')
+const { token, refresh, authorize, oauth, client } = require('procore')
 
 const CLIENT_ID =process.env.CLIENT_ID
 const CLIENT_SECRET = process.env.CLIENT_SECRET
@@ -80,6 +80,36 @@ server.register(
               return reply.redirect('/')
             })
           })
+      }
+    }
+  })
+
+  server.route({
+    method: 'POST',
+    path: '/sessions/refresh',
+    config: {
+      auth: false,
+      handler: (req, reply) => {
+        const sid = session.sid
+
+        server.app.cache.get(sid, (err, {account}) => {
+          refresh({
+            id: CLIENT_ID,
+            secret: CLIENT_SECRET,
+            uri: REDIRECT_URL,
+            refresh: account.refresh_token,
+            token: account.auth_token
+          })
+          .then((refreshed) => {
+            return req.app.cache.set(sid, { account: refreshed }, (err) => {
+              if (err) {
+                return reply(err)
+              }
+
+              return reply(refreshed)
+            })
+          })
+        })
       }
     }
   })

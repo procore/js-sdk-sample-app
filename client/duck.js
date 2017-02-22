@@ -6,8 +6,12 @@ export const setResponse = createAction('set response')
 
 
 export const reducer = createReducer(
-  { [setResponse]: (state, action) => state },
-  {  }
+  {
+    [setResponse]: (state, resource) => {
+      return Object.assign({}, state, { resource });
+    }
+  },
+  { }
 )
 
 

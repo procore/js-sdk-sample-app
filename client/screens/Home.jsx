@@ -1,6 +1,8 @@
 import React from 'react'
+import R from 'ramda'
 import { connect } from 'react-redux'
-import { oauth, client } from 'procore'
+import Inspector from 'react-inspector'
+import { oauth, client, refresher } from 'procore'
 import { Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle } from 'material-ui/Toolbar'
 import { Field, reduxForm, FieldArray } from 'redux-form'
 import RaisedButton from 'material-ui/RaisedButton'
@@ -11,19 +13,38 @@ import ReduxFormDropdownMenu from './../components/ReduxFormDropdownMenu.jsx'
 import ReduxFormTextField from './../components/ReduxFormTextField.jsx'
 import ReduxFormKeyValueFields from './../components/ReduxFormKeyValueFields.jsx'
 
-const procore = client(
-  oauth(
-    document.head.querySelector('[name=token]').getAttribute('content')
-  )
+const authorizer = oauth(
+  document.head.querySelector('[name=token]').getAttribute('content')
 )
 
-const startResponseChange = ({ endpoint, method }, dispatch) => {
-  console.log(endpoint, dispatch, procore)
-  return procore[method]({ endpoint })
-    .then((response) => dispatch(changeResponse(response)))
+const refreshToken = token => fetch(
+  '/oauth/procore/refresh',
+  { method: 'POST', headers: { 'Authorization': `Bearer ${token}`  }  }
+);
+
+const procore = client(
+  refresher(authorizer, refreshToken)
+)
+
+const hashFromTuples = R.compose(
+  R.reduce(
+    (memo, {key, value}) => {
+      memo[key] = value
+
+      return memo
+    },
+    {}
+  ),
+  R.when(R.isNil, () => [])
+)
+
+const startResponseChange = ({ endpoint, method, qs }, dispatch) => {
+  return procore[method]({ endpoint, qs: hashFromTuples(qs) })
+    .then((response) => dispatch(setResponse(response)))
 }
 
-const Home = ({ dispatch, option, method, endpoint, value, source, handleSubmit }) => {
+const Home = ({ dispatch, app, option, method, endpoint, value, source, handleSubmit }) => {
+  console.log(app)
   return (
     <div>
       <Toolbar>
@@ -40,12 +61,16 @@ const Home = ({ dispatch, option, method, endpoint, value, source, handleSubmit 
         </ToolbarGroup>
       </Toolbar>
       <FieldArray name="qs" addLabel="Query" component={ReduxFormKeyValueFields} />
+      {R.not(R.isNil(app.resource)) && <Inspector data={app.resource} />}
     </div>
   )
 }
 
-export default reduxForm({
-  form: 'home',
-  initialValues: { method: 'get'  },
-  onSubmit: startResponseChange
-})(Home)
+export default R.compose(
+  connect(state => state),
+  reduxForm({
+    form: 'home',
+    initialValues: { method: 'get', endpoint: 'me' },
+    onSubmit: startResponseChange
+  })
+)(Home)
