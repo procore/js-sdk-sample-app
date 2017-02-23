@@ -1,6 +1,8 @@
 # Node Procore Boilerplate
 An example on how to use `node-procore`. Comes complete with login routes and resource viewer.
 
+![demo video](https://github.com/procore/node-procore-boilerplate/blob/master/demo.gif)
+
 ## Dependiences
 ```
 brew install yarn
