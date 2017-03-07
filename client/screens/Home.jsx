@@ -2,7 +2,7 @@ import React from 'react'
 import R from 'ramda'
 import { connect } from 'react-redux'
 import Inspector from 'react-inspector'
-import { oauth, client, refresher } from 'procore'
+import { oauth, client, refresher, me } from '@procore/sdk'
 import { Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle } from 'material-ui/Toolbar'
 import { Field, reduxForm, FieldArray } from 'redux-form'
 import RaisedButton from 'material-ui/RaisedButton'
@@ -38,13 +38,13 @@ const hashFromTuples = R.compose(
   R.when(R.isNil, () => [])
 )
 
+
 const startResponseChange = ({ endpoint, method, qs }, dispatch) => {
-  return procore[method]({ endpoint, qs: hashFromTuples(qs) })
+  return procore[method]({ base: `/vapid/${endpoint}`, qs: hashFromTuples(qs), params: {} })
     .then((response) => dispatch(setResponse(response)))
 }
 
 const Home = ({ dispatch, app, option, method, endpoint, value, source, handleSubmit }) => {
-  console.log(app)
   return (
     <div>
       <Toolbar>

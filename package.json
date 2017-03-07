@@ -19,6 +19,7 @@
     "dev": "concurrently \"npm run rollup:watch\" \"npm run server:watch\""
   },
   "dependencies": {
+    "@procore/sdk": "0.5.0",
     "alphanum-sort": "^1.0.2",
     "dotenv": "^4.0.0",
     "hapi": "^16.1.0",
@@ -27,7 +28,6 @@
     "inert": "^4.1.0",
     "joi": "^10.2.0",
     "material-ui": "^0.16.7",
-    "procore": "file:../node-procore",
     "ramda": "^0.23.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",

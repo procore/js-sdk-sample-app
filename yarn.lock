@@ -2,6 +2,14 @@
 # yarn lockfile v1
 
 
+"@procore/sdk@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@procore/sdk/-/sdk-0.5.0.tgz#c5c200da8ffb039b73c0b991e7437f49c1980a93"
+  dependencies:
+    isomorphic-fetch "^2.2.1"
+    qs "^6.3.0"
+    ramda "^0.23.0"
+
 abbrev@1:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.0.9.tgz#91b4792588a7738c25f35dd6f63752a2f8776135"
@@ -1963,13 +1971,6 @@ process-es6@^0.11.3:
 process-nextick-args@~1.0.6:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-1.0.7.tgz#150e20b756590ad3f91093f25a4f2ad8bff30ba3"
-
-"procore@file:../node-procore":
-  version "0.0.1"
-  dependencies:
-    isomorphic-fetch "^2.2.1"
-    qs "^6.3.0"
-    ramda "^0.23.0"
 
 promise@^7.1.1:
   version "7.1.1"

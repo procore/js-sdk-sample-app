@@ -5,7 +5,7 @@ const Inert = require('inert')
 const Auth = require('hapi-auth-cookie')
 const Joi = require('joi')
 const { v4 } = require('uuid')
-const { token, refresh, authorize, oauth, client } = require('procore')
+const { token, refresh, authorize, oauth, client } = require('@procore/sdk')
 
 const CLIENT_ID =process.env.CLIENT_ID
 const CLIENT_SECRET = process.env.CLIENT_SECRET
