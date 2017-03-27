@@ -62,7 +62,7 @@ server.register(
 
   server.route({
     method: 'GET',
-    path: '/oauth/procore/consume',
+    path: '/oauth/procore/callback',
     config: {
       auth: false,
       validate: { query: { code: Joi.string() } },
@@ -86,7 +86,7 @@ server.register(
 
   server.route({
     method: 'POST',
-    path: '/sessions/refresh',
+    path: '/oauth/procore/refresh',
     config: {
       auth: false,
       handler: (req, reply) => {

@@ -27,10 +27,10 @@ SESSION_PASSWORD
 `GET /sessions/create`
 Starts oauth authorization with procore
 
-`GET /oauth/procore/consume`
+`GET /oauth/procore/callback`
 The registred redirect uri
 
-`POST /sessions/refresh`
+`POST /oauth/procore/refresh`
 Refreshes the current auth token and saves to app session
 
 `GET /public/{param*}`
