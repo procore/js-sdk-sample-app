@@ -1,6 +1,6 @@
 {
   "name": "@procore/js-sdk-sample-app",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Example app showcasing procore node package",
   "main": "server/main.js",
   "author": "Procore",
