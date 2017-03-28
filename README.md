@@ -1,5 +1,5 @@
 # Node Procore Boilerplate
-An example on how to use `node-procore`. Comes complete with login routes and resource viewer.
+An example on how to use [`@procore/js-sdk`](https://www.npmjs.com/package/@procore/js-sdk). Comes complete with login routes and resource viewer.
 
 ![demo video](https://github.com/procore/node-procore-boilerplate/blob/master/demo.gif)
 
@@ -39,7 +39,7 @@ Used for public assets eg css, js, images
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/procore/node-procore-boilerplate. This project is
+Bug reports and pull requests are welcome on GitHub at https://github.com/procore/js-sdk-sample-app. This project is
 intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the
 [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 

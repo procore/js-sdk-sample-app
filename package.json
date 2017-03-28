@@ -1,5 +1,5 @@
 {
-  "name": "node-procore-boilerplate",
+  "name": "@prcore/js-sdk-sample-app",
   "version": "1.0.0",
   "description": "Example app showcasing procore node package",
   "main": "server/main.js",
@@ -19,7 +19,7 @@
     "dev": "concurrently \"npm run rollup:watch\" \"npm run server:watch\""
   },
   "dependencies": {
-    "@procore/sdk": "0.5.0",
+    "@procore/js-sdk": "^0.7.1",
     "alphanum-sort": "^1.0.2",
     "dotenv": "^4.0.0",
     "hapi": "^16.1.0",
