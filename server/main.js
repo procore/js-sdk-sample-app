@@ -85,6 +85,18 @@ server.register(
   })
 
   server.route({
+    method: 'GET',
+    path: '/logout',
+    config: {
+      auth: false,
+      handler: (req, reply) => {
+        req.cookieAuth.clear();
+        return reply.redirect('/')
+      }
+    }
+  })
+
+  server.route({
     method: 'POST',
     path: '/oauth/procore/refresh',
     config: {
