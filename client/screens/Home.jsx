@@ -58,6 +58,7 @@ const Home = ({ dispatch, app, option, method, endpoint, value, source, handleSu
             options={[['get', 'Get'], ['post', 'Post'], ['patch', 'Patch'], ['destroy', 'Destroy']]}
           />
           <RaisedButton label="Submit" primary onClick={() => handleSubmit()} />
+          <FlatButton label="Logout" primary href='/logout' />
         </ToolbarGroup>
       </Toolbar>
       <FieldArray name="qs" addLabel="Query" component={ReduxFormKeyValueFields} />
