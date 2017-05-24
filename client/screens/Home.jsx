@@ -41,7 +41,7 @@ const hashFromTuples = R.compose(
 
 const startResponseChange = ({ endpoint, method, qs }, dispatch) => {
   return procore[method]({ base: `/vapid/${endpoint}`, qs: hashFromTuples(qs), params: {} })
-    .then((response) => dispatch(setResponse(response)))
+    .then(({ body }) => dispatch(setResponse(body)))
 }
 
 const Home = ({ dispatch, app, option, method, endpoint, value, source, handleSubmit }) => {
@@ -71,7 +71,7 @@ export default R.compose(
   connect(state => state),
   reduxForm({
     form: 'home',
+    onSubmit: startResponseChange,
     initialValues: { method: 'get', endpoint: 'me' },
-    onSubmit: startResponseChange
   })
 )(Home)

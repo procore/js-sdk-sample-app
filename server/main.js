@@ -10,17 +10,19 @@ const { token, refresh, authorize, oauth, client } = require('@procore/js-sdk')
 const CLIENT_ID =process.env.CLIENT_ID
 const CLIENT_SECRET = process.env.CLIENT_SECRET
 const REDIRECT_URL = process.env.REDIRECT_URL
+const HOSTNAME = process.env.HOSTNAME;
+const PORT = process.env.PORT;
 
 const server = new Hapi.Server()
 
-server.connection({ port: 8080, host: 'localhost' })
+server.connection({ port: PORT, host: HOSTNAME })
 
 server.register(
   [Inert, Vision, Auth],
   (err) => {
   if (err) { throw err }
 
-  const cache = server.cache({ segment: 'sessions', expiresIn: 3 * 24 * 60 * 60 * 1000  });
+  const cache = server.cache({ segment: 'sessions', expiresIn: 3 * 24 * 60 * 60 * 1000  })
 
   server.app.cache = cache;
 
@@ -36,7 +38,7 @@ server.register(
 
         if (!cached) { return callback(null, false) }
 
-        return callback(null, true, cached.code)
+        return callback(null, true, cached.account)
       })
     }
   })
@@ -68,11 +70,12 @@ server.register(
       validate: { query: { code: Joi.string() } },
       handler: (req, reply) => {
         const code = req.query.code
-        const sid = v4()
 
         token({ id: CLIENT_ID, secret: CLIENT_SECRET, uri: REDIRECT_URL, code })
-          .then(code => {
-            req.server.app.cache.set(sid, { code }, 0, err => {
+          .then(account => {
+            const sid = account.access_token
+
+            req.server.app.cache.set(sid, { account }, 0, err => {
               if (err) { reply(err) }
 
               req.cookieAuth.set({ sid })
@@ -90,7 +93,8 @@ server.register(
     config: {
       auth: false,
       handler: (req, reply) => {
-        req.cookieAuth.clear();
+        req.cookieAuth.clear()
+
         return reply.redirect('/')
       }
     }
@@ -102,9 +106,9 @@ server.register(
     config: {
       auth: false,
       handler: (req, reply) => {
-        const sid = session.sid
+        const token = req.headers.authorization.split("Bearer ")[1]
 
-        server.app.cache.get(sid, (err, {account}) => {
+        req.server.app.cache.get(token, (err, { account }, cached, log) => {
           refresh({
             id: CLIENT_ID,
             secret: CLIENT_SECRET,
@@ -113,15 +117,19 @@ server.register(
             token: account.auth_token
           })
           .then((refreshed) => {
-            return req.app.cache.set(sid, { account: refreshed }, (err) => {
+            const sid = refreshed.access_token
+
+            req.server.app.cache.set(sid, { account: refreshed }, 0, (err) => {
               if (err) {
-                return reply(err)
+                reply(err)
               }
 
-              return reply(refreshed)
+              req.cookieAuth.set({ sid })
+
+              reply(refreshed)
             })
-          })
-        })
+          });
+        });
       }
     }
   })
