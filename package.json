@@ -19,7 +19,6 @@
     "dev": "concurrently \"npm run rollup:watch\" \"npm run server:watch\""
   },
   "dependencies": {
-    "@procore/wrench": "^2.475.0",
     "alphanum-sort": "^1.0.2",
     "dotenv": "^4.0.0",
     "hapi": "^16.1.0",
