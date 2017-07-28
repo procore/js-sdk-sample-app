@@ -7,7 +7,7 @@ const Joi = require('joi')
 const { v4 } = require('uuid')
 const { token, refresh, authorize, oauth, client } = require('@procore/js-sdk')
 
-const CLIENT_ID =process.env.CLIENT_ID
+const CLIENT_ID = process.env.CLIENT_ID
 const CLIENT_SECRET = process.env.CLIENT_SECRET
 const REDIRECT_URL = process.env.REDIRECT_URL
 const HOSTNAME = process.env.HOSTNAME;
