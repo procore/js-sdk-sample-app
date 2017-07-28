@@ -19,11 +19,12 @@ const authorizer = oauth(
 
 const refreshToken = token => fetch(
   '/oauth/procore/refresh',
-  { method: 'POST', headers: { 'Authorization': `Bearer ${token}`  }  }
+  { method: 'POST', headers: { 'Authorization': `Bearer ${token}` } }
 );
 
 const procore = client(
-  refresher(authorizer, refreshToken)
+  refresher(authorizer, refreshToken),
+  { credentials: 'omit' }
 )
 
 const hashFromTuples = R.compose(

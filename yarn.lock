@@ -15,9 +15,15 @@
     string "^3.3.3"
     to-pascal-case "^1.0.0"
 
+<<<<<<< HEAD
 "@procore/js-sdk@^0.12.0":
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/@procore/js-sdk/-/js-sdk-0.12.0.tgz#806ee19ff236be478160da624bcfc7ee31c6672b"
+=======
+"@procore/js-sdk@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@procore/js-sdk/-/js-sdk-1.2.0.tgz#9ffd489d9ae13513982b429381a88e635ba6ba1b"
+>>>>>>> fix: set up credentials correctly
   dependencies:
     "@procore/js-sdk-endpoints" "^1.9.0"
     isomorphic-fetch "^2.2.1"
@@ -2741,8 +2747,13 @@ ua-parser-js@^0.7.9:
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.12.tgz#04c81a99bdd5dc52263ea29d24c6bf8d4818a4bb"
 
 uglify-js@^2.6:
+<<<<<<< HEAD
   version "2.8.27"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.27.tgz#47787f912b0f242e5b984343be8e35e95f694c9c"
+=======
+  version "2.8.29"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.29.tgz#29c5733148057bb4e1f75df35b7a9cb72e6a59dd"
+>>>>>>> fix: set up credentials correctly
   dependencies:
     source-map "~0.5.1"
     yargs "~3.10.0"
