@@ -2057,9 +2057,9 @@ process-nextick-args@~1.0.6:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-1.0.7.tgz#150e20b756590ad3f91093f25a4f2ad8bff30ba3"
 
-"progress@git+https://github.com/visionmedia/node-progress.git":
+"progress@https://github.com/visionmedia/node-progress":
   version "2.0.0"
-  resolved "git+https://github.com/visionmedia/node-progress.git#30d70d968c4a39b44282cc70c42a026cd8f86fcc"
+  resolved "https://github.com/visionmedia/node-progress#30d70d968c4a39b44282cc70c42a026cd8f86fcc"
 
 promise@^7.1.1:
   version "7.1.1"
