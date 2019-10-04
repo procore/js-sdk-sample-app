@@ -1,0 +1,35 @@
+{
+  "name": "@procore/js-sdk-sample-app-client",
+  "version": "1.1.0",
+  "description": "Example app showcasing Procore Node application",
+  "main": "build/bundle.js",
+  "author": "Procore",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:procore/js-sdk-sample-app.git"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production webpack",
+    "start": "NODE_ENV=development webpack --watch",
+    "format": "prettier --config ./../../prettier.config.js --write **/*.{js,jsx}"
+  },
+  "dependencies": {
+    "@material-ui/core": "4.5.1",
+    "@material-ui/icons": "4.5.1",
+    "@material-ui/styles": "4.5.0",
+    "@procore/js-sdk": "2.3.0",
+    "react": "16.10.2",
+    "react-app-polyfill": "1.0.4",
+    "react-dom": "16.10.2",
+    "react-inspector": "4.0.0",
+    "react-router-dom": "5.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.6.4",
+    "babel-loader": "8.0.6",
+    "babel-preset-react-app": "9.0.2",
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.9"
+  }
+}
