@@ -24,7 +24,7 @@ function Account() {
   }
 
   function logout() {
-    window.location.replace('/session/logout');
+    window.location.replace('/account/logout');
   }
 
   return (
