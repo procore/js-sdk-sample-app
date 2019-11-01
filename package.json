@@ -1,64 +1,16 @@
 {
   "name": "@procore/js-sdk-sample-app",
-  "version": "1.1.0",
-  "description": "Example app showcasing procore node package",
-  "main": "server/main.js",
-  "author": "Procore",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:procore/js-sdk-sample-app.git"
-  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "test:watch": "mocha -r babel-core/register -w test/**/**/**/*.spec.js",
-    "test": "mocha -r babel-core/register -w test/**/**/**/*.spec.js",
-    "server": "node -r babel-core/register -r dotenv/config server/main.js",
-    "server:watch": "nodemon --ignore client --ignore public -r babel-core/register -r dotenv/config server/main.js",
-    "rollup:watch": "rollup --watch -c",
-    "rollup:build": "rollup -c",
-    "dev": "concurrently \"npm run rollup:watch\" \"npm run server:watch\""
-  },
-  "dependencies": {
-    "@procore/js-sdk": "^1.4.0",
-    "alphanum-sort": "^1.0.2",
-    "dotenv": "^4.0.0",
-    "hapi": "^16.7.0",
-    "hapi-auth-cookie": "^6.1.1",
-    "hapi-react-views": "^9.3.0",
-    "inert": "^4.2.1",
-    "joi": "^10.6.0",
-    "material-ui": "^0.16.7",
-    "ramda": "^0.23.0",
-    "react": "^15.6.2",
-    "react-dom": "^15.6.2",
-    "react-inspector": "^1.1.2",
-    "react-redux": "^5.1.1",
-    "react-router": "^3.2.3",
-    "react-tap-event-plugin": "^2.0.1",
-    "redux": "^3.7.2",
-    "redux-act": "^1.7.7",
-    "redux-form": "^6.8.0",
-    "reflexbox": "^2.2.3",
-    "string": "^3.3.3",
-    "typescript": "^2.9.2",
-    "uuid": "^3.3.3",
-    "vision": "^4.1.1"
+    "build": "lerna run build",
+    "start": "lerna run start",
+    "format": "lerna run format",
+    "serve": "lerna run serve"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "chai": "^3.5.0",
-    "concurrently": "^3.6.1",
-    "mocha": "^6.2.0",
-    "nodemon": "^1.19.1",
-    "rollup": "^0.41.6",
-    "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-commonjs": "^7.1.0",
-    "rollup-plugin-node-globals": "^1.4.0",
-    "rollup-plugin-node-resolve": "^2.1.1",
-    "rollup-watch": "^3.2.2"
+    "lerna": "^3.16.4"
   }
 }
