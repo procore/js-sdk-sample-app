@@ -1,43 +1,37 @@
 # Node Procore Boilerplate
+
 An example on how to use [`@procore/js-sdk`](https://www.npmjs.com/package/@procore/js-sdk). Comes complete with login routes and resource viewer.
 
-![demo video](https://github.com/procore/node-procore-boilerplate/blob/master/demo.gif)
+![Demo video](https://github.com/procore/node-procore-boilerplate/blob/master/demo.gif)
 
-## Dependiences
-```
+## Dependencies
+
+```shell
 brew install yarn
 yarn install
-touch .env
+cp packages/server/.env.example packages/server/.env
 ```
+
 ### Environment
-```
+
+```text
 CLIENT_ID
 CLIENT_SECRET
 REDIRECT_URL
 SESSION_PASSWORD
 HOSTNAME
 PORT
+PROCORE_SERVER
 ```
+
 ## Development
-`npm run dev`
+
+`yarn start`
 
 ## Production
-1. `npm run rollup:build`
-2. `npm run server`
 
-## Routes
-`GET /sessions/create`
-Starts oauth authorization with procore
-
-`GET /oauth/procore/callback`
-The registred redirect uri
-
-`POST /oauth/procore/refresh`
-Refreshes the current auth token and saves to app session
-
-`GET /public/{param*}`
-Used for public assets eg css, js, images
-
+1. `yarn build`
+2. `yarn serve`
 
 ## Contributing
 
