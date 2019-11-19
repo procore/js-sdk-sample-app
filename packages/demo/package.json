@@ -1,0 +1,45 @@
+{
+  "name": "@procore/demo",
+  "version": "0.0.0",
+  "author": "Procore Technologies, Inc",
+  "license": "UNLICENSED",
+  "private": true,
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "scripts": {
+    "cli": "core-scripts",
+    "build": "yarn cli app:build",
+    "build:development": "yarn build",
+    "build:production": "yarn build",
+    "start": "yarn cli app:start",
+    "test": "yarn cli test",
+    "coverage": "yarn test --coverage",
+    "lint:eslint": "yarn cli lint:eslint",
+    "e2e:start": "core-scripts e2e:start"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "@material-ui/core": "4.5.1",
+    "@material-ui/icons": "4.5.1",
+    "@material-ui/styles": "4.5.0",
+    "@procore/js-sdk": "2.3.0",
+    "react": "16.10.2",
+    "react-app-polyfill": "1.0.4",
+    "react-dom": "16.10.2",
+    "react-inspector": "4.0.0",
+    "react-router-dom": "5.1.2"
+  },
+  "devDependencies": {
+    "@procore/core-scripts": "8.0.1",
+    "@types/enzyme": "3.10.3",
+    "@types/react": "16.9.11",
+    "@types/react-dom": "16.9.4",
+    "enzyme": "3.10.0",
+    "enzyme-adapter-react-16": "1.15.1",
+    "jest-enzyme": "7.1.2"
+  }
+}

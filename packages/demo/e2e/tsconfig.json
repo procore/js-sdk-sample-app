@@ -1,0 +1,4 @@
+{
+  "extends": "../node_modules/@procore/core-scripts/configs/tsconfig.e2e",
+  "include": ["src"]
+}
