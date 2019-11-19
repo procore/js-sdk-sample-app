@@ -1,5 +1,5 @@
 {
-  "extends": "./node_modules/@procore/core-scripts/configs/tsconfig.app.json",
+  "extends": "../../node_modules/@procore/core-scripts/configs/tsconfig.app.json",
   "compilerOptions": {
     "baseUrl": "."
   },
