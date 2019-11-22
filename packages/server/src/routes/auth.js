@@ -5,23 +5,31 @@ export const authRouter = Router();
 
 authRouter.get('/', (_req, res) => {
   return res.redirect(
-    authorize({
-      clientId: process.env.CLIENT_ID,
-      uri: process.env.REDIRECT_URL,
-    })
+    authorize(
+      {
+        clientId: process.env.CLIENT_ID,
+        uri: process.env.REDIRECT_URL,
+      },
+      `http://${process.env.HOSTNAME}/authproxy`
+    )
   );
 });
 
 authRouter.get('/callback', async (req, res) => {
-  const account = await token({
-    id: process.env.CLIENT_ID,
-    secret: process.env.CLIENT_SECRET,
-    uri: process.env.REDIRECT_URL,
-    code: req.query.code,
-  });
+  const account = await token(
+    {
+      id: process.env.CLIENT_ID,
+      secret: process.env.CLIENT_SECRET,
+      uri: process.env.REDIRECT_URL,
+      code: req.query.code,
+    },
+    `http://${process.env.HOSTNAME}/authproxy`
+  );
   req.session.accessToken = account.access_token;
   req.session.refreshToken = account.refresh_token;
-  return res.redirect('/');
+  return res.redirect(
+    `http://${process.env.HOSTNAME}${process.env.ROOT_PATH || '/'}`
+  );
 });
 
 authRouter.post('/refresh', async (req, res) => {
