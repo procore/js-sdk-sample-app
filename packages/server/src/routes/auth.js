@@ -27,10 +27,14 @@ authRouter.get('/callback', async (req, res) => {
   );
   req.session.accessToken = account.access_token;
   req.session.refreshToken = account.refresh_token;
-  const port =
-    process.env.NODE_ENV === 'production' ? `:${process.env.PORT}` : '';
-  const path = process.env.ROOT_PATH || '/';
-  return res.redirect(`http://${process.env.HOSTNAME}${port}${path}`);
+  let redirect = '/';
+  if (process.env.HOSTNAME !== 'locahost') {
+    const protocol = process.env.PROTOCOL || 'http'
+    const host = process.env.HOSTNAME
+    const path = process.env.ROOT_PATH || '/';
+    redirect = `${protocol}://${host}${path}`;
+  }
+  return res.redirect(redirect)
 });
 
 authRouter.post('/refresh', async (req, res) => {
