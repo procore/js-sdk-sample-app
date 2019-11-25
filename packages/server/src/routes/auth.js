@@ -28,13 +28,22 @@ authRouter.get('/callback', async (req, res) => {
   req.session.accessToken = account.access_token;
   req.session.refreshToken = account.refresh_token;
   let redirect = '/';
-  if (process.env.HOSTNAME !== 'locahost') {
-    const protocol = process.env.PROTOCOL || 'http'
-    const host = process.env.HOSTNAME
+  const isLocalhost = Boolean(
+    process.env.HOSTNAME === 'localhost' ||
+      // [::1] is the IPv6 localhost address.
+      process.env.HOSTNAME === '[::1]' ||
+      // 127.0.0.0/8 are considered localhost for IPv4.
+      process.env.HOSTNAME.match(
+        /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
+      )
+  );
+  if (!isLocalhost) {
+    const protocol = process.env.PROTOCOL || 'http';
+    const host = process.env.HOSTNAME;
     const path = process.env.ROOT_PATH || '/';
     redirect = `${protocol}://${host}${path}`;
   }
-  return res.redirect(redirect)
+  return res.redirect(redirect);
 });
 
 authRouter.post('/refresh', async (req, res) => {
