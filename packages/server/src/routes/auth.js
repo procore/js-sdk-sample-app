@@ -16,6 +16,7 @@ authRouter.get('/', (_req, res) => {
 });
 
 authRouter.get('/callback', async (req, res) => {
+  console.log({ callBackHeaders: req.headers });
   const account = await token(
     {
       id: process.env.CLIENT_ID,
@@ -25,6 +26,7 @@ authRouter.get('/callback', async (req, res) => {
     },
     process.env.PROCORE_SERVER
   );
+  console.log({ account });
   req.session.accessToken = account.access_token;
   req.session.refreshToken = account.refresh_token;
   let redirect = '/';
