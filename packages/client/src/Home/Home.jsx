@@ -13,11 +13,12 @@ function hashFromTuples(tuples) {
   }, {});
 }
 
-async function sendRequest({ endpoint, method, qs }) {
+async function sendRequest({endpoint, method, qs, version}) {
   const response = await httpClient[method]({
-    base: `/${endpoint}`,
+    base: `${endpoint}`,
     qs: hashFromTuples(qs),
     params: {},
+    api_version: version,
   });
 
   return response.body;
