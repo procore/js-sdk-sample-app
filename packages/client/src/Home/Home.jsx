@@ -18,7 +18,7 @@ async function sendRequest({endpoint, method, qs, version}) {
     base: `${endpoint}`,
     qs: hashFromTuples(qs),
     params: {},
-    apiVersion: version,
+    version: version,
   });
 
   return response.body;
