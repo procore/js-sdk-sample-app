@@ -9,5 +9,5 @@ const authorizer = oauth(
 export const httpClient = client(
   refresher(authorizer, refreshToken),
   {},
-  '/proxy'
+  { apiHostname: '/proxy', defaultVersion: 'v1.0' }
 );
