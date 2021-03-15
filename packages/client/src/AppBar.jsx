@@ -23,8 +23,8 @@ function Account() {
     setAnchorEl(null);
   }
 
-  function logout() {
-    window.location.replace('/account/logout');
+  function revokeToken() {
+    window.location.replace('/account/revoke');
   }
 
   return (
@@ -48,7 +48,7 @@ function Account() {
         open={Boolean(anchorEl)}
         onClose={handleMenuClose}
       >
-        <MenuItem onClick={logout}>Log out</MenuItem>
+        <MenuItem onClick={revokeToken}>Revoke Token</MenuItem>
       </Menu>
     </React.Fragment>
   );
