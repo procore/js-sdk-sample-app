@@ -11,6 +11,7 @@ export function VersionInput(props) {
       value={props.value}
       onChange={onChange}
       label="API version"
+      helperText="API version is optional parameter"
       variant="filled"
       fullWidth
     />

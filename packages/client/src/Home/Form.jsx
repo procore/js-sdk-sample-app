@@ -36,7 +36,6 @@ export function Form(props) {
 
   return (
     <FormContainer noValidate autoComplete="off" onSubmit={onSubmit}>
-      *API version is optional parameter
       <VersionInput value={version} onChange={setVersion} />
       <MethodInput value={method} onChange={setMethod} />
       <EndpointInput value={endpoint} onChange={setEndpoint} />
