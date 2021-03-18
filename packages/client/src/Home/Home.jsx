@@ -1,9 +1,10 @@
 import React from 'react';
 import { styled } from '@material-ui/core/styles';
 import Inspector from 'react-inspector';
+import axios from 'axios';
 
 import { AppBar } from '../AppBar';
-import { httpClient } from '../httpClient';
+import { TokenInfo } from './TokenInfo';
 import { Form } from './Form';
 
 function hashFromTuples(tuples) {
@@ -13,19 +14,28 @@ function hashFromTuples(tuples) {
   }, {});
 }
 
-async function sendRequest({endpoint, method, qs, version}) {
+function getVersion(version) {
+  const [, restVersion = undefined] = version.match(/(^v[1-9]\d*\.\d+$)/) || [];
+  const [, vapidVersion = undefined] = version.match(/(^vapid)\/?$/) || [];
+
+    if (restVersion) {
+      return `rest/${restVersion}`;
+    } else if (vapidVersion) {
+      return vapidVersion;
+    } else {
+      throw new Error(`'${version}' is an invalid Procore API version`)
+    }
+}
+
+async function sendRequest({ endpoint, method, qs, version }) {
   try {
-    const response = await httpClient[method]({
-      base: `${endpoint}`,
-      qs: hashFromTuples(qs),
-      params: {},
-      version: version,
+    const response = await axios[method](`/proxy/${getVersion(version)}/${endpoint}`, {
+      params: hashFromTuples(qs)
     });
 
-    return response.body;
+    return response.data;
   } catch (err) {
-    //ToDo: refactor to something else, not alert
-    alert(err.message)
+    alert(err);
   }
 }
 
@@ -53,6 +63,7 @@ function Home() {
   return (
     <HomeContainer>
       <AppBar />
+      <TokenInfo />
       <Form onSubmit={onSubmit} />
       {response && (
         <InspectorContainer>

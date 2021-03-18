@@ -23,8 +23,16 @@ function Account() {
     setAnchorEl(null);
   }
 
+  function refreshToken() {
+    window.location.replace('/oauth/procore/refresh');
+  }
+
   function revokeToken() {
-    window.location.replace('/account/revoke');
+    window.location.replace('/oauth/procore/revoke');
+  }
+
+  function signOut() {
+    window.location.replace('/oauth/procore/signout');
   }
 
   return (
@@ -48,7 +56,9 @@ function Account() {
         open={Boolean(anchorEl)}
         onClose={handleMenuClose}
       >
+        <MenuItem onClick={refreshToken}>Refresh Token</MenuItem>
         <MenuItem onClick={revokeToken}>Revoke Token</MenuItem>
+        <MenuItem onClick={signOut}>Sign Out</MenuItem>
       </Menu>
     </React.Fragment>
   );
@@ -58,7 +68,7 @@ export function AppBar() {
   return (
     <MuiAppBar color="primary" position="static">
       <Toolbar>
-        <Title variant="h6">My App</Title>
+        <Title variant="h6">Procore Sample Application</Title>
         <Account />
       </Toolbar>
     </MuiAppBar>
