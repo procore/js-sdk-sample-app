@@ -15,26 +15,19 @@
     "format": "prettier --config ./../../prettier.config.js --write **/*.{js,jsx}"
   },
   "dependencies": {
-    "@hapi/cookie": "10.1.2",
-    "@hapi/hapi": "18.4.0",
-    "@hapi/inert": "5.2.2",
-    "@hapi/vision": "5.5.4",
     "@procore/js-sdk": "file:.yalc/@procore/js-sdk",
-    "cookie-parser": "1.4.4",
-    "cookie-session": "1.3.3",
-    "debug": "2.6.9",
-    "dotenv": "8.1.0",
+    "cookie-parser": "1.4.5",
+    "cookie-session": "1.4.0",
+    "debug": "4.3.1",
+    "dotenv": "8.2.0",
     "esm": "3.2.25",
     "express": "4.17.1",
-    "express-session": "^1.17.0",
-    "handlebars": "^4.4.2",
-    "http-errors": "1.6.3",
-    "http-proxy": "1.18.0",
-    "joi": "14.3.1",
-    "morgan": "1.9.1",
-    "pug": "2.0.4"
+    "http-errors": "1.8.0",
+    "http-proxy": "1.18.1",
+    "morgan": "1.10.0",
+    "pug": "3.0.2"
   },
   "devDependencies": {
-    "nodemon": "1.19.3"
+    "nodemon": "2.0.7"
   }
 }

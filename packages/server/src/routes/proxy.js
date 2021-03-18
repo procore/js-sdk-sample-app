@@ -11,6 +11,6 @@ proxy.on('proxyReq', function(proxyReq, req, res, options) {
 proxyRouter.use((req, res) => {
   proxy.web(req, res, {
     changeOrigin: true,
-    target: process.env.PROCORE_SERVER,
+    target: process.env.BASE_URL,
   });
 });

@@ -9,6 +9,7 @@ accountRouter.get('/revoke', async (req, res) => {
     clientId: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET
   });
-  
+  req.session = null;
+
   res.json(revokeRes);
 });

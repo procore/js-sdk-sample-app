@@ -7,7 +7,7 @@ authRouter.get('/', (_req, res) => {
   return res.redirect(
     authorize({
       clientId: process.env.CLIENT_ID,
-      uri: process.env.REDIRECT_URL,
+      uri: process.env.REDIRECT_URI,
     })
   );
 });
@@ -16,7 +16,7 @@ authRouter.get('/callback', async (req, res) => {
   const account = await token({
     id: process.env.CLIENT_ID,
     secret: process.env.CLIENT_SECRET,
-    uri: process.env.REDIRECT_URL,
+    uri: process.env.REDIRECT_URI,
     code: req.query.code,
   });
   req.session.accessToken = account.access_token;
@@ -28,7 +28,7 @@ authRouter.post('/refresh', async (req, res) => {
   const account = await refresh({
     id: process.env.CLIENT_ID,
     secret: process.env.CLIENT_SECRET,
-    uri: process.env.REDIRECT_URL,
+    uri: process.env.REDIRECT_URI,
     token: req.session.accessToken,
     refresh: req.session.refreshToken,
   });
