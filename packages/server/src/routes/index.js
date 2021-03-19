@@ -24,10 +24,11 @@ router.use(authorizer, (req, res, next) => {
   };
 
   if (main.authenticated) {
-    const now = new Date();
+    const createdAt = new Date(req.session.createdAt * 1000);
+    const expireAt = new Date(createdAt.getTime() + (req.session.expiresIn * 1000));
     main.tokenInfo = {
       accessToken: req.session.accessToken.replace(/^([\w\W]{4}).*([\w\W]{4})$/i, '$1...$2'),
-      expiresAt: ((now.setSeconds(now.getSeconds() + req.session.expiresIn)), now.toISOString()),
+      expiresAt: expireAt.toISOString().slice(0, -5) + "Z",
       expiresIn: req.session.expiresIn,
       refreshToken: req.session.refreshToken.replace(/^([\w\W]{4}).*([\w\W]{4})$/i, '$1...$2')
     };

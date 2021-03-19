@@ -27,9 +27,14 @@ function getVersion(version) {
     }
 }
 
+function getEndpoint(endpoint) {
+  const [, ep = undefined] = endpoint.match(/^[\/]{0,1}(.*?)[\/]{0,1}$/) || [];
+  return ep;
+}
+
 async function sendRequest({ endpoint, method, qs, version }) {
   try {
-    const response = await axios[method](`/proxy/${getVersion(version)}/${endpoint}`, {
+    const response = await axios[method](`/proxy/${getVersion(version)}/${getEndpoint(endpoint)}`, {
       params: hashFromTuples(qs)
     });
 

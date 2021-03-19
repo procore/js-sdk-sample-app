@@ -18,15 +18,17 @@ export function TokenInfo() {
           <TableRow>
             <TableCell>Access Token</TableCell>
             <TableCell>Expires At</TableCell>
+            <TableCell>Current UTC Time</TableCell>
             <TableCell>Refresh Token</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
-            <TableRow>
-              <TableCell>{tokenInfo.accessToken || 'Not Available'}</TableCell>
-              <TableCell>{tokenInfo.expiresAt || 'Not Available'}</TableCell>
-              <TableCell>{tokenInfo.refreshToken || 'Not Available'}</TableCell>
-            </TableRow>
+          <TableRow>
+            <TableCell>{tokenInfo.accessToken || 'Not Available'}</TableCell>
+            <TableCell>{tokenInfo.expiresAt || 'Not Available'}</TableCell>
+            <TableCell>{new Date().toISOString().slice(0, -5) + "Z"}</TableCell>
+            <TableCell>{tokenInfo.refreshToken || 'Not Available'}</TableCell>
+          </TableRow>
         </TableBody>
       </Table>
     </TableContainer>
