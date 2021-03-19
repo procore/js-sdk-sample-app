@@ -52,11 +52,11 @@ authRouter.get('/refresh', async (req, res) => {
 });
 
 authRouter.get('/revoke', async (req, res) => {
-  revokeAccessToken(req);
+  await revokeAccessToken(req);
   return res.redirect(`/`);
 });
 
 authRouter.get('/signout', async (req, res) => {
-  revokeAccessToken(req);
+  await revokeAccessToken(req);
   return res.redirect(`${process.env.OAUTH_URL}/logout`);
 });
