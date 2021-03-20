@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { token, refresh, authorize, revoke } from '@procore/js-sdk';
+import { token, refresh, authorize, revoke, info } from '@procore/js-sdk';
 
 function setSession(req, result) {
   req.session.accessToken = result.access_token;
@@ -26,6 +26,11 @@ authRouter.get('/', (_req, res) => {
       uri: process.env.REDIRECT_URI,
     })
   );
+});
+
+authRouter.get('/info', async (req, res) => {
+  const result = await info(req.session.accessToken);
+  return res.json(result);
 });
 
 authRouter.get('/callback', async (req, res) => {
