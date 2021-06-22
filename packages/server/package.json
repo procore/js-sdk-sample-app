@@ -12,7 +12,7 @@
   "scripts": {
     "start": "nodemon -r dotenv/config -r esm ./bin/www",
     "serve": "node -r dotenv/config -r esm ./bin/www",
-    "format": "prettier --config ./../../prettier.config.js --write **/*.{js,jsx}"
+    "format": "prettier --no-error-on-unmatched-pattern --config ./../../prettier.config.js --write **/*.{js,jsx}"
   },
   "dependencies": {
     "@procore/js-sdk": "3.0.1",
