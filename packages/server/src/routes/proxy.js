@@ -25,10 +25,14 @@ proxyRouter.all('*', async (req, res) => {
   }
   [endpoint] = endpoint.join('/').split('?');
 
-  const result = await procore[method.toLowerCase()]({
-    base: `/${endpoint}`,
-    version: version,
-    params: JSON.parse(JSON.stringify(req.query))
-  });
-  return res.json(result.body);
+  try {
+    const result = await procore[method.toLowerCase()]({
+      base: `/${endpoint}`,
+      version: version,
+      params: JSON.parse(JSON.stringify(req.query))
+    });
+    return res.json(result.body);
+  } catch (error) {
+      return res.json(error.body);
+  }
 });
