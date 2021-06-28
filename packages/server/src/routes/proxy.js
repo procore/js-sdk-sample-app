@@ -29,10 +29,10 @@ proxyRouter.all('*', async (req, res) => {
     const result = await procore[method.toLowerCase()]({
       base: `/${endpoint}`,
       version: version,
-      params: JSON.parse(JSON.stringify(req.query))
+      qs: JSON.parse(JSON.stringify(req.query))
     });
     return res.json(result.body);
   } catch (error) {
-      return res.json(error.body);
+    return res.json(error.body);
   }
 });
