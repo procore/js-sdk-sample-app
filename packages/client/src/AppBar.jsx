@@ -11,7 +11,7 @@ import Modal from '@material-ui/core/Modal';
 import axios from 'axios';
 
 const Title = styled(Typography)({
-  flexGrow: 1,
+  flexGrow: 1
 });
 
 function getModalStyle() {
@@ -21,7 +21,7 @@ function getModalStyle() {
   return {
     top: `${top}%`,
     left: `${left}%`,
-    transform: `translate(-${top}%, -${left}%)`,
+    transform: `translate(-${top}%, -${left}%)`
   };
 }
 
@@ -32,8 +32,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
-  },
+    padding: theme.spacing(2, 4, 3)
+  }
 }));
 
 function Account() {
@@ -109,11 +109,7 @@ function Account() {
         <MenuItem onClick={info}>Token Info</MenuItem>
         <MenuItem onClick={signOut}>Sign Out</MenuItem>
       </Menu>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="simple-modal-title"
-      >
+      <Modal open={open} onClose={handleClose} aria-labelledby="simple-modal-title">
         {body}
       </Modal>
     </React.Fragment>

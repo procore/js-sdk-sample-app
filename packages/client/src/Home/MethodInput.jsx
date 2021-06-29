@@ -13,13 +13,7 @@ export function MethodInput(props) {
   return (
     <FormControl component="fieldset">
       <FormLabel component="legend">Method</FormLabel>
-      <RadioGroup
-        row
-        aria-label="gender"
-        name="method"
-        value={props.value}
-        onChange={onChange}
-      >
+      <RadioGroup row aria-label="gender" name="method" value={props.value} onChange={onChange}>
         <FormControlLabel value="get" control={<Radio />} label="GET" />
       </RadioGroup>
     </FormControl>

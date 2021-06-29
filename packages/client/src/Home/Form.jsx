@@ -14,8 +14,8 @@ const FormContainer = styled('form')(({ theme }) => ({
   alignSelf: 'center',
   maxWidth: '800px',
   '& > *': {
-    marginTop: theme.spacing(2),
-  },
+    marginTop: theme.spacing(2)
+  }
 }));
 
 export function Form(props) {
@@ -30,7 +30,7 @@ export function Form(props) {
       version,
       endpoint,
       method,
-      qs,
+      qs
     });
   }
 

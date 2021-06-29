@@ -1,16 +1,14 @@
 const path = require('path');
 
 const SOURCE_PATH = path.resolve(path.join(__dirname, 'src'));
-const OUTPUT_PATH = path.resolve(
-  path.join(__dirname, '..', 'server', 'public')
-);
+const OUTPUT_PATH = path.resolve(path.join(__dirname, '..', 'server', 'public'));
 
 module.exports = {
   mode: process.env.NODE_ENV,
   target: 'web',
 
   entry: {
-    app: [path.join(SOURCE_PATH, 'index.jsx')],
+    app: [path.join(SOURCE_PATH, 'index.jsx')]
   },
 
   output: {
@@ -18,13 +16,13 @@ module.exports = {
     filename: '[name].js',
     chunkFilename: '[name].chunk.js',
     path: OUTPUT_PATH,
-    publicPath: '/',
+    publicPath: '/'
   },
 
   devtool: 'source-map',
 
   resolve: {
-    extensions: ['.js', '.jsx', '.json'],
+    extensions: ['.js', '.jsx', '.json']
   },
 
   module: {
@@ -35,9 +33,9 @@ module.exports = {
         include: SOURCE_PATH,
         loader: 'babel-loader',
         options: {
-          cacheDirectory: true,
-        },
-      },
-    ],
-  },
+          cacheDirectory: true
+        }
+      }
+    ]
+  }
 };

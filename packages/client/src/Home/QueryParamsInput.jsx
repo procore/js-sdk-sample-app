@@ -9,42 +9,32 @@ import TextField from '@material-ui/core/TextField';
 
 const QueryParamInputContainer = styled('div')({
   display: 'flex',
-  alignItems: 'center',
+  alignItems: 'center'
 });
 
 const QueryParamTextField = styled(TextField)({
-  flex: 1,
+  flex: 1
 });
 
 function QueryParamBaseInput(props) {
   function onKeyChange(event) {
     props.onChange({
       key: event.target.value,
-      value: props.value.value,
+      value: props.value.value
     });
   }
 
   function onValueChange(event) {
     props.onChange({
       key: props.value.key,
-      value: event.target.value,
+      value: event.target.value
     });
   }
 
   return (
     <QueryParamInputContainer>
-      <QueryParamTextField
-        label="Key"
-        value={props.value.key}
-        onChange={onKeyChange}
-        margin="dense"
-      />
-      <QueryParamTextField
-        label="Value"
-        value={props.value.value}
-        onChange={onValueChange}
-        margin="dense"
-      />
+      <QueryParamTextField label="Key" value={props.value.key} onChange={onKeyChange} margin="dense" />
+      <QueryParamTextField label="Value" value={props.value.value} onChange={onValueChange} margin="dense" />
       {props.children}
     </QueryParamInputContainer>
   );
@@ -80,11 +70,7 @@ function QueryParamInputAdder(props) {
 export function QueryParamsInput(props) {
   function onChange(index) {
     return (value) => {
-      const newValue = [
-        ...props.value.slice(0, index),
-        value,
-        ...props.value.slice(index + 1),
-      ];
+      const newValue = [...props.value.slice(0, index), value, ...props.value.slice(index + 1)];
       props.onChange(newValue);
     };
   }
@@ -95,9 +81,7 @@ export function QueryParamsInput(props) {
 
   function onDelete(index) {
     return () => {
-      const newValue = props.value
-        .slice(0, index)
-        .concat(props.value.slice(index + 1));
+      const newValue = props.value.slice(0, index).concat(props.value.slice(index + 1));
 
       props.onChange(newValue);
     };

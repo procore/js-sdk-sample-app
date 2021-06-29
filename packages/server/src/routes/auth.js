@@ -8,7 +8,7 @@ function setSession(req, result) {
   req.session.createdAt = result.created_at;
 }
 
-async function revokeAccessToken(req){
+async function revokeAccessToken(req) {
   await revoke({
     token: req.session.accessToken,
     clientId: process.env.CLIENT_ID,
@@ -23,7 +23,7 @@ authRouter.get('/', (_req, res) => {
   return res.redirect(
     authorize({
       clientId: process.env.CLIENT_ID,
-      uri: process.env.REDIRECT_URI,
+      uri: process.env.REDIRECT_URI
     })
   );
 });
@@ -38,7 +38,7 @@ authRouter.get('/callback', async (req, res) => {
     id: process.env.CLIENT_ID,
     secret: process.env.CLIENT_SECRET,
     uri: process.env.REDIRECT_URI,
-    code: req.query.code,
+    code: req.query.code
   });
   setSession(req, result);
   return res.redirect('/');
@@ -50,7 +50,7 @@ authRouter.get('/refresh', async (req, res) => {
     secret: process.env.CLIENT_SECRET,
     uri: process.env.REDIRECT_URI,
     token: req.session.accessToken,
-    refresh: req.session.refreshToken,
+    refresh: req.session.refreshToken
   });
   setSession(req, result);
   return res.redirect('/');

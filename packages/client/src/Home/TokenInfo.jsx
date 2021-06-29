@@ -26,7 +26,7 @@ export function TokenInfo() {
           <TableRow>
             <TableCell>{tokenInfo.accessToken || 'Not Available'}</TableCell>
             <TableCell>{tokenInfo.expiresAt || 'Not Available'}</TableCell>
-            <TableCell>{new Date().toISOString().slice(0, -5) + "Z"}</TableCell>
+            <TableCell>{new Date().toISOString().slice(0, -5) + 'Z'}</TableCell>
             <TableCell>{tokenInfo.refreshToken || 'Not Available'}</TableCell>
           </TableRow>
         </TableBody>

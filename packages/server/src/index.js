@@ -18,7 +18,7 @@ app.use(
     name: 'session',
     maxAge: 24 * 60 * 60 * 1000, // 1 day
     secret: process.env.SESSION_PASSWORD,
-    secure: process.env.NODE_ENV === 'production',
+    secure: process.env.NODE_ENV === 'production'
   })
 );
 

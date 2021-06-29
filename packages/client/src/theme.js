@@ -13,18 +13,18 @@ const fontFamily = [
   'sans-serif',
   '"Apple Color Emoji"',
   '"Segoe UI Emoji"',
-  '"Segoe UI Symbol"',
+  '"Segoe UI Symbol"'
 ].join(',');
 
 export const theme = createMuiTheme({
   typography: {
-    fontFamily,
+    fontFamily
   },
   palette: {
     primary: deepOrange,
     secondary: blue,
     background: {
-      default: common['white'],
-    },
-  },
+      default: common['white']
+    }
+  }
 });

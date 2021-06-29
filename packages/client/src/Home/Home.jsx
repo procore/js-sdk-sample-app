@@ -18,13 +18,13 @@ function getVersion(version) {
   const [, restVersion = undefined] = version.match(/(^v[1-9]\d*\.\d+$)/) || [];
   const [, vapidVersion = undefined] = version.match(/(^vapid)\/?$/) || [];
 
-    if (restVersion) {
-      return `rest/${restVersion}`;
-    } else if (vapidVersion) {
-      return vapidVersion;
-    } else {
-      throw new Error(`'${version}' is an invalid Procore API version`)
-    }
+  if (restVersion) {
+    return `rest/${restVersion}`;
+  } else if (vapidVersion) {
+    return vapidVersion;
+  } else {
+    throw new Error(`'${version}' is an invalid Procore API version`);
+  }
 }
 
 function getEndpoint(endpoint) {
@@ -47,14 +47,14 @@ async function sendRequest({ endpoint, method, qs, version }) {
 const HomeContainer = styled('div')({
   flexGrow: 1,
   display: 'flex',
-  flexDirection: 'column',
+  flexDirection: 'column'
 });
 
 const InspectorContainer = styled('div')(({ theme }) => ({
   alignSelf: 'center',
   maxWidth: '90vw',
   width: '100%',
-  marginTop: theme.spacing(3),
+  marginTop: theme.spacing(3)
 }));
 
 function Home() {
