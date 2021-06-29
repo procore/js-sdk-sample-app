@@ -21,10 +21,6 @@ export function MethodInput(props) {
         onChange={onChange}
       >
         <FormControlLabel value="get" control={<Radio />} label="GET" />
-        <FormControlLabel value="post" control={<Radio />} label="POST" />
-        <FormControlLabel value="put" control={<Radio />} label="PUT" />
-        <FormControlLabel value="patch" control={<Radio />} label="PATCH" />
-        <FormControlLabel value="delete" control={<Radio />} label="DELETE" />
       </RadioGroup>
     </FormControl>
   );
