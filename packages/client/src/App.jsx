@@ -11,32 +11,32 @@ const useGlobalStyles = makeStyles(
     '@global': {
       '*:-webkit-full-screen': {
         height: '100%',
-        width: '100%',
+        width: '100%'
       },
       '::-webkit-scrollbar': {
-        width: '6px',
+        width: '6px'
       },
       '::-webkit-scrollbar-button': {
         height: 0,
-        width: 0,
+        width: 0
       },
       '::-webkit-scrollbar-thumb': {
         background: 'hsla(0, 0%, 0%, 0.2)',
         borderRadius: '3em',
-        transition: 'all .3s ease-in-out',
+        transition: 'all .3s ease-in-out'
       },
       '::-webkit-scrollbar-track': {
-        background: 'hsla(0, 0%, 0%, 0)',
+        background: 'hsla(0, 0%, 0%, 0)'
       },
       body: {
         '&::backdrop': {
-          backgroundColor: theme.palette.background.default,
-        },
+          backgroundColor: theme.palette.background.default
+        }
       },
       'html, body': {
-        height: '100%',
-      },
-    },
+        height: '100%'
+      }
+    }
   }),
   { name: 'AdminRootGlobals' }
 );

@@ -6,13 +6,5 @@ export function EndpointInput(props) {
     props.onChange(event.target.value);
   }
 
-  return (
-    <TextField
-      value={props.value}
-      onChange={onChange}
-      label="Endpoint"
-      variant="filled"
-      fullWidth
-    />
-  );
+  return <TextField value={props.value} onChange={onChange} label="Endpoint" variant="filled" fullWidth />;
 }

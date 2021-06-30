@@ -7,10 +7,9 @@
   "scripts": {
     "build": "lerna run build",
     "start": "lerna run start",
-    "format": "lerna run format",
     "serve": "lerna run serve"
   },
   "devDependencies": {
-    "lerna": "^3.16.4"
+    "lerna": "4.0.0"
   }
 }
