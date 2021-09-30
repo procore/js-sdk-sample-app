@@ -31,7 +31,7 @@ SESSION_PASSWORD=<Used to encrypt session>
 ```
 
 * CLIENT_ID and CLIENT_SECRET values are provided when [creating an application](https://developers.procore.com/documentation/new-application) in the Procore Developer Portal.
-* The BASE_URL and the OAUTH_URL will depend on which environment you're accessing. If you're working in the production environment, the BASE_URL will be https://api.procore.com and the OAUTH_URL will be https://login.procore.com. For the sandbox environment, both the BASE_URL and the OAUTH_URL should be set to https://sandbox.procore.com.
+* The BASE_URL and the OAUTH_URL will depend on which environment you're accessing. If you're working in the production environment, the BASE_URL will be https://api.procore.com and the OAUTH_URL will be https://login.procore.com.
 * The REDIRECT_URI's domain should match the domain of your application, and the full path must be added as an authorized redirect uri for your app in the developer portal.
 * After these values have been configured within the `.env` file, make sure to save your changes.
 
