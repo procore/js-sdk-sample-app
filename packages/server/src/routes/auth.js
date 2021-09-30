@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { token, refresh, authorize, revoke, info } from '@procore/js-sdk';
+import { clientOptions } from '../clientOptions';
 
 function setSession(req, result) {
   req.session.accessToken = result.access_token;
@@ -24,7 +25,9 @@ authRouter.get('/', (_req, res) => {
     authorize({
       clientId: process.env.CLIENT_ID,
       uri: process.env.REDIRECT_URI
-    })
+    },
+    clientOptions
+    )
   );
 });
 
@@ -39,7 +42,9 @@ authRouter.get('/callback', async (req, res) => {
     secret: process.env.CLIENT_SECRET,
     uri: process.env.REDIRECT_URI,
     code: req.query.code
-  });
+  },
+  clientOptions
+  );
   setSession(req, result);
   return res.redirect('/');
 });

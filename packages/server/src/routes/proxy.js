@@ -2,11 +2,15 @@ import { Router } from 'express';
 import { client, oauth } from '@procore/js-sdk';
 
 let pcorClient = undefined;
-function getClient(accessToken, defaults, options) {
+function getClient(accessToken, defaults) {
   if (pcorClient) {
     return pcorClient;
   }
   const authorizer = oauth(accessToken);
+  const options = {
+    apiHostname: process.env.BASE_URL
+  };
+  console.log(`defaults: ${defaults} options: ${options}`);
   return client(authorizer, defaults, options);
 }
 
