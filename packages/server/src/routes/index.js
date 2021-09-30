@@ -2,7 +2,6 @@ import { Router } from 'express';
 import { authRouter } from './auth';
 import { proxyRouter } from './proxy';
 import { authorize } from '../middleware';
-import { clientOptions } from '../clientOptions';
 
 const router = Router();
 const authorizer = authorize({ redirectTo: '/oauth/procore/' });
@@ -15,7 +14,6 @@ router.use(authorizer, (req, res, next) => {
       clientId: process.env.CLIENT_ID,
       uri: process.env.REDIRECT_URI
     },
-    clientOptions
   );
 
   const main = {
