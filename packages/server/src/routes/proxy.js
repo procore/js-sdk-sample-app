@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { client, oauth } from '@procore/js-sdk';
+import { clientOptions } from '../clientOptions';
 
 let pcorClient = undefined;
 function getClient(accessToken, defaults) {
@@ -7,11 +8,7 @@ function getClient(accessToken, defaults) {
     return pcorClient;
   }
   const authorizer = oauth(accessToken);
-  const options = {
-    apiHostname: process.env.BASE_URL
-  };
-  console.log(`defaults: ${defaults} options: ${options}`);
-  return client(authorizer, defaults, options);
+  return client(authorizer, defaults, clientOptions);
 }
 
 export const proxyRouter = Router();
