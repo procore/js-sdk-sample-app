@@ -1,13 +1,14 @@
 import { Router } from 'express';
 import { client, oauth } from '@procore/js-sdk';
+import { clientOptions } from '../clientOptions';
 
 let pcorClient = undefined;
-function getClient(accessToken, defaults, options) {
+function getClient(accessToken, defaults) {
   if (pcorClient) {
     return pcorClient;
   }
   const authorizer = oauth(accessToken);
-  return client(authorizer, defaults, options);
+  return client(authorizer, defaults, clientOptions);
 }
 
 export const proxyRouter = Router();

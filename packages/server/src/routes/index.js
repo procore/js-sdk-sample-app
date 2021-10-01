@@ -14,9 +14,6 @@ router.use(authorizer, (req, res, next) => {
       clientId: process.env.CLIENT_ID,
       uri: process.env.REDIRECT_URI
     },
-    {
-      apiHostname: process.env.OAUTH_URL
-    }
   );
 
   const main = {
