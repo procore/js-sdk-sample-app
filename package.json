@@ -10,7 +10,7 @@
     "serve": "lerna run serve"
   },
   "devDependencies": {
-    "lerna": "4.0.0"
+    "lerna": "5.5.2"
   },
   "version": "0.0.0"
 }
