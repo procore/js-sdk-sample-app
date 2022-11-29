@@ -71,6 +71,10 @@ yarn build
 yarn serve
 ```
 
+## Open Sample Application
+
+Open a browser and navigate to `http://localhost:3000/` assuming you have PORT set to `3000`.
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/procore/js-sdk-sample-app. This project is
