@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sh -c "yarn serve"
+    ports:
+      - "3000:3000"

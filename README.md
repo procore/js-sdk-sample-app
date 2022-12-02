@@ -71,6 +71,29 @@ yarn build
 yarn serve
 ```
 
+## Run js-sdk-sample-app in Docker Container
+
+Install Docker Desktop
+ * https://docs.docker.com/desktop/install/mac-install/
+ * https://docs.docker.com/desktop/install/windows-install/
+ * https://docs.docker.com/desktop/install/linux-install/
+
+Run the following commands from the root of the repo.
+Make sure a valid `.env` file is in the `/packages/server` directory before running these commands.
+Make sure that the port in docker-compose.yml matches the port in the `/packages/server/.env` file.
+
+*Start Docker Container*
+```shell
+BUILDKIT_PROGRESS=plain docker compose up -d --force-recreate --build --remove-orphans
+```
+
+Once the docker container has started you can follow instructions in `Open Sample Application`.
+
+*Stop Docker Container*
+```shell
+docker compose down -t 0
+```
+
 ## Open Sample Application
 
 Open a browser and navigate to `http://localhost:3000/` assuming you have PORT set to `3000`.
