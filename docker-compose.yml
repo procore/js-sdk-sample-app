@@ -4,6 +4,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: sh -c "yarn serve"
+    command: sh -c "npm run serve"
     ports:
       - "3000:3000"

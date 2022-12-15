@@ -2,21 +2,6 @@
 
 An example on how to use [`@procore/js-sdk`](https://www.npmjs.com/package/@procore/js-sdk). Comes complete with login routes and resource viewer.
 
-## Dependencies
-
-If yarn is not installed run the following shell command. `brew` (https://brew.sh/) must be installed for this command to work.
-
-```shell
-brew install yarn
-```
-
-Run the following commands from the root of the repo.
-
-```shell
-yarn install
-cp packages/server/.env.example packages/server/.env
-```
-
 ### Environment
 
 ```bash
@@ -59,7 +44,7 @@ SESSION_PASSWORD=Strong^^123~Pass
 Run the following command from the root of the repo.
 
 ```shell
-yarn start
+npm run start
 ```
 
 ## Production
@@ -67,8 +52,8 @@ yarn start
 Run the following commands from the root of the repo.
 
 ```shell
-yarn build
-yarn serve
+npm run build
+npm run serve
 ```
 
 ## Run js-sdk-sample-app in Docker Container
