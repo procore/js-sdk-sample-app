@@ -1,6 +1,6 @@
 {
   "name": "@procore/js-sdk-sample-app-server",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Example app showcasing procore Node application",
   "main": "server/main.js",
   "author": "Procore",
@@ -15,19 +15,19 @@
     "format": "prettier --config ../../prettier.config.js --write ."
   },
   "dependencies": {
-    "@procore/js-sdk": "3.0.1",
+    "@procore/js-sdk": "3.0.2",
     "cookie-parser": "1.4.5",
     "cookie-session": "1.4.0",
     "dotenv": "8.2.0",
     "esm": "3.2.25",
-    "express": "4.17.1",
+    "express": "4.17.3",
     "http-errors": "1.8.0",
     "http-proxy": "1.18.1",
     "morgan": "1.10.0",
     "pug": "3.0.2"
   },
   "devDependencies": {
-    "nodemon": "2.0.7",
+    "nodemon": "2.0.20",
     "prettier": "2.3.2"
   }
 }
