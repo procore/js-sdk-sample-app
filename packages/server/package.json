@@ -15,7 +15,7 @@
     "format": "prettier --config ../../prettier.config.js --write ."
   },
   "dependencies": {
-    "@procore/js-sdk": "3.0.2",
+    "@procore/js-sdk": "4.0.2",
     "cookie-parser": "1.4.5",
     "cookie-session": "1.4.0",
     "dotenv": "8.2.0",
