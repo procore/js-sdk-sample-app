@@ -68,5 +68,5 @@ authRouter.get('/revoke', async (req, res) => {
 
 authRouter.get('/signout', async (req, res) => {
   await revokeAccessToken(req);
-  return res.redirect(`${process.env.OAUTH_URL}/logout`);
+  return res.redirect(`${process.env.OAUTH_URL}/account/logout`);
 });
