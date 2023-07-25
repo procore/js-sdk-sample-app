@@ -20,7 +20,7 @@ const FormContainer = styled('form')(({ theme }) => ({
 
 export function Form(props) {
   const [version, setVersion] = React.useState('v1.0');
-  const [endpoint, setEndpoint] = React.useState('/me');
+  const [endpoint, setEndpoint] = React.useState('/schedule_integration');
   const [method, setMethod] = React.useState('get');
   const [qs, setQs] = React.useState([]);
 
