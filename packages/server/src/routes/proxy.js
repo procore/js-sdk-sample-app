@@ -53,16 +53,14 @@ proxyRouter.all('*', async (req, res) => {
     const result = await procore[method.toLowerCase()]({
       base: `/${endpoint}`,
       version: version,
-      accept: 'application/json',
+
       contentType: 'multipart/form-data',  // Seems like 'contentType" or 'headers' does not really pass
       'headers': {
         'accept': 'application/json',
         'content-type': 'multipart/form-data',
         'Content-Type': 'multipart/form-data'
       },
-      data: formData, // That is not necessary
-      body: formData, // That is not necessary
-      form: formData, // That is not necessary
+      
       qs: JSON.parse(JSON.stringify(req.query))
     });
     return res.json(result.body);
