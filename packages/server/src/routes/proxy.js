@@ -42,27 +42,28 @@ proxyRouter.all('*', async (req, res) => {
 
   req.query = {
     'project_id': 1884702,
+    // 'schedule_integration[file]': fs.createReadStream('/Users/vfeshchenko/temp/abcd.xml')
     'schedule_integration': inner
   };
   
-  req.headers['accept'] = 'application/json';
-  req.headers['content-type'] = 'multipart/form-data';
-  // req.headers['content-type'] =  'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW';
-
   try {
     const result = await procore[method.toLowerCase()]({
       base: `/${endpoint}`,
       version: version,
-
-      contentType: 'multipart/form-data',  // Seems like 'contentType" or 'headers' does not really pass
-      'headers': {
-        'accept': 'application/json',
-        'content-type': 'multipart/form-data',
-        'Content-Type': 'multipart/form-data'
-      },
-      
       qs: JSON.parse(JSON.stringify(req.query))
-    });
+    },
+    { 'schedule_integration[file]': fs.createReadStream('/Users/vfeshchenko/temp/abcd.xml')
+    // { schedule_integration: {
+        // file: fs.createReadStream('/Users/vfeshchenko/temp/abcd.xml')
+      // }
+    },
+    {
+      headers: {
+        'content-type': 'multipart/form-data',
+        'test-header': 'is_passed?'
+      }
+    }
+    );
     return res.json(result.body);
   } catch (error) {
     return res.json(error.body);
