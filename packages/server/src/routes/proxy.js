@@ -42,8 +42,8 @@ proxyRouter.all('*', async (req, res) => {
 
   req.query = {
     'project_id': 1884702,
-    // 'schedule_integration[file]': fs.createReadStream('/Users/vfeshchenko/temp/abcd.xml')
-    'schedule_integration': inner
+    'schedule_integration[file]': fs.createReadStream('/Users/vfeshchenko/temp/abcd.xml')
+    // 'schedule_integration': inner
   };
   
   try {
@@ -52,11 +52,12 @@ proxyRouter.all('*', async (req, res) => {
       version: version,
       qs: JSON.parse(JSON.stringify(req.query))
     },
-    { 'schedule_integration[file]': fs.createReadStream('/Users/vfeshchenko/temp/abcd.xml')
+    {},
+    // { 'schedule_integration[file]': fs.createReadStream('/Users/vfeshchenko/temp/abcd.xml')
     // { schedule_integration: {
         // file: fs.createReadStream('/Users/vfeshchenko/temp/abcd.xml')
       // }
-    },
+    // },
     {
       headers: {
         'content-type': 'multipart/form-data',
