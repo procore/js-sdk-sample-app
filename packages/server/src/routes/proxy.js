@@ -38,12 +38,16 @@ proxyRouter.all('*', async (req, res) => {
     }
   };
   const formData = new FormData();
-  formData.append('schedule_integration', JSON.stringify(inner));
+  // formData.append('schedule_integration', JSON.stringify(inner));
+
+  const fileStream = fs.createReadStream('/Users/vfeshchenko/temp/abcd.xml');
+  // formData.append('file', fileStream, 'test.xml');
+  formData.append('schedule_integration[file]', fileStream, 'test.xml');
 
   req.query = {
     'project_id': 1884702,
-    'schedule_integration[file]': fs.createReadStream('/Users/vfeshchenko/temp/abcd.xml')
-    // 'schedule_integration': inner
+    'schedule_integration[file]': 'fake' 
+    // formData
   };
   
   try {
@@ -52,7 +56,13 @@ proxyRouter.all('*', async (req, res) => {
       version: version,
       qs: JSON.parse(JSON.stringify(req.query))
     },
-    {},
+    // { 'schedule_integration[file]': 'fake'
+    // { 'schedule_integration': inner
+    // { 'schedule_integration': formData
+    // { formData
+    { 'schedule_integration': { 'file': 'fake', 'original_filename': 'test' }
+    }, // status code 400, 'param is missing or the value is empty: schedule_integration'
+    // {},
     // { 'schedule_integration[file]': fs.createReadStream('/Users/vfeshchenko/temp/abcd.xml')
     // { schedule_integration: {
         // file: fs.createReadStream('/Users/vfeshchenko/temp/abcd.xml')
