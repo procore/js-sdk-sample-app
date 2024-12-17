@@ -26,7 +26,7 @@
     "react-router-dom": "5.2.0"
   },
   "devDependencies": {
-    "@babel/core": "7.14.6",
+    "@babel/core": "7.26.0",
     "babel-loader": "8.2.2",
     "babel-preset-react-app": "10.0.0",
     "prettier": "2.3.2",
