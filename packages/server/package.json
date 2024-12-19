@@ -20,14 +20,14 @@
     "cookie-session": "1.4.0",
     "dotenv": "8.2.0",
     "esm": "3.2.25",
-    "express": "4.17.3",
+    "express": "4.21.2",
     "http-errors": "1.8.0",
     "http-proxy": "1.18.1",
     "morgan": "1.10.0",
     "pug": "3.0.2"
   },
   "devDependencies": {
-    "nodemon": "2.0.20",
+    "nodemon": "3.1.9",
     "prettier": "2.3.2"
   }
 }
