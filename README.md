@@ -18,7 +18,6 @@ SESSION_PASSWORD=<Used to encrypt session>
 ```
 
 Example:
-
 ```bash
 CLIENT_ID=c74b...bc3
 CLIENT_SECRET=251...60b
